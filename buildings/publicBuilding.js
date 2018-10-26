@@ -17,8 +17,8 @@ class PublicBuilding extends THREE.Group {
     var hallMaterials = [
         new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.leftTex+".jpg"), side: THREE.FrontSide }), //LEFT
         new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.rightTex+".jpg"), side: THREE.FrontSide }), //RIGHT
-        new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/roof/ground10.jpg"), side: THREE.FrontSide }), //TOP
-        new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground3.jpg"), side: THREE.FrontSide }), //BOTTOM
+        new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/roof/roof1.jpg"), side: THREE.FrontSide }), //TOP
+        new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground11.jpg"), side: THREE.FrontSide }), //BOTTOM
         new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.frontTex+".jpg"), side: THREE.FrontSide }), //FRONT
         new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.backTex+".jpg"), side: THREE.FrontSide }), //BACK
         ];
