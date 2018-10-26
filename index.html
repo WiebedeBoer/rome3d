@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!--library: three.js-->
+<script src="library/three.js"></script>
+<!--camera controls-->
+<script src="controls/FPControls.js"></script>
+<script src="controls/KeyboardState.js"></script>
+<!--buildings-->
+<script src="buildings/openxml.js"></script>
+<script src="buildings/BuildingMaker.js"></script>
+<script src="buildings/insulae.js"></script>
+<script src="buildings/publicBuilding.js"></script>
+<!--environment: plane en skybox-->
+<script src="environment/Plane.js"></script>
+<script src="environment/Skybox.js"></script>
+<!--lighting-->
+<script src="lighting/Lighting.js"></script>
+<script src="lighting/Pointlight.js"></script>
+<script src="lighting/Lantern.js"></script>
+<!--props-->
+<script src="props/Props.js"></script>
+<script src="props/coinCollect.js"></script>
+<script src="props/coin.js"></script>
+<!--loaders-->
+<script src="loaders/OBJLoader.js"></script>
+<script src="loaders/MTLLoader.js"></script>
+<script src="loaders/DDSLoader.js"></script>
+<script src="loaders/ModelLoader.js"></script>
+<!--collision detection-->
+<script src="collision/collision.js"></script>
+<!--people-->
+<!--<script src="people/people.js"></script>-->
+<!--<script src="people/peopleMaker.js"></script>-->
+<!--<script src="people/peopleMovement.js"></script>-->
+<!--<script src="people/Graph.js"></script>-->
+<!--<script src="people/Dijkstra.js"></script>-->
+<!--economy-->
+<script src="economy/Shooting.js"></script>
+<!--<script src="economy/Scoring.js"></script>-->
+<script src="economy/Gathering.js"></script>
+<!--styling-->
+<link rel="stylesheet" type="text/css" href="Styling.css">
+</head>
+<body class="ng-scope" style="margin: 0px; background-color: #d8e7ff; overflow: hidden;">
+
+<div class="parent" id="parent">  
+   <!--customcanvas-->       
+<div height="400" width="800" class="customcanvas" id="customcanvas"></div>
+        <!--hud-->
+                <div id="content-frame" ng-controller="HudState" class="ng-scope">
+                                <div id="canvas-container">
+                                    <div id="canvas-align">
+                                        <canvas id="webgl-canvas" width="800" height="400"></canvas>
+                                        <div id="hud" ng-class="{visible: style.visible, transparent: style.transparent, perspective: style.perspective, animated: style.animated}" class="visible">
+                                            <div id="weapon" class="ng-binding">
+                                                
+                                            </div>
+                                            <div id="ammo" class="ng-binding">
+                                                
+                                            </div>
+                                            <div id="message" class="ng-binding">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!--menu-->
+                        <div id="menu" class="ng-menu">
+                                <div id="content-frame" class="ng-scope">
+                                        <div id="canvas-container">
+                                                <div id="quit">
+                                                        <button id="quitbutton">Quit</button>                                                        
+                                                </div>
+                                                <div id="resume">
+                                                        <button id="resumebutton">Resume</button>
+                                                </div>
+                                        </div>
+                                        
+                                </div>
+                                        
+                        </div>
+</div>
+<script>
+//keyboard
+var keyboard = new THREEx.KeyboardState();
+var clock = new THREE.Clock();
+
+//collision vars
+var MovingCube;
+var collidableMeshList = []; 
+var collidablePropMeshList = []; 
+var collidableBulletMeshList = [];
+
+//no show menu
+var gamestart = document.getElementById("menu");
+gamestart.style.display = "none";
+
+// Bullets array
+var bullets = [];
+var bulletmeshes = [];
+       
+//updater
+var updateFcts = [];
+//scene
+var scene = new THREE.Scene();
+//fog
+scene.fog = new THREE.FogExp2( 0xd0e0f0, 0.0025 );
+//renderer
+var renderer = new THREE.WebGLRenderer( { antialias: false } );
+//window
+canvasWidth = 800;
+canvasHeight = 400;
+renderer.setSize( canvasWidth, canvasHeight );
+        
+//append object to it
+document.getElementById("customcanvas").appendChild(renderer.domElement);
+
+//camera
+var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 5700);
+camera.position.y = 12;
+camera.position.z = 70;
+camera.position.x = 140;
+
+//lighting and lantern props
+Lighter();
+
+//props
+Props();
+
+//people
+
+//planes 
+var planeroad = new Plane(5630,5630);
+scene.add(planeroad);  
+
+//skybox
+var skyBox = new Skybox();
+scene.add( skyBox );
+
+//city buildings
+BuildingMaker();
+
+//moving cube
+var cubeGeometry = new THREE.CylinderGeometry(5,5,20,8);
+var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
+MovingCube = new THREE.Mesh( cubeGeometry, wireMaterial );
+MovingCube.position.set(camera.position.x, camera.position.y, camera.position.z);
+scene.add( MovingCube );
+        
+//Camera Controls
+var controls = new THREE.FirstPersonControls( camera );
+//controls.movementSpeed = 80;
+controls.lookSpeed = 0.05;
+controls.lookVertical = false; //if true vertical look on mousemovement
+updateFcts.push(function(delta, now){
+                controls.update( delta );                
+        })
+
+//Locking the pointer to the game
+document.getElementById("parent").addEventListener( 'click', function ( event ) {
+        lock();
+}, false );
+function lock(rawr) {
+        document.getElementById("parent").requestPointerLock();
+} 
+
+//initial economy variables
+var totalCoin = 24;
+var eItem ="Purse";
+
+//show HUD economy functions
+function appendCoin(){        
+        document.getElementById('ammo').innerHTML = totalCoin;}
+function appendItem(){
+        document.getElementById('weapon').innerHTML = eItem;}
+
+//hit registration collision
+function clearText()
+{   document.getElementById('message').innerHTML = '....,.';}
+
+function appendText(txt)
+{   document.getElementById('message').innerHTML += txt;}
+
+//economy HUD
+appendCoin();
+appendItem();
+
+        //update function
+        updateFcts.push(function(){
+                //render the scene
+                renderer.render( scene, camera );
+
+                //moving cube position and rotation
+                MovingCube.position.x = camera.position.x;
+                MovingCube.position.y = camera.position.y;
+                MovingCube.position.z = camera.position.z;                
+
+                //collision detection
+                Collide();
+                //people movement
+                
+                //bullets
+                BulletTravel();
+        })
+        
+        //loop runner
+        var lastTimeMsec= null
+        requestAnimationFrame(function animate(nowMsec){
+                // keep looping
+                requestAnimationFrame( animate );
+                // measure time
+                lastTimeMsec = lastTimeMsec || nowMsec-1000/60
+                var deltaMsec = Math.min(200, nowMsec - lastTimeMsec)
+                lastTimeMsec = nowMsec
+                // call each update function
+                updateFcts.forEach(function(updateFn){
+                        updateFn(deltaMsec/1000, nowMsec/1000)
+                })
+        })
+</script>
+</div>
+<p class="ce">Use Q, E keys to rotate the camera. Use the W, A, S, D keys to move around. </p>
+<p class="ce">Click on screen to attach mouse pointer. Escape to deattach mouse pointer.</p>
+<p class="ce">WebGL renderer is supported in Firefox 4+, Chrome 9+, and Safari 6+</p>
+<!--music-->
+<audio autoplay loop><source src="music/rome_imperium.mp3" type="audio/mp3"></audio>
+</body>
+</html>
