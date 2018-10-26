@@ -1,12 +1,17 @@
 //prop gathering: health packs, ammo packs
 function propGathering(){
-
     
-//origin point
-var originPlayerPoint = MovingCube.position.clone();
-var propHit = 0;
+    breadGathering();
+        
+}
 
-//gathering collision
+//bread gathering
+function breadGathering(){
+    //origin point
+    var originPlayerPoint = MovingCube.position.clone();
+    var propHit = 0;
+
+    //gathering collision
     for (var vertexPropIndex = 0; vertexPropIndex < MovingCube.geometry.vertices.length; vertexPropIndex++)
     {
         var localVertex = MovingCube.geometry.vertices[vertexPropIndex].clone();
@@ -29,14 +34,12 @@ var propHit = 0;
             //amend economy 
             Gather();
         }
-
-        
 }
 
 function Gather(){         
     totalCoin = totalCoin + 1; 
-        if (totalCoin <101){           
-            eItem ="Treasure";
+        if (totalCoin <25){           
+            eItem ="bread";
             //update weapon in HUD
             appendCoin();
             //update ammo in HUD
