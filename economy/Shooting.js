@@ -19,22 +19,12 @@ function Shot(){
             
             //create bullet mesh
             var bulletmesh;
-            bulletmesh = new THREE.Group();
-                loadOBJModel("props/coin/","coin.obj","props/coin/","coin.mtl", (mesh) => {
-                    bulletmesh.add(mesh);
-                    //scale
-                    bulletmesh.scale.set(0.00001, 0.00001, 0.00001);                    
-                    //set position
-                    bulletmesh.position.set(ammoCube.position.x, ammoCube.position.y, ammoCube.position.z);
-                    //set rotation to that of the camera (player)
-                    bulletmesh.rotation.x = camera.rotation.x;
-                    bulletmesh.rotation.y = camera.rotation.y;                                   
-                    bulletmesh.rotation.z = camera.rotation.z;
-                    //push in list
-                    bulletmeshes.push(bulletmesh);
-                    //add to scene
-                    scene.add(bulletmesh);                            
-                });                 
+
+            bulletmesh = new Coin(ammoCube.position.x, ammoCube.position.y, ammoCube.position.z,camera.rotation.x,camera.rotation.y,camera.rotation.z); //shop 23,20
+            //push in list
+            bulletmeshes.push(bulletmesh);
+            //add to scene
+            scene.add(bulletmesh);               
 
             //add particle
             scene.add( ammoCube );
