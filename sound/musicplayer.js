@@ -1,6 +1,5 @@
 //music player
-var imperia = document.getElementById("imperia");
-function playImperium(){
+function changeImperium(){
         var rand = Math.floor((Math.random() * 4) + 1);
         if (rand ==1){
                 document.getElementById("parade").src = "music/rome_imperium.mp3";
@@ -15,4 +14,11 @@ function playImperium(){
                 document.getElementById("parade").src = "music/celtic_king_of_the_fairies.mp3";
         }        
         document.getElementById("imperia").load();
+}
+var aud = document.getElementById("imperia"); 
+function pauseImperium(){        
+        aud.pause(); 
+}
+function playImperium(){        
+        aud.play(); 
 }
