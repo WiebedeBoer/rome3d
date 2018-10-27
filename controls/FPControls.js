@@ -5,7 +5,9 @@
  */
 
 THREE.FirstPersonControls = function ( object, domElement ) {
-
+        //soundcuts
+        var soundcut;
+        //objects
         this.object = object;
         this.target = new THREE.Vector3( 0, 0, 0 );  //0,0,0
 
@@ -90,7 +92,8 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                         case 103: this.mouseX = 1500 - 3000; break;
                         case 69: this.mouseX = 1500; break;  /*e rotate right*/
                         case 105: this.mouseX = 1500; break;
-                        case 71: /*G*/ propGathering(); break;
+                        case 71: /*G*/ propGathering(); soundcut="grab"; playSound(soundcut); break;
+                                                
                 }
 
         };
@@ -116,7 +119,7 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                         case 103: this.mouseX = 0; break;
                         case 69: this.mouseX = 0; break; /*e rotate right*/
                         case 105: this.mouseX = 0; break;
-                        case 84: /*T*/ Shot(); break;
+                        case 84: /*T*/ Shot(); soundcut="shoot"; playSound(soundcut); break;
                         
                 }
 
