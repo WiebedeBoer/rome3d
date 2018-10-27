@@ -20,7 +20,7 @@ function Shot(){
             //create bullet mesh
             var bulletmesh;
 
-            bulletmesh = new Coin(ammoCube.position.x, ammoCube.position.y, ammoCube.position.z,camera.rotation.x,camera.rotation.y,camera.rotation.z); //shop 23,20
+            bulletmesh = new Arrow(ammoCube.position.x, ammoCube.position.y, ammoCube.position.z,camera.rotation.x,camera.rotation.y,camera.rotation.z); //shop 23,20
             //push in list
             bulletmeshes.push(bulletmesh);
             //add to scene
