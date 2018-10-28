@@ -66,7 +66,7 @@ function Props(){
             // put a position amphora
             var propPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 75; //column
             var propPositionZ = (1800 - 3600) + (jezi * 90) - 30; //row
-            var oilLoaf = new Amphora(propPositionX,6,propPositionZ,0,0,0); 
+            var oilLoaf = new Jug(propPositionX,0,propPositionZ,0,0,0); 
             scene.add(oilLoaf);
             var oilLoafCol = new breadCollect(propPositionX,6,propPositionZ); 
             scene.add(oilLoafCol);
@@ -75,10 +75,19 @@ function Props(){
             // put a position amphora
             var propPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 30; //column
             var propPositionZ = (1800 - 3600) + (jezi * 90) - 75; //row
-            var wineLoaf = new Amphora(propPositionX,6,propPositionZ,0,0,0); 
+            var wineLoaf = new Jug(propPositionX,0,propPositionZ,0,0,0); 
             scene.add(wineLoaf);
             var wineLoafCol = new breadCollect(propPositionX,6,propPositionZ); 
             scene.add(wineLoafCol);
+        }
+        else if (businesses =="pottery"){
+            // put a position amphora
+            var propPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 30; //column
+            var propPositionZ = (1800 - 3600) + (jezi * 90) - 75; //row
+            var jugLoaf = new Amphora(propPositionX,6,propPositionZ,0,0,0); 
+            scene.add(jugLoaf);
+            var jugLoafCol = new breadCollect(propPositionX,6,propPositionZ); 
+            scene.add(jugLoafCol);
         }
         else if (businesses =="cheesemaker"){
             // put a position cheese
