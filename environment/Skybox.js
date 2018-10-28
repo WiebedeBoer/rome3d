@@ -4,7 +4,7 @@ class Skybox extends THREE.Group {
 				var imagePrefix = "images/skybox";
 	            var directions  = ["xpos", "xneg", "ypos", "yneg", "zpos", "zneg"];
 	            var imageSuffix = ".png";
-	            var skyGeometry = new THREE.CubeGeometry( 5630, 5630, 5630 );	
+	            var skyGeometry = new THREE.CubeGeometry( this.width, this.length, this.height );	
 	
 	            var materialArray = [];
 	            for (var i = 0; i < 6; i++)
@@ -21,8 +21,11 @@ class Skybox extends THREE.Group {
 			}
 
     
-			constructor(){
+			constructor(width,length,height){
 				super();
+				this.width = width;
+				this.length = length;
+				this.height = height;
 				this.init();
 			}	
         }

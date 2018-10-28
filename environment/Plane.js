@@ -4,12 +4,11 @@ class Plane extends THREE.Group {
 
         mPlane = this;
         
-            texture = new THREE.TextureLoader().load( "textures/plane/ground.jpg" );
-            texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-            texture.repeat.set( 200, 200 );
-            material = new THREE.MeshBasicMaterial( { map: texture} );
-        
-      
+        texture = new THREE.TextureLoader().load( "textures/plane/ground2.jpg" );
+        texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+        texture.offset.set( 0.45 , 0.45 ); 
+        texture.repeat.set( this.width / 90, this.length / 90 );
+        material = new THREE.MeshBasicMaterial( { map: texture} );      
         geometry = new THREE.PlaneGeometry( this.width, this.length );
         plane = new THREE.Mesh( geometry, material );
         plane.rotation.x= - 90 * Math.PI / 180;
