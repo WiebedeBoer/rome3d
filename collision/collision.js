@@ -26,8 +26,22 @@ if (!collisionCheck){
         controls.movementSpeed = 80;}
         else if ( keyboard.pressed("a") || keyboard.pressed("w") ){
         controls.movementSpeed = 80;}
+        //street name
+        var x_street = Math.floor((camera.position.x + 1800) / 90);
+        var z_street = Math.floor((camera.position.z + 1800) / 90);
+        //map blacking
+        var cb = document.getElementById("myCanvas");
+        var ctxb = cb.getContext("2d");
+        ctxb.fillStyle = "black";
+        ctxb.fillRect(1, 1, 40, 40);
+        //map coord
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(x_street, z_street, 1, 1);
+        //msg
         clearText();
-        appendText(camera.position.x +","+camera.position.z+";");
+        appendText(x_street +"th W-E street,"+z_street+"th N-S street");
 }
 else {
         controls.movementSpeed -= controls.movementSpeed + controls.movementSpeed;  
