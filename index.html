@@ -68,6 +68,11 @@
                                             <div id="message" class="ng-binding">
                                                 
                                             </div>
+                                                                    <!--minimap-->
+                        <div id="minimap" class="ng-binding">
+                                        <canvas id="myCanvas" width="40" height="40" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+                        </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -87,6 +92,7 @@
                                 </div>
                                         
                         </div>
+
 </div>
 <script>
 //keyboard
@@ -125,7 +131,7 @@ document.getElementById("customcanvas").appendChild(renderer.domElement);
 
 //camera
 var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 5700);
-camera.position.y = 102;
+camera.position.y = 12;
 camera.position.z = 100;
 camera.position.x = 135;
 
