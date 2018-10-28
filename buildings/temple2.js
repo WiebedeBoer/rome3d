@@ -1,9 +1,9 @@
-class Temple extends THREE.Group {
+class TempleR extends THREE.Group {
 
     init (){
 
         var dChurch = this;
-        loadOBJModel("models/templum/","3d-model.obj","models/templum/","3d-model.mtl", (mesh) => {
+        loadOBJModel("models/templum2/","3d-model.obj","models/templum2/","3d-model.mtl", (mesh) => {
             mesh.scale.x = 0.07;
             mesh.scale.y = 0.1;
             mesh.scale.z = 0.06;
