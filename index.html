@@ -8,10 +8,14 @@
 <script src="controls/FPControls.js"></script>
 <script src="controls/KeyboardState.js"></script>
 <!--buildings-->
-<script src="buildings/openxml.js"></script>
-<script src="buildings/BuildingMaker.js"></script>
+<script src="openxml.js"></script>
+<script src="BuildingMaker.js"></script>
 <script src="buildings/insulae.js"></script>
 <script src="buildings/publicBuilding.js"></script>
+<script src="buildings/municipal.js"></script>
+<script src="buildings/theatre.js"></script>
+<script src="buildings/amphitheatre.js"></script>
+<script src="buildings/temple.js"></script>
 <!--environment: plane en skybox-->
 <script src="environment/Plane.js"></script>
 <script src="environment/Skybox.js"></script>
@@ -23,6 +27,7 @@
 <script src="props/Props.js"></script>
 <script src="props/coinCollect.js"></script>
 <script src="props/coin.js"></script>
+<script src="props/arrow.js"></script>
 <!--loaders-->
 <script src="loaders/OBJLoader.js"></script>
 <script src="loaders/MTLLoader.js"></script>
@@ -86,8 +91,8 @@
 <script>
 //keyboard
 var keyboard = new THREEx.KeyboardState();
-var clock = new THREE.Clock();
-
+var clock = new THREE.Clock(); 
+ 
 //collision vars
 var MovingCube;
 var collidableMeshList = []; 
@@ -120,9 +125,9 @@ document.getElementById("customcanvas").appendChild(renderer.domElement);
 
 //camera
 var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 5700);
-camera.position.y = 12;
-camera.position.z = 70;
-camera.position.x = 140;
+camera.position.y = 102;
+camera.position.z = 100;
+camera.position.x = 135;
 
 //lighting and lantern props
 Lighter();
@@ -132,12 +137,13 @@ Props();
 
 //people
 
-//planes 
-var planeroad = new Plane(5630,5630);
+//environment
+var environmentsize = 5500;
+//plane
+var planeroad = new Plane(environmentsize,environmentsize);
 scene.add(planeroad);  
-
 //skybox
-var skyBox = new Skybox();
+var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
 scene.add( skyBox );
 
 //city buildings
