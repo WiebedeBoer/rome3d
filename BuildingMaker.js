@@ -4,7 +4,7 @@ function BuildingMaker(){
 //private buildings: building type, front texture, back texture, right texture, left texture, building height
 
 //scene 1, domus, residential
-var Domus = new Commercial("domus","domus_front","domus_back","wall5","wall5",60); //256
+var Domus = new Commercial("domus","domus_front","domus_back","gold_wall","gold_wall",60); //256
 scene.add(Domus);
 
 //scene 2, latifundia, agricultural
@@ -27,62 +27,65 @@ scene.add(Smelter);
 
 //scene 3, insulae, commercial
 //bakery
-var Bakery = new Commercial("bakery","wall7","wall7","baker","baker",80); //57
-scene.add(Bakery);
+var Bakery = new Commercial("bakery","potter_wall","potter_wall","baker","baker",80); //44
+scene.add(Bakery); //table + bread
 //butcher
-var Butcher = new Commercial("butcher","wall6","wall6","butcher","butcher",80); //35
+var Butcher = new Commercial("butcher","food_wall","food_wall","butcher","butcher",80); //36
 scene.add(Butcher);
-//pottery
-var Pottery = new Commercial("pottery","wall9","wall9","wall4","wall4",80); //30
-scene.add(Pottery);
+//tavern
+var Tavern = new Commercial("tavern","taberna","taberna","food_wall","food_wall",80); //39
+scene.add(Tavern);
+//sauce workshop
+var Sauceworkshop = new Commercial("sauce","gold_wall","gold_wall","fisher","fisher",80); //26
+scene.add(Sauceworkshop); //table + fish
+//cheesemaker
+var Cheesemaker = new Commercial("cheesemaker","butcher","butcher","food_wall","food_wall",80); //38
+scene.add(Cheesemaker); //table + cheese
+//wine workshop
+var Wineworkshop = new Commercial("winery","food_wall","food_wall","vintner","vintner",80); //24
+scene.add(Wineworkshop); //amphora
+//oil workshop
+var Oilworkshop = new Commercial("oil","vintner","vintner","food_wall","food_wall",80); //41
+scene.add(Oilworkshop); //amphora
 //weavery
-var Weavery = new Commercial("weavery","wall9","wall9","wall4","wall4",80); //35
+var Weavery = new Commercial("weavery","cloth_front","cloth_wall","cloth_back","cloth_back",80); //25
 scene.add(Weavery);
-//dyer
-var Dyer = new Commercial("dyer","wall9","wall9","wall4","wall4",80); //23
-scene.add(Dyer);
 //clothier
-var Clothier = new Commercial("clothier","wall9","wall9","wall4","wall4",80); //19
+var Clothier = new Commercial("clothier","cloth_wall","cloth_front","cloth_back","cloth_back",80); //19
 scene.add(Clothier);
 //shoemaker
-var Shoemaker = new Commercial("shoemaker","wall9","wall9","wall4","wall4",80); //24
+var Shoemaker = new Commercial("shoemaker","cloth_back","cloth_back","cloth_front","cloth_wall",80); //19
 scene.add(Shoemaker);
+//pottery
+var Pottery = new Commercial("pottery","potter_front","potter_wall","potter_back","potter_back",80); //39
+scene.add(Pottery);
+//furtniture workshop
+var Furniture = new Commercial("carpenter","potter_wall","potter_front","potter_back","potter_back",80); //37
+scene.add(Furniture);
+//dyer
+var Dyer = new Commercial("dyer","industry_front","industry_back","fora_wall","fora_wall",80); //25
+scene.add(Dyer);
 //charcoalmaker
-var Charcoalmaker = new Commercial("charcoalmaker","industry_front","industry_front","industry_back","fora_wall",80); //18
+var Charcoalmaker = new Commercial("charcoalmaker","industry_front","industry_front","industry_back","fora_wall",80); //10
 scene.add(Charcoalmaker);
-//cheesemaker
-var Cheesemaker = new Commercial("cheesemaker","butcher","butcher","wall6","wall6",80); //43
-scene.add(Cheesemaker);
-//jeweler
-var Jeweler = new Commercial("jeweler","wall9","wall9","wall4","wall4",80); //19
-scene.add(Jeweler);
-//wine workshop
-var Wineworkshop = new Commercial("winery","wall6","wall6","vintner","vintner",80); //43
-scene.add(Wineworkshop);
-//oil workshop
-var Oilworkshop = new Commercial("oil","vintner","vintner","wall6","wall6",80); //40
-scene.add(Oilworkshop);
-//sauce workshop
-var Sauceworkshop = new Commercial("sauce","wall5","wall5","fisher","fisher",80); //20
-scene.add(Sauceworkshop);
 //fletcher
-var Fletcher = new Commercial("fletcher","smithy_back","smithy_front","smithy_back","smithy_back",80); //16
+var Fletcher = new Commercial("fletcher","smithy_back","smithy_front","smithy_back","smithy_back",80); //13
 scene.add(Fletcher);
 //smithy
 var Smithy = new Commercial("smithy","smithy_front","smithy_back","smithy_back","smithy_back",80); //16
 scene.add(Smithy);
 //armorer
-var Armorer = new Commercial("armorer","smithy_back","smithy_back","smithy_front","smithy_back",80); //18
+var Armorer = new Commercial("armorer","smithy_back","smithy_back","smithy_front","smithy_back",80); //22
 scene.add(Armorer);
 //poleturner
-var Poleturner = new Commercial("poleturner","smithy_back","smithy_back","smithy_back","smithy_front",80); //22
+var Poleturner = new Commercial("poleturner","smithy_back","smithy_back","smithy_back","smithy_front",80); //17
 scene.add(Poleturner);
-//tavern
-var Tavern = new Commercial("tavern","taberna","taberna","wall6","wall6",80); //30
-scene.add(Tavern);
+//jeweler
+var Jeweler = new Commercial("jeweler","gold_wall","gold_wall","banker","banker",80); //16
+scene.add(Jeweler);
 //moneylender
-var Bank = new Commercial("bank","banker","banker","wall5","wall5",80); //16
-scene.add(Bank);
+var Bank = new Commercial("bank","banker","banker","gold_wall","gold_wall",80); //14
+scene.add(Bank); //table + coin
 
 //public buildings, multiple: front texture, back texture, right texture, left texture, building height, width, length
 //scene 4, forum, 9 fora
@@ -186,15 +189,15 @@ scene.add(Harbor);
 
 //public buildings, single: front texture, back texture, right texture, left texture, building height, row, col
 //scene 15, tabularium, records
-var Tabularium = new PublicBuilding("fora_wall","fora_wall","fora_front","fora_front",80,22,17); //22,17 aerarium
+var Tabularium = new PublicBuilding("fora_wall","fora_wall","fora_front","fora_front",80,22,17); //22,17 tabularium
 scene.add(Tabularium);
 
 //scene 16, aerarium, treasury
-var Aerarium = new PublicBuilding("aerarium","aerarium","wall9","wall9",80,22,20); //22,20 tabularium
+var Aerarium = new PublicBuilding("aerarium","aerarium","concrete","concrete",80,22,20); //22,20 aerarium
 scene.add(Aerarium);
 
 //scene 17, carcer, prison
-var Carcer = new PublicBuilding("domus_front","wall9","wall9","wall9",70,18,18); //18,18 prison
+var Carcer = new PublicBuilding("domus_front","concrete","concrete","concrete",70,18,18); //18,18 prison
 scene.add(Carcer);
 
 //scene 18, senatum, senate
