@@ -62,6 +62,24 @@ function Props(){
             var fishLoafCol = new breadCollect(propPositionX,6,propPositionZ); 
             scene.add(fishLoafCol);
         }
+        else if (businesses =="oil"){
+            // put a position amphora
+            var propPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 75; //column
+            var propPositionZ = (1800 - 3600) + (jezi * 90) - 30; //row
+            var oilLoaf = new Amphora(propPositionX,6,propPositionZ,0,0,0); 
+            scene.add(oilLoaf);
+            var oilLoafCol = new breadCollect(propPositionX,6,propPositionZ); 
+            scene.add(oilLoafCol);
+        }
+        else if (businesses =="winery"){
+            // put a position amphora
+            var propPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 30; //column
+            var propPositionZ = (1800 - 3600) + (jezi * 90) - 75; //row
+            var wineLoaf = new Amphora(propPositionX,6,propPositionZ,0,0,0); 
+            scene.add(wineLoaf);
+            var wineLoafCol = new breadCollect(propPositionX,6,propPositionZ); 
+            scene.add(wineLoafCol);
+        }
 
     //increment loop
     i ++;
