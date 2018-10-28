@@ -213,10 +213,12 @@ appendItem();
                 //moving cube position and rotation
                 MovingCube.position.x = camera.position.x;
                 MovingCube.position.y = camera.position.y;
-                MovingCube.position.z = camera.position.z;                
+                MovingCube.position.z = camera.position.z;              
 
-                //collision detection
+                //collision detection and mini map
                 Collide();
+                //ambient sound
+                ambientGathering();
                 //people movement
                 
                 //bullets
@@ -254,8 +256,10 @@ appendItem();
                 <button onclick="changeImperium()" type="button">Change Music</button>
                 <button onclick="pauseImperium()" type="button">Pause Music</button>
                 <button onclick="playImperium()" type="button">Play Music</button>
+                <!--sound scripts-->
                 <script src="sound/musicplayer.js"></script>
                 <script src="sound/soundplayer.js"></script>
+                <script src="sound/ambient.js"></script>
         </div>
 
 </div>
