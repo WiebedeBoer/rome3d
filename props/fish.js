@@ -1,10 +1,10 @@
-class Arrow extends THREE.Group {
+class Trout extends THREE.Group {
 
     init (){
 
         var dGun = this;
-        loadOBJModel("props/arrow/","CHAHIN_ARROW.obj","props/arrow/","CHAHIN_ARROW.mtl", (mesh) => {
-            mesh.scale.set (2.5, 2.5, 2.5);
+        loadOBJModel("props/trout/","NOVELO_TROUT.obj","props/trout/","NOVELO_TROUT.mtl", (mesh) => {
+            mesh.scale.set (0.01, 0.01, 0.01);
             dGun.position.x = this.pX;
             dGun.position.y = this.pY;
             dGun.position.z = this.pZ;

@@ -16,6 +16,9 @@
 <script src="buildings/theatre.js"></script>
 <script src="buildings/amphitheatre.js"></script>
 <script src="buildings/temple.js"></script>
+<script src="buildings/wireTemples.js"></script>
+<script src="buildings/pillar.js"></script>
+<script src="buildings/hortus.js"></script>
 <!--environment: plane en skybox-->
 <script src="environment/Plane.js"></script>
 <script src="environment/Skybox.js"></script>
@@ -25,9 +28,12 @@
 <script src="lighting/Lantern.js"></script>
 <!--props-->
 <script src="props/Props.js"></script>
-<script src="props/coinCollect.js"></script>
-<script src="props/coin.js"></script>
+<script src="props/breadCollect.js"></script>
+<script src="props/bread.js"></script>
 <script src="props/arrow.js"></script>
+<script src="props/coin.js"></script>
+<script src="props/fish.js"></script>
+<script src="props/table.js"></script>
 <!--loaders-->
 <script src="loaders/OBJLoader.js"></script>
 <script src="loaders/MTLLoader.js"></script>
@@ -48,7 +54,7 @@
 <!--styling-->
 <link rel="stylesheet" type="text/css" href="Styling.css">
 </head>
-<body class="ng-scope" style="margin: 0px; background-color: #d8e7ff; overflow: hidden;">
+<body class="ng-scope" onload="myInit()" style="margin: 0px; background-color: #d8e7ff; overflow: hidden;">
 
 <div class="parent" id="parent">  
    <!--customcanvas-->       
@@ -65,14 +71,6 @@
                                             <div id="ammo" class="ng-binding">
                                                 
                                             </div>
-                                            <div id="message" class="ng-binding">
-                                                
-                                            </div>
-                                                                    <!--minimap-->
-                        <div id="minimap" class="ng-binding">
-                                        <canvas id="myCanvas" width="40" height="40" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
-                        </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -92,9 +90,9 @@
                                 </div>
                                         
                         </div>
-
 </div>
 <script>
+
 //keyboard
 var keyboard = new THREEx.KeyboardState();
 var clock = new THREE.Clock(); 
@@ -135,6 +133,8 @@ camera.position.y = 12;
 camera.position.z = 100;
 camera.position.x = 135;
 
+function myInit(){
+
 //lighting and lantern props
 Lighter();
 
@@ -155,6 +155,8 @@ scene.add( skyBox );
 //city buildings
 BuildingMaker();
 
+}
+
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,8);
 var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
@@ -164,7 +166,6 @@ scene.add( MovingCube );
         
 //Camera Controls
 var controls = new THREE.FirstPersonControls( camera );
-//controls.movementSpeed = 80;
 controls.lookSpeed = 0.05;
 controls.lookVertical = false; //if true vertical look on mousemovement
 updateFcts.push(function(delta, now){
@@ -200,6 +201,8 @@ function appendText(txt)
 appendCoin();
 appendItem();
 
+
+
         //update function
         updateFcts.push(function(){
                 //render the scene
@@ -234,16 +237,32 @@ appendItem();
         })
 </script>
 </div>
+
+<div id="game" class="game">
+        <!--message-->
+        <div id="message" class="ce"></div>
+        <!--minimap-->
+        <div id="minimap" class="ce">
+                <canvas id="myCanvas" width="40" height="40" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+        </div>
+        <!--music-->
+        <div id="sound" class="ce">                
+                <audio id="imperia" loop autoplay><source id="parade" src="music/parade_of_charioteers.mp3" type="audio/mp3"></audio>   
+                <audio id="soundpar" autoplay><source id="soundscape" src="sfx/atmosphere/population_1_hamlet.mp3" type="audio/mp3"></audio> 
+                <button onclick="changeImperium()" type="button">Change Music</button>
+                <button onclick="pauseImperium()" type="button">Pause Music</button>
+                <button onclick="playImperium()" type="button">Play Music</button>
+                <script src="sound/musicplayer.js"></script>
+                <script src="sound/soundplayer.js"></script>
+        </div>
+
+</div>
+
+<!--description-->
+<div id="desribe" class="describe">
 <p class="ce">Use Q, E keys to rotate the camera. Use the W, A, S, D keys to move around. </p>
 <p class="ce">Click on screen to attach mouse pointer. Escape to deattach mouse pointer.</p>
 <p class="ce">WebGL renderer is supported in Firefox 4+, Chrome 9+, and Safari 6+</p>
-<!--music-->
-<audio id="imperia" loop autoplay><source id="parade" src="music/parade_of_charioteers.mp3" type="audio/mp3"></audio>   
-<audio id="soundpar" autoplay><source id="soundscape" src="sfx/atmosphere/population_1_hamlet.mp3" type="audio/mp3"></audio> 
-<button onclick="changeImperium()" type="button">Change Music</button>
-<button onclick="pauseImperium()" type="button">Pause Music</button>
-<button onclick="playImperium()" type="button">Play Music</button>
-<script src="sound/musicplayer.js"></script>
-<script src="sound/soundplayer.js"></script>
+</div>
 </body>
 </html>

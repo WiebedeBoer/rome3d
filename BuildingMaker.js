@@ -63,19 +63,19 @@ scene.add(Wineworkshop);
 var Oilworkshop = new Commercial("oil","vintner","vintner","wall6","wall6",80); //40
 scene.add(Oilworkshop);
 //sauce workshop
-var Sauceworkshop = new Commercial("sauce","wall9","wall9","wall6","wall6",80); //20
+var Sauceworkshop = new Commercial("sauce","wall5","wall5","fisher","fisher",80); //20
 scene.add(Sauceworkshop);
 //fletcher
-var Fletcher = new Commercial("fletcher","wall9","wall9","wall6","wall6",80); //16
+var Fletcher = new Commercial("fletcher","smithy_back","smithy_front","smithy_back","smithy_back",80); //16
 scene.add(Fletcher);
 //smithy
-var Smithy = new Commercial("smithy","wall9","wall9","wall6","wall6",80); //16
+var Smithy = new Commercial("smithy","smithy_front","smithy_back","smithy_back","smithy_back",80); //16
 scene.add(Smithy);
 //armorer
-var Armorer = new Commercial("armorer","wall9","wall9","wall6","wall6",80); //18
+var Armorer = new Commercial("armorer","smithy_back","smithy_back","smithy_front","smithy_back",80); //18
 scene.add(Armorer);
 //poleturner
-var Poleturner = new Commercial("poleturner","wall9","wall9","wall6","wall6",80); //22
+var Poleturner = new Commercial("poleturner","smithy_back","smithy_back","smithy_back","smithy_front",80); //22
 scene.add(Poleturner);
 //tavern
 var Tavern = new Commercial("tavern","taberna","taberna","wall6","wall6",80); //30
@@ -93,6 +93,9 @@ var Basilica = new Municipal("basilica","basilica_front","basilica_front","fora_
 scene.add(Basilica);
 
 //scene 6, templum, 29 temples
+var wireCol = new wireTemples("templum",80);
+scene.add(wireCol);
+
 var Temple1 = new Temple(24,0,9); //24,9
 scene.add(Temple1);
 var Temple2 = new Temple(12,0,10); //12,10
@@ -223,7 +226,11 @@ var regiaBuilding = new PublicBuilding("fora_wall","fora_wall","basilica_front",
 scene.add(regiaBuilding);
 
 //scene 25, rostra, speaker, 29,17
+var Rostrum = new Pillar(29,0,17); //29,17
+scene.add(Rostrum);
 
 //scene 26, umbilicus, column, 28,18
+var Umbilicus = new Pillar(28,0,18); //28,18
+scene.add(Umbilicus);
 
 }

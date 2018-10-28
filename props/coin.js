@@ -3,19 +3,18 @@ class Coin extends THREE.Group {
     init (){
 
         var dGun = this;
-        loadOBJModel("props/bread/","bread.obj","props/bread/","bread.mtl", (mesh) => {
-            mesh.scale.set (10, 10, 10);
-            //mesh.scale.y = 10;
-            //mesh.scale.z = 10;
-            dGun.position.x = this.pX;
-            dGun.position.y = this.pY;
-            dGun.position.z = this.pZ;
-            dGun.rotation.x = this.pXr;
-            dGun.rotation.y = this.pYr;
-            dGun.rotation.z = this.pZr;
-            dGun.add(mesh);
+        var geometry = new THREE.CylinderGeometry( 0.6, 0.6, 0.25, 16 );
+        var material = new THREE.MeshBasicMaterial( {color: 0xffd700} );
+        var cylinder = new THREE.Mesh( geometry, material );        
+        dGun.position.x = this.pX;
+        dGun.position.y = this.pY;
+        dGun.position.z = this.pZ;
+        dGun.rotation.x = this.pXr;
+        dGun.rotation.y = this.pYr;
+        dGun.rotation.z = this.pZr;
+        dGun.add(cylinder);
 
-        });
+        
     }    
             
     constructor(pX,pY,pZ,pXr,pYr,pZr){
