@@ -80,6 +80,17 @@ function Props(){
             var wineLoafCol = new breadCollect(propPositionX,6,propPositionZ); 
             scene.add(wineLoafCol);
         }
+        else if (businesses =="cheesemaker"){
+            // put a position cheese
+            var propPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 30; //column
+            var propPositionZ = (1800 - 3600) + (jezi * 90) - 75; //row
+            var tablestand = new Table(propPositionX,0,propPositionZ,0,0,0); 
+            scene.add(tablestand);
+            var cheeseLoaf = new Cheese(propPositionX,6,propPositionZ,0,0,0); 
+            scene.add(cheeseLoaf);
+            var cheeseLoafCol = new breadCollect(propPositionX,6,propPositionZ); 
+            scene.add(cheeseLoafCol);
+        }
 
     //increment loop
     i ++;
