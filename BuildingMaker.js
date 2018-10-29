@@ -101,13 +101,13 @@ scene.add(wireCol);
 
 var Temple1 = new Temple(24,0,9); //24,9
 scene.add(Temple1);
-var Temple2 = new Temple(12,0,10); //12,10
+var Temple2 = new TempleR(12,0,10); //12,10
 scene.add(Temple2);
 var Temple3 = new Temple(15,0,11); //15,11
 scene.add(Temple3);
 var Temple4 = new Temple(23,0,11); //23,11
 scene.add(Temple4);
-var Temple5 = new Temple(26,0,11); //26,11
+var Temple5 = new TempleD(26,0,11); //26,11
 scene.add(Temple5);
 var Temple6 = new Temple(13,0,12); //13,12
 scene.add(Temple6);
@@ -115,43 +115,43 @@ var Temple7 = new Temple(31,0,12); //31,12
 scene.add(Temple7);
 var Temple8 = new Temple(26,0,13); //26,13
 scene.add(Temple8);
-var Temple9 = new Temple(15,0,14); //15,14
+var Temple9 = new TempleD(15,0,14); //15,14
 scene.add(Temple9);
-var Temple10 = new Temple(29,0,14); //29,14
+var Temple10 = new TempleR(29,0,14); //29,14
 scene.add(Temple10);
-var Temple11 = new Temple(18,0,16); //18,16
+var Temple11 = new TempleR(18,0,16); //18,16
 scene.add(Temple11);
-var Temple12 = new TempleR(17,0,17); //17,17
+var Temple12 = new TempleD(17,0,17); //17,17
 scene.add(Temple12);
-var Temple13 = new TempleR(18,0,17); //18,17
+var Temple13 = new TempleP(18,0,17); //18,17
 scene.add(Temple13);
-var Temple14 = new Temple(14,0,21); //14,21
+var Temple14 = new TempleB(14,0,21); //14,21
 scene.add(Temple14);
-var Temple15 = new Temple(34,0,21); //34,21
+var Temple15 = new TempleP(34,0,21); //34,21
 scene.add(Temple15);
-var Temple16 = new TempleR(23,0,22); //23,22
+var Temple16 = new Temple(23,0,22); //23,22
 scene.add(Temple16);
-var Temple17 = new TempleR(25,0,22); //25,22
+var Temple17 = new Temple(25,0,22); //25,22
 scene.add(Temple17);
-var Temple18 = new TempleR(32,0,22); //32,22
+var Temple18 = new Temple(32,0,22); //32,22
 scene.add(Temple18);
-var Temple19 = new TempleR(28,0,23); //28,23
+var Temple19 = new TempleP(28,0,23); //28,23
 scene.add(Temple19);
-var Temple20 = new Temple(12,0,28); //12,28
+var Temple20 = new TempleP(12,0,28); //12,28
 scene.add(Temple20);
 var Temple21 = new Temple(4,0,29); //4,29
 scene.add(Temple21);
-var Temple22 = new Temple(11,0,30); //11,30
+var Temple22 = new TempleP(11,0,30); //11,30
 scene.add(Temple22);
 var Temple23 = new Temple(20,0,30); //20,30
 scene.add(Temple23);
-var Temple24 = new Temple(10,0,31); //10,31
+var Temple24 = new TempleP(10,0,31); //10,31
 scene.add(Temple24);
-var Temple25 = new Temple(22,0,31); //22,31
+var Temple25 = new TempleR(22,0,31); //22,31
 scene.add(Temple25);
 var Temple26 = new Temple(12,0,33); //12,33
 scene.add(Temple26);
-var Temple27 = new Temple(14,0,33); //14,33
+var Temple27 = new TempleP(14,0,33); //14,33
 scene.add(Temple27);
 var Temple28 = new Temple(30,0,37); //30,37
 scene.add(Temple28);
