@@ -4,25 +4,25 @@ function BuildingMaker(){
 //private buildings: building type, front texture, back texture, right texture, left texture, building height
 
 //scene 1, domus, residential
-var Domus = new Commercial("domus","domus_front","domus_back","gold_wall","gold_wall",60); //256
+var Domus = new Commercial("domus","domus_front","domus_back","gold_wall","gold_wall",60); //252
 scene.add(Domus);
 
 //scene 2, latifundia, agricultural
-var Farm = new Commercial("villa","villa_front","villa_back","villa_back","villa_back",60); //352
+var Farm = new Commercial("villa","villa_front","villa_back","villa_back","villa_back",60); //353
 scene.add(Farm);
 
 //scene 3, insulae, industrial
 //mill
-var Mill = new Commercial("mill","industry_front","industry_front","industry_back","industry_back",60); //35
+var Mill = new Commercial("mill","industry_front","industry_front","industry_back","industry_back",60); //39
 scene.add(Mill);
 //sawmill
-var Sawmill = new Commercial("sawmill","industry_front","industry_front","industry_back","industry_back",60); //35
+var Sawmill = new Commercial("sawmill","industry_front","industry_front","industry_back","industry_back",60); //33
 scene.add(Sawmill);
 //tannery
-var Tannery = new Commercial("tannery","industry_back","industry_back","industry_front","industry_front",60); //28
+var Tannery = new Commercial("tannery","industry_back","industry_back","industry_front","industry_front",60); //25
 scene.add(Tannery);
 //smelter
-var Smelter = new Commercial("smelter","industry_back","industry_back","industry_front","industry_front",60); //33
+var Smelter = new Commercial("smelter","industry_back","industry_back","industry_front","industry_front",60); //32
 scene.add(Smelter);
 
 //scene 3, insulae, commercial
@@ -43,10 +43,10 @@ var Cheesemaker = new Commercial("cheesemaker","butcher","butcher","food_wall","
 scene.add(Cheesemaker); //table + cheese
 //wine workshop
 var Wineworkshop = new Commercial("winery","food_wall","food_wall","vintner","vintner",80); //24
-scene.add(Wineworkshop); //amphora
+scene.add(Wineworkshop); //jug
 //oil workshop
 var Oilworkshop = new Commercial("oil","vintner","vintner","food_wall","food_wall",80); //41
-scene.add(Oilworkshop); //amphora
+scene.add(Oilworkshop); //jug
 //weavery
 var Weavery = new Commercial("weavery","cloth_front","cloth_wall","cloth_back","cloth_back",80); //25
 scene.add(Weavery);
@@ -58,7 +58,7 @@ var Shoemaker = new Commercial("shoemaker","cloth_back","cloth_back","cloth_fron
 scene.add(Shoemaker);
 //pottery
 var Pottery = new Commercial("pottery","potter_front","potter_wall","potter_back","potter_back",80); //39
-scene.add(Pottery);
+scene.add(Pottery); //amphora
 //furtniture workshop
 var Furniture = new Commercial("carpenter","potter_wall","potter_front","potter_back","potter_back",80); //37
 scene.add(Furniture);
@@ -70,7 +70,7 @@ var Charcoalmaker = new Commercial("charcoalmaker","industry_front","industry_fr
 scene.add(Charcoalmaker);
 //fletcher
 var Fletcher = new Commercial("fletcher","smithy_back","smithy_front","smithy_back","smithy_back",80); //13
-scene.add(Fletcher);
+scene.add(Fletcher); //table + arrow
 //smithy
 var Smithy = new Commercial("smithy","smithy_front","smithy_back","smithy_back","smithy_back",80); //16
 scene.add(Smithy);
