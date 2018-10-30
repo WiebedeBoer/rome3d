@@ -158,6 +158,7 @@ scene.add(Temple28);
 var Temple29 = new Temple(13,0,38); //13,38
 scene.add(Temple29);
 
+
 //scene 7, thermae, 10 baths
 var Thermae = new Municipal("thermae","bath_wall","bath_wall","bath_front","bath_wall",80,240,240);
 scene.add(Thermae);
@@ -228,6 +229,7 @@ scene.add(stateBuilding);
 var regiaBuilding = new PublicBuilding("fora_wall","fora_wall","basilica_front","basilica_front",80,30,24); //30,24
 scene.add(regiaBuilding);
 
+
 //scene 25, rostra, speaker, 29,17
 var Rostrum = new Pillar(29,0,17); //29,17
 scene.add(Rostrum);
@@ -235,5 +237,6 @@ scene.add(Rostrum);
 //scene 26, umbilicus, column, 28,18
 var Umbilicus = new Pillar(28,0,18); //28,18
 scene.add(Umbilicus);
+
 
 }

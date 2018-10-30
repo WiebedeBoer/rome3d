@@ -3,7 +3,8 @@ function Shot(){
     //shoot ammo check
         if (totalCoin >0){
             //less ammo
-            totalCoin = totalCoin - 1;            
+            totalArrow = totalArrow - 1;
+            totalItem = totalArrow - 1;              
             
             //create ammo particle
             var ammoGeometry = new THREE.CubeGeometry(3,3,3,1,1,1);
@@ -20,7 +21,7 @@ function Shot(){
             //create bullet mesh
             var bulletmesh;
 
-            bulletmesh = new Arrow(ammoCube.position.x, ammoCube.position.y, ammoCube.position.z,camera.rotation.x,camera.rotation.y,camera.rotation.z); //shop 23,20
+            bulletmesh = new Arrow(camera.position.x, camera.position.y, camera.position.z,camera.rotation.x-1.5708,camera.rotation.y+1.5708,camera.rotation.z); //shop 23,20
             //push in list
             bulletmeshes.push(bulletmesh);
             //add to scene
@@ -52,6 +53,8 @@ function Shot(){
         }
         //update coin in HUD
         appendCoin();
+        eItem ="Bow";
+        appendItem();
     
 } 
 //move bullet cube
@@ -60,7 +63,7 @@ function BulletTravel(){
         element.translateZ(-10);
     });
     bulletmeshes.forEach(element => {
-        element.translateZ(-10); 
+        element.translateX(10); 
     });
 }
 

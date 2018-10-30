@@ -29,8 +29,8 @@
 <script src="lighting/Pointlight.js"></script>
 <script src="lighting/Lantern.js"></script>
 <!--props-->
-<script src="props/Props.js"></script>
-<script src="props/breadCollect.js"></script>
+<script src="Props.js"></script>
+<script src="props/propCollect.js"></script>
 <script src="props/bread.js"></script>
 <script src="props/arrow.js"></script>
 <script src="props/coin.js"></script>
@@ -49,7 +49,6 @@
 <!--loaders-->
 <script src="loaders/OBJLoader.js"></script>
 <script src="loaders/MTLLoader.js"></script>
-<script src="loaders/DDSLoader.js"></script>
 <script src="loaders/ModelLoader.js"></script>
 <!--collision detection-->
 <script src="collision/collision.js"></script>
@@ -61,7 +60,6 @@
 <!--<script src="people/Dijkstra.js"></script>-->
 <!--economy-->
 <script src="economy/Shooting.js"></script>
-<!--<script src="economy/Scoring.js"></script>-->
 <script src="economy/Gathering.js"></script>
 <!--styling-->
 <link rel="stylesheet" type="text/css" href="Styling.css">
@@ -111,9 +109,11 @@ var clock = new THREE.Clock();
  
 //collision vars
 var MovingCube;
-var collidableMeshList = []; 
-var collidablePropMeshList = []; 
+var collidableMeshList = [];
 var collidableBulletMeshList = [];
+//collidable props
+var collidablePropMeshList = []; 
+var propTypes = [];
 
 //no show menu
 var gamestart = document.getElementById("menu");
@@ -193,12 +193,23 @@ function lock(rawr) {
 } 
 
 //initial economy variables
+var totalItem;
 var totalCoin = 12;
+var totalBread = 3;
+var totalArrow = 23;
+var totalSauce = 2;
+var totalOil = 2;
+var totalWine = 5;
+var totalPottery = 1;
+var totalCheese = 1;
 var eItem ="Purse";
+
+//initial item
+totalItem = totalCoin;
 
 //show HUD economy functions
 function appendCoin(){        
-        document.getElementById('ammo').innerHTML = totalCoin;}
+        document.getElementById('ammo').innerHTML = totalItem;}
 function appendItem(){
         document.getElementById('weapon').innerHTML = eItem;}
 
@@ -212,8 +223,6 @@ function appendText(txt)
 //economy HUD
 appendCoin();
 appendItem();
-
-
 
         //update function
         updateFcts.push(function(){
