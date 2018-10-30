@@ -39,7 +39,7 @@ scene.add(Tavern);
 var Sauceworkshop = new Commercial("sauce","gold_wall","gold_wall","fisher","fisher",80); //26
 scene.add(Sauceworkshop); //table + fish
 //cheesemaker
-var Cheesemaker = new Commercial("cheesemaker","butcher","butcher","food_wall","food_wall",80); //38
+var Cheesemaker = new Commercial("cheesemaker","butcher","butcher","food_wall","food_wall",80); //37
 scene.add(Cheesemaker); //table + cheese
 //wine workshop
 var Wineworkshop = new Commercial("winery","food_wall","food_wall","vintner","vintner",80); //24

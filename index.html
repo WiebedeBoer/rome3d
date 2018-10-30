@@ -39,6 +39,13 @@
 <script src="props/table.js"></script>
 <script src="props/amphora.js"></script>
 <script src="props/jug.js"></script>
+<!--animals-->
+<script src="props/donkey.js"></script>
+<script src="props/cow.js"></script>
+<script src="props/goat.js"></script>
+<script src="props/pig.js"></script>
+<script src="props/sheep.js"></script>
+<script src="props/horse.js"></script>
 <!--loaders-->
 <script src="loaders/OBJLoader.js"></script>
 <script src="loaders/MTLLoader.js"></script>
@@ -133,7 +140,7 @@ renderer.setSize( canvasWidth, canvasHeight );
 document.getElementById("customcanvas").appendChild(renderer.domElement);
 
 //camera
-var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 5700);
+var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 7800);
 camera.position.y = 12;
 camera.position.z = 100;
 camera.position.x = 135;

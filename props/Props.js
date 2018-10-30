@@ -100,6 +100,38 @@ function Props(){
             var cheeseLoafCol = new breadCollect(propPositionX,6,propPositionZ); 
             scene.add(cheeseLoafCol);
         }
+        else if (businesses =="unknown"){
+            var animals = xtag[itag].getElementsByTagName("SOUND")[0].childNodes[0].nodeValue;
+            var propPositionX = xtag[itag].getElementsByTagName("XCO")[0].childNodes[0].nodeValue;
+            var propPositionZ = xtag[itag].getElementsByTagName("YCO")[0].childNodes[0].nodeValue;
+            if (animals =="donkey"){
+                var donkey = new Donkey(propPositionX,0,propPositionZ,0,0,0); 
+                scene.add(donkey);
+                console.log("donkey,"+propPositionX+","+propPositionZ);
+            }
+            else if(animals =="pig"){
+                var pig = new Pig(propPositionX,5,propPositionZ,0,0,0); 
+                scene.add(pig);
+                console.log("pig,"+propPositionX+","+propPositionZ);
+            }
+            else if(animals =="cattle"){
+                var cow = new Cow(propPositionX,0,propPositionZ,0,0,0); 
+                scene.add(cow);
+                console.log("cow,"+propPositionX+","+propPositionZ);
+            }
+            else if(animals =="sheep"){
+                var sheep = new Sheep(propPositionX,0,propPositionZ,0,0,0); 
+                scene.add(sheep);
+            }
+            else if(animals =="goat"){
+                var goat = new Goat(propPositionX,0,propPositionZ,0,0,0); 
+                scene.add(goat);
+            }
+            else if(animals =="horse"){
+                var horse = new Horse(propPositionX,0,propPositionZ,0,0,0); 
+                scene.add(horse);
+            }
+        }
 
     //increment loop
     i ++;
