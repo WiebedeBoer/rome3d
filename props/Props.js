@@ -106,18 +106,15 @@ function Props(){
             var propPositionZ = xtag[itag].getElementsByTagName("YCO")[0].childNodes[0].nodeValue;
             if (animals =="donkey"){
                 var donkey = new Donkey(propPositionX,0,propPositionZ,0,0,0); 
-                scene.add(donkey);
-                console.log("donkey,"+propPositionX+","+propPositionZ);
+                scene.add(donkey);                
             }
             else if(animals =="pig"){
                 var pig = new Pig(propPositionX,5,propPositionZ,0,0,0); 
-                scene.add(pig);
-                console.log("pig,"+propPositionX+","+propPositionZ);
+                scene.add(pig);                
             }
             else if(animals =="cattle"){
                 var cow = new Cow(propPositionX,0,propPositionZ,0,0,0); 
-                scene.add(cow);
-                console.log("cow,"+propPositionX+","+propPositionZ);
+                scene.add(cow);                
             }
             else if(animals =="sheep"){
                 var sheep = new Sheep(propPositionX,0,propPositionZ,0,0,0); 
