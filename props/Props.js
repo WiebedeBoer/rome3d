@@ -106,27 +106,27 @@ function Props(){
             var propPositionZ = xtag[itag].getElementsByTagName("YCO")[0].childNodes[0].nodeValue;
             if (animals =="donkey"){
                 var donkey = new Donkey(propPositionX,0,propPositionZ,0,0,0); 
-                scene.add(donkey);                
+                scene.add(donkey);  //2              
             }
             else if(animals =="pig"){
                 var pig = new Pig(propPositionX,5,propPositionZ,0,0,0); 
-                scene.add(pig);                
+                scene.add(pig);  //3              
             }
             else if(animals =="cattle"){
                 var cow = new Cow(propPositionX,0,propPositionZ,0,0,0); 
-                scene.add(cow);                
+                scene.add(cow);  //6              
             }
             else if(animals =="sheep"){
                 var sheep = new Sheep(propPositionX,0,propPositionZ,0,0,0); 
-                scene.add(sheep);
+                scene.add(sheep); //13
             }
             else if(animals =="goat"){
                 var goat = new Goat(propPositionX,0,propPositionZ,0,0,0); 
-                scene.add(goat);
+                scene.add(goat); //11
             }
             else if(animals =="horse"){
                 var horse = new Horse(propPositionX,0,propPositionZ,0,0,0); 
-                scene.add(horse);
+                scene.add(horse); //2
             }
         }
 
