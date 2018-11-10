@@ -6,7 +6,6 @@
 <script src="library/three.js"></script>
 <!--camera controls-->
 <script src="controls/FPControls.js"></script>
-<script src="controls/KeyboardState.js"></script>
 <!--buildings-->
 <script src="openxml.js"></script>
 <script src="BuildingMaker.js"></script>
@@ -46,10 +45,7 @@
 <script src="props/pig.js"></script>
 <script src="props/sheep.js"></script>
 <script src="props/horse.js"></script>
-<!--loaders-->
-<script src="loaders/OBJLoader.js"></script>
-<script src="loaders/MTLLoader.js"></script>
-<script src="loaders/ModelLoader.js"></script>
+
 <!--collision detection-->
 <script src="collision/collision.js"></script>
 <!--people-->
@@ -64,7 +60,7 @@
 <!--styling-->
 <link rel="stylesheet" type="text/css" href="Styling.css">
 </head>
-<body class="ng-scope" onload="myInit()" style="margin: 0px; background-color: #d8e7ff; overflow: hidden;">
+<body class="ng-scope" style="margin: 0px; background-color: #d8e7ff; overflow: hidden;">
 
 <div class="parent" id="parent">  
    <!--customcanvas-->       
@@ -101,11 +97,13 @@
                                         
                         </div>
 </div>
+<!--loaders-->
+<script src="loaders/OBJLoader.js"></script>
+<script src="loaders/MTLLoader.js"></script>
+<script src="loaders/ModelLoader.js"></script>
 <script>
 
-//keyboard
-var keyboard = new THREEx.KeyboardState();
-var clock = new THREE.Clock(); 
+
  
 //collision vars
 var MovingCube;
@@ -145,8 +143,6 @@ camera.position.y = 12;
 camera.position.z = 100;
 camera.position.x = 135;
 
-function myInit(){
-
 //lighting and lantern props
 Lighter();
 
@@ -167,11 +163,9 @@ scene.add( skyBox );
 //city buildings
 BuildingMaker();
 
-}
-
 //moving cube
-var cubeGeometry = new THREE.CylinderGeometry(5,5,20,8);
-var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
+var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
+var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:true } );
 MovingCube = new THREE.Mesh( cubeGeometry, wireMaterial );
 MovingCube.position.set(camera.position.x, camera.position.y, camera.position.z);
 scene.add( MovingCube );
@@ -224,22 +218,24 @@ function appendText(txt)
 appendCoin();
 appendItem();
 
+//collision vars
+var collisionX;
+var collisionZ;
+
         //update function
         updateFcts.push(function(){
                 //render the scene
                 renderer.render( scene, camera );
-
                 //moving cube position and rotation
                 MovingCube.position.x = camera.position.x;
                 MovingCube.position.y = camera.position.y;
-                MovingCube.position.z = camera.position.z;              
-
-                //collision detection and mini map
-                Collide();
+                MovingCube.position.z = camera.position.z;
+                MovingCube.rotation.y = camera.rotation.y;                         
+                //collision detection and mini map                          
+                //playerMovement();
                 //ambient sound
                 ambientGathering();
-                //people movement
-                
+                //people movement               
                 //bullets
                 BulletTravel();
         })
