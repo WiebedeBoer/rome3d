@@ -70,7 +70,7 @@ THREE.FirstPersonControls = function ( object, domElement ) {
 		var movementY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
 		this.mouseX = movementX * 150;
                 this.mouseY = movementY * 150;
-                console.log(this.mouseX );
+                //console.log(this.mouseX );
 	}
 
         //loose keys keyboard
@@ -148,11 +148,17 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                                                              
                         } 
                         else {
-                                this.object.translateX(cos * -actualMoveSpeed); 
-                                console.log("f cos "+cos);
-                                console.log("fx "+collisionX+" "+collisionZ);  
-                        }                           
-      
+                                if (cos >0.5){
+                                        this.object.translateX(cos * -actualMoveSpeed);                                 
+                                        console.log("f cos "+cos);
+                                        console.log("fx "+collisionX+" "+collisionZ);   
+                                }
+                                else {
+                                        this.object.translateX(cos * actualMoveSpeed);                                 
+                                        console.log("f cos "+cos);
+                                        console.log("fx "+collisionX+" "+collisionZ);                                         
+                                } 
+                        }                        
                                               
                 } 
                 //backward
@@ -164,9 +170,16 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                                 
                         }
                         else {
-                                this.object.translateX(cos * actualMoveSpeed); 
-                                console.log("b cos "+cos);
-                                console.log("bx "+collisionX+" "+collisionZ);     
+                                if (cos >0.5){
+                                        this.object.translateX(cos * -actualMoveSpeed);                                 
+                                        console.log("b cos "+cos);
+                                        console.log("bx "+collisionX+" "+collisionZ);   
+                                }
+                                else {
+                                        this.object.translateX(cos * actualMoveSpeed);                                 
+                                        console.log("b cos "+cos);
+                                        console.log("bx "+collisionX+" "+collisionZ);                                         
+                                }    
                         }
 
                 }
@@ -178,9 +191,16 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                                 
                         }
                         else {
-                                this.object.translateZ(sin * -actualMoveSpeed);
-                                console.log("l sin "+sin);
-                                console.log("lz "+collisionX+" "+collisionZ); 
+                                if (sin >0.5){
+                                        this.object.translateZ(sin * -actualMoveSpeed);                                 
+                                        console.log("l sin "+sin);
+                                        console.log("lz "+collisionX+" "+collisionZ);   
+                                }
+                                else {
+                                        this.object.translateZ(sin * actualMoveSpeed);                                 
+                                        console.log("l sin "+sin);
+                                        console.log("lz "+collisionX+" "+collisionZ);                                         
+                                }  
                         }
 
                       
@@ -193,9 +213,16 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                                 
                         }
                         else {
-                                this.object.translateZ(sin * actualMoveSpeed);
-                                console.log("b sin "+sin);
-                                console.log("rz "+collisionX+" "+collisionZ); 
+                                if (sin >0.5){
+                                        this.object.translateZ(sin * -actualMoveSpeed);                                 
+                                        console.log("r sin "+sin);
+                                        console.log("rz "+collisionX+" "+collisionZ);   
+                                }
+                                else {
+                                        this.object.translateZ(sin * actualMoveSpeed);                                 
+                                        console.log("r sin "+sin);
+                                        console.log("rz "+collisionX+" "+collisionZ);                                         
+                                }  
                         }
  
                      
