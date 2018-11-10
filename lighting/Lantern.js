@@ -3,29 +3,35 @@ class Lantern extends THREE.Group {
     init (){
 
         var dLantern = this;
-        loadOBJModel("props/model_obj_lantern/","model.obj","props/model_obj_lantern/","materials.mtl", (mesh) => {
-            dLantern.position.x = this.pX;
-            dLantern.position.y = 10;
-            dLantern.position.z = this.pZ;
-            mesh.scale.x = 4;
-            mesh.scale.y = 30;
-            mesh.scale.z = 4;
+        loadOBJModel("props/torch/","model.obj","props/torch/","materials.mtl", (mesh) => {
+            dLantern.position.x = (1800 - 3600) + (this.pX * 90) - 75;
+            dLantern.position.y = this.pY;
+            dLantern.position.z = (1800 - 3600) + (this.pZ * 90) - 30;
+            dLantern.rotation.x = this.pXr;
+            dLantern.rotation.y = this.pYr;
+            dLantern.rotation.z = this.pZr;
+            mesh.scale.x = 10;
+            mesh.scale.y = 50;
+            mesh.scale.z = 10;
             dLantern.add(mesh);
             addPointLight(dLantern,0xf8eabb, 0, 1, 0, 4, 25); //lantern light
             var g = new THREE.BoxGeometry(1,1,1);
-            var m = new THREE.MeshBasicMaterial({color: 0xffffff});
+            var m = new THREE.MeshBasicMaterial({color: 0xf8eabb});
             dLantern._meshLight = new THREE.Mesh(g, m);
-            dLantern._meshLight.position.set(12,15,-60);
-            dLantern._meshLight.visible = false;
+            dLantern._meshLight.position.set(dLantern.position.x,50,dLantern.position.z);
+            dLantern._meshLight.visible = true;
             dLantern.add(dLantern._meshLight);            
         });
     }    
             
-    constructor(pX,pY,pZ){
+    constructor(pX,pY,pZ,pXr,pYr,pZr){
         super();
         this.pX = pX;
         this.pY = pY;
         this.pZ = pZ;
+        this.pXr = pXr;
+        this.pYr = pYr;
+        this.pZr = pZr;
         this.init();
     }
 
