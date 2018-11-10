@@ -13,10 +13,11 @@ THREE.FirstPersonControls = function ( object, domElement ) {
 
         this.domElement = ( domElement !== undefined ) ? domElement : document;
 
-        this.movementSpeed = 1.0;
+        this.movementSpeed = 60.0;
         this.lookSpeed = 0.005;
 
         this.autoForward = false;
+        this.autoRight = false;
 
         this.activeLook = true; //true = rotate left right
 
@@ -69,6 +70,7 @@ THREE.FirstPersonControls = function ( object, domElement ) {
 		var movementY = event.movementY || event.mozMovementY || event.webkitMovementY || 0;
 		this.mouseX = movementX * 150;
                 this.mouseY = movementY * 150;
+                console.log(this.mouseX );
 	}
 
         //loose keys keyboard
@@ -77,16 +79,16 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                 switch ( event.keyCode ) {
 
                         case 104: /*up*/
-                        case 87: /*W*/ this.moveForward = true; break;
+                        case 87: /*W*/ this.moveForward = true; break; //true
 
                         case 100: /*left*/
-                        case 65: /*A*/ this.moveLeft = true; break;
+                        case 65: /*A*/ this.moveLeft = true; break; //true
 
                         case 98: /*down*/
-                        case 83: /*S*/ this.moveBackward = true; break;
+                        case 83: /*S*/ this.moveBackward = true; break; //true
 
                         case 102: /*right*/
-                        case 68: /*D*/ this.moveRight = true; break;
+                        case 68: /*D*/ this.moveRight = true; break; //true
 
                         case 81: this.mouseX = 1500 - 3000; break; /*q rotate left*/
                         case 103: this.mouseX = 1500 - 3000; break;
@@ -128,13 +130,76 @@ THREE.FirstPersonControls = function ( object, domElement ) {
         //update
         this.update = function( delta ) {
 
+                //collision
+                Collide();
+
+                var sin = Math.sin(MovingCube.rotation.y);
+                var cos = Math.cos(MovingCube.rotation.y);
+
+                //move speed
                 var actualMoveSpeed = delta * this.movementSpeed;
 
-                if ( this.moveForward || ( this.autoForward && !this.moveBackward ) ) this.object.translateZ( - ( actualMoveSpeed + this.autoSpeedFactor ) );
-                if ( this.moveBackward ) this.object.translateZ( actualMoveSpeed );
+                //forward
+                if ( this.moveForward || ( this.autoForward && !this.moveBackward ) ){
 
-                if ( this.moveLeft ) this.object.translateX( - actualMoveSpeed );
-                if ( this.moveRight ) this.object.translateX( actualMoveSpeed );
+                        if (collisionZ ==0 && cos !=0) {
+                                this.object.translateZ(-actualMoveSpeed); //forward
+                                console.log("1f "+actualMoveSpeed);
+                                                             
+                        } 
+                        else {
+                                this.object.translateX(cos * -actualMoveSpeed); 
+                                console.log("f cos "+cos);
+                                console.log("fx "+collisionX+" "+collisionZ);  
+                        }                           
+      
+                                              
+                } 
+                //backward
+                if ( this.moveBackward ){
+
+                        if (collisionZ ==0 && cos !=0) {
+                                this.object.translateZ(actualMoveSpeed); //backward
+                                console.log("1b "+actualMoveSpeed);
+                                
+                        }
+                        else {
+                                this.object.translateX(cos * actualMoveSpeed); 
+                                console.log("b cos "+cos);
+                                console.log("bx "+collisionX+" "+collisionZ);     
+                        }
+
+                }
+                //left 
+                if ( this.moveLeft ){
+                        if (collisionX ==0 && sin !=0) {
+                                this.object.translateX(-actualMoveSpeed); //left
+                                console.log("1l "+actualMoveSpeed);
+                                
+                        }
+                        else {
+                                this.object.translateZ(sin * -actualMoveSpeed);
+                                console.log("l sin "+sin);
+                                console.log("lz "+collisionX+" "+collisionZ); 
+                        }
+
+                      
+                } 
+                //right
+                if ( this.moveRight ){
+                        if (collisionX ==0 && sin !=0) {
+                                this.object.translateX(actualMoveSpeed); //right
+                                console.log("1r "+actualMoveSpeed);
+                                
+                        }
+                        else {
+                                this.object.translateZ(sin * actualMoveSpeed);
+                                console.log("b sin "+sin);
+                                console.log("rz "+collisionX+" "+collisionZ); 
+                        }
+ 
+                     
+                } 
 
                 var actualLookSpeed = delta * this.lookSpeed;
 
@@ -151,8 +216,7 @@ THREE.FirstPersonControls = function ( object, domElement ) {
 
                 this.theta = THREE.Math.degToRad( this.lon );
 
-                var targetPosition = this.target,
-                        position = this.object.position;
+                var targetPosition = this.target, position = this.object.position;
 
                 targetPosition.x = position.x + 100 * Math.sin( this.phi ) * Math.cos( this.theta );
                 targetPosition.y = position.y + 100 * Math.cos( this.phi );
