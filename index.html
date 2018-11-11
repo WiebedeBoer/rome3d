@@ -223,7 +223,7 @@ var collisionX;
 var collisionZ;
 
         //update function
-        updateFcts.push(function(){
+        updateFcts.push(function(delta,now){
                 //render the scene
                 renderer.render( scene, camera );
                 //moving cube position and rotation
@@ -237,7 +237,7 @@ var collisionZ;
                 ambientGathering();
                 //people movement               
                 //bullets
-                BulletTravel();
+                BulletTravel(delta);
         })
         
         //loop runner
