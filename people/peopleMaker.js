@@ -12,14 +12,14 @@ function PeopleMaker() {
         var itag = i - 1;
         var businesses = xtag[itag].getElementsByTagName("BUSINESS")[0].childNodes[0].nodeValue;        
         //pleb
-        if (businesses =="bakery" || businesses =="butcher"){ 
+        if (businesses =="bakery"){ 
             var personPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 70; //column
             var personPositionZ = (1800 - 3600) + (jezi * 90) - 70; //row
             citizen ="pleb";         
             var people = new Person(citizen,personPositionX,personPositionZ);
             scene.add(people);            
         }
-        else if (businesses =="tavern" || businesses =="oil" || businesses =="winery"){ 
+        else if (businesses =="tavern"){ 
             var personPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 70; //column
             var personPositionZ = (1800 - 3600) + (jezi * 90) - 70; //row
             citizen ="womanlow";         
@@ -41,6 +41,7 @@ function PeopleMaker() {
             var people = new Person(citizen,personPositionX,personPositionZ);
             scene.add(people);            
         }
+        //public
         else if (businesses =="templum" || businesses =="regia"){ 
             var personPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 70; //column
             var personPositionZ = (1800 - 3600) + (jezi * 90) - 70; //row
@@ -55,7 +56,7 @@ function PeopleMaker() {
             var people = new Person(citizen,personPositionX,personPositionZ);
             scene.add(people);            
         }
-        else if (businesses =="senatum" || businesses =="graecostacium" || businesses =="graecostacium" || businesses =="atriumlibertatis"){ 
+        else if (businesses =="senatum" || businesses =="graecostacium" || businesses =="tabularium" || businesses =="atriumlibertatis"){ 
             var personPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 70; //column
             var personPositionZ = (1800 - 3600) + (jezi * 90) - 70; //row
             citizen ="senator";         
@@ -73,6 +74,13 @@ function PeopleMaker() {
             var personPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 160; //column
             var personPositionZ = (1800 - 3600) + (jezi * 90) - 160; //row
             citizen ="gladiator";         
+            var people = new Person(citizen,personPositionX,personPositionZ);
+            scene.add(people);            
+        }
+        else if (businesses =="thermae"){ 
+            var personPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 160; //column
+            var personPositionZ = (1800 - 3600) + (jezi * 90) - 160; //row
+            citizen ="womanbath";         
             var people = new Person(citizen,personPositionX,personPositionZ);
             scene.add(people);            
         }
