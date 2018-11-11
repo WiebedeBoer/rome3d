@@ -52,11 +52,8 @@
 <!--collision detection-->
 <script src="collision/collision.js"></script>
 <!--people-->
-<!--<script src="people/people.js"></script>-->
-<!--<script src="people/peopleMaker.js"></script>-->
-<!--<script src="people/peopleMovement.js"></script>-->
-<!--<script src="people/Graph.js"></script>-->
-<!--<script src="people/Dijkstra.js"></script>-->
+<script src="people/person.js"></script>
+<script src="people/peopleMaker.js"></script>
 <!--economy-->
 <script src="economy/Shooting.js"></script>
 <script src="economy/Gathering.js"></script>
@@ -141,7 +138,7 @@ Lighter();
 //props
 Props();
 //people
-
+PeopleMaker();
 //environment
 var environmentsize = 5500;
 //plane
@@ -189,8 +186,7 @@ function appendItem(){
         document.getElementById('weapon').innerHTML = eItem;}
 //hit registration collision
 function clearText()
-{   document.getElementById('message').innerHTML = '....,.';}
-
+{   document.getElementById('message').innerHTML = '....';}
 function appendText(txt)
 {   document.getElementById('message').innerHTML += txt;}
 //collision vars
