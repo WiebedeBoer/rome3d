@@ -1,5 +1,8 @@
 //music player
 function playSound(soundtype){
+
+    var audi = document.getElementById("soundpar"); 
+    audi.volume = 0.5; 
         
         if (soundtype =="shoot"){
                 document.getElementById("soundscape").src = "sfx/combat/ranged_fire02.mp3";

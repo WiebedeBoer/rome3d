@@ -1,10 +1,13 @@
 //ambient vars
 var soundType = "false";
 
+var audi = document.getElementById("soundpar"); 
+audi.volume = 0.5; 
+
 //sound gathering
 function ambientGathering(){
-    var x_sound = Math.ceil((camera.position.x + 1800) / 90);
-    var z_sound = Math.ceil((camera.position.z + 1800) / 90);
+    var x_sound = Math.ceil((camera.position.x + 1775) / 90);
+    var z_sound = Math.ceil((camera.position.z + 1775) / 90);
     //x limits
     if (x_sound >40){
         x_sound = 40;
@@ -26,38 +29,50 @@ function ambientGathering(){
         z_sound = z_sound;
     }
 
-    var itag = ((z_sound - 1) * 40) + x_sound;
-    var ambients = xtag[itag].getElementsByTagName("BUSINESS")[0].childNodes[0].nodeValue;
+    var mtag = ((z_sound - 1) * 40) + x_sound;
+    var ambients = xtag[mtag].getElementsByTagName("BUSINESS")[0].childNodes[0].nodeValue;
     
     //small ambients checks
-    if (ambients =="smithy" && soundType !="smithy"){
-    ambientSmithy();}
+    if (ambients =="smithy" && soundType !="smithy"){    
+        ambientSmithy();
+    }
     if (ambients =="tavern" && soundType !="tavern"){
-    ambientTavern();}
+        ambientTavern();
+    }
     if (ambients =="templum" && soundType !="temple"){
-    ambientTemple();}
+        ambientTemple();
+    }
     if (ambients =="hortus" && soundType !="garden"){
-    ambientGarden();}
-    if ((ambients =="forum" && soundType !="market") || ambients=="venalium"){
-    ambientMarket();}
-    if (ambients =="bank" && soundType !="bank"){
-    ambientBank();}
-    if (ambients =="villa" && soundType !="villa"){
-    ambientStable();}
+       ambientGarden();
+    }
+    if ((ambients =="forum" && soundType !="market") || (ambients=="venalium" && soundType !="market")){
+       ambientMarket();
+    }
+    if (ambients =="bank" && soundType !="bank"){    
+        ambientBank();
+    }
+    if (ambients =="villa" && soundType !="villa"){     
+        ambientStable();
+    }
     //large ambients checks
     if (ambients =="unknown"){
         
-        var localsound = xtag[itag].getElementsByTagName("SOUND")[0].childNodes[0].nodeValue;
+        var localsound = xtag[mtag].getElementsByTagName("SOUND")[0].childNodes[0].nodeValue;
         if (localsound =="racetrack" && soundType !="circus"){
-            ambientCircus();}
+            ambientCircus();
+        }
         if (localsound =="arena" && soundType !="amphitheatre"){
-            ambientTheatre();}
+            ambientTheatre();
+        }
         if (localsound =="baths" && soundType !="baths"){
-            ambientBaths();}
-        if (localsound =="barracks" && soundType !="barracks"){
-            ambientBarracks();}
-        if (localsound =="docks" && soundType !="harbor"){
-            ambientHarbor();}
+            ambientBaths();
+        }
+        if (localsound =="barracks" && soundType !="barracks"){        
+            ambientBarracks();
+        }
+        if (localsound =="docks" && soundType !="harbor"){   
+            ambientHarbor();
+        }
     }
 
         
