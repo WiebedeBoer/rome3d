@@ -7,9 +7,9 @@ class Pig extends THREE.Group {
             mesh.scale.x = 0.08;
             mesh.scale.y = 0.08;
             mesh.scale.z = 0.08;
-            dChurch.position.x = (1800 - 3600) + (this.pX * 90) - 30;
+            dChurch.position.x = this.pX;
             dChurch.position.y = this.pY;
-            dChurch.position.z = (1800 - 3600) + (this.pZ * 90) - 30;
+            dChurch.position.z = this.pZ;
             dChurch.add(mesh);
             collidableMeshList.push(mesh);
 

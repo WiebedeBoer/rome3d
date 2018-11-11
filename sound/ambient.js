@@ -3,8 +3,8 @@ var soundType = "false";
 
 //sound gathering
 function ambientGathering(){
-    var x_sound = Math.floor((camera.position.x + 1800) / 90);
-    var z_sound = Math.floor((camera.position.z + 1800) / 90);
+    var x_sound = Math.ceil((camera.position.x + 1800) / 90);
+    var z_sound = Math.ceil((camera.position.z + 1800) / 90);
     //x limits
     if (x_sound >40){
         x_sound = 40;
@@ -26,7 +26,7 @@ function ambientGathering(){
         z_sound = z_sound;
     }
 
-    var itag = ((x_sound * z_sound) - 1) + z_sound;
+    var itag = ((z_sound - 1) * 40) + x_sound;
     var ambients = xtag[itag].getElementsByTagName("BUSINESS")[0].childNodes[0].nodeValue;
     
     //small ambients checks
@@ -38,7 +38,7 @@ function ambientGathering(){
     ambientTemple();}
     if (ambients =="hortus" && soundType !="garden"){
     ambientGarden();}
-    if (ambients =="forum" && soundType !="market"){
+    if ((ambients =="forum" && soundType !="market") || ambients=="venalium"){
     ambientMarket();}
     if (ambients =="bank" && soundType !="bank"){
     ambientBank();}

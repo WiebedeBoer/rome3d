@@ -5,8 +5,6 @@
  */
 
 THREE.FirstPersonControls = function ( object, domElement ) {
-        //soundcuts
-        var soundcut;
         //objects
         this.object = object;
         this.target = new THREE.Vector3( 0, 0, 0 );  //0,0,0
@@ -79,22 +77,28 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                 switch ( event.keyCode ) {
 
                         case 104: /*up*/
+                        case 38:
                         case 87: /*W*/ this.moveForward = true; break; //true
 
                         case 100: /*left*/
+                        case 37:
                         case 65: /*A*/ this.moveLeft = true; break; //true
 
                         case 98: /*down*/
+                        case 40:
                         case 83: /*S*/ this.moveBackward = true; break; //true
 
                         case 102: /*right*/
+                        case 39:
                         case 68: /*D*/ this.moveRight = true; break; //true
 
-                        case 81: this.mouseX = 1500 - 3000; break; /*q rotate left*/
-                        case 103: this.mouseX = 1500 - 3000; break;
-                        case 69: this.mouseX = 1500; break;  /*e rotate right*/
-                        case 105: this.mouseX = 1500; break;
-                        case 71: /*G*/ propGathering(); soundcut="grab"; playSound(soundcut); break;
+                        case 81: this.mouseX = 1200 - 2400; break; /*q rotate left*/
+                        case 36: this.mouseX = 1200 - 2400; break;
+                        case 103: this.mouseX = 1200 - 2400; break;
+                        case 69: this.mouseX = 1200; break;  /*e rotate right*/
+                        case 33: this.mouseX = 1200; break;
+                        case 105: this.mouseX = 1200; break;
+                        case 71: /*G*/ propGathering(); break;
                                                 
                 }
 
@@ -106,22 +110,28 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                 switch( event.keyCode ) {
 
                         case 104: /*up*/
+                        case 38:
                         case 87: /*W*/ this.moveForward = false; break;
 
                         case 100: /*left*/
+                        case 37:
                         case 65: /*A*/ this.moveLeft = false; break;
 
                         case 98: /*down*/
+                        case 40:
                         case 83: /*S*/ this.moveBackward = false; break;
 
                         case 102: /*right*/
+                        case 39:
                         case 68: /*D*/ this.moveRight = false; break;
 
                         case 81: this.mouseX = 0; break; /*q rotate left*/
+                        case 36: this.mouseX = 0; break;
                         case 103: this.mouseX = 0; break;
                         case 69: this.mouseX = 0; break; /*e rotate right*/
+                        case 33: this.mouseX = 0; break;
                         case 105: this.mouseX = 0; break;
-                        case 84: /*T*/ Shot(); soundcut="shoot"; playSound(soundcut); break;
+                        case 84: /*T*/ Shot();  break;
                         
                 }
 

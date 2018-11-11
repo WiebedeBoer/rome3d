@@ -38,6 +38,8 @@
 <script src="props/table.js"></script>
 <script src="props/amphora.js"></script>
 <script src="props/jug.js"></script>
+<script src="props/fence.js"></script>
+<script src="props/cabbage.js"></script>
 <!--animals-->
 <script src="props/donkey.js"></script>
 <script src="props/cow.js"></script>
@@ -45,7 +47,6 @@
 <script src="props/pig.js"></script>
 <script src="props/sheep.js"></script>
 <script src="props/horse.js"></script>
-
 <!--collision detection-->
 <script src="collision/collision.js"></script>
 <!--people-->
@@ -61,7 +62,6 @@
 <link rel="stylesheet" type="text/css" href="Styling.css">
 </head>
 <body class="ng-scope" style="margin: 0px; background-color: #d8e7ff; overflow: hidden;" onload="loadImperium()">
-
 <div class="parent" id="parent">  
    <!--customcanvas-->       
 <div height="400" width="800" class="customcanvas" id="customcanvas"></div>
@@ -102,9 +102,6 @@
 <script src="loaders/MTLLoader.js"></script>
 <script src="loaders/ModelLoader.js"></script>
 <script>
-
-
- 
 //collision vars
 var MovingCube;
 var collidableMeshList = [];
@@ -112,15 +109,12 @@ var collidableBulletMeshList = [];
 //collidable props
 var collidablePropMeshList = []; 
 var propTypes = [];
-
 //no show menu
 var gamestart = document.getElementById("menu");
 gamestart.style.display = "none";
-
 // Bullets array
 var bullets = [];
-var bulletmeshes = [];
-       
+var bulletmeshes = [];      
 //updater
 var updateFcts = [];
 //scene
@@ -132,23 +126,18 @@ var renderer = new THREE.WebGLRenderer( { antialias: false } );
 //window
 canvasWidth = 800;
 canvasHeight = 400;
-renderer.setSize( canvasWidth, canvasHeight );
-        
+renderer.setSize( canvasWidth, canvasHeight );      
 //append object to it
 document.getElementById("customcanvas").appendChild(renderer.domElement);
-
 //camera
 var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 7800);
 camera.position.y = 12;
 camera.position.z = 100;
 camera.position.x = 135;
-
 //lighting and lantern props
 Lighter();
-
 //props
 Props();
-
 //people
 
 //environment
@@ -159,25 +148,18 @@ scene.add(planeroad);
 //skybox
 var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
 scene.add( skyBox );
-
 //city buildings
 BuildingMaker();
-
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
 var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
 MovingCube = new THREE.Mesh( cubeGeometry, wireMaterial );
 MovingCube.position.set(camera.position.x, camera.position.y, camera.position.z);
-scene.add( MovingCube );
-        
+scene.add( MovingCube );  
 //Camera Controls
 var controls = new THREE.FirstPersonControls( camera );
 controls.lookSpeed = 0.05;
 controls.lookVertical = false; //if true vertical look on mousemovement
-updateFcts.push(function(delta, now){
-                controls.update( delta );                
-        })
-
 //Locking the pointer to the game
 document.getElementById("parent").addEventListener( 'click', function ( event ) {
         lock();
@@ -185,7 +167,6 @@ document.getElementById("parent").addEventListener( 'click', function ( event ) 
 function lock(rawr) {
         document.getElementById("parent").requestPointerLock();
 } 
-
 //initial economy variables
 var totalItem;
 var totalCoin = 12;
@@ -197,33 +178,30 @@ var totalWine = 5;
 var totalPottery = 1;
 var totalCheese = 1;
 var eItem ="Purse";
-
 //initial item
 totalItem = totalCoin;
-
 //show HUD economy functions
 function appendCoin(){        
         document.getElementById('ammo').innerHTML = totalItem;}
 function appendItem(){
         document.getElementById('weapon').innerHTML = eItem;}
-
 //hit registration collision
 function clearText()
 {   document.getElementById('message').innerHTML = '....,.';}
 
 function appendText(txt)
 {   document.getElementById('message').innerHTML += txt;}
-
+//collision vars
+var collisionX;
+var collisionZ;
 //economy HUD
 appendCoin();
 appendItem();
 
-//collision vars
-var collisionX;
-var collisionZ;
-
         //update function
         updateFcts.push(function(delta,now){
+                //controls update
+                controls.update( delta ); 
                 //render the scene
                 renderer.render( scene, camera );
                 //moving cube position and rotation
@@ -256,7 +234,6 @@ var collisionZ;
         })
 </script>
 </div>
-
 <div id="game" class="game">
         <!--message-->
         <div id="message" class="ce"></div>
@@ -277,9 +254,7 @@ var collisionZ;
                 <script src="sound/soundplayer.js"></script>
                 <script src="sound/ambient.js"></script>
         </div>
-
 </div>
-
 <!--description-->
 <div id="desribe" class="describe">
 <p class="ce">Use Q, E keys to rotate the camera. Use the W, A, S, D keys to move around. </p>

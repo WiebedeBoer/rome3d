@@ -4,7 +4,7 @@ function BuildingMaker(){
 //private buildings: building type, front texture, back texture, right texture, left texture, building height
 
 //scene 1, domus, residential
-var Domus = new Commercial("domus","domus_front","domus_back","gold_wall","gold_wall",60); //252
+var Domus = new Commercial("domus","domus_front","domus_back","gold_wall","gold_wall",60); //250
 scene.add(Domus);
 
 //scene 2, latifundia, agricultural
@@ -45,7 +45,7 @@ scene.add(Cheesemaker); //table + cheese
 var Wineworkshop = new Commercial("winery","food_wall","food_wall","vintner","vintner",80); //24
 scene.add(Wineworkshop); //jug
 //oil workshop
-var Oilworkshop = new Commercial("oil","vintner","vintner","food_wall","food_wall",80); //41
+var Oilworkshop = new Commercial("oil","vintner","vintner","food_wall","food_wall",80); //40
 scene.add(Oilworkshop); //jug
 //weavery
 var Weavery = new Commercial("weavery","cloth_front","cloth_wall","cloth_back","cloth_back",80); //25
@@ -96,7 +96,7 @@ var Basilica = new Municipal("basilica","basilica_front","basilica_front","fora_
 scene.add(Basilica);
 
 //scene 6, templum, 29 temples
-var wireCol = new wireTemples("templum",80);
+var wireCol = new wireTemples("templum",30);
 scene.add(wireCol);
 
 var Temple1 = new Temple(24,0,9); //24,9
@@ -157,7 +157,6 @@ var Temple28 = new Temple(30,0,37); //30,37
 scene.add(Temple28);
 var Temple29 = new Temple(13,0,38); //13,38
 scene.add(Temple29);
-
 
 //scene 7, thermae, 10 baths
 var Thermae = new Municipal("thermae","bath_wall","bath_wall","bath_front","bath_wall",80,240,240);
@@ -229,7 +228,6 @@ scene.add(stateBuilding);
 var regiaBuilding = new PublicBuilding("fora_wall","fora_wall","basilica_front","basilica_front",80,30,24); //30,24
 scene.add(regiaBuilding);
 
-
 //scene 25, rostra, speaker, 29,17
 var Rostrum = new Pillar(29,0,17); //29,17
 scene.add(Rostrum);
@@ -237,6 +235,5 @@ scene.add(Rostrum);
 //scene 26, umbilicus, column, 28,18
 var Umbilicus = new Pillar(28,0,18); //28,18
 scene.add(Umbilicus);
-
 
 }

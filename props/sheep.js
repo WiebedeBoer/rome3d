@@ -7,9 +7,9 @@ class Sheep extends THREE.Group {
             mesh.scale.x = 1.3;
             mesh.scale.y = 1.3;
             mesh.scale.z = 1.3;
-            dChurch.position.x = (1800 - 3600) + (this.pX * 90) - 30;
+            dChurch.position.x = this.pX;
             dChurch.position.y = 0;
-            dChurch.position.z = (1800 - 3600) + (this.pZ * 90) - 30;
+            dChurch.position.z = this.pZ;
             dChurch.add(mesh);
             collidableMeshList.push(mesh);
 
