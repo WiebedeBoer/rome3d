@@ -11,7 +11,7 @@ scene.add(Domus);
 var Farm = new Commercial("villa","villa_front","villa_back","villa_back","villa_back",60); //353
 scene.add(Farm);
 
-//scene 3, insulae, industrial
+//scene 3, insulae, industrial, 129
 //mill
 var Mill = new Commercial("mill","industry_front","industry_front","industry_back","industry_back",60); //39
 scene.add(Mill);
@@ -25,27 +25,27 @@ scene.add(Tannery);
 var Smelter = new Commercial("smelter","industry_back","industry_back","industry_front","industry_front",60); //32
 scene.add(Smelter);
 
-//scene 3, insulae, commercial
+//scene 3, insulae, commercial, 512
 //bakery
-var Bakery = new Commercial("bakery","potter_wall","potter_wall","baker","baker",80); //44
+var Bakery = new Commercial("bakery","potter_wall","potter_wall","baker","baker",80); //41
 scene.add(Bakery); //table + bread
 //butcher
-var Butcher = new Commercial("butcher","food_wall","food_wall","butcher","butcher",80); //36
+var Butcher = new Commercial("butcher","food_wall","food_wall","butcher","butcher",80); //34
 scene.add(Butcher);
 //tavern
-var Tavern = new Commercial("tavern","taberna","taberna","food_wall","food_wall",80); //39
+var Tavern = new Commercial("tavern","taberna","taberna","food_wall","food_wall",80); //38
 scene.add(Tavern);
 //sauce workshop
 var Sauceworkshop = new Commercial("sauce","gold_wall","gold_wall","fisher","fisher",80); //26
 scene.add(Sauceworkshop); //table + fish
 //cheesemaker
-var Cheesemaker = new Commercial("cheesemaker","butcher","butcher","food_wall","food_wall",80); //37
+var Cheesemaker = new Commercial("cheesemaker","butcher","butcher","food_wall","food_wall",80); //36
 scene.add(Cheesemaker); //table + cheese
 //wine workshop
 var Wineworkshop = new Commercial("winery","food_wall","food_wall","vintner","vintner",80); //24
 scene.add(Wineworkshop); //jug
 //oil workshop
-var Oilworkshop = new Commercial("oil","vintner","vintner","food_wall","food_wall",80); //40
+var Oilworkshop = new Commercial("oil","vintner","vintner","food_wall","food_wall",80); //39
 scene.add(Oilworkshop); //jug
 //weavery
 var Weavery = new Commercial("weavery","cloth_front","cloth_wall","cloth_back","cloth_back",80); //25
@@ -54,7 +54,7 @@ scene.add(Weavery);
 var Clothier = new Commercial("clothier","cloth_wall","cloth_front","cloth_back","cloth_back",80); //19
 scene.add(Clothier);
 //shoemaker
-var Shoemaker = new Commercial("shoemaker","cloth_back","cloth_back","cloth_front","cloth_wall",80); //19
+var Shoemaker = new Commercial("shoemaker","cloth_back","cloth_back","cloth_front","cloth_wall",80); //18
 scene.add(Shoemaker);
 //pottery
 var Pottery = new Commercial("pottery","potter_front","potter_wall","potter_back","potter_back",80); //39
@@ -69,7 +69,7 @@ scene.add(Dyer);
 var Charcoalmaker = new Commercial("charcoalmaker","industry_front","industry_front","industry_back","fora_wall",80); //10
 scene.add(Charcoalmaker);
 //fletcher
-var Fletcher = new Commercial("fletcher","smithy_back","smithy_front","smithy_back","smithy_back",80); //13
+var Fletcher = new Commercial("fletcher","smithy_back","smithy_front","smithy_back","smithy_back",80); //14
 scene.add(Fletcher); //table + arrow
 //smithy
 var Smithy = new Commercial("smithy","smithy_front","smithy_back","smithy_back","smithy_back",80); //16
@@ -81,7 +81,7 @@ scene.add(Armorer);
 var Poleturner = new Commercial("poleturner","smithy_back","smithy_back","smithy_back","smithy_front",80); //17
 scene.add(Poleturner);
 //jeweler
-var Jeweler = new Commercial("jeweler","gold_wall","gold_wall","banker","banker",80); //16
+var Jeweler = new Commercial("jeweler","gold_wall","gold_wall","banker","banker",80); //15
 scene.add(Jeweler);
 //moneylender
 var Bank = new Commercial("bank","banker","banker","gold_wall","gold_wall",80); //14
