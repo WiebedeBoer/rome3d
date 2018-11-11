@@ -6,8 +6,8 @@ audi.volume = 0.5;
 
 //sound gathering
 function ambientGathering(){
-    var x_sound = Math.ceil((camera.position.x + 1775) / 90);
-    var z_sound = Math.ceil((camera.position.z + 1775) / 90);
+    var x_sound = Math.floor((camera.position.x + 1800) / 90);
+    var z_sound = Math.floor((camera.position.z + 1815) / 90);
     //x limits
     if (x_sound >40){
         x_sound = 40;
@@ -29,7 +29,7 @@ function ambientGathering(){
         z_sound = z_sound;
     }
 
-    var mtag = ((z_sound - 1) * 40) + x_sound;
+    var mtag = ((z_sound - 1) * 40) + x_sound; //23,22 863 temple test
     var ambients = xtag[mtag].getElementsByTagName("BUSINESS")[0].childNodes[0].nodeValue;
     
     //small ambients checks
