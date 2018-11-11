@@ -17,10 +17,11 @@ function Gardens(){
         if (gardens =="hortus"){
 
             // put a position bread
-            var propPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 30; //column
-            var propPositionZ = (1800 - 3600) + (jezi * 90) - 30; //row
-            var gardenstand = new Hortus(propPositionX,6,propPositionZ); 
+            var garPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 30; //column
+            var garPositionZ = (1800 - 3600) + (jezi * 90) - 30; //row
+            var gardenstand = new Hortus(garPositionX,6,garPositionZ); 
             scene.add(gardenstand); 
+            console.log("hortus"+itag+" "+garPositionX+" "+garPositionZ);
 
         }
 

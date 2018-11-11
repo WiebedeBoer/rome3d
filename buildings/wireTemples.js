@@ -5,7 +5,7 @@ class wireTemples extends THREE.Group {
     var mCity = this;
 
     //city mesh
-    var geometry = new THREE.CubeGeometry(1, 1, 1 );
+    var geometry = new THREE.CubeGeometry(1,1,1);
 
     // translate the geometry to place the pivot point at the bottom instead of the center
     geometry.applyMatrix( new THREE.Matrix4().makeTranslation( 0, 0.5, 0 ) );    

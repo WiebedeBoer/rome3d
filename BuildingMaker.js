@@ -236,4 +236,7 @@ scene.add(Rostrum);
 var Umbilicus = new Pillar(28,0,18); //28,18
 scene.add(Umbilicus);
 
+//scene 27,hortus, garden
+Gardens();
+
 }
