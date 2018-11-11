@@ -56,7 +56,7 @@ function PeopleMaker() {
             var people = new Person(citizen,personPositionX,personPositionZ);
             scene.add(people);            
         }
-        else if (businesses =="senatum" || businesses =="graecostacium" || businesses =="tabularium" || businesses =="atriumlibertatis"){ 
+        else if (businesses =="senatum" || businesses =="basilica" || businesses =="graecostacium" || businesses =="tabularium" || businesses =="atriumlibertatis"){ 
             var personPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 70; //column
             var personPositionZ = (1800 - 3600) + (jezi * 90) - 70; //row
             citizen ="senator";         
