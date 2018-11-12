@@ -132,6 +132,8 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                         case 33: this.mouseX = 0; break;
                         case 105: this.mouseX = 0; break;
                         case 84: /*T*/ Shot();  break;
+                        case 120:
+                        case 88: /*X*/ newDoc();  break;
                         
                 }
 
@@ -154,7 +156,7 @@ THREE.FirstPersonControls = function ( object, domElement ) {
 
                         if (collisionZ ==0 && cos !=0) {
                                 this.object.translateZ(-actualMoveSpeed); //forward
-                                console.log("1f "+actualMoveSpeed);
+                                //console.log("1f "+actualMoveSpeed);
                                                              
                         } 
                         else {
@@ -176,7 +178,7 @@ THREE.FirstPersonControls = function ( object, domElement ) {
 
                         if (collisionZ ==0 && cos !=0) {
                                 this.object.translateZ(actualMoveSpeed); //backward
-                                console.log("1b "+actualMoveSpeed);
+                                //console.log("1b "+actualMoveSpeed);
                                 
                         }
                         else {
@@ -197,7 +199,7 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                 if ( this.moveLeft ){
                         if (collisionX ==0 && sin !=0) {
                                 this.object.translateX(-actualMoveSpeed); //left
-                                console.log("1l "+actualMoveSpeed);
+                                //console.log("1l "+actualMoveSpeed);
                                 
                         }
                         else {
@@ -219,7 +221,7 @@ THREE.FirstPersonControls = function ( object, domElement ) {
                 if ( this.moveRight ){
                         if (collisionX ==0 && sin !=0) {
                                 this.object.translateX(actualMoveSpeed); //right
-                                console.log("1r "+actualMoveSpeed);
+                                //console.log("1r "+actualMoveSpeed);
                                 
                         }
                         else {
