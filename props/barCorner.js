@@ -13,7 +13,7 @@ class BarCorner extends THREE.Group {
             dBar.rotation.z = this.pZr;
             dBar.add(mesh);
             //candle 1 light
-            addPointLight(dBar,0xf8eabb, 0, 0, 0, 0.7, 25); 
+            addPointLight(dBar,0xf8eabb, -6.8,1.2,9.3, 0.7, 25); 
             var g = new THREE.BoxGeometry(1,1,1);
             var m = new THREE.MeshBasicMaterial({color: 0xf8eabb});
             dBar._meshLight = new THREE.Mesh(g, m);
@@ -21,7 +21,7 @@ class BarCorner extends THREE.Group {
             dBar._meshLight.visible = false;
             dBar.add(dBar._meshLight); 
             //candle 2 light 
-            addPointLight(dBar,0xf8eabb, 0, 0, 0, 0.7, 25); 
+            addPointLight(dBar,0xf8eabb, -8.4,-0.7,9.7, 0.7, 25); 
             var gc = new THREE.BoxGeometry(1,1,1);
             var mc = new THREE.MeshBasicMaterial({color: 0xf8eabb});
             dBar._candleLight = new THREE.Mesh(gc, mc);
