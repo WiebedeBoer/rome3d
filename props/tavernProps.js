@@ -41,4 +41,8 @@ var jugLoaf = new Amphora(-20,9.9,-20,0,0,0);
 scene.add(jugLoaf);
 var cheeseLoafCol = new propCollect(26,6,16,"cheese"); 
 scene.add(cheeseLoafCol);
+var jug1 = new Jug(-35,0,7,0,0,0); 
+scene.add(jug1);
+var jug2 = new Jug(-35,0,14,0,0,0); 
+scene.add(jug2);
 }

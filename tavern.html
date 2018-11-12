@@ -30,8 +30,9 @@
 <!--collision detection-->
 <script src="collision/tavernCollision.js"></script>
 <!--people-->
-<script src="people/person.js"></script>
-
+<script src="people/barMaid.js"></script>
+<script src="people/barVisitor.js"></script>
+<script src="people/tavernPeople.js"></script>
 <!--economy-->
 <script src="economy/Shooting.js"></script>
 <script src="economy/Gathering.js"></script>
@@ -114,13 +115,12 @@ camera.position.x = 1;
 //lighting and tavern
 var tavernSize = 100;
 tavernLighter(tavernSize);
-var taberna =new Tavern("concrete_tavern","concrete","concrete","concrete","tiles4",tavernSize);
+var taberna =new Tavern("concrete_tavern","door_tavern","fresco_tavern","fresco_tavern","tiles4",tavernSize);
 scene.add( taberna );  
 //props
 tavernProps();
 //people
-
-
+TavernPeople();
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
 var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
@@ -167,7 +167,7 @@ var collisionZ;
 //economy HUD
 appendCoin();
 appendItem();
-
+//onload loop
 function GameLoop(){
         //update function
         updateFcts.push(function(delta,now){

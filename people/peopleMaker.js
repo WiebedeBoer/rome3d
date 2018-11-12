@@ -12,7 +12,7 @@ function PeopleMaker() {
         var itag = i - 1;
         var businesses = xtag[itag].getElementsByTagName("BUSINESS")[0].childNodes[0].nodeValue;        
         //pleb
-        if (businesses =="bakery"){ 
+        if (businesses =="smithy"){ 
             var personPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 70; //column
             var personPositionZ = (1800 - 3600) + (jezi * 90) - 70; //row
             citizen ="pleb";         
