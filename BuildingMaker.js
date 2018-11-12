@@ -3,11 +3,11 @@ function BuildingMaker(){
 //1600 buildings to scene
 //private buildings: building type, front texture, back texture, right texture, left texture, building height
 
-//scene 1, domus, residential
+//scene 1, domus, residential, 250
 var Domus = new Commercial("domus","domus_front","domus_back","gold_wall","gold_wall",60); //250
 scene.add(Domus);
 
-//scene 2, latifundia, agricultural
+//scene 2, latifundia, agricultural, 353
 var Farm = new Commercial("villa","villa_front","villa_back","villa_back","villa_back",60); //353
 scene.add(Farm);
 
@@ -161,7 +161,7 @@ scene.add(Temple29);
 //scene 7, thermae, 10 baths
 var Thermae = new Municipal("thermae","bath_wall","bath_wall","bath_front","bath_wall",80,240,240);
 scene.add(Thermae);
-//scene 8, horreum, 2 granary
+//scene 8, horreum, 3 granary
 var Horreum = new Municipal("horreum","dock_wall","dock_wall","horrea_wall","horrea_wall",80,240,240);
 scene.add(Horreum);
 //scene 9, castrum, 4 barracks
@@ -236,7 +236,7 @@ scene.add(Rostrum);
 var Umbilicus = new Pillar(28,0,18); //28,18
 scene.add(Umbilicus);
 
-//scene 27,hortus, garden
+//scene 27,hortus, garden, 10
 Gardens();
 
 }

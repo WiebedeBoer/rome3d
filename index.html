@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Rome - city</title>
 <!--library: three.js-->
 <script src="library/three.js"></script>
 <!--camera controls-->
@@ -60,7 +61,7 @@
 <!--styling-->
 <link rel="stylesheet" type="text/css" href="Styling.css">
 </head>
-<body class="ng-scope" style="margin: 0px; background-color: #d8e7ff; overflow: hidden;" onload="loadImperium()">
+<body class="ng-scope" style="margin: 0px; background-color: #d8e7ff; overflow: hidden;" onload="loadImperium(),GameLoop()">
 <div class="parent" id="parent">  
    <!--customcanvas-->       
 <div height="400" width="800" class="customcanvas" id="customcanvas"></div>
@@ -123,8 +124,8 @@ scene.fog = new THREE.FogExp2( 0xd0e0f0, 0.0025 );
 //renderer
 var renderer = new THREE.WebGLRenderer( { antialias: false } );
 //window
-canvasWidth = 800;
-canvasHeight = 400;
+canvasWidth = 800; //screen.width; //800;
+canvasHeight = 400; //screen.height; //400;
 renderer.setSize( canvasWidth, canvasHeight );      
 //append object to it
 document.getElementById("customcanvas").appendChild(renderer.domElement);
@@ -196,6 +197,7 @@ var collisionZ;
 appendCoin();
 appendItem();
 
+function GameLoop(){
         //update function
         updateFcts.push(function(delta,now){
                 //controls update
@@ -230,6 +232,8 @@ appendItem();
                         updateFn(deltaMsec/1000, nowMsec/1000)
                 })
         })
+
+}
 </script>
 </div>
 <div id="game" class="game">
