@@ -17,10 +17,6 @@
 <script src="lighting/DomusLight.js"></script>
 <script src="lighting/Pointlight.js"></script>
 <!--bar props-->
-<script src="props/tavernProps.js"></script>
-<script src="props/barCorner.js"></script>
-<script src="props/barTable.js"></script>
-<script src="props/barStool.js"></script>
 <script src="props/largeTable.js"></script>
 <script src="props/stool.js"></script>
 <script src="props/propCollect.js"></script>
@@ -29,6 +25,7 @@
 <script src="props/amphora.js"></script>
 <script src="props/jug.js"></script>
 <script src="props/cabbage.js"></script>
+<script src="props/bed.js"></script>
 <!--collision detection-->
 <script src="collision/domusCollision.js"></script>
 <!--people-->
@@ -121,7 +118,7 @@ var vestibulum =new Room("concrete","concrete","door_tavern","concrete_tavern","
 scene.add( vestibulum ); 
 var tablinum =new Room("concrete","concrete","door_tavern","door_tavern","tiles4",roomSize,200,0);
 scene.add( tablinum ); 
-var exedra =new Room("concrete","concrete","concrete","door_tavern","tiles2",roomSize,400,0);
+var exedra =new Room("concrete","concrete","concrete_exedra","door_tavern","tiles2",roomSize,400,0);
 scene.add( exedra ); 
 var cubiculum =new Room("concrete","door_tavern","concrete","concrete","tiles4",roomSize,100,-100);
 scene.add( cubiculum ); 
@@ -129,8 +126,9 @@ var alea =new Room("door_tavern","concrete","concrete","concrete","tiles1",roomS
 scene.add( alea );
 var culina =new Room("fresco_tavern","door_tavern","fresco_tavern","fresco_tavern","tiles3",roomSize,300,-100);
 scene.add( culina ); 
-var triclinium =new Room("door_tavern","fresco_tavern","fresco_tavern","fresco_tavern","tiles4",roomSize,300,100);
+var triclinium =new Room("door_tavern","concrete_exedra","fresco_tavern","fresco_tavern","tiles4",roomSize,300,100);
 scene.add( triclinium ); 
+//planes and roofs
 var impluve =new Impluvium(roomSize,roomSize,"impluvium",100,0,0);
 scene.add( impluve );
 var piscine =new Impluvium(roomSize,roomSize,"impluvium",300,0,0);
@@ -139,6 +137,7 @@ var impluve2 =new Impluvium(roomSize,roomSize,"roof_mud",100,36,0);
 scene.add( impluve2 );
 var piscine2 =new Impluvium(roomSize,roomSize,"roof_mud",300,36,0);
 scene.add( piscine2 );
+//pillars
 var pillar1 = new Pillar(115,0,15);
 scene.add(pillar1);
 var pillar2 = new Pillar(85,0,15);
@@ -156,7 +155,42 @@ scene.add(pillar7);
 var pillar8 = new Pillar(285,0,-15);
 scene.add(pillar8);
 //props
-
+var jugLoaf = new Amphora(300,9.9,-110,0,0,0); 
+scene.add(jugLoaf);
+var tablestand = new LargeTable(300,0,-110,0,0,0); 
+scene.add(tablestand);
+var wineLoaf = new Jug(285,0,-100,0,0,0); 
+scene.add(wineLoaf);
+var wineLoafCol = new propCollect(285,6,-100,"wine"); 
+scene.add(wineLoafCol);
+var oilLoaf = new Jug(270,0,-110,0,0,0); 
+scene.add(oilLoaf);
+var oilLoafCol = new propCollect(270,6,-110,"oil"); 
+scene.add(oilLoafCol);
+var breadLoaf = new Bread(280,8,90,0,0,0); 
+scene.add(breadLoaf);
+var breadLoafCol = new propCollect(280,8,90,"bread"); 
+scene.add(breadLoafCol);
+var tablestand2 = new LargeTable(280,0,90,0,0,0); 
+scene.add(tablestand2);
+var vegeLoaf = new Cabbage(280,7,94,0,0,0); 
+scene.add(vegeLoaf);
+var stool = new Stool(271,4,94,0,0,0);
+scene.add( stool );
+var stool2 = new Stool(271,4,86,0,0,0);
+scene.add( stool2 ); 
+var stool3 = new Stool(289,4,94,0,0,0);
+scene.add( stool3 );
+var stool4 = new Stool(289,4,86,0,0,0);
+scene.add( stool4 ); 
+var bed1 = new Bed(137,4.8,-123,0,0.872,0);
+scene.add( bed1 ); 
+var jugLoaf2 = new Amphora(70,9.9,-110,0,0,0); 
+scene.add(jugLoaf2);
+var tablestand3 = new LargeTable(70,0,-110,0,0,0); 
+scene.add(tablestand3);
+var stool4 = new Stool(79,4,-116,0,0,0);
+scene.add( stool4 ); 
 //people
 
 //moving cube
