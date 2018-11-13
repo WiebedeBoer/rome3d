@@ -3,8 +3,8 @@ class Coin extends THREE.Group {
     init (){
 
         var dGun = this;
-        var geometry = new THREE.CylinderGeometry( 0.6, 0.6, 0.25, 16 );
-        var material = new THREE.MeshBasicMaterial( {color: 0xffd700} );
+        var geometry = new THREE.CylinderGeometry( 0.55, 0.55, 0.22, 16 );
+        var material = new THREE.MeshPhongMaterial( {color: 0xffd700} );
         var cylinder = new THREE.Mesh( geometry, material );        
         dGun.position.x = this.pX;
         dGun.position.y = this.pY;

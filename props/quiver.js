@@ -1,10 +1,10 @@
-class Cheese extends THREE.Group {
+class Quiver extends THREE.Group {
 
     init (){
 
         var dGun = this;
-        loadOBJModel("props/cheese/","model.obj","props/cheese/","materials.mtl", (mesh) => {
-            mesh.scale.set (6.3, 6.3, 6.3);
+        loadOBJModel("props/quiver/","model.obj","props/quiver/","materials.mtl", (mesh) => {
+            mesh.scale.set (5, 5, 5);
             dGun.position.x = this.pX;
             dGun.position.y = this.pY;
             dGun.position.z = this.pZ;
@@ -12,7 +12,6 @@ class Cheese extends THREE.Group {
             dGun.rotation.y = this.pYr;
             dGun.rotation.z = this.pZr;
             dGun.add(mesh);
-
         });
     }    
             
