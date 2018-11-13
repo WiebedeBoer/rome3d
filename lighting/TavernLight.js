@@ -1,10 +1,10 @@
 function tavernLighter(LightHeight){
 //lighting
-var light = new THREE.HemisphereLight( 0xfffff0, 0x101020, 0.04 );
-light.position.set( 0, LightHeight, 0 );
-scene.add( light );
+var hemilight = new THREE.HemisphereLight( 0xfffff0, 0x101020, 0.07 );
+hemilight.position.set( 0, LightHeight, 0 );
+scene.add( hemilight );
 //directional
-var directionalLight = new THREE.DirectionalLight( 0xfffff0, 0.07 );
+var directionalLight = new THREE.DirectionalLight( 0xfffff0, 0.09 );
 directionalLight.position.set(-25, 30, -49);
 directionalLight.castShadow = true;
 directionalLight.shadowMapWidth = 100;
