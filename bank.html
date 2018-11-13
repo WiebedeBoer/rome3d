@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Rome - domus</title>
+<title>Rome - bank</title>
 <!--library: three.js-->
 <script src="library/three.js"></script>
 <!--camera controls-->
@@ -10,38 +10,28 @@
 <!--buildings-->
 <script src="openxml.js"></script>
 <!--environment: plane en skybox-->
-<script src="buildings/domus.js"></script>
-<script src="buildings/room.js"></script>
-<script src="buildings/tablinum.js"></script>
-<script src="buildings/peristyle.js"></script>
-<script src="environment/impluvium.js"></script>
+<script src="buildings/bank.js"></script>
 <!--lighting-->
-<script src="lighting/DomusLight.js"></script>
+<script src="lighting/BankLight.js"></script>
 <script src="lighting/Pointlight.js"></script>
 <!--bar props-->
-<script src="props/domusProps.js"></script>
+<script src="props/bankProps.js"></script>
 <script src="props/largeTable.js"></script>
 <script src="props/stool.js"></script>
 <script src="props/propCollect.js"></script>
-<script src="props/bread.js"></script>
 <script src="props/arrow.js"></script>
 <script src="props/amphora.js"></script>
-<script src="props/jug.js"></script>
-<script src="props/cabbage.js"></script>
-<script src="props/bed.js"></script>
 <script src="props/bookcase.js"></script>
 <script src="props/stove.js"></script>
 <script src="props/candle.js"></script>
 <script src="props/scroll.js"></script>
-<script src="props/quiver.js"></script>
 <script src="props/coin.js"></script>
-<script src="props/fish.js"></script>
-<script src="props/cheese.js"></script>
 <script src="props/chest.js"></script>
 <!--collision detection-->
-<script src="collision/domusCollision.js"></script>
+<script src="collision/tavernCollision.js"></script>
 <!--people-->
-
+<script src="people/barVisitor.js"></script>
+<script src="people/bankPeople.js"></script>
 <!--economy-->
 <script src="economy/Shooting.js"></script>
 <script src="economy/Gathering.js"></script>
@@ -119,16 +109,17 @@ document.getElementById("customcanvas").appendChild(renderer.domElement);
 //camera
 var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 7800);
 camera.position.y = 12;
-camera.position.z = 1;
-camera.position.x = 1;
-//lighting and rooms
-var roomSize = 100;
-domusLighter(roomSize);
-Domus();
+camera.position.z = -6;
+camera.position.x = -24;
+//lighting and tavern
+var tavernSize = 100;
+bankLighter(tavernSize);
+var banca =new Bank("tablinum_wall","concrete_tavern","tablinum_wall","tablinum_wall","tiles4",tavernSize);
+scene.add( banca );  
 //props
-domusProps();
+bankProps();
 //people
-
+BankPeople();
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
 var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
@@ -206,12 +197,11 @@ function GameLoop(){
                         updateFn(deltaMsec/1000, nowMsec/1000)
                 })
         })
+
 }
 
 function newDoc() {
-        if(camera.position.x <50){
-                window.location.assign("index.html");
-        }   
+    window.location.assign("index.html")
 }
 </script>
 </div>
@@ -225,7 +215,7 @@ function newDoc() {
         <!--music-->
         <div id="sound" class="ce">                
                 <audio id="imperia" loop><source id="parade" src="music/Rome_Forum.mp3" type="audio/mp3"></audio>   
-                <audio id="soundpar" autoplay><source id="soundscape" src="sfx/atmosphere/birds.mp3" type="audio/mp3"></audio> 
+                <audio id="soundpar" autoplay><source id="soundscape" src="sfx/atmosphere/population_1_hamlet.mp3" type="audio/mp3"></audio> 
                 <button onclick="changeImperium()" type="button">Change Music</button>
                 <button onclick="pauseImperium()" type="button">Pause Music</button>
                 <button onclick="playImperium()" type="button">Play Music</button>

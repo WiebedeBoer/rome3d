@@ -43,6 +43,7 @@
 <script src="props/jug.js"></script>
 <script src="props/fence.js"></script>
 <script src="props/cabbage.js"></script>
+<script src="props/quiver.js"></script>
 <!--animals-->
 <script src="props/donkey.js"></script>
 <script src="props/cow.js"></script>
@@ -242,6 +243,12 @@ function newDoc() {
         var ambients = xtag[btag].getElementsByTagName("BUSINESS")[0].childNodes[0].nodeValue;
         if (ambients =="tavern"){
                 window.location.assign("tavern.html");
+        }
+        else if (ambients =="domus" || ambients =="villa"){
+                window.location.assign("domus.html");
+        }
+        else if (ambients =="bank"){
+                window.location.assign("bank.html");
         }
         
 }

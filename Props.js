@@ -27,10 +27,10 @@ function Props(){
             // put a position arrow
             var propPositionX = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 70; //column
             var propPositionZ = (1800 - 3600) + (jezi * 90) - 30; //row
-            var tablestand = new Table(propPositionX,0,propPositionZ,0,0,0); 
-            scene.add(tablestand);
-            var arrowLoaf = new Arrow(propPositionX,6,propPositionZ,0,0,0); 
-            scene.add(arrowLoaf);
+            var quiverbow = new Quiver(propPositionX,2.5,propPositionZ,0,0,0);
+            scene.add( quiverbow ); 
+            var arrowbow = new Arrow(propPositionX+1.5,7.5,propPositionZ-0.1,-3.14159 / 2,0,0);
+            scene.add( arrowbow );
             var arrowLoafCol = new propCollect(propPositionX,6,propPositionZ,"bow"); 
             scene.add(arrowLoafCol);
         }
@@ -40,11 +40,11 @@ function Props(){
             var propPositionZ = (1800 - 3600) + (jezi * 90) - 70; //row
             var tablestand = new Table(propPositionX,0,propPositionZ,0,0,0); 
             scene.add(tablestand);
-            var coinLoaf = new Coin(propPositionX,6,propPositionZ,0,0,0); 
+            var coinLoaf = new Coin(propPositionX,5.6,propPositionZ,0,0,0); 
             scene.add(coinLoaf);
-            var coinLoaf = new Coin(propPositionX + 2,6,propPositionZ + 2,0,0,0); 
+            var coinLoaf = new Coin(propPositionX + 2,5.6,propPositionZ + 2,0,0,0); 
             scene.add(coinLoaf);
-            var coinLoafCol = new propCollect(propPositionX,6,propPositionZ,"coin"); 
+            var coinLoafCol = new propCollect(propPositionX,5.6,propPositionZ,"coin"); 
             scene.add(coinLoafCol);
         }
         else if (businesses =="sauce"){
@@ -91,9 +91,9 @@ function Props(){
             var propPositionZ = (1800 - 3600) + (jezi * 90) - 70; //row
             var tablestand = new Table(propPositionX,0,propPositionZ,0,0,0); 
             scene.add(tablestand);
-            var cheeseLoaf = new Cheese(propPositionX,6,propPositionZ,0,0,0); 
+            var cheeseLoaf = new Cheese(propPositionX,5.9,propPositionZ,0,0,0); 
             scene.add(cheeseLoaf);
-            var cheeseLoafCol = new propCollect(propPositionX,6,propPositionZ,"cheese"); 
+            var cheeseLoafCol = new propCollect(propPositionX,5.9,propPositionZ,"cheese"); 
             scene.add(cheeseLoafCol);
         }
         else if (businesses =="horreum" || businesses =="emporium"){
