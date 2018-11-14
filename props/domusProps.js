@@ -101,5 +101,9 @@ var tChest = new Chest(4,6,206,30);
 scene.add( tChest ); 
 var Lararium = new Lares(20,10,55,90);
 scene.add( Lararium ); 
+var wChair1 = new Chair(405,3.5,8,0,3.14159,0); 
+scene.add(wChair1);
+var wChair2 = new Chair(405,3.5,-8,0,3.14159,0); 
+scene.add(wChair2);
 
 }
