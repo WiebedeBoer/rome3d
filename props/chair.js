@@ -4,7 +4,7 @@ class Chair extends THREE.Group {
 
         var dGun = this;
         loadOBJModel("props/chair/","CHAHIN_WOODEN_CHAIR.obj","props/chair/","CHAHIN_WOODEN_CHAIR.mtl", (mesh) => {
-            mesh.scale.set (3.3, 3.3, 3.3);
+            mesh.scale.set (5.5, 5.5, 5.5);
             dGun.position.x = this.pX;
             dGun.position.y = this.pY;
             dGun.position.z = this.pZ;
