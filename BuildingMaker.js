@@ -175,9 +175,27 @@ scene.add(Odeum);
 //scene 11, theatrum, 3 theatres
 var Theatrum = new Theatre("theatrum","theatre","theatre","theatre","theatre",90,150,240);
 scene.add(Theatrum);
+
 //scene 12, amphitheatrum, 4 amphitheatres
-var Amphitheatrum = new Theatre("amphitheatrum","theatre","theatre","theatre","theatre",90,240,240);
+var wireCol = new wireAmphi("amphitheatrum",60,112,112);
+scene.add(wireCol);
+var Amphitheatrum = new AmphitheatreEast(25,25);
 scene.add(Amphitheatrum);
+var Amphitheatrum2 = new AmphitheatreEast(8,26);
+scene.add(Amphitheatrum2);
+var Amphitheatrum3 = new AmphitheatreEast(36,29);
+scene.add(Amphitheatrum3);
+var Amphitheatrum4 = new AmphitheatreEast(8,10);
+scene.add(Amphitheatrum4);
+var Amphitheatrum5 = new AmphitheatreWest(25,25);
+scene.add(Amphitheatrum5);
+var Amphitheatrum6 = new AmphitheatreWest(8,26);
+scene.add(Amphitheatrum6);
+var Amphitheatrum7 = new AmphitheatreWest(36,29);
+scene.add(Amphitheatrum7);
+var Amphitheatrum8 = new AmphitheatreWest(8,10);
+scene.add(Amphitheatrum8);
+
 //scene 13, circus, 2 circus
 var Circus = new Theatre("circus","circus","circus","theatre","theatre",90,240,420);
 scene.add(Circus);
@@ -238,5 +256,6 @@ scene.add(Umbilicus);
 
 //scene 27,hortus, garden, 10
 Gardens();
+
 
 }
