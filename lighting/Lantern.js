@@ -14,12 +14,12 @@ class Lantern extends THREE.Group {
             mesh.scale.y = 50;
             mesh.scale.z = 10;
             dLantern.add(mesh);
-            addPointLight(dLantern,0xf8eabb, 0, 1, 0, 4, 25); //lantern light
+            addPointLight(dLantern,0xf8eabb, 0.1, 13.3, 0.1, 2.5, 35); //lantern light
             var g = new THREE.BoxGeometry(1,1,1);
             var m = new THREE.MeshBasicMaterial({color: 0xf8eabb});
             dLantern._meshLight = new THREE.Mesh(g, m);
-            dLantern._meshLight.position.set(dLantern.position.x,50,dLantern.position.z);
-            dLantern._meshLight.visible = true;
+            dLantern._meshLight.position.set(0.1,13.3,0.1);
+            dLantern._meshLight.visible = false;
             dLantern.add(dLantern._meshLight);            
         });
     }    

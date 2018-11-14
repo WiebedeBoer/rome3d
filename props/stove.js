@@ -36,11 +36,11 @@ class Stove extends THREE.Group {
         mCityhall.add(mesh4); 
         
         //stove light
-        addPointLight(mCityhall,0xfff2ba, this.xPos-9,6,this.zPos, 2.4, 55); 
+        addPointLight(mCityhall,0xfff2ba, this.xPos-9.9,6,this.zPos, 2.4, 55); 
         var g = new THREE.BoxGeometry(1,1,1);
         var m = new THREE.MeshBasicMaterial({color: 0xfff2ba});
         mCityhall._meshLight = new THREE.Mesh(g, m);
-        mCityhall._meshLight.position.set(this.xPos-9,6,this.zPos);
+        mCityhall._meshLight.position.set(this.xPos-9.9,6,this.zPos);
         mCityhall._meshLight.visible = false;
         mCityhall.add(mCityhall._meshLight); 
         

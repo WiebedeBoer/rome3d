@@ -99,5 +99,7 @@ var coinLoafCol = new propCollect(200,6,-6.7,"coin");
 scene.add(coinLoafCol);
 var tChest = new Chest(4,6,206,30);
 scene.add( tChest ); 
+var Lararium = new Lares(20,10,55,90);
+scene.add( Lararium ); 
 
 }
