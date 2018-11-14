@@ -1,4 +1,9 @@
 function domusProps(){
+//vestibulum
+var bigAmphora = new AmphoraRed(39,4.6,20,0,0,0);
+scene.add( bigAmphora ); 
+var bigAmphora2 = new AmphoraRed(39,4.6,-20,0,0,0);
+scene.add( bigAmphora2 ); 
 //cubiculum
 var bed1 = new Bed(137,4.8,-123,0,0.872,0);
 scene.add( bed1 ); 
