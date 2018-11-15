@@ -13,12 +13,12 @@ class Basilica extends THREE.Group {
         //tiles
         var texture = new THREE.TextureLoader().load( "textures/ground/"+this.groundTex+".jpg" );
         texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-        texture.repeat.set( this.bSize / 40, this.bSize / 40 );
+        texture.repeat.set( this.bLength / 50, this.bWidth / 30 );
         //material
         var hallMaterials = [
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.leftTex+".jpg"), side: THREE.BackSide }), //LEFT
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.rightTex+".jpg"), side: THREE.BackSide }), //RIGHT
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.BackSide }), //TOP
+            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/roof/roof_wood.jpg"), side: THREE.BackSide }), //TOP
             new THREE.MeshPhongMaterial({ map: texture, side: THREE.BackSide }), //BOTTOM
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.frontTex+".jpg"), side: THREE.BackSide }), //FRONT
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.backTex+".jpg"), side: THREE.BackSide }), //BACK
@@ -32,7 +32,7 @@ class Basilica extends THREE.Group {
         meshCityhall.rotation.y = 0.5*Math.PI*2;
         //building scale
         meshCityhall.scale.x = this.bWidth;
-        meshCityhall.scale.y = 36;
+        meshCityhall.scale.y = 72;
         meshCityhall.scale.z = this.bLength;
 
         // merge it with cityGeometry - very important for performance
@@ -46,7 +46,7 @@ class Basilica extends THREE.Group {
     
     }
 
-    constructor(frontTex,backTex,rightTex,leftTex,groundTex,bLength,bWidth){
+    constructor(frontTex,backTex,rightTex,leftTex,groundTex,bWidth,bLength){
         super();        
         this.frontTex = frontTex;
         this.backTex = backTex;
