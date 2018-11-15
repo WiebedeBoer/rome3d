@@ -1,16 +1,15 @@
-class wireAmphi extends THREE.Group {
+class wireCircus extends THREE.Group {
 
   init (){
 
     var mCity = this;
 
     //city mesh
-    var geometry = new THREE.CylinderGeometry( this.width, this.depth, this.height, 64 ); //new THREE.CubeGeometry(1,1,1);
-
+    var geometry = new THREE.CubeGeometry(1,1,1);
     // translate the geometry to place the pivot point at the bottom instead of the center
     geometry.applyMatrix( new THREE.Matrix4().makeTranslation( 0, 0.5, 0 ) );    
  
-    var comMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
+    var comMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:true } );
     var buildingMesh = new THREE.Mesh(geometry);
 
     //city geometry
@@ -35,9 +34,13 @@ class wireAmphi extends THREE.Group {
       // put a position
       buildingMesh.position.x = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 30; //column
       buildingMesh.position.z = (1800 - 3600) + (jezi * 90) - 30; //row
-      buildingMesh.position.y = this.height / 2;
+      buildingMesh.position.y = 10;
       //put a rotation
       buildingMesh.rotation.y = 0.5*Math.PI*2;
+      //building scale
+      buildingMesh.scale.x = this.depth;
+      buildingMesh.scale.y = this.height;
+      buildingMesh.scale.z = this.width;
       // merge it with cityGeometry - very important for performance
       var geometry = buildingMesh.geometry;
       //merge

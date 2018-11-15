@@ -168,14 +168,19 @@ scene.add(Horreum);
 var Castrum = new Municipal("castrum","dock_wall","fora_wall","horrea_wall","horrea_wall",80,240,240);
 scene.add(Castrum);
 
+
 //entertainment buildings, multiple: front texture, back texture, right texture, left texture, building height, width, length
 //scene 10, odeum, 2 odeons
-var Odeum = new Theatre("odeum","odeon","odeon","odeon","odeon",80,60,60);
+var wireOde = new wireTemples("odeum",30);
+scene.add(wireOde);
+var Odeum = new Odeon(8,14);
 scene.add(Odeum);
+var Odeum2 = new Odeon(31,16);
+scene.add(Odeum2);
+
 //scene 11, theatrum, 3 theatres
 var wireTheatre = new wireTheatres("theatrum",30);
 scene.add(wireTheatre);
-
 var Theatrum = new AmphitheatreHalf(6,16);
 scene.add(Theatrum);
 var Theatrum2 = new AmphitheatreHalf(7,21);
@@ -196,8 +201,12 @@ var Amphitheatrum4 = new AmphitheatreFull(8,10);
 scene.add(Amphitheatrum4);
 
 //scene 13, circus, 2 circus
-var Circus = new Theatre("circus","circus","circus","theatre","theatre",90,240,420);
-scene.add(Circus);
+var wireTrack = new wireCircus("circus",90,240,420);
+scene.add(wireTrack);
+var Circus1 = new Circus(12,19);
+scene.add(Circus1);
+var Circus2 = new Circus(19,22);
+scene.add(Circus2);
 
 //dock buildings, multiple: front texture, back texture, right texture, left texture, building height, width, length
 //scene 14, emporium, 1 harbor
