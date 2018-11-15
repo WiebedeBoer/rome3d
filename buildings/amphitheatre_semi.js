@@ -11,7 +11,7 @@ var loader = new THREE.OBJLoader();
 var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xb18868 } );
 
 // load a resource
-loader.load('models/amphi/SM_Coliseum.obj',	function ( object ) {
+loader.load('models/amphi/amphi_full.obj',	function ( object ) {
 
     object.traverse( function ( child ) {
         if ( child instanceof THREE.Mesh ) {             
