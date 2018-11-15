@@ -210,7 +210,7 @@ scene.add(Circus2);
 
 //dock buildings, multiple: front texture, back texture, right texture, left texture, building height, width, length
 //scene 14, emporium, 1 harbor
-var Harbor = new Theatre("emporium","dock_wall","dock_wall","dock_front","dock_front",90,420,240);
+var Harbor = new Emporium("emporium","dock_wall","dock_wall","dock_front","dock_front",90,420,240);
 scene.add(Harbor);
 
 //public buildings, single: front texture, back texture, right texture, left texture, building height, row, col
