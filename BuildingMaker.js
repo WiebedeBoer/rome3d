@@ -181,13 +181,13 @@ scene.add(Theatrum);
 //scene 12, amphitheatrum, 4 amphitheatres
 var wireCol = new wireAmphi("amphitheatrum",60,112,112);
 scene.add(wireCol);
-var Amphitheatrum = new Amphitheatre(25,25);
+var Amphitheatrum = new AmphitheatreWest(25,25);
 scene.add(Amphitheatrum);
-var Amphitheatrum2 = new Amphitheatre(8,26);
+var Amphitheatrum2 = new AmphitheatreWest(8,26);
 scene.add(Amphitheatrum2);
-var Amphitheatrum3 = new Amphitheatre(36,29);
+var Amphitheatrum3 = new AmphitheatreWest(36,29);
 scene.add(Amphitheatrum3);
-var Amphitheatrum4 = new Amphitheatre(8,10);
+var Amphitheatrum4 = new AmphitheatreWest(8,10);
 scene.add(Amphitheatrum4);
 
 
