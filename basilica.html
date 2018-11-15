@@ -10,9 +10,9 @@
 <!--buildings-->
 <script src="openxml.js"></script>
 <!--environment: plane en skybox-->
-<script src="buildings/bank.js"></script>
+<script src="buildings/basilica.js"></script>
 <!--lighting-->
-<script src="lighting/BankLight.js"></script>
+<script src="lighting/BasilicaLight.js"></script>
 <script src="lighting/Pointlight.js"></script>
 <!--bar props-->
 
@@ -99,15 +99,18 @@ var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 6
 camera.position.y = 12;
 camera.position.z = -6;
 camera.position.x = -24;
-//lighting and tavern
-var tavernSize = 100;
-bankLighter(tavernSize);
-var banca =new Bank("tablinum_wall","concrete_tavern","tablinum_wall","tablinum_wall","tiles4",tavernSize);
-scene.add( banca );  
+//lighting 
+basilicaLighter(50);
+//rooms
+var width = 300;
+var length = 500;
+var taberna =new Basilica("concrete_tavern","door_tavern","fresco_tavern","fresco_tavern","tiles4",width,length);
+scene.add( taberna );  
+ 
 //props
-bankProps();
+
 //people
-BankPeople();
+
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
 var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );

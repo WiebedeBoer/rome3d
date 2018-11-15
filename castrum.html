@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Rome - basilica</title>
+<title>Rome - castrum</title>
 <!--library: three.js-->
 <script src="library/three.js"></script>
 <!--camera controls-->
@@ -16,7 +16,7 @@
 <script src="lighting/Lighting.js"></script>
 <script src="lighting/Pointlight.js"></script>
 <script src="lighting/Lantern.js"></script>
-<!--bar props-->
+<!--props-->
 
 <!--collision detection-->
 <script src="collision/collision.js"></script>
@@ -101,6 +101,14 @@ var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 7
 camera.position.y = 12;
 camera.position.z = -6;
 camera.position.x = -24;
+//environment
+var environmentsize = 5500;
+//plane
+var planeroad = new Plane(environmentsize,environmentsize);
+scene.add(planeroad);  
+//skybox
+var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
+scene.add( skyBox );
 //lighting 
 
 //buildings
