@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<title>Rome - tavern</title>
+<title>Rome - basilica</title>
 <!--library: three.js-->
 <script src="library/three.js"></script>
 <!--camera controls-->
@@ -10,29 +10,16 @@
 <!--buildings-->
 <script src="openxml.js"></script>
 <!--environment: plane en skybox-->
-<script src="buildings/tavern.js"></script>
+<script src="buildings/bank.js"></script>
 <!--lighting-->
-<script src="lighting/TavernLight.js"></script>
+<script src="lighting/BankLight.js"></script>
 <script src="lighting/Pointlight.js"></script>
 <!--bar props-->
-<script src="props/tavernProps.js"></script>
-<script src="props/barCorner.js"></script>
-<script src="props/barTable.js"></script>
-<script src="props/barStool.js"></script>
-<script src="props/largeTable.js"></script>
-<script src="props/stool.js"></script>
-<script src="props/propCollect.js"></script>
-<script src="props/bread.js"></script>
-<script src="props/arrow.js"></script>
-<script src="props/amphora.js"></script>
-<script src="props/jug.js"></script>
-<script src="props/cabbage.js"></script>
+
 <!--collision detection-->
-<script src="collision/tavernCollision.js"></script>
+<script src="collision/domusCollision.js"></script>
 <!--people-->
-<script src="people/barMaid.js"></script>
-<script src="people/barVisitor.js"></script>
-<script src="people/tavernPeople.js"></script>
+
 <!--economy-->
 <script src="economy/Shooting.js"></script>
 <script src="economy/Gathering.js"></script>
@@ -108,19 +95,19 @@ renderer.setSize( canvasWidth, canvasHeight );
 //append object to it
 document.getElementById("customcanvas").appendChild(renderer.domElement);
 //camera
-var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 200);
+var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 600);
 camera.position.y = 12;
-camera.position.z = 1;
-camera.position.x = 1;
+camera.position.z = -6;
+camera.position.x = -24;
 //lighting and tavern
 var tavernSize = 100;
-tavernLighter(tavernSize);
-var taberna =new Tavern("concrete_tavern","door_tavern","fresco_tavern","fresco_tavern","tiles4",tavernSize);
-scene.add( taberna );  
+bankLighter(tavernSize);
+var banca =new Bank("tablinum_wall","concrete_tavern","tablinum_wall","tablinum_wall","tiles4",tavernSize);
+scene.add( banca );  
 //props
-tavernProps();
+bankProps();
 //people
-TavernPeople();
+BankPeople();
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
 var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
