@@ -1,4 +1,4 @@
-class wireTemples extends THREE.Group {
+class wireTheatres extends THREE.Group {
 
   init (){
 
@@ -10,7 +10,7 @@ class wireTemples extends THREE.Group {
     // translate the geometry to place the pivot point at the bottom instead of the center
     geometry.applyMatrix( new THREE.Matrix4().makeTranslation( 0, 0.5, 0 ) );    
  
-    var comMaterial = new THREE.MeshBasicMaterial( { color: 0xff00ff, wireframe:true, visible:false } );
+    var comMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
     var buildingMesh = new THREE.Mesh(geometry);
 
     //city geometry
@@ -34,14 +34,14 @@ class wireTemples extends THREE.Group {
 
       // put a position
       buildingMesh.position.x = (1800 - 3600) + ((40 + i - (jezi * 40)) * 90) - 30; //column
-      buildingMesh.position.z = (1800 - 3600) + (jezi * 90) - 30; //row
+      buildingMesh.position.z = (1800 - 3600) + (jezi * 90) - 75; //row
       buildingMesh.position.y = 0;
       //put a rotation
       buildingMesh.rotation.y = 0.5*Math.PI*2;
       //building scale
-      buildingMesh.scale.x = 60;
+      buildingMesh.scale.x = 240;
       buildingMesh.scale.y = this.height;
-      buildingMesh.scale.z = buildingMesh.scale.x;
+      buildingMesh.scale.z = 150;
       // merge it with cityGeometry - very important for performance
       var geometry = buildingMesh.geometry;
       //merge

@@ -1,9 +1,8 @@
-class AmphitheatreWest extends THREE.Group {
+class AmphitheatreHalf extends THREE.Group {
 
     init (){
 
         var dChurch = this;
-        var dColos;
 
         // instantiate a loader
 var loader = new THREE.OBJLoader();
@@ -11,15 +10,19 @@ var loader = new THREE.OBJLoader();
 var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xb18868 } );
 
 // load a resource
-loader.load('models/amphi/amphi_full.obj',	function ( object ) {
+loader.load(
+	// resource URL
+	'models/amphi/theatre.obj',
+	// called when resource is loaded
+	function ( object ) {
 
-    object.traverse( function ( child ) {
-        if ( child instanceof THREE.Mesh ) {             
-             child.material = amphiMaterial;
-            }
-        } );
-   
-    dChurch.add(object);
+        object.traverse( function ( child ) {
+            if ( child instanceof THREE.Mesh ) {                 
+                 child.material = amphiMaterial;
+                }
+            } );
+
+        dChurch.add(object);
 	},
 	// called when loading is in progresses
 	function ( xhr ) {
@@ -31,13 +34,13 @@ loader.load('models/amphi/amphi_full.obj',	function ( object ) {
 	}
 );
 
-dChurch.scale.x = 5.2;
+dChurch.scale.x = 6.53;
 dChurch.scale.y = 3.5;
-dChurch.scale.z = 5.2;
-dChurch.rotation.y = Math.PI +0.41;
-dChurch.position.x = ((1800 - 3600) + (this.pX * 90) - 30) + 0.5; //-3.4
-dChurch.position.y = 13.0;
-dChurch.position.z = ((1800 - 3600) + (this.pZ * 90) - 30) + 3.5; //1.5
+dChurch.scale.z = 4.58;
+dChurch.rotation.y = 2.325; //2.231 -5 12 //2.225 -7 15 //2.237 -5 12 //2.3
+dChurch.position.x = (1800 - 3600) + (this.pX * 90) - 35;
+dChurch.position.y = 12.0;
+dChurch.position.z = (1800 - 3600) + (this.pZ * 90) - 14;
 
     }    
             
