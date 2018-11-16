@@ -1,4 +1,4 @@
-class Circus extends THREE.Group {
+class Rostra extends THREE.Group {
 
     init (){
 
@@ -7,12 +7,12 @@ class Circus extends THREE.Group {
         // instantiate a loader
 var loader = new THREE.OBJLoader();
 
-var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xb18868 } );
+var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xe6e4d8 } );
 
 // load a resource
 loader.load(
 	// resource URL
-	'models/amphi/circus_max.obj',
+	'models/pillar_marble/rostra.obj',
 	// called when resource is loaded
 	function ( object ) {
 
@@ -35,12 +35,12 @@ loader.load(
 );
 
 
-dChurch.scale.x = 36;
-dChurch.scale.y = 33;
-dChurch.scale.z = 27.5;
-dChurch.rotation.y = Math.PI/2; 
-dChurch.position.x = (1800 - 3600) + (this.pX * 90) + 45;
-dChurch.position.y = 15.0;
+dChurch.scale.x = 10;
+dChurch.scale.y = 13;
+dChurch.scale.z = 10;
+dChurch.rotation.y = 0; 
+dChurch.position.x = (1800 - 3600) + (this.pX * 90) - 30;
+dChurch.position.y = 5.0;
 dChurch.position.z = (1800 - 3600) + (this.pZ * 90) - 30;
 
     }    

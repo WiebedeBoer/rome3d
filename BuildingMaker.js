@@ -254,7 +254,7 @@ var regiaBuilding = new PublicBuilding("fora_wall","fora_wall","basilica_front",
 scene.add(regiaBuilding);
 
 //scene 25, rostra, speaker, 29,17
-var Rostrum = new Pillar(29,0,17); //29,17
+var Rostrum = new Rostra(29,17); //29,17
 scene.add(Rostrum);
 
 //scene 26, umbilicus, column, 28,18
