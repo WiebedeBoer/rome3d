@@ -14,8 +14,8 @@
 <!--lighting-->
 <script src="lighting/BasilicaLight.js"></script>
 <script src="lighting/Pointlight.js"></script>
-<!--bar props-->
-
+<!--basilica props-->
+<script src="buildings/columnade.js"></script>
 <!--collision detection-->
 <script src="collision/domusCollision.js"></script>
 <!--people-->
@@ -84,8 +84,6 @@ var bulletmeshes = [];
 var updateFcts = [];
 //scene
 var scene = new THREE.Scene();
-//fog
-scene.fog = new THREE.FogExp2( 0xd0e0f0, 0.0025 );
 //renderer
 var renderer = new THREE.WebGLRenderer( { antialias: false } );
 //window
@@ -104,11 +102,45 @@ basilicaLighter(50);
 //rooms
 var width = 300;
 var length = 500;
-var taberna =new Basilica("concrete","concrete","concrete","concrete","tiles4",width,length);
+var taberna =new Basilica("concrete","concrete","basilica_windows","basilica_windows","tiles4",width,length);
 scene.add( taberna );  
- 
 //props
-
+var column1 = new Columnade(100,-200); 
+scene.add(column1);
+var column2 = new Columnade(100,-150); 
+scene.add(column2);
+var column3 = new Columnade(100,-100); 
+scene.add(column3);
+var column4 = new Columnade(100,-50); 
+scene.add(column4);
+var column5 = new Columnade(100,0); 
+scene.add(column5);
+var column6 = new Columnade(100,50); 
+scene.add(column6);
+var column7 = new Columnade(100,100); 
+scene.add(column7);
+var column8 = new Columnade(100,150); 
+scene.add(column8);
+var column9 = new Columnade(100,200); 
+scene.add(column9);
+var column11 = new Columnade(-100,-200); 
+scene.add(column11);
+var column12 = new Columnade(-100,-150); 
+scene.add(column12);
+var column13 = new Columnade(-100,-100); 
+scene.add(column13);
+var column14 = new Columnade(-100,-50); 
+scene.add(column14);
+var column15 = new Columnade(-100,0); 
+scene.add(column15);
+var column16 = new Columnade(-100,50); 
+scene.add(column16);
+var column17 = new Columnade(-100,100); 
+scene.add(column17);
+var column18 = new Columnade(-100,150); 
+scene.add(column18);
+var column19 = new Columnade(-100,200); 
+scene.add(column19);
 //people
 
 //moving cube

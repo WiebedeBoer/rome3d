@@ -9,7 +9,7 @@ class wireCircus extends THREE.Group {
     // translate the geometry to place the pivot point at the bottom instead of the center
     geometry.applyMatrix( new THREE.Matrix4().makeTranslation( 0, 0.5, 0 ) );    
  
-    var comMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:true } );
+    var comMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
     var buildingMesh = new THREE.Mesh(geometry);
 
     //city geometry

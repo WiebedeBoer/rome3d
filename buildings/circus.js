@@ -34,6 +34,7 @@ loader.load(
 	}
 );
 
+
 dChurch.scale.x = 36;
 dChurch.scale.y = 33;
 dChurch.scale.z = 27.5;
@@ -41,6 +42,22 @@ dChurch.rotation.y = Math.PI/2;
 dChurch.position.x = (1800 - 3600) + (this.pX * 90) + 45;
 dChurch.position.y = 15.0;
 dChurch.position.z = (1800 - 3600) + (this.pZ * 90) - 30;
+
+/*
+loadOBJModel("models/amphi/","circus.obj","models/amphi/","circus.mtl", (mesh) => {
+    mesh.scale.x = 36;
+    mesh.scale.y = 33;
+    mesh.scale.z = 27.5;
+    dChurch.position.x = (1800 - 3600) + (this.pX * 90) + 45;
+    dChurch.position.y = 15.0;
+    dChurch.position.z = (1800 - 3600) + (this.pZ * 90) - 30;
+    dChurch.rotation.y = Math.PI/2; 
+    dChurch.add(mesh);
+    //collidableMeshList.push(mesh);
+
+});
+*/
+
 
     }    
             

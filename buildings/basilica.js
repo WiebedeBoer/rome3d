@@ -18,7 +18,7 @@ class Basilica extends THREE.Group {
         var hallMaterials = [
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.leftTex+".jpg"), side: THREE.BackSide }), //LEFT
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.rightTex+".jpg"), side: THREE.BackSide }), //RIGHT
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/roof/roof_wood.jpg"), side: THREE.BackSide }), //TOP
+            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/roof/roof_basilica.jpg"), side: THREE.BackSide }), //TOP
             new THREE.MeshPhongMaterial({ map: texture, side: THREE.BackSide }), //BOTTOM
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.frontTex+".jpg"), side: THREE.BackSide }), //FRONT
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.backTex+".jpg"), side: THREE.BackSide }), //BACK
