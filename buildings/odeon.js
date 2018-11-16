@@ -21,11 +21,11 @@ class Odeon extends THREE.Group {
         dChurch.add(object);
 	    },
 	    // called when loading is in progresses
-	    function ( xhr ) {
-		    console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+	    function () {
+		    console.log(  '100% loaded' );
 	    },
 	    // called when loading has errors
-	    function ( error ) {
+	    function () {
 		    console.log( 'An error happened' );
 	    }
 );
