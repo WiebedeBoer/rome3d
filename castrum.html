@@ -8,12 +8,16 @@
 <!--camera controls-->
 <script src="controls/FPControls.js"></script>
 <!--buildings-->
-<script src="openxml.js"></script>
+<script src="buildings/tent.js"></script>
+<script src="buildings/strigae.js"></script>
+<script src="buildings/praetorium.js"></script>
+<script src="buildings/tribunal.js"></script>
+<script src="buildings/temple.js"></script>
 <!--environment: plane en skybox-->
 <script src="environment/Plane.js"></script>
 <script src="environment/Skybox.js"></script>
 <!--lighting-->
-<script src="lighting/Lighting.js"></script>
+<script src="lighting/BarracksLight.js"></script>
 <script src="lighting/Pointlight.js"></script>
 <script src="lighting/Lantern.js"></script>
 <!--props-->
@@ -110,9 +114,9 @@ scene.add(planeroad);
 var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
 scene.add( skyBox );
 //lighting 
-
+barracksLighter();
 //buildings
-
+Strigae();
 //props
 
 //people
@@ -211,8 +215,8 @@ function newDoc() {
         </div>
         <!--music-->
         <div id="sound" class="ce">                
-                <audio id="imperia" loop><source id="parade" src="music/Rome_Forum.mp3" type="audio/mp3"></audio>   
-                <audio id="soundpar" autoplay><source id="soundscape" src="sfx/atmosphere/population_1_hamlet.mp3" type="audio/mp3"></audio> 
+                <audio id="imperia" loop><source id="parade" src="music/Marcus_Antonius.mp3" type="audio/mp3"></audio>   
+                <audio id="soundpar" autoplay><source id="soundscape" src="sfx/combat/march02.mp3" type="audio/mp3"></audio> 
                 <button onclick="changeImperium()" type="button">Change Music</button>
                 <button onclick="pauseImperium()" type="button">Pause Music</button>
                 <button onclick="playImperium()" type="button">Play Music</button>
