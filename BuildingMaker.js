@@ -89,7 +89,7 @@ scene.add(Bank); //table + coin
 
 //public buildings, multiple: front texture, back texture, right texture, left texture, building height, width, length
 //scene 4, forum, 9 fora
-var Forum = new Fora("forum","mosaic9",2,60,60);
+var Forum = new Fora("forum","mosaic8",2,60,60);
 scene.add(Forum);
 //scene 5, basilica, 6 basilica
 var Basilica = new Municipal("basilica","basilica_front","basilica_front","fora_wall","fora_wall",80,60,60);
