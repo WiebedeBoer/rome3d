@@ -1,4 +1,9 @@
 function LegionMaker(){
+    //augur
+    var augur = new Person("augur",-23,-73);
+    scene.add(augur);   
+    var farmer = new Person("farmer",21,273);
+    scene.add(farmer);   
     //legatus
     var legatus = new Military("legatus",415,13);
     scene.add(legatus); 
