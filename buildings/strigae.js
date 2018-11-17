@@ -398,23 +398,23 @@ var wallSouthWest = new Pallisade("wallWE",30,60,690,-750,-375); //wall
 scene.add( wallSouthWest );
 
 //towers
-var tower1 = new Praetorium("tower","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,60,12,12); 
+var tower1 = new Praetorium("tower","lares_wood","tower_wood","tower_wood","lares_wood","roof3",80,60,60,12,12); 
 scene.add( tower1 );
-var tower2 = new Praetorium("tower","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,60,12,29); 
+var tower2 = new Praetorium("tower","tower_wood","lares_wood","tower_wood","lares_wood","roof3",80,60,60,12,29); 
 scene.add( tower2 );
-var tower3 = new Praetorium("tower","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,60,32,12); 
+var tower3 = new Praetorium("tower","lares_wood","tower_wood","lares_wood","tower_wood","roof3",80,60,60,32,12); 
 scene.add( tower3 );
-var tower4 = new Praetorium("tower","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,60,32,29); 
+var tower4 = new Praetorium("tower","tower_wood","lares_wood","lares_wood","tower_wood","roof3",80,60,60,32,29); 
 scene.add( tower4 );
 
 //gates
-var gate1 = new Praetorium("gate","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,90,12,20.5); 
+var gate1 = new Praetorium("gate","tower_wood","tower_wood","gate_wood","gate_wood","roof3",80,60,90,12,20.5); 
 scene.add( gate1 );
-var gate2 = new Praetorium("gate","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,90,60,24.5,29); 
+var gate2 = new Praetorium("gate","gate_wood","gate_wood","tower_wood","tower_wood","roof3",80,90,60,24.5,29); 
 scene.add( gate2 );
-var gate3 = new Praetorium("gate","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,90,60,24.5,12); 
+var gate3 = new Praetorium("gate","gate_wood","gate_wood","tower_wood","tower_wood","roof3",80,90,60,24.5,12); 
 scene.add( gate3 );
-var gate4 = new Praetorium("gate","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,90,32,20.5);
+var gate4 = new Praetorium("gate","tower_wood","tower_wood","gate_wood","gate_wood","roof3",80,60,90,32,20.5);
 scene.add( gate4 );
 
 }

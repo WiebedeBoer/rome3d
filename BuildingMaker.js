@@ -264,4 +264,89 @@ scene.add(Umbilicus);
 //scene 27,hortus, garden, 10
 Gardens();
 
+//towers
+var tower1 = new Praetorium("tower","city_tower","city_port","city_port","city_tower","roof3",80,60,60,-1,0); 
+scene.add( tower1 );
+var tower2 = new Praetorium("tower","city_port","city_tower","city_port","city_tower","roof3",80,60,60,-1,41); 
+scene.add( tower2 );
+var tower3 = new Praetorium("tower","city_tower","city_port","city_tower","city_port","roof3",80,60,60,40,0); 
+scene.add( tower3 );
+var tower4 = new Praetorium("tower","city_port","city_tower","city_tower","city_port","roof3",80,60,60,40,41); 
+scene.add( tower4 );
+
+//walls
+//northern walls
+var wallNorth1 = new CityWall("wallNS",30,870,60,-1455,-1830); 
+scene.add( wallNorth1 );
+var wallNorth2 = new CityWall("wallNS",30,1710,60,-75,-1830); 
+scene.add( wallNorth2 );
+var wallNorth3 = new CityWall("wallNS",30,360,60,1050,-1830); 
+scene.add( wallNorth3 );
+var wallNorth4 = new CityWall("wallNS",30,420,60,1530,-1830); 
+scene.add( wallNorth4 );
+//eastern walls
+var wallEast1 = new CityWall("wallEW",30,60,1590,1770,-1005);
+scene.add( wallEast1 );
+var wallEast2 = new CityWall("wallEW",30,60,450,1770,105);
+scene.add( wallEast2 );
+var wallEast3 = new CityWall("wallEW",30,60,450,1770,645);
+scene.add( wallEast3 );
+var wallEast4 = new CityWall("wallEW",30,60,870,1770,1395);
+scene.add( wallEast4 );
+//southern walls
+var wallSouth1 = new CityWall("wallNS",30,1860,60,-960,1860); 
+scene.add( wallSouth1 );
+var wallSouth2 = new CityWall("wallNS",30,810,60,465,1860); 
+scene.add( wallSouth2 );
+var wallSouth3 = new CityWall("wallNS",30,360,60,1140,1860); 
+scene.add( wallSouth3 );
+var wallSouth4 = new CityWall("wallNS",30,330,60,1575,1860); 
+scene.add( wallSouth4 );
+//western walls
+var wallWest1 = new CityWall("wallEW",30,60,510,-1920,1575);  
+scene.add( wallWest1 );
+var wallWest2 = new CityWall("wallEW",30,60,1170,-1920,645);  
+scene.add( wallWest2 );
+var wallWest3 = new CityWall("wallEW",30,60,1770,-1920,-915);  
+scene.add( wallWest3 );
+
+//gates
+//flaminia
+var gateFlaminia = new Praetorium("gate","city_gate","city_gate","city_port","city_port","roof3",80,90,60,9.5,0); 
+scene.add( gateFlaminia );
+//salaria
+var gateSalaria = new Praetorium("gate","city_gate","city_gate","city_port","city_port","roof3",80,90,60,29.5,0); 
+scene.add( gateSalaria );
+//nomentana
+var gateNomentana = new Praetorium("gate","city_gate","city_gate","city_port","city_port","roof3",80,90,60,34.5,0); 
+scene.add( gateNomentana );
+
+//tiburtina
+var gateTiburtina = new Praetorium("gate","city_port","city_port","city_gate","city_gate","roof3",80,60,90,40,18.5); 
+scene.add( gateTiburtina );
+//labicana
+var gateLabicana = new Praetorium("gate","city_port","city_port","city_gate","city_gate","roof3",80,60,90,40,24.5); 
+scene.add( gateLabicana );
+//tusculana
+var gateTusculana = new Praetorium("gate","city_port","city_port","city_gate","city_gate","roof3",80,60,90,40,30.5); 
+scene.add( gateTusculana );
+
+//latina
+var gateLatina = new Praetorium("gate","city_gate","city_gate","city_port","city_port","roof3",80,90,60,35.5,41); 
+scene.add( gateLatina );
+//apina
+var gateApina = new Praetorium("gate","city_gate","city_gate","city_port","city_port","roof3",80,90,60,30.5,41); 
+scene.add( gateApina );
+//ostiensis
+var gateOstiensis = new Praetorium("gate","city_gate","city_gate","city_port","city_port","roof3",80,90,60,20.5,41); 
+scene.add( gateOstiensis );
+
+//portuensis
+var gatePortuensis = new Praetorium("gate","city_port","city_port","city_gate","city_gate","roof3",80,60,90,-1,20.5); 
+scene.add( gatePortuensis );
+//aurelia
+var gateAurelia = new Praetorium("gate","city_port","city_port","city_gate","city_gate","roof3",80,60,90,-1,34.5); 
+scene.add( gateAurelia );
+
+
 }

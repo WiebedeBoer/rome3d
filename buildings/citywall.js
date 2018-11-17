@@ -1,4 +1,4 @@
-class Pallisade extends THREE.Group {
+class CityWall extends THREE.Group {
 
     init (){
 
@@ -16,16 +16,21 @@ class Pallisade extends THREE.Group {
     //mesh
     var meshCityhall = new THREE.Mesh(hallGeometry);
 
+
+
     //north south direction
     if (this.type =="wallNS"){
-        var texture = new THREE.TextureLoader().load( "textures/wall/pallisade.jpg" );    
+        var texture = new THREE.TextureLoader().load( "textures/wall/gold_wall.jpg" );    
         texture.wrapS = texture.wrapT = THREE.RepeatWrapping; 
-        texture.repeat.set( this.bWidth / 60, 1 );    
+        texture.repeat.set( this.bWidth / 60, 1 );  
+        var rooftexture = new THREE.TextureLoader().load( "textures/wall/concrete.jpg" );    
+        rooftexture.wrapS = rooftexture.wrapT = THREE.RepeatWrapping; 
+        rooftexture.repeat.set( this.bWidth / 60, 1 );  
         //material
         var hallMaterials = [
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/pallisade.jpg"), side: THREE.FrontSide }), //LEFT
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/pallisade.jpg"), side: THREE.FrontSide }), //RIGHT
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/roof/roof_wood.jpg"), side: THREE.FrontSide }), //TOP
+            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/gold_wall.jpg"), side: THREE.FrontSide }), //LEFT
+            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/gold_wall.jpg"), side: THREE.FrontSide }), //RIGHT
+            new THREE.MeshPhongMaterial({ map: rooftexture, side: THREE.FrontSide }), //TOP
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide }), //BOTTOM
             new THREE.MeshPhongMaterial({ map: texture, side: THREE.FrontSide }), //FRONT
             new THREE.MeshPhongMaterial({ map: texture, side: THREE.FrontSide }), //BACK
@@ -33,17 +38,20 @@ class Pallisade extends THREE.Group {
     }
     //south west direction
     else {
-        var texture = new THREE.TextureLoader().load( "textures/wall/pallisade.jpg" );    
+        var texture = new THREE.TextureLoader().load( "textures/wall/gold_wall.jpg" );    
         texture.wrapS = texture.wrapT = THREE.RepeatWrapping; 
-        texture.repeat.set( this.bDepth / 60, 1 );     
+        texture.repeat.set( this.bDepth / 60, 1 );  
+        var rooftexture = new THREE.TextureLoader().load( "textures/wall/concrete.jpg" );    
+        rooftexture.wrapS = rooftexture.wrapT = THREE.RepeatWrapping; 
+        rooftexture.repeat.set( this.bDepth / 60, 1 );  
         //material
         var hallMaterials = [
             new THREE.MeshPhongMaterial({ map: texture,side: THREE.FrontSide }), //LEFT
             new THREE.MeshPhongMaterial({ map: texture, side: THREE.FrontSide }), //RIGHT
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/roof/roof_wood.jpg"), side: THREE.FrontSide }), //TOP
+            new THREE.MeshPhongMaterial({ map: rooftexture, side: THREE.FrontSide }), //TOP
             new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide }), //BOTTOM
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/pallisade.jpg"), side: THREE.FrontSide }), //FRONT
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/pallisade.jpg"), side: THREE.FrontSide }), //BACK
+            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/gold_wall.jpg"), side: THREE.FrontSide }), //FRONT
+            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/gold_wall.jpg"), side: THREE.FrontSide }), //BACK
             ];
     }
 
