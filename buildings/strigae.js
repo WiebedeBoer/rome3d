@@ -252,29 +252,29 @@ scene.add( contubernium11j );
 var contubernium12j = new Tent(24,26);
 scene.add( contubernium12j );
 //11th street
-var contubernium1k = new Tent(25,15);
+var contubernium1k = new Officer_Tent(25,15);
 scene.add( contubernium1k );
-var contubernium2k = new Tent(25,16);
+var contubernium2k = new Officer_Tent(25,16);
 scene.add( contubernium2k );
-var contubernium3k = new Tent(25,17);
+var contubernium3k = new Officer_Tent(25,17);
 scene.add( contubernium3k );
-var contubernium4k = new Tent(25,18);
+var contubernium4k = new Officer_Tent(25,18);
 scene.add( contubernium4k );
-var contubernium5k = new Tent(25,19);
+var contubernium5k = new Officer_Tent(25,19);
 scene.add( contubernium5k );
 var contubernium6k = new Tribunal("forum","mosaic7",25,20);  //forum
 scene.add( contubernium6k );
 var contubernium7k = new Praetorium("praetorium","castra_door","lares_wood","castra_window","castra_window","roof3",60,60,60,25,21); //praetorium
 scene.add( contubernium7k );
-var contubernium8k = new Tent(25,22);
+var contubernium8k = new Officer_Tent(25,22);
 scene.add( contubernium8k );
-var contubernium9k = new Tent(25,23);
+var contubernium9k = new Officer_Tent(25,23);
 scene.add( contubernium9k );
-var contubernium10k = new Tent(25,24);
+var contubernium10k = new Officer_Tent(25,24);
 scene.add( contubernium10k );
-var contubernium11k = new Tent(25,25);
+var contubernium11k = new Officer_Tent(25,25);
 scene.add( contubernium11k );
-var contubernium12k = new Tent(25,26);
+var contubernium12k = new Officer_Tent(25,26);
 scene.add( contubernium12k );
 //12th street
 var contubernium1l = new Tent(26,15);

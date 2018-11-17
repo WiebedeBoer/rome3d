@@ -1,4 +1,4 @@
-class Tent extends THREE.Group {
+class Officer_Tent extends THREE.Group {
 
     init (){
 
@@ -7,10 +7,10 @@ class Tent extends THREE.Group {
         // instantiate a loader
         var loader = new THREE.OBJLoader();
 
-        var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xa1736c } );
+        var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xf3dfcb } );
 
         // load a resource
-        loader.load('models/contubernium/tent.obj',	function ( object ) {
+        loader.load('models/contubernium/officer.obj',	function ( object ) {
 
         object.traverse( function ( child ) {
         if ( child instanceof THREE.Mesh ) {             
@@ -30,9 +30,9 @@ class Tent extends THREE.Group {
 	    }
 );
 
-dChurch.scale.x = 10;
+dChurch.scale.x = 12;
 dChurch.scale.y = 10;
-dChurch.scale.z = 18;
+dChurch.scale.z = 12;
 dChurch.rotation.y = Math.PI;
 dChurch.position.x = ((1800 - 3600) + (this.pX * 90) - 30); 
 dChurch.position.y = 0;
