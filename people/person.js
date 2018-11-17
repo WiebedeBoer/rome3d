@@ -20,8 +20,8 @@ class Person extends THREE.Group {
     var hallMaterials = [
         new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/units/"+this.frontTex+".gif"), side: THREE.FrontSide, opacity: params.opacity,transparent: true }), //LEFT
         new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/units/"+this.frontTex+".gif"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //RIGHT
-        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //TOP
-        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //BOTTOM
+        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide, opacity: opaq.opacity,transparent: true  }), //TOP
+        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide, opacity: opaq.opacity,transparent: true  }), //BOTTOM
         new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/units/"+this.frontTex+".gif"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //FRONT
         new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/units/"+this.frontTex+".gif"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //BACK
         ];
