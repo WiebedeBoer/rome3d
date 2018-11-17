@@ -13,6 +13,7 @@
 <script src="buildings/praetorium.js"></script>
 <script src="buildings/tribunal.js"></script>
 <script src="buildings/temple.js"></script>
+<script src="buildings/pallisade.js"></script>
 <!--environment: plane en skybox-->
 <script src="environment/Plane.js"></script>
 <script src="environment/Skybox.js"></script>
@@ -108,7 +109,7 @@ camera.position.x = -24;
 //environment
 var environmentsize = 5500;
 //plane
-var planeroad = new Plane(environmentsize,environmentsize);
+var planeroad = new Plane(environmentsize,environmentsize,"ground3");
 scene.add(planeroad);  
 //skybox
 var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);

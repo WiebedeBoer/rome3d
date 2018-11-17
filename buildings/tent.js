@@ -33,11 +33,11 @@ class Tent extends THREE.Group {
 
 dChurch.scale.x = 10;
 dChurch.scale.y = 10;
-dChurch.scale.z = 10;
+dChurch.scale.z = 15;
 dChurch.rotation.y = Math.PI;
-dChurch.position.x = ((1800 - 3600) + (this.pX * 90) - 30) + 0.1; 
+dChurch.position.x = ((1800 - 3600) + (this.pX * 90) - 30); 
 dChurch.position.y = 0;
-dChurch.position.z = ((1800 - 3600) + (this.pZ * 90) - 30) + 15.1; 
+dChurch.position.z = ((1800 - 3600) + (this.pZ * 90) - 30) + 5; 
 
     }    
             

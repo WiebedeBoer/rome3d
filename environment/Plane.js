@@ -4,7 +4,7 @@ class Plane extends THREE.Group {
 
         mPlane = this;
         
-        texture = new THREE.TextureLoader().load( "textures/plane/ground2.jpg" );
+        texture = new THREE.TextureLoader().load( "textures/plane/"+this.ground+".jpg" );
         texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
         texture.offset.set( 0.45 , 0.45 ); 
         texture.repeat.set( this.width / 90, this.length / 90 );
@@ -14,8 +14,9 @@ class Plane extends THREE.Group {
         plane.rotation.x= - 90 * Math.PI / 180;
         mPlane.add(plane);
     }
-    constructor(width,length){
+    constructor(width,length,ground){
         super();
+        this.ground = ground;
         this.width = width;
         this.length = length;
         this.init();

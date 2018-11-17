@@ -10,11 +10,11 @@ var contubernium3a = new Tent(15,17);
 scene.add( contubernium3a );
 var contubernium4a = new Tent(15,18);
 scene.add( contubernium4a );
-var contubernium5a = new Praetorium("valetudinarium","concrete","concrete","concrete","concrete","roof3",60,60,60,15,19); //valetudinarium
+var contubernium5a = new Praetorium("valetudinarium","castra_window","castra_window","castra_door","lares_wood","roof3",60,60,60,15,19); //valetudinarium
 scene.add( contubernium5a );
-var contubernium6a = new Praetorium("veterinarium","concrete","concrete","concrete","concrete","roof3",60,60,60,15,20); //veterinarium
+var contubernium6a = new Praetorium("veterinarium","lares_wood","castra_door","castra_window","castra_window","roof3",60,60,60,15,20); //veterinarium
 scene.add( contubernium6a );
-var contubernium7a = new Praetorium("fabrica","concrete","concrete","concrete","concrete","roof3",60,60,60,15,21); //fabrica
+var contubernium7a = new Praetorium("fabrica","castra_door","lares_wood","castra_window","castra_window","roof3",60,60,60,15,21); //fabrica
 scene.add( contubernium7a );
 var contubernium8a = new Tent(15,22);
 scene.add( contubernium8a );
@@ -110,7 +110,7 @@ var contubernium3e = new Tent(19,17);
 scene.add( contubernium3e );
 var contubernium4e = new Tent(19,18);
 scene.add( contubernium4e );
-var contubernium5e = new Praetorium("quintana","concrete","concrete","concrete","concrete","roof3",60,60,60,19,19); //quintana
+var contubernium5e = new Praetorium("quintana","canteen_wall","canteen_front","canteen_wall","canteen_wall","roof3",60,60,60,19,19); //quintana
 scene.add( contubernium5e );
 var contubernium6e = new Tribunal("venalia","mosaic6",19,20); //venalia
 scene.add( contubernium6e );
@@ -141,11 +141,11 @@ var contubernium6f = new Tribunal("area","mosaic8",20,20); //area
 scene.add( contubernium6f );
 var contubernium7f = new Tribunal("tribunal","mosaic8",20,21); //tribunal
 scene.add( contubernium7f );
-var contubernium8f = new Praetorium("armamentarium","concrete","concrete","concrete","concrete","roof3",60,60,60,20,22); //armamentarium
+var contubernium8f = new Praetorium("armamentarium","smithy_back","smithy_back","smithy_front","smithy_back","roof3",60,60,60,20,22); //armamentarium
 scene.add( contubernium8f );
-var contubernium9f = new Praetorium("horrea","concrete","fora_wall","fora_wall","fora_wall","roof3",60,60,60,20,23); //horrea
+var contubernium9f = new Praetorium("horrea","fora_wall","fora_wall","industry_front","fora_wall","roof3",60,60,60,20,23); //horrea
 scene.add( contubernium9f );
-var contubernium10f = new Praetorium("carnarea","concrete","fora_wall","fora_wall","fora_wall","roof3",60,60,60,20,24); //carnarea
+var contubernium10f = new Praetorium("carnarea","fora_wall","fora_wall","industry_front","fora_wall","roof3",60,60,60,20,24); //carnarea
 scene.add( contubernium10f );
 var contubernium11f = new Tent(20,25);
 scene.add( contubernium11f );
@@ -237,9 +237,9 @@ var contubernium4j = new Tent(24,18);
 scene.add( contubernium4j );
 var contubernium5j = new Tent(24,19);
 scene.add( contubernium5j );
-var contubernium6j = new Praetorium("thermae","bath_front","bath_wall","bath_wall","bath_wall","roof3",60,60,60,24,20); //thermae
+var contubernium6j = new Praetorium("thermae","bath_wall","bath_front","bath_wall","bath_wall","roof3",60,60,60,24,20); //thermae
 scene.add( contubernium6j );
-var contubernium7j = new Praetorium("statores","concrete","concrete","concrete","concrete","roof3",60,60,60,24,21); //statores
+var contubernium7j = new Praetorium("statores","castra_door","lares_wood","castra_window","castra_window","roof3",60,60,60,24,21); //statores
 scene.add( contubernium7j );
 var contubernium8j = new Tent(24,22);
 scene.add( contubernium8j );
@@ -264,7 +264,7 @@ var contubernium5k = new Tent(25,19);
 scene.add( contubernium5k );
 var contubernium6k = new Tribunal("forum","mosaic7",25,20);  //forum
 scene.add( contubernium6k );
-var contubernium7k = new Praetorium("praetorium","concrete","concrete","concrete","concrete","roof3",60,60,60,25,21); //praetorium
+var contubernium7k = new Praetorium("praetorium","castra_door","lares_wood","castra_window","castra_window","roof3",60,60,60,25,21); //praetorium
 scene.add( contubernium7k );
 var contubernium8k = new Tent(25,22);
 scene.add( contubernium8k );
@@ -289,7 +289,7 @@ var contubernium5l = new Tent(26,19);
 scene.add( contubernium5l );
 var contubernium6l = new Tent(26,20);
 scene.add( contubernium6l );
-var contubernium7l = new Praetorium("quaestorium","concrete","concrete","concrete","concrete","roof3",60,60,60,26,21); //quaestorium
+var contubernium7l = new Praetorium("quaestorium","castra_door","lares_wood","castra_window","castra_window","roof3",60,60,60,26,21); //quaestorium
 scene.add( contubernium7l );
 var contubernium8l = new Tent(26,22);
 scene.add( contubernium8l );
@@ -376,4 +376,45 @@ var contubernium11o = new Tent(29,25);
 scene.add( contubernium11o );
 var contubernium12o = new Tent(29,26);
 scene.add( contubernium12o );
+
+//walls
+//1740, 19.33, 17c, 12-32
+var wallWestNorth = new Pallisade("wallNS",30,600,60,720,780); //wall 
+scene.add( wallWestNorth );
+var wallEastNorth = new Pallisade("wallNS",30,600,60,720,-750); //wall
+scene.add( wallEastNorth );
+var wallWestSouth = new Pallisade("wallNS",30,1050,60,-195,780); //wall 
+scene.add( wallWestSouth );
+var wallEastSouth = new Pallisade("wallNS",30,1050,60,-195,-750); //wall
+scene.add( wallEastSouth );
+//1470, 16.33, 21c, 12-29
+var wallNorthWest = new Pallisade("wallWE",30,60,690,1050,405); //wall 
+scene.add( wallNorthWest );
+var wallSouthWest = new Pallisade("wallWE",30,60,690,-750,405); //wall
+scene.add( wallSouthWest );
+var wallNorthEast = new Pallisade("wallWE",30,60,690,1050,-375); //wall
+scene.add( wallNorthEast );
+var wallSouthWest = new Pallisade("wallWE",30,60,690,-750,-375); //wall
+scene.add( wallSouthWest );
+
+//towers
+var tower1 = new Praetorium("tower","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,60,12,12); 
+scene.add( tower1 );
+var tower2 = new Praetorium("tower","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,60,12,29); 
+scene.add( tower2 );
+var tower3 = new Praetorium("tower","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,60,32,12); 
+scene.add( tower3 );
+var tower4 = new Praetorium("tower","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,60,32,29); 
+scene.add( tower4 );
+
+//gates
+var gate1 = new Praetorium("gate","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,90,12,20.5); 
+scene.add( gate1 );
+var gate2 = new Praetorium("gate","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,90,60,24.5,29); 
+scene.add( gate2 );
+var gate3 = new Praetorium("gate","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,90,60,24.5,12); 
+scene.add( gate3 );
+var gate4 = new Praetorium("gate","lares_wood","lares_wood","lares_wood","lares_wood","roof3",80,60,90,32,20.5);
+scene.add( gate4 );
+
 }
