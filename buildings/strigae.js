@@ -1,5 +1,6 @@
 function Strigae(){
-//164 tents, 1312 men
+//154 tents, 1232 men
+//10 officer tents
 //16 buildings
 //1st street
 var contubernium1a = new Tent(15,15);
