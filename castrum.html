@@ -9,6 +9,7 @@
 <script src="controls/FPControls.js"></script>
 <!--buildings-->
 <script src="buildings/tent.js"></script>
+<script src="buildings/officer_tent.js"></script>
 <script src="buildings/strigae.js"></script>
 <script src="buildings/praetorium.js"></script>
 <script src="buildings/tribunal.js"></script>
@@ -22,11 +23,27 @@
 <script src="lighting/Pointlight.js"></script>
 <script src="lighting/Lantern.js"></script>
 <!--props-->
-
+<script src="props/barrackProps.js"></script>
+<script src="props/quiver.js"></script>
+<script src="props/propCollect.js"></script>
+<script src="props/coin.js"></script>
+<script src="props/bread.js"></script>
+<script src="props/cabbage.js"></script>
+<script src="props/fish.js"></script>
+<script src="props/cheese.js"></script>
+<script src="props/arrow.js"></script>
+<script src="props/stool.js"></script>
+<script src="props/table.js"></script>
+<script src="props/amphora.js"></script>
+<script src="props/jug.js"></script>
+<!--animals-->
+<script src="props/donkey.js"></script>
+<script src="props/horse.js"></script>
 <!--collision detection-->
-<script src="collision/collision.js"></script>
+<script src="collision/barracksCollision.js"></script>
 <!--people-->
-
+<script src="people/legionMaker.js"></script>
+<script src="people/military.js"></script>
 <!--economy-->
 <script src="economy/Shooting.js"></script>
 <script src="economy/Gathering.js"></script>
@@ -119,9 +136,9 @@ barracksLighter();
 //buildings
 Strigae();
 //props
-
+barrackProps();
 //people
-
+LegionMaker();
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
 var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
