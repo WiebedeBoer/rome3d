@@ -24,9 +24,9 @@ fieldMaker("cow",xVil-180,zVil-90);
 else if (farmtype=="civitas"){
     
     houseMaker("farmhouse",xVil+90,zVil-270);
-    houseMaker("farmhouse2",xVil+90,zVil-180);
+    houseMaker("potterer",xVil+90,zVil-180);
     houseMaker("farmhouse",xVil+90,zVil-90);
-    houseMaker("farmhouse2",xVil+90,zVil);
+    houseMaker("carpenter",xVil+90,zVil);
     
     houseMaker("smithy",xVil,zVil-270);
     houseMaker("fora",xVil,zVil-180);
@@ -34,7 +34,7 @@ else if (farmtype=="civitas"){
     houseMaker("farmhouse2",xVil,zVil); //center
     
     houseMaker("barn2",xVil-90,zVil-270);
-    houseMaker("farmhouse",xVil-90,zVil-180);
+    houseMaker("tavern",xVil-90,zVil-180);
     houseMaker("farmhouse",xVil-90,zVil-90);
     //houseMaker("barn2",xVil-90,zVil);
     

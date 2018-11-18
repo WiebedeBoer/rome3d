@@ -5,7 +5,7 @@ class Smithy extends THREE.Group {
         var dChurch = this;
         loadOBJModel("models/house2/","house2.obj","models/house2/","house2.mtl", (mesh) => {
             mesh.scale.x = 55.0;
-            mesh.scale.y = 57.5;
+            mesh.scale.y = 60.0;
             mesh.scale.z = 55.0;
             dChurch.position.x = this.pX;
             dChurch.position.y = this.pY;
