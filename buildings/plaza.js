@@ -1,4 +1,4 @@
-class Tribunal extends THREE.Group {
+class Plaza extends THREE.Group {
 
     init (){
 
@@ -21,9 +21,9 @@ class Tribunal extends THREE.Group {
     var hallMaterial = new THREE.MeshFaceMaterial(hallMaterials);
     var meshCityhall = new THREE.Mesh(hallGeometry);
     // put a position
-    meshCityhall.position.x = (1800 - 3600) + (this.nrow * 90) - 30;
+    meshCityhall.position.x = this.nrow;
     meshCityhall.position.y = 0;
-    meshCityhall.position.z = (1800 - 3600) + (this.ncol * 90) - 30;
+    meshCityhall.position.z = this.ncol;
     //put a rotation
     meshCityhall.rotation.y = 0.5*Math.PI*2;
     //building scale

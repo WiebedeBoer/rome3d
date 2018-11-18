@@ -115,6 +115,7 @@ function Props(){
             var fenceWest = (1800 - 3600) + (ppZ * 90) - 60;
             var fenceEast = (1800 - 3600) + (ppZ * 90);      
 
+            //animals
             //forum suarium
             if(animals =="pig"){
                 var pig = new Pig(propPositionX,5,propPositionZa,0,0,0); 
@@ -190,71 +191,87 @@ function Props(){
                 var fenceB = new Fence(fenceSouth,0,propPositionZ,0,1.5707963,0); 
                 scene.add(fenceB);  
             }
+            //food
             //forum piscarium 
             else if(animals =="fish"){
-                var tablestand = new Table(propPositionX,0,propPositionZa,0,0,0); 
+                var venalia = new Square("mosaic5",60,60,propPositionX,propPositionZ); 
+                scene.add(venalia); 
+
+                var tablestand = new Table(propPositionX,2,propPositionZa,0,0,0); 
                 scene.add(tablestand); 
-                var fishLoaf = new Trout(propPositionX,6,propPositionZa,0,0,0); 
+                var fishLoaf = new Trout(propPositionX,8,propPositionZa,0,0,0); 
                 scene.add(fishLoaf);
-                var fishLoafCol = new propCollect(propPositionX,6,propPositionZa,"sauce"); 
+                var fishLoafCol = new propCollect(propPositionX,8,propPositionZa,"sauce"); 
                 scene.add(fishLoafCol);
-                var tablestand2 = new Table(propPositionX,0,propPositionZb,0,0,0); 
+                var tablestand2 = new Table(propPositionX,2,propPositionZb,0,0,0); 
                 scene.add(tablestand2); 
-                var fishLoaf2 = new Trout(propPositionX,6,propPositionZb,0,0,0); 
+                var fishLoaf2 = new Trout(propPositionX,8,propPositionZb,0,0,0); 
                 scene.add(fishLoaf2);
-                var fishLoafCol2 = new propCollect(propPositionX,6,propPositionZb,"sauce"); 
+                var fishLoafCol2 = new propCollect(propPositionX,8,propPositionZb,"sauce"); 
                 scene.add(fishLoafCol2);
             }
             //forum pistorium 
-            else if (animals =="bread"){                
-                var tablestand = new Table(propPositionX,0,propPositionZa,0,0,0); 
+            else if (animals =="bread"){ 
+                var venalia = new Square("mosaic3",60,60,propPositionX,propPositionZ); 
+                scene.add(venalia); 
+
+                var tablestand = new Table(propPositionX,2,propPositionZa,0,0,0); 
                 scene.add(tablestand); 
-                var breadLoaf = new Bread(propPositionX,6,propPositionZa,0,0,0); 
+                var breadLoaf = new Bread(propPositionX,8,propPositionZa,0,0,0); 
                 scene.add(breadLoaf);
-                var breadLoafCol = new propCollect(propPositionX,6,propPositionZa,"bread"); 
+                var breadLoafCol = new propCollect(propPositionX,8,propPositionZa,"bread"); 
                 scene.add(breadLoafCol);
-                var tablestand2 = new Table(propPositionX,0,propPositionZb,0,0,0); 
+                var tablestand2 = new Table(propPositionX,2,propPositionZb,0,0,0); 
                 scene.add(tablestand2); 
-                var breadLoaf2 = new Bread(propPositionX,6,propPositionZb,0,0,0); 
+                var breadLoaf2 = new Bread(propPositionX,8,propPositionZb,0,0,0); 
                 scene.add(breadLoaf2);
-                var breadLoafCol2 = new propCollect(propPositionX,6,propPositionZb,"bread"); 
+                var breadLoafCol2 = new propCollect(propPositionX,8,propPositionZb,"bread"); 
                 scene.add(breadLoafCol2);
             }
             //forum vinarium 
-            else if (animals =="wine"){                
-                var wineLoaf = new Jug(propPositionX,0,propPositionZa,0,0,0); 
+            else if (animals =="wine"){ 
+                var venalia = new Square("mosaic1",60,60,propPositionX,propPositionZ); 
+                scene.add(venalia); 
+
+                var wineLoaf = new Jug(propPositionX,2,propPositionZa,0,0,0); 
                 scene.add(wineLoaf); 
-                var wineLoafCol = new propCollect(propPositionX,6,propPositionZa,"wine"); 
+                var wineLoafCol = new propCollect(propPositionX,8,propPositionZa,"wine"); 
                 scene.add(wineLoafCol);
-                var wineLoaf2 = new Jug(propPositionX,0,propPositionZb,0,0,0); 
+                var wineLoaf2 = new Jug(propPositionX,2,propPositionZb,0,0,0); 
                 scene.add(wineLoaf2); 
-                var wineLoafCol2 = new propCollect(propPositionX,6,propPositionZb,"wine"); 
+                var wineLoafCol2 = new propCollect(propPositionX,8,propPositionZb,"wine"); 
                 scene.add(wineLoafCol2);
             }
             //forum holitorium 
-            else if (animals =="vegetables"){                
-                var tablestand = new Table(propPositionX,0,propPositionZa,0,0,0); 
+            else if (animals =="vegetables"){ 
+                var venalia = new Square("mosaic2",60,60,propPositionX,propPositionZ); 
+                scene.add(venalia); 
+
+                var tablestand = new Table(propPositionX,2,propPositionZa,0,0,0); 
                 scene.add(tablestand); 
-                var vegeLoaf = new Cabbage(propPositionX,5,propPositionZa,0,0,0); 
+                var vegeLoaf = new Cabbage(propPositionX,7,propPositionZa,0,0,0); 
                 scene.add(vegeLoaf);
-                var tablestand2 = new Table(propPositionX,0,propPositionZb,0,0,0); 
+                var tablestand2 = new Table(propPositionX,2,propPositionZb,0,0,0); 
                 scene.add(tablestand2);
-                var vegeLoaf2 = new Cabbage(propPositionX,5,propPositionZb,0,0,0); 
+                var vegeLoaf2 = new Cabbage(propPositionX,7,propPositionZb,0,0,0); 
                 scene.add(vegeLoaf2);
             }
             //forum cuppedinis 
-            else if (animals =="cheese"){                
-                var tablestand = new Table(propPositionX,0,propPositionZa,0,0,0); 
+            else if (animals =="cheese"){ 
+                var venalia = new Square("mosaic4",60,60,propPositionX,propPositionZ); 
+                scene.add(venalia); 
+
+                var tablestand = new Table(propPositionX,2,propPositionZa,0,0,0); 
                 scene.add(tablestand); 
-                var cheeseLoaf = new Cheese(propPositionX,6,propPositionZa,0,0,0); 
+                var cheeseLoaf = new Cheese(propPositionX,8,propPositionZa,0,0,0); 
                 scene.add(cheeseLoaf);
-                var cheeseLoafCol = new propCollect(propPositionX,6,propPositionZa,"cheese"); 
+                var cheeseLoafCol = new propCollect(propPositionX,8,propPositionZa,"cheese"); 
                 scene.add(cheeseLoafCol);
-                var tablestand2 = new Table(propPositionX,0,propPositionZb,0,0,0); 
+                var tablestand2 = new Table(propPositionX,2,propPositionZb,0,0,0); 
                 scene.add(tablestand2); 
-                var cheeseLoaf2 = new Cheese(propPositionX,6,propPositionZb,0,0,0); 
+                var cheeseLoaf2 = new Cheese(propPositionX,8,propPositionZb,0,0,0); 
                 scene.add(cheeseLoaf2);
-                var cheeseLoafCol2 = new propCollect(propPositionX,6,propPositionZb,"cheese"); 
+                var cheeseLoafCol2 = new propCollect(propPositionX,8,propPositionZb,"cheese"); 
                 scene.add(cheeseLoafCol2);
             }
             
