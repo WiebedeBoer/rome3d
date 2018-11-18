@@ -1,11 +1,11 @@
-class Villa extends THREE.Group {
+class Smithy extends THREE.Group {
 
     init (){
 
         var dChurch = this;
-        loadOBJModel("models/house/","house.obj","models/house/","house.mtl", (mesh) => {
+        loadOBJModel("models/house2/","house2.obj","models/house2/","house2.mtl", (mesh) => {
             mesh.scale.x = 55.0;
-            mesh.scale.y = 55.0;
+            mesh.scale.y = 57.5;
             mesh.scale.z = 55.0;
             dChurch.position.x = this.pX;
             dChurch.position.y = this.pY;

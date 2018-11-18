@@ -10,6 +10,7 @@ class Temple extends THREE.Group {
             dChurch.position.x = this.pX;
             dChurch.position.y = this.pY;
             dChurch.position.z = this.pZ;
+            dChurch.rotation.y = Math.PI;
             dChurch.add(mesh);
 
         });

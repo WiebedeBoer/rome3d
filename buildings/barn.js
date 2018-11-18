@@ -4,9 +4,9 @@ class Barn extends THREE.Group {
 
         var dChurch = this;
         loadOBJModel("models/barn2/","Barn_01.obj","models/barn2/","Barn_01.mtl", (mesh) => {
-            mesh.scale.x = 2.7;
-            mesh.scale.y = 2.3;
-            mesh.scale.z = 2.5;
+            mesh.scale.x = 2.9;
+            mesh.scale.y = 2.7;
+            mesh.scale.z = 2.7;
             dChurch.position.x = this.pX;
             dChurch.position.y = this.pY;
             dChurch.position.z = this.pZ;
