@@ -201,6 +201,8 @@ function GameLoop(){
                 MovingCube.rotation.y = camera.rotation.y;                             
                 //bullets
                 BulletTravel(delta);
+                //ambient
+                soundGathering();
         })
         
         //loop runner
@@ -243,7 +245,7 @@ function newDoc() {
                 <!--sound scripts-->
                 <script src="sound/musicplayer.js"></script>
                 <script src="sound/soundplayer.js"></script>
-
+                <script src="sound/ambient_ville.js"></script>
         </div>
 </div>
 <!--description

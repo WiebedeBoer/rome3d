@@ -34,10 +34,14 @@ function breadGathering(){
     
         //check particle hit
         if (propHit >0){
-            //gather prop    
-            //amend economy 
-            Gather();
-            var soundcut="grab"; playSound(soundcut);
+            
+            if (selectedProp !="templum" || selectedProp !="bird"){
+                //gather prop 
+                Gather();
+                //amend economy 
+                var soundcut="grab"; playSound(soundcut);
+            }
+
         }
 }
 
