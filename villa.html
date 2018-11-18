@@ -29,11 +29,9 @@
 <!--props-->
 <script src="props/quiver.js"></script>
 <script src="props/propCollect.js"></script>
-<script src="props/coin.js"></script>
 <script src="props/bread.js"></script>
 <script src="props/cabbage.js"></script>
 <script src="props/fish.js"></script>
-<script src="props/cheese.js"></script>
 <script src="props/arrow.js"></script>
 <script src="props/stool.js"></script>
 <script src="props/table.js"></script>
@@ -132,7 +130,7 @@ camera.position.x = -21;
 //environment
 var environmentsize = 2800;
 //plane
-var planeroad = new Plane(environmentsize,environmentsize,"ground4");
+var planeroad = new Plane(environmentsize,environmentsize,"ground5");
 scene.add(planeroad);  
 //skybox
 var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
@@ -214,6 +212,8 @@ function GameLoop(){
                 MovingCube.rotation.y = camera.rotation.y;                             
                 //bullets
                 BulletTravel(delta);
+                //ambient
+                soundGathering();
         })
         
         //loop runner
@@ -256,6 +256,7 @@ function newDoc() {
                 <!--sound scripts-->
                 <script src="sound/musicplayer.js"></script>
                 <script src="sound/soundplayer.js"></script>
+                <script src="sound/ambient_ville.js"></script>
 
         </div>
 </div>

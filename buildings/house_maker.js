@@ -48,6 +48,8 @@ scene.add(donkey1);
 else if(type =="temple"){
 var temple1 = new Temple(xPos,0,zPos);
 scene.add( temple1 ); 
+var templeCol = new propCollect(xPos,8,zPos-45,"templum"); 
+scene.add(templeCol);
 }
 else if(type =="fora"){
 var fora1 = new Plaza("venalia","mosaic6",xPos,zPos);

@@ -20,16 +20,10 @@ if (type =="wheat"){
     scene.add( field8 );
     var field9 = new Wheat(xPos-15,0,zPos+15);
     scene.add( field9 );
-    /*
-    var fenceL1 = new Fence(xPos,0,zPos+30,0,0,0); 
-    scene.add(fenceL1);
-    var fenceR1 = new Fence(xPos,0,zPos-30,0,0,0); 
-    scene.add(fenceR1);
-    var fenceF1 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceF1);
-    var fenceB1 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceB1); 
-    */
+
+    var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
+    scene.add(birdCol);
+
 }
 else if (type =="vegetables"){
     var field1 = new Cabbage(xPos+15,0,zPos-15,0,0,0);
@@ -50,16 +44,10 @@ else if (type =="vegetables"){
     scene.add( field8 );
     var field9 = new Cabbage(xPos-15,0,zPos+15,0,0,0);
     scene.add( field9 );
-    /*
-    var fenceL1 = new Fence(xPos,0,zPos+30,0,0,0); 
-    scene.add(fenceL1);
-    var fenceR1 = new Fence(xPos,0,zPos-30,0,0,0); 
-    scene.add(fenceR1);
-    var fenceF1 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceF1);
-    var fenceB1 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceB1); 
-    */
+
+    var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
+    scene.add(birdCol);
+
 }
 //olive grove
 else if (type=="olive"){
