@@ -6,8 +6,8 @@ class Plane extends THREE.Group {
         
         texture = new THREE.TextureLoader().load( "textures/plane/"+this.ground+".jpg" );
         texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-        texture.offset.set( 0.45, 0.45 ); 
-        texture.repeat.set( this.width / 90, this.length / 90 );
+        texture.offset.set( 0.29 , 0.89 ); //0.62bad,0.62good
+        texture.repeat.set( this.width / 450, this.length / 450 );
         material = new THREE.MeshBasicMaterial( { map: texture} );      
         geometry = new THREE.PlaneGeometry( this.width, this.length );
         plane = new THREE.Mesh( geometry, material );
