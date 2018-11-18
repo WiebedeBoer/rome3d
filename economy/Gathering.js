@@ -37,6 +37,7 @@ function breadGathering(){
             //gather prop    
             //amend economy 
             Gather();
+            var soundcut="grab"; playSound(soundcut);
         }
 }
 

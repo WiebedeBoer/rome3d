@@ -2,6 +2,8 @@
 function Shot(){
     //shoot ammo check
         if (totalArrow >1){
+            
+            var soundcut="shoot"; playSound(soundcut);
             //less ammo
             totalArrow = totalArrow - 1;
             totalItem = totalArrow - 1;                        
