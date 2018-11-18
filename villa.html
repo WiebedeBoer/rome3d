@@ -12,6 +12,7 @@
 <script src="buildings/plaza.js"></script>
 <script src="buildings/villa.js"></script>
 <script src="buildings/barn.js"></script>
+<script src="buildings/smithy.js"></script>
 <script src="buildings/farm_maker.js"></script>
 <script src="buildings/house_maker.js"></script>
 <script src="buildings/field_maker.js"></script>
@@ -19,7 +20,7 @@
 <script src="buildings/olive_tree.js"></script>
 <script src="props/fence.js"></script>
 <!--environment: plane en skybox-->
-<script src="environment/Plane.js"></script>
+<script src="environment/villePlane.js"></script>
 <script src="environment/Skybox.js"></script>
 <!--lighting-->
 <script src="lighting/BarracksLight.js"></script>
@@ -124,26 +125,34 @@ renderer.setSize( canvasWidth, canvasHeight );
 //append object to it
 document.getElementById("customcanvas").appendChild(renderer.domElement);
 //camera
-var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 7800);
+var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 4000);
 camera.position.y = 12;
 camera.position.z = 15;
 camera.position.x = -21;
 //environment
-var environmentsize = 5500;
+var environmentsize = 2800;
 //plane
-var planeroad = new Plane(environmentsize,environmentsize,"ground3");
+var planeroad = new Plane(environmentsize,environmentsize,"ground4");
 scene.add(planeroad);  
 //skybox
 var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
 scene.add( skyBox );
 //lighting 
 barracksLighter();
-//fields and buildings and props and people
-FarmMaker("villa_rustica",60,-30);
-FarmMaker("villa_rustica",60,330);
+//fields and buildings and props and people, x4, z4
+
+FarmMaker("villa_rustica",-390,-480);
+FarmMaker("villa_rustica",-390,-30);
+FarmMaker("villa_rustica",-390,420);
+
+FarmMaker("villa_rustica",60,-480);
+FarmMaker("civitas",60,-30);
+FarmMaker("villa_rustica",60,420);
+
+FarmMaker("villa_rustica",510,-390);
 FarmMaker("villa_rustica",510,-30);
-FarmMaker("villa_rustica",510,330);
-FarmMaker("civitas",960,330);
+FarmMaker("villa_rustica",510,420);
+
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
 var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
