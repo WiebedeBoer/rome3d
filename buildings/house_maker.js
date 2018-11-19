@@ -17,7 +17,13 @@ else if (type =="villagehouse2"){
 var farmhouse = new Villa(xPos+20,househigh,zPos-28,Math.PI/2);
 scene.add( farmhouse );
 }
-if (type =="tavern"){
+else if (type=="villa"){
+var hacienda = new Latifundia(xPos-20,27.00,zPos-25,Math.PI/2);
+scene.add( hacienda );
+var patrician = new Person("patrician",xPos,zPos-45);
+scene.add(patrician);  
+}
+else if (type =="tavern"){
 var tavern = new Villa(xPos+28,househigh,zPos+30,0);
 scene.add( tavern );
 var wineLoaf = new Jug(xPos+35,0,zPos+2,0,0,0); 

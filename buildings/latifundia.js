@@ -1,12 +1,12 @@
-class Smithy extends THREE.Group {
+class Latifundia extends THREE.Group {
 
     init (){
 
         var dChurch = this;
-        loadOBJModel("models/house/","house2.obj","models/house/","house2.mtl", (mesh) => {
-            mesh.scale.x = 55.0;
-            mesh.scale.y = 60.0;
-            mesh.scale.z = 55.0;
+        loadOBJModel("models/house/","villa.obj","models/house/","villa.mtl", (mesh) => {
+            mesh.scale.x = 100.0;
+            mesh.scale.y = 150.0;
+            mesh.scale.z = 100.0;
             dChurch.position.x = this.pX;
             dChurch.position.y = this.pY;
             dChurch.position.z = this.pZ;
