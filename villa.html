@@ -11,6 +11,7 @@
 <script src="buildings/ville_temple1.js"></script>
 <script src="buildings/plaza.js"></script>
 <script src="buildings/villa.js"></script>
+<script src="buildings/latifundia.js"></script>
 <script src="buildings/barn.js"></script>
 <script src="buildings/smithy.js"></script>
 <script src="buildings/farm_maker.js"></script>
@@ -19,6 +20,7 @@
 <script src="buildings/field_wheat.js"></script>
 <script src="buildings/olive_tree.js"></script>
 <script src="buildings/grapevine.js"></script>
+<script src="buildings/forest.js"></script>
 <script src="props/fence.js"></script>
 <!--environment: plane en skybox-->
 <script src="environment/villePlane.js"></script>
@@ -138,19 +140,37 @@ var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
 scene.add( skyBox );
 //lighting 
 barracksLighter();
-//fields and buildings and props and people, x4, z4
+//fields and buildings and props and people, x5, z5
+FarmMaker("forest",-840,-840);
+FarmMaker("forest",-840,-390);
+FarmMaker("forest",-840,-30);
+FarmMaker("forest",-840,420);
+FarmMaker("forest",-840,870);
 
+
+FarmMaker("forest",-390,-840);
 FarmMaker("villa_rustica",-390,-480);
 FarmMaker("villa_rustica",-390,-30);
 FarmMaker("villa_rustica",-390,420);
+FarmMaker("forest",-390,870);
 
+FarmMaker("forest",60,-840);
 FarmMaker("villa_rustica",60,-480);
 FarmMaker("civitas",60,-30);
-FarmMaker("villa_rustica",60,420);
+FarmMaker("latifundia",60,420);
+//latifundia occupied
 
+FarmMaker("forest",510,-840);
 FarmMaker("villa_rustica",510,-390);
 FarmMaker("villa_rustica",510,-30);
 FarmMaker("villa_rustica",510,420);
+FarmMaker("forest",510,870);
+
+FarmMaker("forest",960,-840);
+FarmMaker("forest",960,-390);
+FarmMaker("forest",960,-30);
+FarmMaker("forest",960,420);
+FarmMaker("forest",960,870);
 
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
