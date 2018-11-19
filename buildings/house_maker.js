@@ -3,9 +3,17 @@ var househigh = 21.0;
 
 if (type =="farmhouse"){
 var farmhouse = new Villa(xPos+28,househigh,zPos+30,0);
-scene.add( farmhouse );
+scene.add( farmhouse ); 
+var farmer = new Person("farmer",xPos+45,zPos);
+scene.add(farmer);   
 }
-else if (type =="farmhouse2"){
+else if (type =="villagehouse"){
+var farmhouse = new Villa(xPos+28,househigh,zPos+30,0);
+scene.add( farmhouse ); 
+var pleb = new Person("pleb",xPos+45,zPos);
+scene.add(pleb);   
+}
+else if (type =="villagehouse2"){
 var farmhouse = new Villa(xPos+20,househigh,zPos-28,Math.PI/2);
 scene.add( farmhouse );
 }
@@ -50,6 +58,8 @@ var temple1 = new Temple(xPos,0,zPos);
 scene.add( temple1 ); 
 var templeCol = new propCollect(xPos,8,zPos-45,"templum"); 
 scene.add(templeCol);
+var augur = new Person("augur",xPos,zPos-45);
+scene.add(augur);  
 }
 else if(type =="fora"){
 var fora1 = new Plaza("venalia","mosaic6",xPos,zPos);

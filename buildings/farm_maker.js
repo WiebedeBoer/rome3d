@@ -18,19 +18,19 @@ fieldMaker("cow",xVil-180,zVil-90);
 }
 else if (farmtype=="civitas"){
     
-    houseMaker("farmhouse",xVil+90,zVil-270);
+    houseMaker("villagehouse",xVil+90,zVil-270);
     houseMaker("potterer",xVil+90,zVil-180);
-    houseMaker("farmhouse",xVil+90,zVil-90);
+    houseMaker("villagehouse",xVil+90,zVil-90);
     houseMaker("carpenter",xVil+90,zVil);
     
     houseMaker("smithy",xVil,zVil-270);
     houseMaker("fora",xVil,zVil-180);
     houseMaker("temple",xVil,zVil-90);
-    houseMaker("farmhouse2",xVil,zVil); //center
+    houseMaker("villagehouse2",xVil,zVil); //center
     
     houseMaker("barn2",xVil-90,zVil-270);
     houseMaker("tavern",xVil-90,zVil-180);
-    houseMaker("farmhouse",xVil-90,zVil-90);
+    houseMaker("villagehouse",xVil-90,zVil-90);
     fieldMaker("grape",xVil-90,zVil);
     
     fieldMaker("sheep",xVil-180,zVil-270);
