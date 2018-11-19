@@ -59,19 +59,33 @@ else if (type=="olive"){
     scene.add(Olive3);
     var Olive4 = new OliveTree(xPos+15,5,zPos-15); 
     scene.add(Olive4);
+
+    var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
+    scene.add(birdCol);
 }
-//fallow land
-else if(type =="fallow"){
-    /*
-    var fenceL2 = new Fence(xPos,0,zPos+30,0,0,0); 
-    scene.add(fenceL2);
-    var fenceR2 = new Fence(xPos,0,zPos-30,0,0,0); 
-    scene.add(fenceR2);
-    var fenceF2 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceF2);
-    var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceB2); 
-    */  
+//grapevine
+else if (type=="grape"){
+    var grape1 = new GrapeVine(xPos+15,0,zPos-15);
+    scene.add( grape1 );
+    var grape2 = new GrapeVine(xPos+15,0,zPos);
+    scene.add( grape2 );
+    var grape3 = new GrapeVine(xPos+15,0,zPos+15);
+    scene.add( grape3 );
+    var grape4 = new GrapeVine(xPos,0,zPos-15);
+    scene.add( grape4 );
+    var grape5 = new GrapeVine(xPos,0,zPos); 
+    scene.add( grape5 );
+    var grape6 = new GrapeVine(xPos,0,zPos+15);
+    scene.add( grape6 );
+    var grape7 = new GrapeVine(xPos-15,0,zPos-15);
+    scene.add( grape7 );
+    var grape8 = new GrapeVine(xPos-15,0,zPos);
+    scene.add( grape8 );
+    var grape9 = new GrapeVine(xPos-15,0,zPos+15);
+    scene.add( grape9 );
+
+    var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
+    scene.add(birdCol);
 }
 //goat pasture
 else if(type =="goat"){
