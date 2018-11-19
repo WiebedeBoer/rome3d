@@ -8,7 +8,7 @@
 <!--camera controls-->
 <script src="controls/FPControls.js"></script>
 <!--buildings and fields-->
-
+<script src="world/urbis.js"></script>
 <!--environment: plane en skybox-->
 <script src="environment/mapPlane.js"></script>
 <script src="environment/Skybox.js"></script>
@@ -83,8 +83,6 @@ gamestart.style.display = "none";
 var updateFcts = [];
 //scene
 var scene = new THREE.Scene();
-//fog
-scene.fog = new THREE.FogExp2( 0xd0e0f0, 0.0002 );
 //renderer
 var renderer = new THREE.WebGLRenderer( { antialias: false } );
 //window
@@ -106,6 +104,13 @@ scene.add(planeroad);
 //skybox
 var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
 scene.add( skyBox );
+//towns
+var town1 = new Urbis("concrete","concrete","concrete","concrete","roof_basilica",30,30,-374,-147);
+scene.add(town1);  
+var villa1 = new Urbis("concrete","concrete","concrete","concrete","roof3",30,30,-367,-38);
+scene.add(villa1); 
+var barrack1 = new Urbis("concrete","concrete","concrete","concrete","roof_wood",30,30,-270,-49);
+scene.add(barrack1); 
 //lighting 
 barracksLighter();
 //moving cube

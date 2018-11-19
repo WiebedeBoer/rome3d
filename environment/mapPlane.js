@@ -4,7 +4,7 @@ class Plane extends THREE.Group {
 
         mPlane = this;
         
-        texture = new THREE.TextureLoader().load( "textures/plane/world.png" );
+        texture = new THREE.TextureLoader().load( "textures/plane/"+this.ground+".png" );
         material = new THREE.MeshBasicMaterial( { map: texture} );      
         geometry = new THREE.PlaneGeometry( this.width, this.length );
         plane = new THREE.Mesh( geometry, material );
