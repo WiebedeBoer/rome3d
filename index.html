@@ -252,22 +252,31 @@ function GameLoop(){
 function newDoc() {
         var x_build = Math.floor((camera.position.x + 1785) / 90); //1785 good
         var z_build = Math.floor((camera.position.z + 1845) / 90); //1845 good
-        var btag = ((z_build - 1) * 40) + x_build; //((z - 1) * 40) +x = good
-        var ambients = xtag[btag].getElementsByTagName("BUSINESS")[0].childNodes[0].nodeValue;
-        if (ambients =="tavern"){
-                window.location.assign("tavern.html");
+
+        if (x_build >=39 || X_build <1 || z_build >=39 || z_build <1){
+                window.location.assign("villa.html"); 
         }
-        else if (ambients =="domus" || ambients =="villa"){
-                window.location.assign("domus.html");
-        }
-        else if (ambients =="bank"){
-                window.location.assign("bank.html");
-        }
-        else if (ambients =="castrum"){
-                window.location.assign("castrum.html");
-        }
-        else if (ambients =="basilica"){
-                window.location.assign("basilica.html");
+        else {
+                var btag = ((z_build - 1) * 40) + x_build; //((z - 1) * 40) +x = good
+                var ambients = xtag[btag].getElementsByTagName("BUSINESS")[0].childNodes[0].nodeValue;
+                if (ambients =="tavern"){
+                        window.location.assign("tavern.html");
+                }
+                else if (ambients =="domus" || ambients =="villa"){
+                        window.location.assign("domus.html");
+                }
+                else if (ambients =="bank"){
+                        window.location.assign("bank.html");
+                }
+                else if (ambients =="castrum"){
+                        window.location.assign("castrum.html");
+                }
+                else if (ambients =="basilica"){
+                        window.location.assign("basilica.html");
+                }
+                else if (ambients =="umbilicus"){
+                        window.location.assign("villa.html");
+                }
         }
         
 }
