@@ -2,63 +2,60 @@ class Urbis extends THREE.Group {
 
     init (){
 
-        var mCityhall = this;
-    
-        //city geometry
-        var cityGeometry= new THREE.Geometry();
-        //city mesh
-        var hallGeometry = new THREE.CubeGeometry(1, 1, 1 );
-        // translate the geometry to place the pivot point at the bottom instead of the center
-        hallGeometry.applyMatrix( new THREE.Matrix4().makeTranslation( 0, 0.5, 0 ) );
-        //tiles
-        var texture = new THREE.TextureLoader().load( "textures/roof/"+this.groundTex+".jpg" );
-        texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-        texture.repeat.set( this.bLength / 50, this.bWidth / 30 );
-        //material
-        var hallMaterials = [
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.leftTex+".jpg"), side: THREE.FrontSide }), //LEFT
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.rightTex+".jpg"), side: THREE.FrontSide }), //RIGHT
-            new THREE.MeshPhongMaterial({ map: texture, side: THREE.FrontSide }), //TOP
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide }), //BOTTOM            
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.frontTex+".jpg"), side: THREE.FrontSide }), //FRONT
-            new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.backTex+".jpg"), side: THREE.FrontSide }), //BACK
-        ];
-        var hallMaterial = new THREE.MeshFaceMaterial(hallMaterials);
-        var meshCityhall = new THREE.Mesh(hallGeometry);
-        // put a position
-        meshCityhall.position.x = this.xPos;
-        meshCityhall.position.z = this.zPos;
-        //put a rotation
-        meshCityhall.rotation.y = 0.5*Math.PI*2;
-        //building scale
-        meshCityhall.scale.x = this.bWidth;
-        meshCityhall.scale.y = 22;
-        meshCityhall.scale.z = this.bLength;
+        var dChurch = this;        
 
-        // merge it with cityGeometry - very important for performance
-        var hallGeometry = meshCityhall.hallGeometry;
-        cityGeometry.mergeMesh(meshCityhall);
-        //add to class
-        var mesh4 = new THREE.Mesh(cityGeometry, hallMaterial);
-        mCityhall.add(mesh4);
-        //add to collision
-        collidableMeshList.push(mesh4);
-    
-    }
+        // instantiate a loader
+        var loader = new THREE.OBJLoader();
 
-    constructor(frontTex,backTex,rightTex,leftTex,groundTex,bWidth,bLength,xPos,zPos){
-        super();        
-        this.frontTex = frontTex;
-        this.backTex = backTex;
-        this.rightTex = rightTex;
-        this.leftTex = leftTex;
-        this.groundTex = groundTex;
-        this.bLength = bLength;
-        this.bWidth = bWidth;
-        this.xPos = xPos;
-        this.zPos = zPos;
+        if (this.type =="amphi_full"){
+            var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xb18868 } );
+        }
+        else if (this.type =="officer"){
+            var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xf3dfcb } );
+        }
+
+        // load a resource
+        loader.load('models/'+this.path+'/'+this.type+'.obj',	function ( object ) {
+
+        object.traverse( function ( child ) {
+        if ( child instanceof THREE.Mesh ) {             
+                child.material = amphiMaterial;
+            }
+        } );
+   
+        dChurch.add(object);
+	    },
+	    // called when loading is in progresses
+	    function () {
+		    console.log(  '100% loaded' );
+	    },
+	    // called when loading has errors
+	    function () {
+		    console.log( 'An error happened' );
+	    }
+);
+
+dChurch.scale.x = this.width;
+dChurch.scale.y = this.height;
+dChurch.scale.z = this.depth;
+dChurch.rotation.y = this.yR;
+dChurch.position.x = this.pX; 
+dChurch.position.y = this.pY; 
+dChurch.position.z = this.pZ; 
+
+    }    
+            
+    constructor(type,path,height,width,depth,pX,pY,pZ,yR){
+        super();
+        this.type = type;
+        this.path = path;       
+        this.height = height;
+        this.width = width;
+        this.depth = depth;
+        this.pX = pX;
+        this.pY = pY;
+        this.pZ = pZ;
+        this.yR = yR;     
         this.init();
     }
-
-
 }

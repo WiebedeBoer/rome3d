@@ -9,6 +9,7 @@
 <script src="controls/FPControls.js"></script>
 <!--buildings and fields-->
 <script src="world/urbis.js"></script>
+<script src="world/place.js"></script>
 <!--environment: plane en skybox-->
 <script src="environment/mapPlane.js"></script>
 <script src="environment/Skybox.js"></script>
@@ -94,7 +95,7 @@ document.getElementById("customcanvas").appendChild(renderer.domElement);
 //camera
 var camera = new THREE.PerspectiveCamera(45, canvasWidth / canvasHeight, 0.01, 5800);
 camera.position.x = -358;
-camera.position.y = 30;
+camera.position.y = 15;
 camera.position.z = -94;
 //environment
 var environmentsize = 2048;
@@ -105,11 +106,14 @@ scene.add(planeroad);
 var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
 scene.add( skyBox );
 //towns
-var town1 = new Urbis("concrete","concrete","concrete","concrete","roof_basilica",30,30,-374,-147);
-scene.add(town1);  
-var villa1 = new Urbis("concrete","concrete","concrete","concrete","roof3",30,30,-367,-38);
+//type, path, height,width,depth, x position,y position,z position,rotation y axis
+var town1 = new Urbis("amphi_full","amphi",0.2,0.2,0.2,-343,2,-68,0);
+scene.add(town1); 
+var town2 = new Place("3d-model","templum",0.005,0.005,0.005,-308,2,-17,0);
+scene.add(town2); 
+var villa1 = new Place("villa","house",5,5,5,-329,2,-54,0);
 scene.add(villa1); 
-var barrack1 = new Urbis("concrete","concrete","concrete","concrete","roof_wood",30,30,-270,-49);
+var barrack1 = new Urbis("officer","contubernium",1,1,1,-270,2,-49,0);
 scene.add(barrack1); 
 //lighting 
 barracksLighter();
@@ -173,7 +177,7 @@ function GameLoop(){
                 MovingCube.position.z = camera.position.z;
                 MovingCube.rotation.y = camera.rotation.y;            
                 //ambient
-                soundGathering();
+                //soundGathering();
         })
         
         //loop runner
