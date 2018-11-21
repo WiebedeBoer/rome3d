@@ -183,8 +183,8 @@ var villa5 = new Place("villa","house",5,5,5, 1254 -halfsize+villa_offset,1.1, 1
 scene.add(villa5); //Memphis
 var villa6 = new Place("villa","house",5,5,5, 659 -halfsize+villa_offset,1.1, 836 -halfsize-villa_offset,0);
 scene.add(villa6); //Bauzanum
-var villa7 = new Place("villa","house",5,5,5, 768 -halfsize+villa_offset,1.1, 1149 -halfsize-villa_offset,0);
-scene.add(villa7); //Paestum
+var villa7 = new Place("villa","house",5,5,5, 1410 -halfsize+villa_offset,1.1, 1515 -halfsize-villa_offset,0);
+scene.add(villa7); //Bostra
 var villa8 = new Place("villa","house",5,5,5, 794 -halfsize+villa_offset,1.1, 1155 -halfsize-villa_offset,0);
 scene.add(villa8); //Grumentum
 var villa9 = new Place("villa","house",5,5,5, 690 -halfsize+villa_offset,1.1, 1014 -halfsize-villa_offset,0);
@@ -209,8 +209,7 @@ var villa18 = new Place("villa","house",5,5,5, 361 -halfsize+villa_offset,1.1, 9
 scene.add(villa18); //Tolosa
 var villa19 = new Place("villa","house",5,5,5, 301 -halfsize+villa_offset,1.1, 924 -halfsize-villa_offset,0);
 scene.add(villa19); //Burdigala
-var villa20 = new Place("villa","house",5,5,5, 1410 -halfsize+villa_offset,1.1, 1515 -halfsize-villa_offset,0);
-scene.add(villa20); //Bostra
+
 
 
 /*
@@ -292,82 +291,121 @@ scene.add(theatre); //
 */
 
 //constructor: building type, front texture, back texture, right texture, left texture, top texture, building height, width, length, x position,y position,z position, y rotation
-var horreum1 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1353 -halfsize,0, 1552 -halfsize,0);
+//south, north, west, east
+var horreum1 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 1353 -halfsize,0, 1552 -halfsize,0);
 scene.add(horreum1); //Ascalon
-var horreum2 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1373 -halfsize,0, 1481 -halfsize,0);
+var horreum2 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 1373 -halfsize,0, 1481 -halfsize,0);
 scene.add(horreum2); //Tyrus
-var horreum3 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1363 -halfsize,0, 1515 -halfsize,0);
+var horreum3 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 1363 -halfsize,0, 1515 -halfsize,0);
 scene.add(horreum3); //Caesarea Maritima
-var horreum4 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 636 -halfsize,0, 1366 -halfsize,0);
+var horreum4 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 636 -halfsize,0, 1366 -halfsize,0);
 scene.add(horreum4); //Hadrumetum
-var horreum5 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 620 -halfsize,0, 1453 -halfsize,0);
+var horreum5 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 620 -halfsize,0, 1453 -halfsize,0);
 scene.add(horreum5); //Tacape
-var horreum6 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 746 -halfsize,0, 1510 -halfsize,0);
+var horreum6 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 746 -halfsize,0, 1510 -halfsize,0);
 scene.add(horreum6); //Leptis Magna
-var horreum7 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 413 -halfsize,0, 1064 -halfsize,0);
+var horreum7 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 413 -halfsize,0, 1064 -halfsize,0);
 scene.add(horreum7); //Emporiae
 var horreum8 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 356 -halfsize,0, 1113 -halfsize,0);
 scene.add(horreum8); //Tarraco
-var horreum9 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 317 -halfsize,0, 1168 -halfsize,0);
+var horreum9 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 317 -halfsize,0, 1168 -halfsize,0);
 scene.add(horreum9); //Saguntum
 var horreum10 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 399 -halfsize,0, 1187 -halfsize,0);
 scene.add(horreum10); //Palma
 var horreum11 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 361 -halfsize,0, 1218 -halfsize,0);
 scene.add(horreum11); //Caleta
-var horreum12 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1293 -halfsize,0, 1579 -halfsize,0);
+var horreum12 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1293 -halfsize,0, 1579 -halfsize,0);
 scene.add(horreum12); //Pelusium
-var horreum13 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1214 -halfsize,0, 1572 -halfsize,0);
+var horreum13 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1214 -halfsize,0, 1572 -halfsize,0);
 scene.add(horreum13); //Alexandria
-var horreum14 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 973 -halfsize,0, 1501 -halfsize,0);
+var horreum14 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 973 -halfsize,0, 1501 -halfsize,0);
 scene.add(horreum14); //Cyrene
 var horreum15 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 746 -halfsize,0, 1127 -halfsize,0);
 scene.add(horreum15); //Neapolis
-var horreum16 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 627 -halfsize,0, 1318 -halfsize,0);
+var horreum16 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 627 -halfsize,0, 1318 -halfsize,0);
 scene.add(horreum16); //Carthago
-var horreum17 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 620 -halfsize,0, 1309 -halfsize,0);
+var horreum17 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 620 -halfsize,0, 1309 -halfsize,0);
 scene.add(horreum17); //Utica
 var horreum18 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 587 -halfsize,0, 947 -halfsize,0);
 scene.add(horreum18); //Genua
 var horreum19 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 480 -halfsize,0, 1004 -halfsize,0);
 scene.add(horreum19); //Massilia
-var horreum20 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 409 -halfsize,0, 1010 -halfsize,0);
+var horreum20 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 409 -halfsize,0, 1010 -halfsize,0);
 scene.add(horreum20); //Narbo Martius
-var horreum21 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 788 -halfsize,0, 1259 -halfsize,0);
+var horreum21 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 788 -halfsize,0, 1259 -halfsize,0);
 scene.add(horreum21); //Rhegium
 var horreum22 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 112 -halfsize,0, 1299 -halfsize,0);
 scene.add(horreum22); //Tartessus
 var horreum23 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 725 -halfsize,0, 1297 -halfsize,0);
 scene.add(horreum23); //Agrigentum
-var horreum24 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 692 -halfsize,0, 1274 -halfsize,0);
+var horreum24 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 692 -halfsize,0, 1274 -halfsize,0);
 scene.add(horreum24); //Lilybaeum
-var horreum25 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 718 -halfsize,0, 1259 -halfsize,0);
+var horreum25 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 718 -halfsize,0, 1259 -halfsize,0);
 scene.add(horreum25); //Panormus
 var horreum26 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1071 -halfsize,0, 1388 -halfsize,0);
 scene.add(horreum26); //Heracleum
 var horreum27 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1037 -halfsize,0, 1382 -halfsize,0);
 scene.add(horreum27); //Kydonia
-var horreum28 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1162 -halfsize,0, 1339 -halfsize,0);
+var horreum28 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 1162 -halfsize,0, 1339 -halfsize,0);
 scene.add(horreum28); //Rhodus
 var horreum29 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 1077 -halfsize,0, 1291 -halfsize,0);
 scene.add(horreum29); //Delos
-var horreum30 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 604 -halfsize,0, 1065 -halfsize,0);
+var horreum30 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 604 -halfsize,0, 1065 -halfsize,0);
 scene.add(horreum30); //Aleria
-var horreum31 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 570 -halfsize,0, 1129 -halfsize,0);
+var horreum31 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 570 -halfsize,0, 1129 -halfsize,0);
 scene.add(horreum31); //Turris Libyssonis
 var horreum32 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 591 -halfsize,0, 1205 -halfsize,0);
 scene.add(horreum32); //Caralis
 var horreum33 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 835 -halfsize,0, 1146 -halfsize,0);
 scene.add(horreum33); //Tarentum
-var horreum34 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 855 -halfsize,0, 1138 -halfsize,0);
+var horreum34 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 855 -halfsize,0, 1138 -halfsize,0);
 scene.add(horreum34); //Brundisium
-var horreum35 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 753 -halfsize,0, 1133 -halfsize,0);
+var horreum35 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 753 -halfsize,0, 1133 -halfsize,0);
 scene.add(horreum35); //Pompei
-var horreum36 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 686 -halfsize,0, 1084 -halfsize,0);
+var horreum36 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 686 -halfsize,0, 1084 -halfsize,0);
 scene.add(horreum36); //Ostia
-var horreum37 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 630 -halfsize,0, 983 -halfsize,0);
+var horreum37 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 630 -halfsize,0, 983 -halfsize,0);
 scene.add(horreum37); //Pisa
-
-
+var horreum38 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 768 -halfsize,0, 1149 -halfsize,0);
+scene.add(horreum38); //Paestum
+var horreum39 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 613 -halfsize,0, 1298 -halfsize,0);
+scene.add(horreum39); //Hippo Zarytus
+var horreum40 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 550 -halfsize,0, 1315 -halfsize,0);
+scene.add(horreum40); //Hippo Regius
+var horreum41 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 525 -halfsize,0, 1317 -halfsize,0);
+scene.add(horreum41); //Russicada
+var horreum42 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 471 -halfsize,0, 1324 -halfsize,0);
+scene.add(horreum42); //Saldae
+var horreum43 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 411 -halfsize,0, 1325 -halfsize,0);
+scene.add(horreum43); //Icosium
+var horreum44 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 385 -halfsize,0, 1330 -halfsize,0);
+scene.add(horreum44); //Caesarea Mauretaniae
+var horreum45 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 358 -halfsize,0, 1335 -halfsize,0);
+scene.add(horreum45); //Cartenna
+var horreum46 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 323 -halfsize,0, 1357 -halfsize,0);
+scene.add(horreum46); //Murustaga
+var horreum47 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 307 -halfsize,0, 1194 -halfsize,0);
+scene.add(horreum47); //Valentia Edatonorum
+var horreum48 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 305 -halfsize,0, 1247 -halfsize,0);
+scene.add(horreum48); //Lucentum
+var horreum49 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 290 -halfsize,0, 1282 -halfsize,0);
+scene.add(horreum49); //Carthago Nova
+var horreum50 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 229 -halfsize,0, 1322 -halfsize,0);
+scene.add(horreum50); //Abdera
+var horreum51 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 186 -halfsize,0, 1325 -halfsize,0);
+scene.add(horreum51); //Malaca
+var horreum52 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 231 -halfsize,0, 1390 -halfsize,0);
+scene.add(horreum52); //Rusadir
+var horreum53 = new Dock("horreum","horrea_wall","horrea_wall","horrea_wall","dock_wall","roof_wood",5,5,5, 159 -halfsize,0, 1364 -halfsize,0);
+scene.add(horreum53); //Septem
+var horreum54 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, 144 -halfsize,0, 1369 -halfsize,0);
+scene.add(horreum54); //Tingis
+var horreum55 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 131 -halfsize,0, 1333 -halfsize,0);
+scene.add(horreum55); //Gadeira
+var horreum56 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 136 -halfsize,0, 1394 -halfsize,0);
+scene.add(horreum56); //Lixus
+var horreum57 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",5,5,5, 114 -halfsize,0, 1449 -halfsize,0);
+scene.add(horreum57); //Sala
 
 /*
 var horreum = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",5,5,5, -halfsize,0, -halfsize,0);
