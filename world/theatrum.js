@@ -1,4 +1,4 @@
-class Urbis extends THREE.Group {
+class Theatrum extends THREE.Group {
 
     init (){
 
@@ -12,9 +12,6 @@ class Urbis extends THREE.Group {
         }
         else if (this.type =="officer"){
             var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xf3dfcb } );
-        }
-        else if (this.type =="theatre"){
-            var amphiMaterial = new THREE.MeshPhongMaterial( { color: 0xb18868 } );
         }
 
         // load a resource
