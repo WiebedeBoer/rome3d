@@ -3,11 +3,12 @@ function WorldBuilder(){
 /*
 1 amphitheatre
 34 temple
-164 villa
-112 oppidum
+167 villa
+102 oppidum
 19 theatre
 145 dock
 47 oasis
+7 baths
 522 towns
 */
 
@@ -27,12 +28,24 @@ var pyramid = new Place("CHAHIN_PYRAMID","pyramid",1,1,1, 1248 -halfsize,0, 1623
 scene.add(pyramid); //pyramid
 
 //hanging gardens
-var palmtree = new Palm( 1648 -halfsize, 1512 -halfsize);
-scene.add(palmtree);
-var palmtree = new Palm( 1648 -halfsize, 1515 -halfsize);
-scene.add(palmtree);
-var palmtree = new Palm( 1648 -halfsize, 1518 -halfsize);
-scene.add(palmtree);
+var palmtree1 = new Palm( 1648 -halfsize, 1512 -halfsize);
+scene.add(palmtree1);
+var palmtree2 = new Palm( 1648 -halfsize, 1515 -halfsize);
+scene.add(palmtree2);
+var palmtree3 = new Palm( 1648 -halfsize, 1518 -halfsize);
+scene.add(palmtree3);
+
+//cedar woods
+var cedartree1 = new Cedar( 1368 -halfsize, 1309 -halfsize);
+scene.add(cedartree1);
+var cedartree2 = new Cedar( 1409 -halfsize, 1447 -halfsize);
+scene.add(cedartree2);
+var cedartree3 = new Cedar( 1430 -halfsize, 1407 -halfsize);
+scene.add(cedartree3);
+var cedartree4 = new Cedar( 1272 -halfsize, 1313 -halfsize);
+scene.add(cedartree4);
+var cedartree5 = new Cedar( 1396 -halfsize, 1454 -halfsize);
+scene.add(cedartree5);
 
 //1 = yellow, 2 = brown orange, 3 = dark blue, 4 = dark red, 5 = light grey
 
@@ -71,8 +84,8 @@ var temple16 = new Place("3d-model","templum5",0.005,0.005,0.005, 1000 -halfsize
 scene.add(temple16); //Sarmizegetusa
 var temple17 = new Place("3d-model","templum5",0.005,0.005,0.005, 982 -halfsize,0, 891 -halfsize,0);
 scene.add(temple17); //Tibiscum
-var temple18 = new Place("3d-model","templum5",0.005,0.005,0.005, 776 -halfsize,0, 851 -halfsize,0);
-scene.add(temple18); //Celeia
+var temple18 = new Place("3d-model","templum5",0.005,0.005,0.005, 1024 -halfsize,0, 858 -halfsize,0);
+scene.add(temple18); //Apulum
 var temple19 = new Place("3d-model","templum5",0.005,0.005,0.005, 1011 -halfsize,0, 799 -halfsize,0);
 scene.add(temple19); //Porolissum
 var temple20 = new Place("3d-model","templum5",0.005,0.005,0.005, 733 -halfsize,0, 924 -halfsize,0);
@@ -81,8 +94,8 @@ var temple21 = new Place("3d-model","templum5",0.005,0.005,0.005, 82 -halfsize,0
 scene.add(temple21); //Ebora
 var temple22 = new Place("3d-model","templum5",0.005,0.005,0.005, 176 -halfsize,0, 1270 -halfsize,0);
 scene.add(temple22); //Corduba
-var temple23 = new Place("3d-model","templum5",0.005,0.005,0.005, 1024 -halfsize,0, 858 -halfsize,0);
-scene.add(temple23); //Apulum
+var temple23 = new Place("3d-model","templum5",0.005,0.005,0.005, 776 -halfsize,0, 851 -halfsize,0);
+scene.add(temple23); //Celeia
 var temple24 = new Place("3d-model","templum5",0.005,0.005,0.005, 129 -halfsize,0, 1220 -halfsize,0);
 scene.add(temple24); //Emerita
 var temple25 = new Place("3d-model","templum2",0.005,0.005,0.005, 624 -halfsize,0, 887 -halfsize,0);
@@ -167,8 +180,8 @@ var villa29 = new Place("villa","house",5,5,5, 576 -halfsize+villa_offset,1.1, 1
 scene.add(villa29); //Thelepte
 var villa30 = new Place("villa","house",5,5,5, 562 -halfsize+villa_offset,1.1, 1384 -halfsize-villa_offset,0);
 scene.add(villa30); //Theveste
-var villa31 = new Place("villa","house",5,5,5, 531 -halfsize+villa_offset,1.1, 1385 -halfsize-villa_offset,0);
-scene.add(villa31); //Aquae Flavianae
+var villa31 = new Place("villa","house",5,5,5, 913 -halfsize+villa_offset,1.1, 976 -halfsize-villa_offset,0);
+scene.add(villa31); //Capedunum
 var villa32 = new Place("villa","house",5,5,5, 516 -halfsize+villa_offset,1.1, 1382 -halfsize-villa_offset,0);
 scene.add(villa32); //Thamugadi
 var villa33 = new Place("villa","house",5,5,5, 508 -halfsize+villa_offset,1.1, 1379 -halfsize-villa_offset,0);
@@ -231,16 +244,16 @@ var villa61 = new Place("villa","house",5,5,5, 776 -halfsize+villa_offset,1.1, 8
 scene.add(villa61); //Metulum
 var villa62 = new Place("villa","house",5,5,5, 809 -halfsize+villa_offset,1.1, 891 -halfsize-villa_offset,0);
 scene.add(villa62); //Siscia
-var villa63 = new Place("villa","house",5,5,5, 834 -halfsize+villa_offset,1.1, 885 -halfsize-villa_offset,0);
-scene.add(villa63); //Aquae Balissae
-var villa64 = new Place("villa","house",5,5,5, 811 -halfsize+villa_offset,1.1, 853 -halfsize-villa_offset,0);
-scene.add(villa64); //Aquae Iasae
+var villa63 = new Place("villa","house",5,5,5, 1174 -halfsize+villa_offset,1.5, 905 -halfsize-villa_offset,0);
+scene.add(villa63); //Noviodunum
+var villa64 = new Place("villa","house",5,5,5, 1134 -halfsize+villa_offset,1.5, 963 -halfsize-villa_offset,0);
+scene.add(villa64); //Durostorum
 var villa65 = new Place("villa","house",5,5,5, 907 -halfsize+villa_offset,1.1, 917 -halfsize-villa_offset,0);
 scene.add(villa65); //Sirmium
 var villa66 = new Place("villa","house",5,5,5, 953 -halfsize+villa_offset,1.1, 931 -halfsize-villa_offset,0);
 scene.add(villa66); //Viminacium
-var villa67 = new Place("villa","house",5,5,5, 989 -halfsize+villa_offset,1.1, 923 -halfsize-villa_offset,0);
-scene.add(villa67); //Aquae Herculi
+var villa67 = new Place("villa","house",5,5,5, 858 -halfsize+villa_offset,1.1, 908 -halfsize-villa_offset,0);
+scene.add(villa67); //Marsonia
 var villa68 = new Place("villa","house",5,5,5, 997 -halfsize+villa_offset,1.1, 936 -halfsize-villa_offset,0);
 scene.add(villa68); //Drobeta
 var villa69 = new Place("villa","house",5,5,5, 1049 -halfsize+villa_offset,1.1, 960 -halfsize-villa_offset,0);
@@ -263,8 +276,8 @@ var villa77 = new Place("villa","house",5,5,5, 983 -halfsize+villa_offset,1.1, 1
 scene.add(villa77); //Stobi
 var villa78 = new Place("villa","house",5,5,5, 960 -halfsize+villa_offset,1.1, 1070 -halfsize-villa_offset,0);
 scene.add(villa78); //Scupi
-var villa79 = new Place("villa","house",5,5,5, 403 -halfsize+villa_offset,1.1, 1079 -halfsize-villa_offset,0);
-scene.add(villa79); //Aquae Calidae
+var villa79 = new Place("villa","house",5,5,5, 985 -halfsize+villa_offset,1.1, 974 -halfsize-villa_offset,0);
+scene.add(villa79); //Felix Romulania
 var villa80 = new Place("villa","house",5,5,5, 338 -halfsize+villa_offset,1.1, 1089 -halfsize-villa_offset,0);
 scene.add(villa80); //Ilerda
 var villa81 = new Place("villa","house",5,5,5, 292 -halfsize+villa_offset,1.1, 1087 -halfsize-villa_offset,0);
@@ -435,6 +448,12 @@ var villa163 = new Place("villa","house",5,5,5, 1885 -halfsize+villa_offset,1.1,
 scene.add(villa163); //Amol
 var villa164 = new Place("villa","house",5,5,5, 1948 -halfsize+villa_offset,1.1, 1319 -halfsize-villa_offset,0);
 scene.add(villa164); //Gorgan
+var villa165 = new Place("villa","house",5,5,5, 1056 -halfsize+villa_offset,1.1, 999 -halfsize-villa_offset,0);
+scene.add(villa165); //Storgasia
+var villa166 = new Place("villa","house",5,5,5, 931 -halfsize+villa_offset,1.1, 927 -halfsize-villa_offset,0);
+scene.add(villa166); //Singidunum
+var villa167 = new Place("villa","house",5,5,5, 963 -halfsize+villa_offset,1.1, 912 -halfsize-villa_offset,0);
+scene.add(villa167); //Argidava
 
 //towns oppidum
 var oppidum1 = new Place("house3","house",5,5,5, 514 -halfsize+villa_offset,1.5, 939 -halfsize+villa_offset,0);
@@ -465,8 +484,8 @@ var oppidum13 = new Place("house3","house",5,5,5, 352 -halfsize+villa_offset,1.5
 scene.add(oppidum13); //Rotomagus
 var oppidum14 = new Place("house3","house",5,5,5, 454 -halfsize+villa_offset,1.5, 780 -halfsize+villa_offset,0);
 scene.add(oppidum14); //Alesia
-var oppidum15 = new Place("house3","house",5,5,5, 1056 -halfsize+villa_offset,1.5, 999 -halfsize+villa_offset,0);
-scene.add(oppidum15); //Storgasia
+var oppidum15 = new Place("house3","house",5,5,5, 921 -halfsize+villa_offset,1.5, 850 -halfsize+villa_offset,0);
+scene.add(oppidum15); //Partiscum
 var oppidum16 = new Place("house3","house",5,5,5, 500 -halfsize+villa_offset,1.5, 796 -halfsize+villa_offset,0);
 scene.add(oppidum16); //Vesontio
 var oppidum17 = new Place("house3","house",5,5,5, 479 -halfsize+villa_offset,1.5, 761 -halfsize+villa_offset,0);
@@ -501,8 +520,8 @@ var oppidum31 = new Place("house3","house",5,5,5, 68 -halfsize+villa_offset,1.5,
 scene.add(oppidum31); //Aeminium
 var oppidum32 = new Place("house3","house",5,5,5, 67 -halfsize+villa_offset,1.5, 1092 -halfsize+villa_offset,0);
 scene.add(oppidum32); //Bracara
-var oppidum33 = new Place("house3","house",5,5,5, 96 -halfsize+villa_offset,1.5, 1083 -halfsize+villa_offset,0);
-scene.add(oppidum33); //Aquae Flaviae
+var oppidum33 = new Place("house3","house",5,5,5, 1080 -halfsize+villa_offset,1.5, 887 -halfsize+villa_offset,0);
+scene.add(oppidum33); //Cumidava
 var oppidum34 = new Place("house3","house",5,5,5, 138 -halfsize+villa_offset,1.5, 1162 -halfsize+villa_offset,0);
 scene.add(oppidum34); //Caparra
 var oppidum35 = new Place("house3","house",5,5,5, 149 -halfsize+villa_offset,1.5, 1122 -halfsize+villa_offset,0);
@@ -633,34 +652,15 @@ var oppidum97 = new Place("house3","house",5,5,5, 794 -halfsize+villa_offset,1.5
 scene.add(oppidum97); //Poetovio
 var oppidum98 = new Place("house3","house",5,5,5, 864 -halfsize+villa_offset,1.5, 860 -halfsize+villa_offset,0);
 scene.add(oppidum98); //Sopianae
-var oppidum99 = new Place("house3","house",5,5,5, 858 -halfsize+villa_offset,1.5, 908 -halfsize+villa_offset,0);
-scene.add(oppidum99); //Marsonia
-var oppidum100 = new Place("house3","house",5,5,5, 921 -halfsize+villa_offset,1.5, 850 -halfsize+villa_offset,0);
-scene.add(oppidum100); //Partiscum
-var oppidum101 = new Place("house3","house",5,5,5, 931 -halfsize+villa_offset,1.5, 927 -halfsize+villa_offset,0);
-scene.add(oppidum101); //Singidunum
-var oppidum102 = new Place("house3","house",5,5,5, 867 -halfsize+villa_offset,1.5, 977 -halfsize+villa_offset,0);
-scene.add(oppidum102); //Aquae Sulphurae
-var oppidum103 = new Place("house3","house",5,5,5, 913 -halfsize+villa_offset,1.5, 976 -halfsize+villa_offset,0);
-scene.add(oppidum103); //Capedunum
-var oppidum104 = new Place("house3","house",5,5,5, 963 -halfsize+villa_offset,1.5, 912 -halfsize+villa_offset,0);
-scene.add(oppidum104); //Argidava
-var oppidum105 = new Place("house3","house",5,5,5, 985 -halfsize+villa_offset,1.5, 974 -halfsize+villa_offset,0);
-scene.add(oppidum105); //Felix Romulania
-var oppidum106 = new Place("house3","house",5,5,5, 1003 -halfsize+villa_offset,1.5, 867 -halfsize+villa_offset,0);
-scene.add(oppidum106); //Micia
-var oppidum107 = new Place("house3","house",5,5,5, 1026 -halfsize+villa_offset,1.5, 871 -halfsize+villa_offset,0);
-scene.add(oppidum107); //Napoca
-var oppidum108 = new Place("house3","house",5,5,5, 1125 -halfsize+villa_offset,1.5, 790 -halfsize+villa_offset,0);
-scene.add(oppidum108); //Cotnari
-var oppidum109 = new Place("house3","house",5,5,5, 1108 -halfsize+villa_offset,1.5, 812 -halfsize+villa_offset,0);
-scene.add(oppidum109); //Petrodava
-var oppidum110 = new Place("house3","house",5,5,5, 1080 -halfsize+villa_offset,1.5, 887 -halfsize+villa_offset,0);
-scene.add(oppidum110); //Cumidava
-var oppidum111 = new Place("house3","house",5,5,5, 1174 -halfsize+villa_offset,1.5, 905 -halfsize+villa_offset,0);
-scene.add(oppidum111); //Noviodunum
-var oppidum112 = new Place("house3","house",5,5,5, 1134 -halfsize+villa_offset,1.5, 963 -halfsize+villa_offset,0);
-scene.add(oppidum112); //Durostorum
+var oppidum99 = new Place("house3","house",5,5,5, 1003 -halfsize+villa_offset,1.5, 867 -halfsize+villa_offset,0);
+scene.add(oppidum99); //Micia
+var oppidum100 = new Place("house3","house",5,5,5, 1026 -halfsize+villa_offset,1.5, 871 -halfsize+villa_offset,0);
+scene.add(oppidum100); //Napoca
+var oppidum101 = new Place("house3","house",5,5,5, 1125 -halfsize+villa_offset,1.5, 790 -halfsize+villa_offset,0);
+scene.add(oppidum101); //Cotnari
+var oppidum102 = new Place("house3","house",5,5,5, 1108 -halfsize+villa_offset,1.5, 812 -halfsize+villa_offset,0);
+scene.add(oppidum102); //Petrodava
+
 
 //theatre towns
 var theatre1 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1003 -halfsize,0.75, 1243 -halfsize,0);
@@ -701,6 +701,26 @@ var theatre18 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1110 -halfsize,0.75, 11
 scene.add(theatre18); //Troas
 var theatre19 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1082 -halfsize,0.75, 1124 -halfsize,0);
 scene.add(theatre19); //Maroneia
+
+//bath towns
+var thermae = new Dock("horreum","bath_front","bath_wall","bath_wall","bath_wall","concrete",4,3.5,4, 531 -halfsize,0, 1385 -halfsize,0);
+scene.add(thermae); //Aquae Flavianae
+var thermae = new Dock("horreum","bath_front","bath_wall","bath_wall","bath_wall","concrete",4,3.5,4, 834 -halfsize,0, 885 -halfsize,0);
+scene.add(thermae); //Aquae Balissae
+var thermae = new Dock("horreum","bath_front","bath_wall","bath_wall","bath_wall","concrete",4,3.5,4, 811 -halfsize,0, 853 -halfsize,0);
+scene.add(thermae); //Aquae Iasae
+var thermae = new Dock("horreum","bath_front","bath_wall","bath_wall","bath_wall","concrete",4,3.5,4, 989 -halfsize,0, 923 -halfsize,0);
+scene.add(thermae); //Aquae Herculi
+var thermae = new Dock("horreum","bath_front","bath_wall","bath_wall","bath_wall","concrete",4,3.5,4, 403 -halfsize,0, 1079 -halfsize,0);
+scene.add(thermae); //Aquae Calidae
+var thermae = new Dock("horreum","bath_front","bath_wall","bath_wall","bath_wall","concrete",4,3.5,4, 867 -halfsize,0, 977 -halfsize,0);
+scene.add(thermae); //Aquae Sulphurae
+var thermae = new Dock("horreum","bath_front","bath_wall","bath_wall","bath_wall","concrete",4,3.5,4, 96 -halfsize,0, 1083 -halfsize,0);
+scene.add(thermae); //Aquae Flaviae
+
+
+
+
 
 //constructor: building type, front texture, back texture, right texture, left texture, top texture, building height, width, length, x position,y position,z position, y rotation
 //south, north, west, east
