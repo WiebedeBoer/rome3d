@@ -2,16 +2,14 @@ function WorldBuilder(){
 
 /*
 1 amphitheatre
-32 temple
+34 temple
 164 villa
 112 oppidum
-22 theatre
-144 dock
+19 theatre
+145 dock
 47 oasis
 522 towns
 */
-
-
 
 //type, path, height,width,depth, x position,y position,z position,rotation y axis
 
@@ -24,71 +22,89 @@ scene.add(barrack); //
 var town1 = new Urbis("amphi_full","amphi",0.2,0.2,0.2,693-halfsize,0.75,1076-halfsize,0);
 scene.add(town1); //Rome
 
+//pyramid
+var pyramid = new Place("CHAHIN_PYRAMID","pyramid",1,1,1, 1248 -halfsize,0, 1623 -halfsize,0);
+scene.add(pyramid); //pyramid
+
+//hanging gardens
+var palmtree = new Palm( 1648 -halfsize, 1512 -halfsize);
+scene.add(palmtree);
+var palmtree = new Palm( 1648 -halfsize, 1515 -halfsize);
+scene.add(palmtree);
+var palmtree = new Palm( 1648 -halfsize, 1518 -halfsize);
+scene.add(palmtree);
+
+//1 = yellow, 2 = brown orange, 3 = dark blue, 4 = dark red, 5 = light grey
+
 //temple towns
-var temple1 = new Place("3d-model","templum",0.005,0.005,0.005, 592 -halfsize,0, 1393 -halfsize,0);
-scene.add(temple1); //Sufetula
-var temple2 = new Place("3d-model","templum",0.005,0.005,0.005, 1029 -halfsize,0, 1265 -halfsize,0);
-scene.add(temple2); //Athenae
-var temple3 = new Place("3d-model","templum",0.005,0.005,0.005, 989 -halfsize,0, 1240 -halfsize,0);
-scene.add(temple3); //Delphi
-var temple4 = new Place("3d-model","templum",0.005,0.005,0.005, 1363 -halfsize,0, 1316 -halfsize,0);
-scene.add(temple4); //Tarsus
-var temple5 = new Place("3d-model","templum",0.005,0.005,0.005, 1302 -halfsize,0, 1172 -halfsize,0);
-scene.add(temple5); //Ancyra
-var temple6 = new Place("3d-model","templum",0.005,0.005,0.005, 595 -halfsize,0, 1338 -halfsize,0);
-scene.add(temple6); //Thugga
-var temple7 = new Place("3d-model","templum",0.005,0.005,0.005, 1000 -halfsize,0, 889 -halfsize,0);
-scene.add(temple7); //Sarmizegetusa
-var temple8 = new Place("3d-model","templum",0.005,0.005,0.005, 982 -halfsize,0, 891 -halfsize,0);
-scene.add(temple8); //Tibiscum
-var temple9 = new Place("3d-model","templum",0.005,0.005,0.005, 1137 -halfsize,0, 1268 -halfsize,0);
-scene.add(temple9); //Ephesus
-var temple10 = new Place("3d-model","templum",0.005,0.005,0.005, 383 -halfsize,0, 1101 -halfsize,0);
-scene.add(temple10); //Barcino
-var temple11 = new Place("3d-model","templum",0.005,0.005,0.005, 1404 -halfsize,0, 1470 -halfsize,0);
-scene.add(temple11); //Damascus
-var temple12 = new Place("3d-model","templum",0.005,0.005,0.005, 1465 -halfsize,0, 1423 -halfsize,0);
-scene.add(temple12); //Palmyra
-var temple13 = new Place("3d-model","templum",0.005,0.005,0.005, 1024 -halfsize,0, 858 -halfsize,0);
-scene.add(temple13); //Apulum
-var temple14 = new Place("3d-model","templum",0.005,0.005,0.005, 129 -halfsize,0, 1220 -halfsize,0);
-scene.add(temple14); //Emerita
-var temple15 = new Place("3d-model","templum",0.005,0.005,0.005, 1372 -halfsize,0, 1547 -halfsize,0);
-scene.add(temple15); //Hierosolyma
-var temple16 = new Place("3d-model","templum",0.005,0.005,0.005, 733 -halfsize,0, 924 -halfsize,0);
-scene.add(temple16); //Pola
-var temple17 = new Place("3d-model","templum",0.005,0.005,0.005, 82 -halfsize,0, 1238 -halfsize,0);
-scene.add(temple17); //Ebora
-var temple18 = new Place("3d-model","templum",0.005,0.005,0.005, 176 -halfsize,0, 1270 -halfsize,0);
-scene.add(temple18); //Corduba
-var temple19 = new Place("3d-model","templum",0.005,0.005,0.005, 624 -halfsize,0, 887 -halfsize,0);
-scene.add(temple19); //Brixia
-var temple20 = new Place("3d-model","templum",0.005,0.005,0.005, 465 -halfsize,0, 891 -halfsize,0);
-scene.add(temple20); //Vienne
-var temple21 = new Place("3d-model","templum",0.005,0.005,0.005, 346 -halfsize,0, 529 -halfsize,0);
-scene.add(temple21); //Camulodunum
-var temple22 = new Place("3d-model","templum",0.005,0.005,0.005, 315 -halfsize,0, 551 -halfsize,0);
-scene.add(temple22); //Londinium
-var temple23 = new Place("3d-model","templum",0.005,0.005,0.005, 249 -halfsize,0, 560 -halfsize,0);
-scene.add(temple23); //Aquae Sulis
-var temple24 = new Place("3d-model","templum",0.005,0.005,0.005, 1394 -halfsize,0, 1540 -halfsize,0);
-scene.add(temple24); //Philadelphia
-var temple25 = new Place("3d-model","templum",0.005,0.005,0.005, 776 -halfsize,0, 851 -halfsize,0);
-scene.add(temple25); //Celeia
-var temple26 = new Place("3d-model","templum",0.005,0.005,0.005, 1011 -halfsize,0, 799 -halfsize,0);
-scene.add(temple26); //Porolissum
-var temple27 = new Place("3d-model","templum",0.005,0.005,0.005, 966 -halfsize,0, 1281 -halfsize,0);
-scene.add(temple27); //Olympia
-var temple28 = new Place("3d-model","templum",0.005,0.005,0.005, 447 -halfsize,0, 811 -halfsize,0);
-scene.add(temple28); //Augustodunum
-var temple29 = new Place("3d-model","templum",0.005,0.005,0.005, 341 -halfsize,0, 907 -halfsize,0);
-scene.add(temple29); //Vesunna
-var temple30 = new Place("3d-model","templum",0.005,0.005,0.005, 288 -halfsize,0, 983 -halfsize,0);
-scene.add(temple30); //Aquensium
-var temple31 = new Place("3d-model","templum",0.005,0.005,0.005, 449 -halfsize,0, 977 -halfsize,0);
-scene.add(temple31); //Nemausus
-var temple32 = new Place("3d-model","templum",0.005,0.005,0.005, 497 -halfsize,0, 878 -halfsize,0);
-scene.add(temple32); //Aquae Gratianae
+var temple1 = new Place("3d-model","templum5",0.005,0.005,0.005, 1363 -halfsize,0, 1316 -halfsize,0);
+scene.add(temple1); //Tarsus
+var temple2 = new Place("3d-model","templum5",0.005,0.005,0.005, 1302 -halfsize,0, 1172 -halfsize,0);
+scene.add(temple2); //Ancyra
+var temple3 = new Place("3d-model","templum",0.005,0.005,0.005, 1404 -halfsize,0, 1470 -halfsize,0);
+scene.add(temple3); //Damascus
+var temple4 = new Place("3d-model","templum",0.005,0.005,0.005, 1465 -halfsize,0, 1423 -halfsize,0);
+scene.add(temple4); //Palmyra
+var temple5 = new Place("3d-model","templum",0.005,0.005,0.005, 1372 -halfsize,0, 1547 -halfsize,0);
+scene.add(temple5); //Hierosolyma
+var temple6 = new Place("3d-model","templum",0.005,0.005,0.005, 1394 -halfsize,0, 1540 -halfsize,0);
+scene.add(temple6); //Philadelphia
+var temple7 = new Place("3d-model","templum4",0.005,0.005,0.005, 989 -halfsize,0, 1240 -halfsize,0);
+scene.add(temple7); //Delphi, oracle
+var temple8 = new Place("3d-model","templum4",0.005,0.005,0.005, 975 -halfsize,0, 1303 -halfsize,0);
+scene.add(temple8); //Messenia, oracle
+var temple9 = new Place("3d-model","templum3",0.005,0.005,0.005, 1214 -halfsize,0, 1572 -halfsize,0);
+scene.add(temple9); //Alexandria, great library
+var temple10 = new Place("3d-model","templum3",0.005,0.005,0.005, 966 -halfsize,0, 1281 -halfsize,0);
+scene.add(temple10); //Olympia, statue of zeus
+var temple11 = new Place("3d-model","templum3",0.005,0.005,0.005, 1137 -halfsize,0, 1268 -halfsize,0);
+scene.add(temple11); //Ephesus, temple of artemis
+var temple12 = new Place("3d-model","templum5",0.005,0.005,0.005, 1029 -halfsize,0, 1265 -halfsize,0);
+scene.add(temple12); //Athenae
+var temple13 = new Place("3d-model","templum5",0.005,0.005,0.005, 383 -halfsize,0, 1101 -halfsize,0);
+scene.add(temple13); //Barcino
+var temple14 = new Place("3d-model","templum5",0.005,0.005,0.005, 592 -halfsize,0, 1393 -halfsize,0);
+scene.add(temple14); //Sufetula
+var temple15 = new Place("3d-model","templum5",0.005,0.005,0.005, 595 -halfsize,0, 1338 -halfsize,0);
+scene.add(temple15); //Thugga
+var temple16 = new Place("3d-model","templum5",0.005,0.005,0.005, 1000 -halfsize,0, 889 -halfsize,0);
+scene.add(temple16); //Sarmizegetusa
+var temple17 = new Place("3d-model","templum5",0.005,0.005,0.005, 982 -halfsize,0, 891 -halfsize,0);
+scene.add(temple17); //Tibiscum
+var temple18 = new Place("3d-model","templum5",0.005,0.005,0.005, 776 -halfsize,0, 851 -halfsize,0);
+scene.add(temple18); //Celeia
+var temple19 = new Place("3d-model","templum5",0.005,0.005,0.005, 1011 -halfsize,0, 799 -halfsize,0);
+scene.add(temple19); //Porolissum
+var temple20 = new Place("3d-model","templum5",0.005,0.005,0.005, 733 -halfsize,0, 924 -halfsize,0);
+scene.add(temple20); //Pola
+var temple21 = new Place("3d-model","templum5",0.005,0.005,0.005, 82 -halfsize,0, 1238 -halfsize,0);
+scene.add(temple21); //Ebora
+var temple22 = new Place("3d-model","templum5",0.005,0.005,0.005, 176 -halfsize,0, 1270 -halfsize,0);
+scene.add(temple22); //Corduba
+var temple23 = new Place("3d-model","templum5",0.005,0.005,0.005, 1024 -halfsize,0, 858 -halfsize,0);
+scene.add(temple23); //Apulum
+var temple24 = new Place("3d-model","templum5",0.005,0.005,0.005, 129 -halfsize,0, 1220 -halfsize,0);
+scene.add(temple24); //Emerita
+var temple25 = new Place("3d-model","templum2",0.005,0.005,0.005, 624 -halfsize,0, 887 -halfsize,0);
+scene.add(temple25); //Brixia
+var temple26 = new Place("3d-model","templum2",0.005,0.005,0.005, 465 -halfsize,0, 891 -halfsize,0);
+scene.add(temple26); //Vienne
+var temple27 = new Place("3d-model","templum2",0.005,0.005,0.005, 346 -halfsize,0, 529 -halfsize,0);
+scene.add(temple27); //Camulodunum
+var temple28 = new Place("3d-model","templum2",0.005,0.005,0.005, 315 -halfsize,0, 551 -halfsize,0);
+scene.add(temple28); //Londinium
+var temple29 = new Place("3d-model","templum2",0.005,0.005,0.005, 249 -halfsize,0, 560 -halfsize,0);
+scene.add(temple29); //Aquae Sulis
+var temple30 = new Place("3d-model","templum2",0.005,0.005,0.005, 447 -halfsize,0, 811 -halfsize,0);
+scene.add(temple30); //Augustodunum
+var temple31 = new Place("3d-model","templum2",0.005,0.005,0.005, 341 -halfsize,0, 907 -halfsize,0);
+scene.add(temple31); //Vesunna
+var temple32 = new Place("3d-model","templum2",0.005,0.005,0.005, 288 -halfsize,0, 983 -halfsize,0);
+scene.add(temple32); //Aquensium
+var temple33 = new Place("3d-model","templum2",0.005,0.005,0.005, 449 -halfsize,0, 977 -halfsize,0);
+scene.add(temple33); //Nemausus
+var temple34 = new Place("3d-model","templum2",0.005,0.005,0.005, 497 -halfsize,0, 878 -halfsize,0);
+scene.add(temple34); //Aquae Gratianae
 
 //villa towns
 var villa1 = new Place("villa","house",5,5,5, 1152 -halfsize+villa_offset,1.1, 1273 -halfsize-villa_offset,0);
@@ -651,16 +667,16 @@ var theatre1 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1003 -halfsize,0.75, 124
 scene.add(theatre1); //Mideia
 var theatre2 = new Urbis("theatre","amphi",0.2,0.2,0.2, 999 -halfsize,0.75, 1283 -halfsize,0);
 scene.add(theatre2); //Argos
-var theatre3 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1005 -halfsize,0.75, 1268 -halfsize,0);
-scene.add(theatre3); //Corinthus
+var theatre3 = new Urbis("theatre","amphi",0.2,0.2,0.2, 947 -halfsize,0.75, 1209 -halfsize,0);
+scene.add(theatre3); //Ambracia
 var theatre4 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1016 -halfsize,0.75, 1249 -halfsize,0);
 scene.add(theatre4); //Thebes
 var theatre5 = new Urbis("theatre","amphi",0.2,0.2,0.2, 989 -halfsize,0.75, 1186 -halfsize,0);
 scene.add(theatre5); //Larissa
-var theatre6 = new Urbis("theatre","amphi",0.2,0.2,0.2, 994 -halfsize,0.75, 1323 -halfsize,0);
-scene.add(theatre6); //Gythium
-var theatre7 = new Urbis("theatre","amphi",0.2,0.2,0.2, 975 -halfsize,0.75, 1303 -halfsize,0);
-scene.add(theatre7); //Messenia
+var theatre6 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1023 -halfsize,0.75, 1115 -halfsize,0);
+scene.add(theatre6); //Amphipolis
+var theatre7 = new Urbis("theatre","amphi",0.2,0.2,0.2, 990 -halfsize,0.75, 1308 -halfsize,0);
+scene.add(theatre7); //Sparta
 var theatre8 = new Urbis("theatre","amphi",0.2,0.2,0.2, 776 -halfsize,0.75, 1308 -halfsize,0);
 scene.add(theatre8); //Syracusae
 var theatre9 = new Urbis("theatre","amphi",0.2,0.2,0.2, 770 -halfsize,0.75, 1287 -halfsize,0);
@@ -685,12 +701,6 @@ var theatre18 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1110 -halfsize,0.75, 11
 scene.add(theatre18); //Troas
 var theatre19 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1082 -halfsize,0.75, 1124 -halfsize,0);
 scene.add(theatre19); //Maroneia
-var theatre20 = new Urbis("theatre","amphi",0.2,0.2,0.2, 1023 -halfsize,0.75, 1115 -halfsize,0);
-scene.add(theatre20); //Amphipolis
-var theatre21 = new Urbis("theatre","amphi",0.2,0.2,0.2, 947 -halfsize,0.75, 1209 -halfsize,0);
-scene.add(theatre21); //Ambracia
-var theatre22 = new Urbis("theatre","amphi",0.2,0.2,0.2, 990 -halfsize,0.75, 1308 -halfsize,0);
-scene.add(theatre22); //Sparta
 
 //constructor: building type, front texture, back texture, right texture, left texture, top texture, building height, width, length, x position,y position,z position, y rotation
 //south, north, west, east
@@ -718,8 +728,8 @@ var horreum11 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horr
 scene.add(horreum11); //Caleta
 var horreum12 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",4,3.5,4, 1293 -halfsize,0, 1579 -halfsize,0);
 scene.add(horreum12); //Pelusium
-var horreum13 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",4,3.5,4, 1214 -halfsize,0, 1572 -halfsize,0);
-scene.add(horreum13); //Alexandria
+var horreum13 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",4,3.5,4, 272 -halfsize,0, 798 -halfsize,0);
+scene.add(horreum13); //Portus Namnetus
 var horreum14 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",4,3.5,4, 973 -halfsize,0, 1501 -halfsize,0);
 scene.add(horreum14); //Cyrene
 var horreum15 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",4,3.5,4, 746 -halfsize,0, 1127 -halfsize,0);
@@ -980,8 +990,10 @@ var horreum142 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","hor
 scene.add(horreum142); //Treva
 var horreum143 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",4,3.5,4, 301 -halfsize,0, 924 -halfsize,0);
 scene.add(horreum143); //Burdigala
-var horreum144 = new Dock("horreum","horrea_wall","horrea_wall","dock_wall","horrea_wall","roof_wood",4,3.5,4, 272 -halfsize,0, 798 -halfsize,0);
-scene.add(horreum144); //Portus Namnetus
+var horreum144 = new Dock("horreum","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",4,3.5,4, 1005 -halfsize,0, 1268 -halfsize,0);
+scene.add(horreum144); //Corinthus
+var horreum145 = new Dock("horreum","dock_wall","horrea_wall","horrea_wall","horrea_wall","roof_wood",4,3.5,4, 994 -halfsize,0, 1323 -halfsize,0);
+scene.add(horreum145); //Gythium
 
 //oasis towns
 OasisMaker(417,1417); //Fallaba
