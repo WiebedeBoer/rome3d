@@ -51,17 +51,20 @@ else if (type =="vegetables"){
 }
 //olive grove
 else if (type=="olive"){
-    var Olive1 = new OliveTree(xPos-15,5,zPos+15); 
-    scene.add(Olive1);
-    var Olive2 = new OliveTree(xPos-15,5,zPos-15); 
-    scene.add(Olive2);
-    var Olive3 = new OliveTree(xPos+15,5,zPos+15); 
-    scene.add(Olive3);
-    var Olive4 = new OliveTree(xPos+15,5,zPos-15); 
-    scene.add(Olive4);
 
-    var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
-    scene.add(birdCol);
+    if (climate =="mediterranean"){
+        var Olive1 = new OliveTree(xPos-15,5,zPos+15); 
+        scene.add(Olive1);
+        var Olive2 = new OliveTree(xPos-15,5,zPos-15); 
+        scene.add(Olive2);
+        var Olive3 = new OliveTree(xPos+15,5,zPos+15); 
+        scene.add(Olive3);
+        var Olive4 = new OliveTree(xPos+15,5,zPos-15); 
+        scene.add(Olive4);
+        var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
+        scene.add(birdCol);
+    }
+
 }
 //grapevine
 else if (type=="grape"){
@@ -87,6 +90,15 @@ else if (type=="grape"){
     var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
     scene.add(birdCol);
 }
+//forest
+else if(type=="forest"){
+    var tree1 = new Forest(xPos,45,zPos,climate); 
+    scene.add(tree1);
+
+    var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
+    scene.add(birdCol);
+
+}
 //goat pasture
 else if(type =="goat"){
     var Goat1 = new Goat(xPos-15,5,zPos+15); 
@@ -108,22 +120,25 @@ else if(type =="goat"){
 }
 //sheep pasture
 else if(type =="sheep"){
-    var Sheep1 = new Sheep(xPos-15,5,zPos+15); 
-    scene.add(Sheep1);
-    var Sheep2 = new Sheep(xPos-15,5,zPos-15); 
-    scene.add(Sheep2);
-    var Sheep3 = new Sheep(xPos+15,5,zPos+15); 
-    scene.add(Sheep3);
-    var Sheep4 = new Sheep(xPos+15,5,zPos-15); 
-    scene.add(Sheep4);
-    var fenceL2 = new Fence(xPos,0,zPos+30,0,0,0); 
-    scene.add(fenceL2);
-    var fenceR2 = new Fence(xPos,0,zPos-30,0,0,0); 
-    scene.add(fenceR2);
-    var fenceF2 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceF2);
-    var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceB2);   
+    
+        var Sheep1 = new Sheep(xPos-15,5,zPos+15); 
+        scene.add(Sheep1);
+        var Sheep2 = new Sheep(xPos-15,5,zPos-15); 
+        scene.add(Sheep2);
+        var Sheep3 = new Sheep(xPos+15,5,zPos+15); 
+        scene.add(Sheep3);
+        var Sheep4 = new Sheep(xPos+15,5,zPos-15); 
+        scene.add(Sheep4);
+        var fenceL2 = new Fence(xPos,0,zPos+30,0,0,0); 
+        scene.add(fenceL2);
+        var fenceR2 = new Fence(xPos,0,zPos-30,0,0,0); 
+        scene.add(fenceR2);
+        var fenceF2 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
+        scene.add(fenceF2);
+        var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
+        scene.add(fenceB2);   
+    
+
 }
 //pig pasture
 else if(type =="pig"){
@@ -161,18 +176,21 @@ else if(type =="cow"){
 }
 //horse pasture
 else if(type =="horse"){
-    var Horse1 = new Horse(xPos-15,5,zPos); 
-    scene.add(Horse1);
-    var Horse2 = new Horse(xPos+15,5,zPos); 
-    scene.add(Horse2);
-    var fenceL2 = new Fence(xPos,0,zPos+30,0,0,0); 
-    scene.add(fenceL2);
-    var fenceR2 = new Fence(xPos,0,zPos-30,0,0,0); 
-    scene.add(fenceR2);
-    var fenceF2 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceF2);
-    var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
-    scene.add(fenceB2);   
+    
+        var Horse1 = new Horse(xPos-15,5,zPos); 
+        scene.add(Horse1);
+        var Horse2 = new Horse(xPos+15,5,zPos); 
+        scene.add(Horse2);
+        var fenceL2 = new Fence(xPos,0,zPos+30,0,0,0); 
+        scene.add(fenceL2);
+        var fenceR2 = new Fence(xPos,0,zPos-30,0,0,0); 
+        scene.add(fenceR2);
+        var fenceF2 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
+        scene.add(fenceF2);
+        var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
+        scene.add(fenceB2);  
+    
+ 
 }
 
 }

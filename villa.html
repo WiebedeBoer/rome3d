@@ -7,8 +7,12 @@
 <script src="library/three.js"></script>
 <!--camera controls-->
 <script src="controls/FPControls.js"></script>
+<!--climate and regions-->
+<script src="openregions.js"></script>
 <!--buildings and fields-->
 <script src="buildings/ville_temple1.js"></script>
+<script src="buildings/ville_temple2.js"></script>
+<script src="buildings/ville_temple3.js"></script>
 <script src="buildings/plaza.js"></script>
 <script src="buildings/villa.js"></script>
 <script src="buildings/latifundia.js"></script>
@@ -108,6 +112,16 @@ var propTypes = [];
 //no show menu
 var gamestart = document.getElementById("menu");
 gamestart.style.display = "none";
+//page url for villa type
+var urlParams = new URLSearchParams(location.search);
+var urlid = urlParams.get('villa');
+var climate;
+if (!urlid || urlid >=1 || urlid <55){
+        climate = xprov[urlid].getElementsByTagName("climate")[0].childNodes[0].nodeValue;
+}
+else {
+        window.location.assign("index.html")
+}
 // Bullets array
 var bullets = [];
 var bulletmeshes = [];      
@@ -133,8 +147,14 @@ camera.position.x = -21;
 //environment
 var environmentsize = 2800;
 //plane
-var planeroad = new Plane(environmentsize,environmentsize,"ground5");
-scene.add(planeroad);  
+if(climate =="desert"){
+        var planeroad = new Plane(environmentsize,environmentsize,"ground7");
+        scene.add(planeroad);  
+}
+else {
+        var planeroad = new Plane(environmentsize,environmentsize,"ground5");
+        scene.add(planeroad); 
+}
 //skybox
 var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
 scene.add( skyBox );
@@ -146,7 +166,6 @@ FarmMaker("forest",-840,-390);
 FarmMaker("forest",-840,-30);
 FarmMaker("forest",-840,420);
 FarmMaker("forest",-840,870);
-
 
 FarmMaker("forest",-390,-840);
 FarmMaker("villa_rustica",-390,-480);
@@ -209,7 +228,7 @@ function appendItem(){
         document.getElementById('weapon').innerHTML = eItem;}
 //hit registration collision
 function clearText()
-{   document.getElementById('message').innerHTML = '....';}
+{   document.getElementById('message').innerHTML = '....' +climate;}
 function appendText(txt)
 {   document.getElementById('message').innerHTML += txt;}
 //collision vars

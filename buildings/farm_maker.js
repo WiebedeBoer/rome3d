@@ -11,7 +11,7 @@ if (farmtype=="villa_rustica"){
     fieldMaker("forest",xVil+90,zVil-270);
     //fallow
     fieldMaker("wheat",xVil+90,zVil-90);
-    fieldMaker("olive",xVil+90,zVil);
+    fieldMaker("olive",xVil+90,zVil);    
     //fallow
 
     fieldMaker("forest",xVil,zVil-270);
@@ -41,9 +41,11 @@ else if (farmtype=="latifundia"){
     fieldMaker("forest",xVil+180,zVil-90);
     fieldMaker("forest",xVil+180,zVil);
     fieldMaker("forest",xVil+180,zVil+90);
-    fieldMaker("horse",xVil+180,zVil+180);
-    fieldMaker("sheep",xVil+180,zVil+270);
-    fieldMaker("sheep",xVil+180,zVil+360);
+    if(climate !="desert"){
+        fieldMaker("horse",xVil+180,zVil+180);
+        fieldMaker("sheep",xVil+180,zVil+270);
+        fieldMaker("sheep",xVil+180,zVil+360); 
+    }   
     fieldMaker("forest",xVil+180,zVil+450);
     fieldMaker("forest",xVil+180,zVil+540);
 
@@ -73,7 +75,7 @@ else if (farmtype=="latifundia"){
     fieldMaker("wheat",xVil-90,zVil-180);
     fieldMaker("wheat",xVil-90,zVil-90);
     houseMaker("barn2",xVil-90,zVil);
-    fieldMaker("olive",xVil-90,zVil+90);
+    fieldMaker("olive",xVil-90,zVil+90);      
     fieldMaker("horse",xVil-90,zVil+180);
     fieldMaker("cow",xVil-90,zVil+270);
     fieldMaker("cow",xVil-90,zVil+360);
@@ -83,8 +85,8 @@ else if (farmtype=="latifundia"){
     //fallow
     fieldMaker("wheat",xVil-180,zVil-180);
     fieldMaker("wheat",xVil-180,zVil-90);
-    //fallow
-    fieldMaker("olive",xVil-180,zVil+90);
+    //fallow    
+    fieldMaker("olive",xVil-180,zVil+90); 
     fieldMaker("forest",xVil-180,zVil+180);
     fieldMaker("forest",xVil-180,zVil+270);
     fieldMaker("forest",xVil-180,zVil+360);
@@ -152,8 +154,8 @@ else if (farmtype=="civitas"){
     fieldMaker("grape",xVil-90,zVil);
     fieldMaker("forest",xVil-90,zVil+90);
     
-    fieldMaker("sheep",xVil-180,zVil-270);
-    fieldMaker("olive",xVil-180,zVil-180);
+    fieldMaker("olive",xVil-180,zVil-270); 
+    fieldMaker("sheep",xVil-180,zVil-180);         
     fieldMaker("vegetables",xVil-180,zVil-90);
     fieldMaker("forest",xVil-180,zVil);
     fieldMaker("forest",xVil-180,zVil+90);
