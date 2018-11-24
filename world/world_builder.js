@@ -236,4 +236,17 @@ scene.add(marble);
 var copper = new Deposit("copper","copper",2.5,0.8,1.2,mxi);
 scene.add(copper);
 
+//region collider
+var co = 0;
+while (co < 4){
+  //co++; 
+  var pX = xprov[co].getElementsByTagName("xco")[0].childNodes[0].nodeValue;
+  var pZ = xprov[co].getElementsByTagName("yco")[0].childNodes[0].nodeValue;
+  var tid = xprov[co].getElementsByTagName("id")[0].childNodes[0].nodeValue;
+  var pname = xprov[co].getElementsByTagName("province")[0].childNodes[0].nodeValue;
+  var collidable = new Collider(tid,pname,10,4,4,pX,pZ);
+  scene.add(collidable);
+  co++;
+}
+
 }

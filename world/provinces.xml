@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG>
+<grid><id>1</id><climate>mediterranean</climate><xco>703</xco><yco>1077</yco>
+<province>Latium</province></grid>
+<grid><id>2</id><climate>mediterranean</climate><xco>753</xco><yco>1121</yco>
+<province>Campania</province></grid>
+<grid><id>3</id><climate>mediterranean</climate><xco>659</xco><yco>1012</yco>
+<province>Etruria</province></grid>
+<grid><id>4</id><climate>mediterranean</climate><xco>693</xco><yco>1076</yco>
+<province>Rome</province></grid>
+</CATALOG>

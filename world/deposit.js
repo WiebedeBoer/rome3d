@@ -23,8 +23,6 @@ class Deposit extends THREE.Group {
 
     //city geometry
     var cityGeometry= new THREE.Geometry();
-
-    console.log(this.type);
   
   //loop
   var i = 1;
@@ -60,9 +58,7 @@ class Deposit extends THREE.Group {
   
   //add to class
   var mesh8 = new THREE.Mesh(cityGeometry, comMaterial);
-  mCity.add(mesh8);  
-  //add to collision
-  collidableMeshList.push(mesh8);
+  mCity.add(mesh8); 
 
 }
 

@@ -12,8 +12,6 @@ class Place extends THREE.Group {
             dChurch.position.z = this.pZ;
             dChurch.rotation.y = this.yR;
             dChurch.add(mesh);
-            collidableMeshList.push(mesh);
-
         });
     }    
             

@@ -37,9 +37,7 @@ class TreeMaker extends THREE.Group {
     meshTree.scale.z = this.length;
     //mesh tree
     mCityhall.add(meshTree);
-    //add to collision
-    collidableMeshList.push(meshTree);
-    
+        
     }
 
     constructor(treetype,crow,ccol,width,height,length){

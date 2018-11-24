@@ -6,28 +6,24 @@
 <!--library: three.js-->
 <script src="library/three.js"></script>
 <!--camera controls-->
-<script src="controls/FPControls.js"></script>
+<script src="controls/mapControls.js"></script>
 <!--buildings and fields-->
 <script src="openworld.js"></script>
 <script src="world/urbis.js"></script>
 <script src="world/place.js"></script>
-<script src="world/dock.js"></script>
 <script src="world/tree_maker.js"></script>
 <script src="world/world_builder.js"></script>
 <script src="world/town.js"></script>
 <script src="world/deposit.js"></script>
+<script src="world/collider.js"></script>
 <!--environment: plane en skybox-->
 <script src="environment/mapPlane.js"></script>
 <script src="environment/Skybox.js"></script>
 <!--lighting-->
 <script src="lighting/WorldLight.js"></script>
-<!--fields-->
-
-<!--animals-->
-<script src="props/horse.js"></script>
-<script src="props/donkey.js"></script>
 <!--collision detection-->
-<script src="collision/barracksCollision.js"></script>
+<script src="openregions.js"></script>
+<script src="collision/mapCollision.js"></script>
 <!--styling-->
 <link rel="stylesheet" type="text/css" href="Styling.css">
 </head>
@@ -74,10 +70,10 @@
 <script>
 //collision vars
 var MovingCube;
+//collidable towns
 var collidableMeshList = [];
-//collidable props
-var collidablePropMeshList = []; 
-var propTypes = [];
+var townTypes = [];
+var townNames = [];
 //no show menu
 var gamestart = document.getElementById("menu");
 gamestart.style.display = "none";   
@@ -184,9 +180,7 @@ function GameLoop(){
 
 }
 
-function newDoc() {
-    window.location.assign("index.html")
-}
+
 </script>
 </div>
 <div id="game" class="game">
