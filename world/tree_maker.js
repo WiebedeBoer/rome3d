@@ -32,9 +32,9 @@ class TreeMaker extends THREE.Group {
     //put a rotation
     meshTree.rotation.y = 0.5*Math.PI*2;
     //building scale
-    meshTree.scale.x = 2.5;
-    meshTree.scale.y = 5;
-    meshTree.scale.z = 2.5;
+    meshTree.scale.x = this.width;
+    meshTree.scale.y = this.height;
+    meshTree.scale.z = this.length;
     //mesh tree
     mCityhall.add(meshTree);
     //add to collision
@@ -42,9 +42,12 @@ class TreeMaker extends THREE.Group {
     
     }
 
-    constructor(treetype,crow,ccol){
+    constructor(treetype,crow,ccol,width,height,length){
     super();   
     this.tree = treetype; 
+    this.height = height;
+    this.width = width;
+    this.length = length;
     this.nrow = crow;
     this.ncol = ccol;
     this.init();

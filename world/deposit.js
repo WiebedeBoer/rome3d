@@ -1,4 +1,4 @@
-class Town extends THREE.Group {
+class Deposit extends THREE.Group {
 
   init (){
 
@@ -11,18 +11,20 @@ class Town extends THREE.Group {
     geometry.applyMatrix( new THREE.Matrix4().makeTranslation( 0, 0.5, 0 ) );
     
     var comMaterials = [
-      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.leftbuild+".jpg"), side: THREE.FrontSide }), //LEFT
-      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.rightbuild+".jpg"), side: THREE.FrontSide }), //RIGHT
-      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/roof/"+this.topbuild+".jpg"), side: THREE.FrontSide }), //TOP
-      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide }), //BOTTOM
-      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.frontbuild+".jpg"), side: THREE.FrontSide }), //FRONT
-      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/wall/"+this.backbuild+".jpg"), side: THREE.FrontSide }), //BACK
+      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/deposits/"+this.build+".jpg"), side: THREE.FrontSide }), //LEFT
+      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/deposits/"+this.build+".jpg"), side: THREE.FrontSide }), //RIGHT
+      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/deposits/"+this.build+".jpg"), side: THREE.FrontSide }), //TOP
+      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/deposits/"+this.build+".jpg"), side: THREE.FrontSide }), //BOTTOM
+      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/deposits/"+this.build+".jpg"), side: THREE.FrontSide }), //FRONT
+      new THREE.MeshPhongMaterial({ map: new THREE.TextureLoader().load("textures/deposits/"+this.build+".jpg"), side: THREE.FrontSide }), //BACK
       ];  
     var comMaterial = new THREE.MeshFaceMaterial(comMaterials);
     var buildingMesh = new THREE.Mesh(geometry);
 
     //city geometry
     var cityGeometry= new THREE.Geometry();
+
+    console.log(this.type);
   
   //loop
   var i = 1;
@@ -65,14 +67,10 @@ class Town extends THREE.Group {
 }
 
   //constructor: building type, front texture, back texture, right texture, left texture, building height
-  constructor(type,frontbuild,backbuild,rightbuild,leftbuild,topbuild,width,height,length,maxi){
+  constructor(type,build,width,height,length,maxi){
     super();
     this.type = type;
-    this.frontbuild = frontbuild;
-    this.backbuild = backbuild;
-    this.rightbuild = rightbuild
-    this.leftbuild = leftbuild;
-    this.topbuild = topbuild;
+    this.build = build;
     this.width = width;
     this.height = height;
     this.length = length;
