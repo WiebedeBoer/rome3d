@@ -14,12 +14,8 @@ function WorldBuilder(){
 
 //type, path, height,width,depth, x position,y position,z position,rotation y axis
 
-
-
-
-
 //max towns
-var mxi = 643;
+var mxi = 656;
 
 //town objects
 var i = 0;
@@ -143,6 +139,13 @@ while (i <mxi){
     var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
     var pottery = new Place("scroll","closed_scroll",9.0,9.0,9.0, xpc -halfsize,0.8, zpc -halfsize,0);
     scene.add(pottery);  
+  }
+  //papyrus
+  else if(tench =="honey"){
+      var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+      var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+      var honey = new Place("honey_jug","honey",0.05,0.05,0.05, xpc -halfsize,0.8, zpc -halfsize,0);
+      scene.add(honey);  
   }
   //wine
   else if(tench =="grapevine"){

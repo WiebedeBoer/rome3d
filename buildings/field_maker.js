@@ -87,6 +87,34 @@ else if (type=="grape"){
     var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
     scene.add(birdCol);
 }
+//beekeeping
+else if(type=="honey"){
+
+    if (climate =="desert"){        
+        var tree1 = new Forest(xPos,45,zPos+15,"tree_palm"); 
+        scene.add(tree1);
+    }
+    else {
+        if (timber =="cedar"){
+            var tree1 = new Forest(xPos,45,zPos+15,"cedar"); 
+            scene.add(tree1);
+        }
+        else if (timber =="pine"){
+            var tree1 = new Forest(xPos,45,zPos+15,"tree_pine"); 
+            scene.add(tree1);
+        }
+        else {
+            var tree1 = new Forest(xPos,45,zPos+15,"tree_transparent"); 
+            scene.add(tree1);
+        }        
+    } 
+    if (honey =="honey"){
+        var beehive1 = new Beehive(xPos,zPos-15); 
+        scene.add(beehive1);
+    }
+    var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
+    scene.add(birdCol);
+}
 //forest
 else if(type=="forest"){
 
