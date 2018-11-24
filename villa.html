@@ -115,9 +115,20 @@ gamestart.style.display = "none";
 //page url for villa type
 var urlParams = new URLSearchParams(location.search);
 var urlid = urlParams.get('villa');
-var climate;
+var climate,horse,cattle,sheep,pig;
 if (!urlid || urlid >=1 || urlid <55){
         climate = xprov[urlid].getElementsByTagName("climate")[0].childNodes[0].nodeValue;
+        //resources
+        horse = xprov[urlid].getElementsByTagName("horse")[0].childNodes[0].nodeValue;
+        cattle = xprov[urlid].getElementsByTagName("cattle")[0].childNodes[0].nodeValue;
+        sheep = xprov[urlid].getElementsByTagName("sheep")[0].childNodes[0].nodeValue;
+        pig = xprov[urlid].getElementsByTagName("pig")[0].childNodes[0].nodeValue;
+        fish = xprov[urlid].getElementsByTagName("fish")[0].childNodes[0].nodeValue;
+        grain = xprov[urlid].getElementsByTagName("grain")[0].childNodes[0].nodeValue;
+        vine = xprov[urlid].getElementsByTagName("vine")[0].childNodes[0].nodeValue;
+        oil = xprov[urlid].getElementsByTagName("oil")[0].childNodes[0].nodeValue;
+        pottery = xprov[urlid].getElementsByTagName("pottery")[0].childNodes[0].nodeValue;
+        timber = xprov[urlid].getElementsByTagName("timber")[0].childNodes[0].nodeValue;
 }
 else {
         window.location.assign("index.html")

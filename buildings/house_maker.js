@@ -32,18 +32,22 @@ var wineLoafCol = new propCollect(xPos+35,6,zPos+2,"wine");
 scene.add(wineLoafCol);
 }
 else if (type =="potterer"){
-var potterer = new Villa(xPos+20,househigh,zPos-28,Math.PI/2);
-scene.add( potterer );
-var stool = new Amphora(xPos-5,3,zPos-33,0,0,0);
-scene.add( stool ); 
-var jugLoafCol = new propCollect(xPos-5,3,zPos-33,"pottery"); 
-scene.add(jugLoafCol);
+    if (pottery=="pottery"){
+        var potterer = new Villa(xPos+20,househigh,zPos-28,Math.PI/2);
+        scene.add( potterer );
+        var stool = new Amphora(xPos-5,3,zPos-33,0,0,0);
+        scene.add( stool ); 
+        var jugLoafCol = new propCollect(xPos-5,3,zPos-33,"pottery"); 
+        scene.add(jugLoafCol);
+    }
 }
 else if (type =="carpenter"){
-var carpenter = new Villa(xPos+20,househigh,zPos-28,Math.PI/2);
-scene.add( carpenter );
-var stool = new Stool(xPos-5,3,zPos-33,0,0,0);
-scene.add( stool ); 
+    if(timber =="cedar" || timber =="oak" || timber =="pine"){
+        var carpenter = new Villa(xPos+20,househigh,zPos-28,Math.PI/2);
+        scene.add( carpenter );
+        var stool = new Stool(xPos-5,3,zPos-33,0,0,0);
+        scene.add( stool ); 
+    }
 }
 else if(type =="barn"){
 var stables = new Barn(xPos+13,0,zPos);
@@ -81,12 +85,14 @@ scene.add(augur);
 else if(type =="fora"){
 var fora1 = new Plaza("venalia","mosaic6",xPos,zPos);
 scene.add( fora1 ); 
-var tablestand = new Table(xPos,2,zPos-15,0,0,0); 
-scene.add(tablestand); 
-var fishLoaf = new Trout(xPos,8,zPos-15,0,0,0); 
-scene.add(fishLoaf);
-var fishLoafCol = new propCollect(xPos,8,zPos-15,"sauce"); 
-scene.add(fishLoafCol);
+if (fish =="fish"){
+    var tablestand = new Table(xPos,2,zPos-15,0,0,0); 
+    scene.add(tablestand); 
+    var fishLoaf = new Trout(xPos,8,zPos-15,0,0,0); 
+    scene.add(fishLoaf);
+    var fishLoafCol = new propCollect(xPos,8,zPos-15,"sauce"); 
+    scene.add(fishLoafCol);
+}
 var tablestand2 = new Table(xPos+15,2,zPos-15,0,0,0); 
 scene.add(tablestand2); 
 var breadLoaf = new Bread(xPos+15,8,zPos-15,0,0,0); 

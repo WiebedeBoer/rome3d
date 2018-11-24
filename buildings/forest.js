@@ -17,20 +17,13 @@ class Forest extends THREE.Group {
     var opaq = { opacity: 0.0 };
 
     //material
-    if (this.climate =="desert"){
-        var treetype ="tree_palm";
-    }
-    else {
-        var treetype ="tree_transparent";
-    }    
-
         var hallMaterials = [
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/"+treetype+".png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true }), //LEFT
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/"+treetype+".png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //RIGHT
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/"+this.treetype+".png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true }), //LEFT
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/"+this.treetype+".png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //RIGHT
             new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide, opacity: opaq.opacity,transparent: true  }), //TOP
             new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide, opacity: opaq.opacity,transparent: true  }), //BOTTOM
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/"+treetype+".png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //FRONT
-            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/"+treetype+".png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //BACK
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/"+this.treetype+".png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //FRONT
+            new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/"+this.treetype+".png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //BACK
             ];
     
 
@@ -58,10 +51,10 @@ class Forest extends THREE.Group {
     
     }
 
-    constructor(crow,bHeight,ccol,climate){
+    constructor(crow,bHeight,ccol,treetype){
     super();
     this.bHeight = bHeight;
-    this.climate = climate;
+    this.treetype = treetype;
     this.nrow = crow;
     this.ncol = ccol;
     this.init();
