@@ -9,8 +9,22 @@ class Collider extends THREE.Group {
 
     // translate the geometry to place the pivot point at the bottom instead of the center
     geometry.applyMatrix( new THREE.Matrix4().makeTranslation( 0, 0.5, 0 ) );
+
+    var params = { opacity: 0.9 };
+    var opaq = { opacity: 0.0 };    
+
+    //material
+    var hallMaterials = [
+        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/eagle.png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true }), //LEFT
+        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/eagle.png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //RIGHT
+        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide, opacity: opaq.opacity,transparent: true }), //TOP
+        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/ground/ground_mud.jpg"), side: THREE.FrontSide, opacity: opaq.opacity,transparent: true  }), //BOTTOM
+        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/eagle.png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //FRONT 
+        new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load("textures/tree/eagle.png"), side: THREE.FrontSide, opacity: params.opacity,transparent: true  }), //BACK
+        ];
+    var comMaterial  = new THREE.MeshFaceMaterial(hallMaterials);
     
-    var comMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:true } );
+   
     var buildingMesh = new THREE.Mesh(geometry,comMaterial);
 
     // put a position

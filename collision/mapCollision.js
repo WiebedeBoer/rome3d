@@ -25,29 +25,26 @@ for (var vertexIndex = 0; vertexIndex < MovingCube.geometry.vertices.length; ver
         if ( collisionResults.length > 0 && collisionResults[0].distance < directionVector.length() ){
             propHit = 1;
             indexProp = collidableMeshList.map(e => e.uuid).indexOf(collisionResults[0]['object']['uuid']);
-            soundProp = indexProp -1; //good
-            townInd = townTypes[soundProp];
-            
-            pnid =townNames[soundProp];   //good         
-            console.log(townTypes);
-            console.log(townNames);
+            soundProp = indexProp -1; 
+            townInd = townTypes[soundProp];            
+            pnid =townNames[soundProp];            
+
         }
 }
 
         //check particle hit
         if (propHit >0){                 
             if(pnid !="Rome"){                
-                locurl = "villa.html?villa="+townInd; 
-                //pnid = xprov[soundprop].getElementsByTagName("province")[0].childNodes[0].nodeValue;        
+                locurl = "villa.html?villa="+townInd;       
                 clearText();
-                appendText(" Vicinity of province "+pnid+" "+locurl);                  
-                //newDoc(locurl);        
+                appendText(" Vicinity of province "+pnid);                  
+                newDoc(locurl);        
             }
             else {                
                 locurl ="index.html";        
                 clearText();
                 appendText(" Vicinity of Rome ");
-                //newDoc(locurl);               
+                newDoc(locurl);               
             }
             
 

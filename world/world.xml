@@ -290,7 +290,6 @@
 <town>Corinthus</town></grid>
 <grid><id>145</id><type>horreum_south</type><climate>mediterranean</climate><xco>994</xco><yco>1323</yco>
 <town>Gythium</town></grid>
-
 <grid><id>146</id><type>thermae</type><climate>mediterranean</climate><xco>531</xco><yco>1385</yco>
 <town>Aquae Flavianae</town></grid>
 <grid><id>147</id><type>thermae</type><climate>mediterranean</climate><xco>834</xco><yco>885</yco>

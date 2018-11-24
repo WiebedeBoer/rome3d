@@ -14,10 +14,10 @@ function WorldBuilder(){
 
 //type, path, height,width,depth, x position,y position,z position,rotation y axis
 
-/*
-var barrack = new Urbis("officer","contubernium",1,1,1, -halfsize,0, -halfsize,0);
-scene.add(barrack); //
-*/
+
+var barrack = new Urbis("officer","contubernium",1,1,1, 703 -halfsize,0, 1077 -halfsize,0);
+scene.add(barrack); //Legio
+
 
 //max towns
 var mxi = 643;
@@ -238,7 +238,7 @@ scene.add(copper);
 
 //region collider
 var co = 0;
-while (co < 4){
+while (co < 55){
   //co++; 
   var pX = xprov[co].getElementsByTagName("xco")[0].childNodes[0].nodeValue;
   var pZ = xprov[co].getElementsByTagName("yco")[0].childNodes[0].nodeValue;
