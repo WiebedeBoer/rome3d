@@ -220,4 +220,8 @@
 <province>Rome</province><horse>na</horse><cattle>na</cattle><sheep>na</sheep><pig>na</pig><fish>na</fish>
 <grain>na</grain><vine>na</vine><oil>na</oil><pottery>na</pottery><timber>na</timber>
 </grid>
+<grid><id>56</id><climate>mediterranean</climate><xco>703</xco><yco>1077</yco>
+<province>Castra</province><horse>na</horse><cattle>na</cattle><sheep>na</sheep><pig>na</pig><fish>na</fish>
+<grain>na</grain><vine>na</vine><oil>na</oil><pottery>na</pottery><timber>na</timber>
+</grid>
 </CATALOG>

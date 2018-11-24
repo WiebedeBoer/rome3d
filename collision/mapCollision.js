@@ -34,17 +34,24 @@ for (var vertexIndex = 0; vertexIndex < MovingCube.geometry.vertices.length; ver
 
         //check particle hit
         if (propHit >0){                 
-            if(pnid !="Rome"){                
-                locurl = "villa.html?villa="+townInd;       
+
+            if (pnid =="Castra") {                
+                locurl ="castrum.html";        
                 clearText();
-                appendText(" Vicinity of province "+pnid);                  
-                newDoc(locurl);        
+                appendText(" vicinity of army camp ");
+                newDoc(locurl);               
             }
-            else {                
+            else if(pnid =="Rome") {                
                 locurl ="index.html";        
                 clearText();
-                appendText(" Vicinity of Rome ");
+                appendText(" vicinity of Rome ");
                 newDoc(locurl);               
+            }
+            else {                
+                locurl = "villa.html?villa="+townInd;       
+                clearText();
+                appendText(" vicinity of province "+pnid);                  
+                newDoc(locurl);        
             }
             
 

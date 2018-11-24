@@ -15,8 +15,7 @@ function WorldBuilder(){
 //type, path, height,width,depth, x position,y position,z position,rotation y axis
 
 
-var barrack = new Urbis("officer","contubernium",1,1,1, 703 -halfsize,0, 1077 -halfsize,0);
-scene.add(barrack); //Legio
+
 
 
 //max towns
@@ -236,9 +235,9 @@ scene.add(marble);
 var copper = new Deposit("copper","copper",2.5,0.8,1.2,mxi);
 scene.add(copper);
 
-//region collider
+//region collider and barracks maker
 var co = 0;
-while (co < 55){
+while (co < 56){
   //co++; 
   var pX = xprov[co].getElementsByTagName("xco")[0].childNodes[0].nodeValue;
   var pZ = xprov[co].getElementsByTagName("yco")[0].childNodes[0].nodeValue;
@@ -246,6 +245,10 @@ while (co < 55){
   var pname = xprov[co].getElementsByTagName("province")[0].childNodes[0].nodeValue;
   var collidable = new Collider(tid,pname,10,4,4,pX,pZ);
   scene.add(collidable);
+  if (pname =="Castra"){
+    var barrack = new Urbis("officer","contubernium",1,1,1, pX -halfsize,0, pZ -halfsize,0);
+    scene.add(barrack); //Legio
+  }
   co++;
 }
 

@@ -254,7 +254,7 @@ function newDoc() {
         var z_build = Math.floor((camera.position.z + 1845) / 90); //1845 good
 
         if (x_build >=39 || x_build <1 || z_build >=39 || z_build <1){
-                window.location.assign("villa.html"); 
+                window.location.assign("map.html"); 
         }
         else {
                 var btag = ((z_build - 1) * 40) + x_build; //((z - 1) * 40) +x = good
@@ -275,7 +275,7 @@ function newDoc() {
                         window.location.assign("basilica.html");
                 }
                 else if (ambients =="umbilicus"){
-                        window.location.assign("villa.html");
+                        window.location.assign("map.html");
                 }
         }
         
