@@ -18,7 +18,7 @@
 <script src="world/collider.js"></script>
 <!--environment: plane en skybox-->
 <script src="environment/mapPlane.js"></script>
-<script src="environment/Skybox.js"></script>
+<script src="environment/SkyWorld.js"></script>
 <!--lighting-->
 <script src="lighting/WorldLight.js"></script>
 <!--collision detection-->
@@ -103,7 +103,7 @@ var dock_offset = 5;
 var planeroad = new Plane(environmentsize,environmentsize,"rome_blanc");
 scene.add(planeroad);  
 //skybox
-var skyBox = new Skybox(environmentsize,environmentsize,environmentsize);
+var skyBox = new SkyWorld(environmentsize,environmentsize,environmentsize);
 scene.add( skyBox );
 //towns
 WorldBuilder();

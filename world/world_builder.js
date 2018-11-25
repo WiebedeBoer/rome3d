@@ -3,12 +3,13 @@ function WorldBuilder(){
 //522 towns
 
 // 50 thermae, 1 amphitheatrum, 19 theatrum, 34 templum, 128 emporium, 157 villa, 88 oppidum
-// 7 horse, 16 cattle, 15 sheep, 15 pigs, 8 fish
-// 22 wheat, 30 wine, 19 olive oil, 12 pottery, 20 timber, 12 honey
+// 8 horse, 18 cattle, 17 sheep, 15 pigs, 8 fish
+// 23 wheat, 32 wine, 19 olive oil, 13 pottery, 20 timber, 12 honey
 // 6 marble, 2 tin, 9 copper, 17 iron, 9 gold, 9 silver
+// 1 papyrus, 1 spices, 1 silk
 
 //max towns
-var mxi = 763;
+var mxi = 776;
 
 //town objects
 var i = 0;
@@ -192,7 +193,13 @@ while (i <mxi){
     var pine = new TreeMaker("tree_pine",xpc-halfsize,zpc-halfsize,2.5,5.0,2.5);
     scene.add(pine);
   }
-
+  //luxuries
+  else if (tench =="silk" || tench =="incense" || tench =="ivory" || tench =="spices"){
+    var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+    var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+    var luxury = new Place("DromedaryCamels","dromedary",0.4,0.4,0.4, xpc -halfsize,0.8, zpc -halfsize,0);
+    scene.add(luxury);  
+  }
 
 
 }
@@ -236,7 +243,7 @@ scene.add(copper);
 
 //region collider and barracks maker
 var co = 0;
-while (co < 59){
+while (co < 60){
   //co++; 
   var pX = xprov[co].getElementsByTagName("xco")[0].childNodes[0].nodeValue;
   var pZ = xprov[co].getElementsByTagName("yco")[0].childNodes[0].nodeValue;
