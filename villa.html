@@ -120,7 +120,7 @@ var urlParams = new URLSearchParams(location.search);
 var actid = urlParams.get('villa');
 var urlid =actid -1;
 var province,climate,horse,cattle,sheep,pig,fish,grain,vine,oil,pottery,timber,honey;
-if (!urlid || urlid >=1 || urlid <55){
+if (!urlid || urlid >=1 || urlid <59){
         province = xprov[urlid].getElementsByTagName("province")[0].childNodes[0].nodeValue;
         climate = xprov[urlid].getElementsByTagName("climate")[0].childNodes[0].nodeValue;
         //resources
