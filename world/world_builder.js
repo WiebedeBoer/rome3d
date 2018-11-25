@@ -1,28 +1,17 @@
 function WorldBuilder(){
 
-/*
-1 amphitheatre
-34 temple
-167 villa
-102 oppidum
-19 theatre
-145 dock 
-47 oasis
-7 baths 
-522 towns
-*/
-
+//522 towns
 //type, path, height,width,depth, x position,y position,z position,rotation y axis
 
 //max towns
-var mxi = 656;
+var mxi = 693;
 
 //town objects
 var i = 0;
 while (i <mxi){
 
-    //increment loop
-    i ++;
+  //increment loop
+  i ++;
 
   var tench = xtag[i].getElementsByTagName("type")[0].childNodes[0].nodeValue;
   //theatre towns
@@ -199,6 +188,8 @@ while (i <mxi){
     scene.add(pine);
   }
 
+
+
 }
 
 
@@ -240,7 +231,7 @@ scene.add(copper);
 
 //region collider and barracks maker
 var co = 0;
-while (co < 56){
+while (co < 59){
   //co++; 
   var pX = xprov[co].getElementsByTagName("xco")[0].childNodes[0].nodeValue;
   var pZ = xprov[co].getElementsByTagName("yco")[0].childNodes[0].nodeValue;
