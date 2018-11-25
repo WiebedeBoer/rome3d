@@ -48,7 +48,7 @@
 <town>Agrigentum</town></grid>
 <grid><id>24</id><type>horreum_west</type><climate>mediterranean</climate><xco>692</xco><yco>1274</yco>
 <town>Lilybaeum</town></grid>
-<grid><id>25</id><type>horreum_north</type><climate>mediterranean</climate><xco>718</xco><yco>1259</yco>
+<grid><id>25</id><type>thermae</type><climate>mediterranean</climate><xco>718</xco><yco>1259</yco>
 <town>Panormus</town></grid>
 <grid><id>26</id><type>horreum_north</type><climate>mediterranean</climate><xco>1071</xco><yco>1388</yco>
 <town>Heracleum</town></grid>
@@ -136,13 +136,13 @@
 <town>Aquileia</town></grid>
 <grid><id>68</id><type>horreum_south</type><climate>mediterranean</climate><xco>748</xco><yco>898</yco>
 <town>Tarsatica</town></grid>
-<grid><id>69</id><type>horreum_south</type><climate>mediterranean</climate><xco>775</xco><yco>963</yco>
+<grid><id>69</id><type>thermae</type><climate>mediterranean</climate><xco>775</xco><yco>963</yco>
 <town>Iadera</town></grid>
-<grid><id>70</id><type>horreum_south</type><climate>mediterranean</climate><xco>812</xco><yco>994</yco>
+<grid><id>70</id><type>thermae</type><climate>mediterranean</climate><xco>812</xco><yco>994</yco>
 <town>Salonia</town></grid>
 <grid><id>71</id><type>horreum_west</type><climate>mediterranean</climate><xco>732</xco><yco>883</yco>
 <town>Tergeste</town></grid>
-<grid><id>72</id><type>horreum_west</type><climate>mediterranean</climate><xco>845</xco><yco>1019</yco>
+<grid><id>72</id><type>thermae</type><climate>mediterranean</climate><xco>845</xco><yco>1019</yco>
 <town>Narona</town></grid>
 <grid><id>73</id><type>horreum_west</type><climate>mediterranean</climate><xco>902</xco><yco>1102</yco>
 <town>Epidaurus</town></grid>
@@ -154,7 +154,7 @@
 <town>Gela</town></grid>
 <grid><id>77</id><type>horreum_east</type><climate>mediterranean</climate><xco>642</xco><yco>1415</yco>
 <town>Thaenae</town></grid>
-<grid><id>78</id><type>horreum_north</type><climate>mediterranean</climate><xco>691</xco><yco>1503</yco>
+<grid><id>78</id><type>thermae</type><climate>mediterranean</climate><xco>691</xco><yco>1503</yco>
 <town>Sabrata</town></grid>
 <grid><id>79</id><type>horreum_north</type><climate>mediterranean</climate><xco>714</xco><yco>1498</yco>
 <town>Oea</town></grid>
@@ -184,7 +184,7 @@
 <town>Zephyrium</town></grid>
 <grid><id>92</id><type>horreum_south</type><climate>mediterranean</climate><xco>1334</xco><yco>1340</yco>
 <town>Ourbanopolis</town></grid>
-<grid><id>93</id><type>horreum_south</type><climate>mediterranean</climate><xco>1276</xco><yco>1331</yco>
+<grid><id>93</id><type>thermae</type><climate>mediterranean</climate><xco>1276</xco><yco>1331</yco>
 <town>Coracesium</town></grid>
 <grid><id>94</id><type>horreum_south</type><climate>mediterranean</climate><xco>1238</xco><yco>1316</yco>
 <town>Attalia</town></grid>
@@ -202,7 +202,7 @@
 <town>Perinthus</town></grid>
 <grid><id>101</id><type>horreum_south</type><climate>mediterranean</climate><xco>1186</xco><yco>1120</yco>
 <town>Byzantium</town></grid>
-<grid><id>102</id><type>horreum_north</type><climate>mediterranean</climate><xco>1154</xco><yco>1152</yco>
+<grid><id>102</id><type>thermae</type><climate>mediterranean</climate><xco>1154</xco><yco>1152</yco>
 <town>Cyzicus</town></grid>
 <grid><id>103</id><type>horreum_west</type><climate>mediterranean</climate><xco>1260</xco><yco>1107</yco>
 <town>Heraclea Pontica</town></grid>
@@ -875,7 +875,7 @@
 <town>Calagurris</town></grid>
 <grid><id>460</id><type>oppidum</type><climate>northern</climate><xco>270</xco><yco>1029</yco>
 <town>Pompaelo</town></grid>
-<grid><id>461</id><type>oppidum</type><climate>northern</climate><xco>93</xco><yco>1019</yco>
+<grid><id>461</id><type>thermae</type><climate>northern</climate><xco>93</xco><yco>1019</yco>
 <town>Lucus</town></grid>
 <grid><id>462</id><type>oppidum</type><climate>northern</climate><xco>138</xco><yco>1048</yco>
 <town>Asturica</town></grid>
@@ -895,7 +895,7 @@
 <town>Deva</town></grid>
 <grid><id>470</id><type>thermae</type><climate>northern</climate><xco>244</xco><yco>411</yco>
 <town>Bremetennacum</town></grid>
-<grid><id>471</id><type>oppidum</type><climate>northern</climate><xco>286</xco><yco>401</yco>
+<grid><id>471</id><type>thermae</type><climate>northern</climate><xco>286</xco><yco>401</yco>
 <town>Eboracum</town></grid>
 <grid><id>472</id><type>oppidum</type><climate>northern</climate><xco>231</xco><yco>342</yco>
 <town>Luguvalium</town></grid>
@@ -1162,9 +1162,9 @@
 <grid><id>603</id><type>silver</type><climate>mediterranean</climate><xco>128</xco><yco>1021</yco>
 <region>Hispania_Tarraconensis</region></grid>
 <grid><id>604</id><type>silver</type><climate>mediterranean</climate><xco>1035</xco><yco>1271</yco>
-<region>Asia</region></grid>
+<region>Achaia</region></grid>
 <grid><id>605</id><type>silver</type><climate>mediterranean</climate><xco>1506</xco><yco>1139</yco>
-<region>Hispania_Tarraconensis</region></grid>
+<region>Pontus</region></grid>
 <grid><id>606</id><type>marble</type><climate>mediterranean</climate><xco>392</xco><yco>1353</yco>
 <region>Mauretania_Caesariensis</region></grid>
 <grid><id>607</id><type>marble</type><climate>mediterranean</climate><xco>1032</xco><yco>1256</yco>
@@ -1343,4 +1343,10 @@
 <region>Sarmatia</region></grid>
 <grid><id>694</id><type>tree_transparent</type><climate>mediterranean</climate><xco>119</xco><yco>423</yco>
 <region>Hibernia</region></grid>
+<grid><id>695</id><type>honey</type><climate>mediterranean</climate><xco>997</xco><yco>1083</yco>
+<region>Macedonia</region></grid>
+<grid><id>696</id><type>silver</type><climate>mediterranean</climate><xco>315</xco><yco>987</yco>
+<region>Aquitania</region></grid>
+<grid><id>697</id><type>silver</type><climate>mediterranean</climate><xco>1137</xco><yco>1192</yco>
+<region>Asia</region></grid>
 </CATALOG>

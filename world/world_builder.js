@@ -1,10 +1,14 @@
 function WorldBuilder(){
 
 //522 towns
-//type, path, height,width,depth, x position,y position,z position,rotation y axis
+
+// 50 thermae, 1 amphitheatrum, 19 theatrum, 34 templum, 128 emporium, 157 villa, 88 oppidum
+// 6 horse, 6 cattle, 10 sheep, 6 pig, 6 fish
+// 15 wheat, 26 wine, 17 olive oil, 9 pottery, 11 timber, 11 honey
+// 5 marble, 2 tin, 6 copper, 11 iron, 8 gold, 6 silver
 
 //max towns
-var mxi = 693;
+var mxi = 696;
 
 //town objects
 var i = 0;
@@ -13,6 +17,7 @@ while (i <mxi){
   //increment loop
   i ++;
 
+  //type, path, height,width,depth, x position,y position,z position,rotation y axis
   var tench = xtag[i].getElementsByTagName("type")[0].childNodes[0].nodeValue;
   //theatre towns
   if (tench =="theatre"){

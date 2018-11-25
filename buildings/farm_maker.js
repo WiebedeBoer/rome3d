@@ -160,5 +160,40 @@ else if (farmtype=="civitas"){
     fieldMaker("forest",xVil-180,zVil);
     fieldMaker("forest",xVil-180,zVil+90);
 
-    }
+}
+//x5,z5
+else if (farmtype=="mine"){
+    
+    fieldMaker("forest",xVil+180,zVil-270);
+    fieldMaker("forest",xVil+180,zVil-180);
+    fieldMaker("forest",xVil+180,zVil-90);
+    fieldMaker("forest",xVil+180,zVil);
+    fieldMaker("forest",xVil+180,zVil+90);
+
+    fieldMaker("forest",xVil+90,zVil-270);
+    fieldMaker("forest",xVil+90,zVil-180); //marble
+    fieldMaker("forest",xVil+90,zVil-90); //tin
+    fieldMaker("forest",xVil+90,zVil); //copper
+    fieldMaker("forest",xVil+90,zVil+90);
+    
+    fieldMaker("forest",xVil,zVil-270);
+    houseMaker("barn2",xVil,zVil-180); //barn
+    houseMaker("barn2",xVil,zVil-90); //barn
+    houseMaker("villagehouse2",xVil,zVil); //center
+    fieldMaker("forest",xVil,zVil+90);
+    
+    fieldMaker("forest",xVil-90,zVil-270);
+    fieldMaker("forest",xVil-90,zVil-180); //iron
+    fieldMaker("forest",xVil-90,zVil-90); //gold
+    fieldMaker("forest",xVil-90,zVil); //silver
+    fieldMaker("forest",xVil-90,zVil+90);
+    
+    fieldMaker("forest",xVil-180,zVil-270); 
+    fieldMaker("forest",xVil-180,zVil-180);         
+    fieldMaker("forest",xVil-180,zVil-90);
+    fieldMaker("forest",xVil-180,zVil);
+    fieldMaker("forest",xVil-180,zVil+90);
+
+}
+
 }
