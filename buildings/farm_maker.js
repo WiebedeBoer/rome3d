@@ -173,36 +173,47 @@ else if (farmtype=="mine"){
     fieldMaker("forest",xVil+90,zVil-270);
     //deposits +90,-90
     //marble 
-    var deposit1 = new Metal(xVil+70,zVil-75,"marble",4.5,1.2,4.5);
-    scene.add( deposit1 );
-    var deposit2 = new Metal(xVil+75,zVil-75,"marble",4.5,1.2,4.5);
-    scene.add( deposit2 );
+    if (marble =="marble"){
+        var deposit1 = new Metal(xVil+70,zVil-75,"marble",4.5,1.2,4.5);
+        scene.add( deposit1 );
+        var deposit2 = new Metal(xVil+75,zVil-75,"marble",4.5,1.2,4.5);
+        scene.add( deposit2 );
+    }
     //tin 
-    var deposit3 = new Metal(xVil+88,zVil-75,"tin",1.5,1.2,4.5);
-    scene.add( deposit3 );
-    var deposit4 = new Metal(xVil+90,zVil-75,"tin",1.5,1.2,4.5);
-    scene.add( deposit4 );
+    if (tin =="tin"){
+        var deposit3 = new Metal(xVil+88,zVil-75,"tin",1.5,1.2,4.5);
+        scene.add( deposit3 );
+        var deposit4 = new Metal(xVil+90,zVil-75,"tin",1.5,1.2,4.5);
+        scene.add( deposit4 );      
+    }
     //copper 
-    var deposit5 = new Metal(xVil+103,zVil-75,"copper",1.5,1.2,4.5);
-    scene.add( deposit5 );
-    var deposit6 = new Metal(xVil+105,zVil-75,"copper",1.5,1.2,4.5);
-    scene.add( deposit6 );  
-    //marble 
-    var deposit7 = new Metal(xVil+73,zVil-105,"iron",1.5,1.2,4.5);
-    scene.add( deposit7 );
-    var deposit8 = new Metal(xVil+75,zVil-105,"iron",1.5,1.2,4.5);
-    scene.add( deposit8 );
-    //tin 
-    var deposit9 = new Metal(xVil+88,zVil-105,"gold",1.5,1.2,4.5);
-    scene.add( deposit9 );
-    var deposit10 = new Metal(xVil+90,zVil-105,"gold",1.5,1.2,4.5);
-    scene.add( deposit10 );
-    //copper 
-    var deposit11 = new Metal(xVil+103,zVil-105,"silver",1.5,1.2,4.5);
-    scene.add( deposit11 );
-    var deposit12 = new Metal(xVil+105,zVil-105,"silver",1.5,1.2,4.5);
-    scene.add( deposit12 ); 
-    
+    if (copper =="copper"){
+        var deposit5 = new Metal(xVil+103,zVil-75,"copper",1.5,1.2,4.5);
+        scene.add( deposit5 );
+        var deposit6 = new Metal(xVil+105,zVil-75,"copper",1.5,1.2,4.5);
+        scene.add( deposit6 );        
+    }
+    //iron 
+    if (iron =="iron"){
+        var deposit7 = new Metal(xVil+73,zVil-105,"iron",1.5,1.2,4.5);
+        scene.add( deposit7 );
+        var deposit8 = new Metal(xVil+75,zVil-105,"iron",1.5,1.2,4.5);
+        scene.add( deposit8 );    
+    }
+    //gold
+    if (gold =="gold"){
+        var deposit9 = new Metal(xVil+88,zVil-105,"gold",1.5,1.2,4.5);
+        scene.add( deposit9 );
+        var deposit10 = new Metal(xVil+90,zVil-105,"gold",1.5,1.2,4.5);
+        scene.add( deposit10 );     
+    }
+    //silver 
+    if (silver =="silver"){
+        var deposit11 = new Metal(xVil+103,zVil-105,"silver",1.5,1.2,4.5);
+        scene.add( deposit11 );
+        var deposit12 = new Metal(xVil+105,zVil-105,"silver",1.5,1.2,4.5);
+        scene.add( deposit12 );       
+    }    
 
     fieldMaker("forest",xVil+90,zVil+90);    
     
