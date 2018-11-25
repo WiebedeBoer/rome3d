@@ -181,7 +181,7 @@ else if(type =="sheep"){
 }
 //pig pasture
 else if(type =="pig"){
-    if (pig =="pig"){
+    if (pig =="pigs"){
         var Pig1 = new Pig(xPos-15,5,zPos+15); 
         scene.add(Pig1);
         var Pig2 = new Pig(xPos-15,5,zPos-15); 
