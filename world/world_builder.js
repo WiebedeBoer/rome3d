@@ -3,12 +3,12 @@ function WorldBuilder(){
 //522 towns
 
 // 50 thermae, 1 amphitheatrum, 19 theatrum, 34 templum, 128 emporium, 157 villa, 88 oppidum
-// 6 horse, 6 cattle, 10 sheep, 6 pig, 6 fish
-// 15 wheat, 26 wine, 17 olive oil, 9 pottery, 11 timber, 11 honey
-// 5 marble, 2 tin, 6 copper, 11 iron, 8 gold, 6 silver
+// 6 horse, 8 cattle, 12 sheep, 6 pig, 7 fish
+// 16 wheat, 27 wine, 18 olive oil, 10 pottery, 12 timber, 11 honey
+// 6 marble, 2 tin, 9 copper, 16 iron, 9 gold, 9 silver
 
 //max towns
-var mxi = 696;
+var mxi = 718;
 
 //town objects
 var i = 0;
