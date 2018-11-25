@@ -171,22 +171,54 @@ else if (farmtype=="mine"){
     fieldMaker("forest",xVil+180,zVil+90);
 
     fieldMaker("forest",xVil+90,zVil-270);
-    fieldMaker("forest",xVil+90,zVil-180); //marble
-    fieldMaker("forest",xVil+90,zVil-90); //tin
-    fieldMaker("forest",xVil+90,zVil); //copper
-    fieldMaker("forest",xVil+90,zVil+90);
+    //deposits +90,-90
+    //marble 
+    var deposit1 = new Metal(xVil+70,zVil-75,"marble",4.5,1.2,4.5);
+    scene.add( deposit1 );
+    var deposit2 = new Metal(xVil+75,zVil-75,"marble",4.5,1.2,4.5);
+    scene.add( deposit2 );
+    //tin 
+    var deposit3 = new Metal(xVil+88,zVil-75,"tin",1.5,1.2,4.5);
+    scene.add( deposit3 );
+    var deposit4 = new Metal(xVil+90,zVil-75,"tin",1.5,1.2,4.5);
+    scene.add( deposit4 );
+    //copper 
+    var deposit5 = new Metal(xVil+103,zVil-75,"copper",1.5,1.2,4.5);
+    scene.add( deposit5 );
+    var deposit6 = new Metal(xVil+105,zVil-75,"copper",1.5,1.2,4.5);
+    scene.add( deposit6 );  
+    //marble 
+    var deposit7 = new Metal(xVil+73,zVil-105,"iron",1.5,1.2,4.5);
+    scene.add( deposit7 );
+    var deposit8 = new Metal(xVil+75,zVil-105,"iron",1.5,1.2,4.5);
+    scene.add( deposit8 );
+    //tin 
+    var deposit9 = new Metal(xVil+88,zVil-105,"gold",1.5,1.2,4.5);
+    scene.add( deposit9 );
+    var deposit10 = new Metal(xVil+90,zVil-105,"gold",1.5,1.2,4.5);
+    scene.add( deposit10 );
+    //copper 
+    var deposit11 = new Metal(xVil+103,zVil-105,"silver",1.5,1.2,4.5);
+    scene.add( deposit11 );
+    var deposit12 = new Metal(xVil+105,zVil-105,"silver",1.5,1.2,4.5);
+    scene.add( deposit12 ); 
+    
+
+    fieldMaker("forest",xVil+90,zVil+90);    
     
     fieldMaker("forest",xVil,zVil-270);
-    houseMaker("barn2",xVil,zVil-180); //barn
+    var boulder = new Mountain(xVil,zVil-180); //boulder mountain
+    scene.add( boulder );
     houseMaker("barn2",xVil,zVil-90); //barn
     houseMaker("villagehouse2",xVil,zVil); //center
-    fieldMaker("forest",xVil,zVil+90);
+    fieldMaker("forest",xVil,zVil+90);    
     
     fieldMaker("forest",xVil-90,zVil-270);
-    fieldMaker("forest",xVil-90,zVil-180); //iron
-    fieldMaker("forest",xVil-90,zVil-90); //gold
-    fieldMaker("forest",xVil-90,zVil); //silver
+    //empty
+    //empty
+    //empty
     fieldMaker("forest",xVil-90,zVil+90);
+    
     
     fieldMaker("forest",xVil-180,zVil-270); 
     fieldMaker("forest",xVil-180,zVil-180);         
