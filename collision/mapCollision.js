@@ -26,7 +26,7 @@ for (var vertexIndex = 0; vertexIndex < MovingCube.geometry.vertices.length; ver
             propHit = 1;
             indexProp = collidableMeshList.map(e => e.uuid).indexOf(collisionResults[0]['object']['uuid']);
             soundProp = indexProp -1; 
-            townInd = townTypes[soundProp];            
+            townInd = townTypes[indexProp];            
             pnid =townNames[soundProp];            
 
         }
