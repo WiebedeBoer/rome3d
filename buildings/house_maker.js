@@ -99,7 +99,7 @@ if (paper =="papyrus"){
     var scroll1 = new Scroll(xPos+15,8.1,zPos+15,3.14159 / 2,0,0);
     scene.add( scroll1 ); 
 }
-if (luxury =="spices" || luxury =="incense" || luxury =="silk" || luxury =="ivory"){
+if (luxury =="spices" || luxury =="silk" || scent =="incense"  || carving =="ivory"){
     var dromedary1 = new Camel(xPos-15,zPos-45);
     scene.add( dromedary1 ); 
 }
