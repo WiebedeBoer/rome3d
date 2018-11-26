@@ -100,7 +100,7 @@
 <grain>na</grain><vine>na</vine><oil>olive_tree</oil><pottery>na</pottery><timber>na</timber><honey>na</honey>
 <marble>na</marble><tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>na</silver><luxury>na</luxury><paper>na</paper>
 </grid>
-<grid><id>21</id><climate>mediterranean</climate><xco>1214</xco><yco>1572</yco>
+<grid><id>21</id><climate>desert</climate><xco>1214</xco><yco>1572</yco>
 <province>Aegyptus</province><horse>na</horse><cattle>cattle</cattle><sheep>na</sheep><pig>na</pig><fish>na</fish>
 <grain>wheat</grain><vine>na</vine><oil>na</oil><pottery>na</pottery><timber>na</timber><honey>na</honey>
 <marble>na</marble><tin>na</tin><copper>na</copper><iron>na</iron><gold>gold</gold><silver>na</silver><luxury>spices</luxury><paper>papyrus</paper>

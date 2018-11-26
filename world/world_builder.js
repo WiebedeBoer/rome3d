@@ -244,7 +244,6 @@ scene.add(copper);
 //region collider and barracks maker
 var co = 0;
 while (co < 60){
-  //co++; 
   var pX = xprov[co].getElementsByTagName("xco")[0].childNodes[0].nodeValue;
   var pZ = xprov[co].getElementsByTagName("yco")[0].childNodes[0].nodeValue;
   var tid = xprov[co].getElementsByTagName("id")[0].childNodes[0].nodeValue;

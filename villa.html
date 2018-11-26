@@ -54,6 +54,8 @@
 <script src="props/pig.js"></script>
 <script src="props/sheep.js"></script>
 <script src="props/horse.js"></script>
+<script src="props/camel.js"></script>
+<script src="props/scroll.js"></script>
 <!--collision detection-->
 <script src="collision/villaCollision.js"></script>
 <!--people-->
@@ -119,7 +121,9 @@ gamestart.style.display = "none";
 var urlParams = new URLSearchParams(location.search);
 var actid = urlParams.get('villa');
 var urlid =actid -1;
-var province,climate,horse,cattle,sheep,pig,fish,grain,vine,oil,pottery,timber,honey;
+var province,climate,horse,cattle,sheep,pig,fish;
+var grain,vine,oil,pottery,timber,honey;
+var marble,tin,copper,iron,gold,silver,paper,luxury;
 if (!urlid || urlid >=1 || urlid <59){
         province = xprov[urlid].getElementsByTagName("province")[0].childNodes[0].nodeValue;
         climate = xprov[urlid].getElementsByTagName("climate")[0].childNodes[0].nodeValue;
@@ -141,6 +145,8 @@ if (!urlid || urlid >=1 || urlid <59){
         iron = xprov[urlid].getElementsByTagName("iron")[0].childNodes[0].nodeValue;
         gold = xprov[urlid].getElementsByTagName("gold")[0].childNodes[0].nodeValue;
         silver = xprov[urlid].getElementsByTagName("silver")[0].childNodes[0].nodeValue;
+        paper = xprov[urlid].getElementsByTagName("paper")[0].childNodes[0].nodeValue;
+        luxury = xprov[urlid].getElementsByTagName("luxury")[0].childNodes[0].nodeValue;
 }
 else {
         window.location.assign("index.html")
