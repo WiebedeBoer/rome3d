@@ -28,9 +28,9 @@
 <town>Portus Namnetus</town></grid>
 <grid><id>14</id><type>horreum_north</type><xco>973</xco><yco>1501</yco>
 <town>Cyrene</town></grid>
-<grid><id>15</id><type>horreum_south</type><xco>746</xco><yco>1127</yco>
+<grid><id>15</id><type>library</type><xco>746</xco><yco>1127</yco>
 <town>Neapolis</town></grid>
-<grid><id>16</id><type>horreum_east</type><xco>627</xco><yco>1318</yco>
+<grid><id>16</id><type>library</type><xco>627</xco><yco>1318</yco>
 <town>Carthago</town></grid>
 <grid><id>17</id><type>horreum_east</type><xco>620</xco><yco>1309</yco>
 <town>Utica</town></grid>
@@ -144,11 +144,11 @@
 <town>Tergeste</town></grid>
 <grid><id>72</id><type>thermae</type><xco>845</xco><yco>1019</yco>
 <town>Narona</town></grid>
-<grid><id>73</id><type>horreum_west</type><xco>902</xco><yco>1102</yco>
+<grid><id>73</id><type>library</type><xco>902</xco><yco>1102</yco>
 <town>Epidaurus</town></grid>
 <grid><id>74</id><type>horreum_west</type><xco>918</xco><yco>1180</yco>
 <town>Buthrotum</town></grid>
-<grid><id>75</id><type>horreum_north</type><xco>970</xco><yco>1254</yco>
+<grid><id>75</id><type>library</type><xco>970</xco><yco>1254</yco>
 <town>Patrae</town></grid>
 <grid><id>76</id><type>thermae</type><xco>746</xco><yco>1307</yco>
 <town>Gela</town></grid>
@@ -196,7 +196,7 @@
 <town>Thessalonica</town></grid>
 <grid><id>98</id><type>horreum_east</type><xco>1101</xco><yco>1247</yco>
 <town>Chios</town></grid>
-<grid><id>99</id><type>horreum_west</type><xco>1131</xco><yco>1245</yco>
+<grid><id>99</id><type>library</type><xco>1131</xco><yco>1245</yco>
 <town>Smyrna</town></grid>
 <grid><id>100</id><type>horreum_south</type><xco>1155</xco><yco>1121</yco>
 <town>Perinthus</town></grid>
@@ -286,7 +286,7 @@
 <town>Treva</town></grid>
 <grid><id>143</id><type>horreum_north</type><xco>301</xco><yco>924</yco>
 <town>Burdigala</town></grid>
-<grid><id>144</id><type>horreum_north</type><xco>1005</xco><yco>1268</yco>
+<grid><id>144</id><type>library</type><xco>1005</xco><yco>1268</yco>
 <town>Corinthus</town></grid>
 <grid><id>145</id><type>horreum_south</type><xco>994</xco><yco>1323</yco>
 <town>Gythium</town></grid>
@@ -362,7 +362,7 @@
 <town>Thebes</town></grid>
 <grid><id>203</id><type>theatre</type><xco>989</xco><yco>1186</yco>
 <town>Larissa</town></grid>
-<grid><id>204</id><type>theatre</type><xco>1023</xco><yco>1115</yco>
+<grid><id>204</id><type>library</type><xco>1023</xco><yco>1115</yco>
 <town>Amphipolis</town></grid>
 <grid><id>205</id><type>theatre</type><xco>990</xco><yco>1308</yco>
 <town>Sparta</town></grid>
@@ -374,9 +374,9 @@
 <town>Side</town></grid>
 <grid><id>209</id><type>theatre</type><xco>1178</xco><yco>1279</yco>
 <town>Aphrodisias</town></grid>
-<grid><id>210</id><type>theatre</type><xco>1132</xco><yco>1211</yco>
+<grid><id>210</id><type>library</type><xco>1132</xco><yco>1211</yco>
 <town>Pergamum</town></grid>
-<grid><id>211</id><type>theatre</type><xco>1158</xco><yco>1241</yco>
+<grid><id>211</id><type>library</type><xco>1158</xco><yco>1241</yco>
 <town>Sardes</town></grid>
 <grid><id>212</id><type>theatre</type><xco>1150</xco><yco>1297</yco>
 <town>Miletus</town></grid>
@@ -408,13 +408,13 @@
 <town>Delphi</town></grid>
 <grid><id>226</id><type>templum4</type><xco>975</xco><yco>1303</yco>
 <town>Messenia</town></grid>
-<grid><id>227</id><type>templum3</type><xco>1214</xco><yco>1572</yco>
+<grid><id>227</id><type>library</type><xco>1214</xco><yco>1572</yco>
 <town>Alexandria</town></grid>
 <grid><id>228</id><type>templum3</type><xco>966</xco><yco>1281</yco>
 <town>Olympia</town></grid>
-<grid><id>229</id><type>templum3</type><xco>1137</xco><yco>1268</yco>
+<grid><id>229</id><type>library</type><xco>1137</xco><yco>1268</yco>
 <town>Ephesus</town></grid>
-<grid><id>230</id><type>templum5</type><xco>1029</xco><yco>1265</yco>
+<grid><id>230</id><type>library</type><xco>1029</xco><yco>1265</yco>
 <town>Athenae</town></grid>
 <grid><id>231</id><type>templum5</type><xco>383</xco><yco>1101</yco>
 <town>Barcino</town></grid>
@@ -522,7 +522,7 @@
 <town>Theveste</town></grid>
 <grid><id>283</id><type>villa</type><xco>913</xco><yco>976</yco>
 <town>Capedunum</town></grid>
-<grid><id>284</id><type>villa</type><xco>516</xco><yco>1382</yco>
+<grid><id>284</id><type>library</type><xco>516</xco><yco>1382</yco>
 <town>Thamugadi</town></grid>
 <grid><id>285</id><type>villa</type><xco>508</xco><yco>1379</yco>
 <town>Lambaesis</town></grid>
@@ -572,7 +572,7 @@
 <town>Taurinorum</town></grid>
 <grid><id>308</id><type>villa</type><xco>457</xco><yco>985</yco>
 <town>Arelate</town></grid>
-<grid><id>309</id><type>villa</type><xco>462</xco><yco>962</yco>
+<grid><id>309</id><type>library</type><xco>462</xco><yco>962</yco>
 <town>Arausio</town></grid>
 <grid><id>310</id><type>villa</type><xco>465</xco><yco>920</yco>
 <town>Valentia</town></grid>
@@ -628,7 +628,7 @@
 <town>Thyatira</town></grid>
 <grid><id>336</id><type>villa</type><xco>1177</xco><yco>1163</yco>
 <town>Dascylium</town></grid>
-<grid><id>337</id><type>villa</type><xco>1189</xco><yco>1159</yco>
+<grid><id>337</id><type>library</type><xco>1189</xco><yco>1159</yco>
 <town>Prusa</town></grid>
 <grid><id>338</id><type>villa</type><xco>1209</xco><yco>1148</yco>
 <town>Nicaea</town></grid>
@@ -636,7 +636,7 @@
 <town>Apamea</town></grid>
 <grid><id>340</id><type>villa</type><xco>1233</xco><yco>1239</yco>
 <town>Synnada</town></grid>
-<grid><id>341</id><type>villa</type><xco>1216</xco><yco>1197</yco>
+<grid><id>341</id><type>library</type><xco>1216</xco><yco>1197</yco>
 <town>Cotyaeum</town></grid>
 <grid><id>342</id><type>villa</type><xco>1232</xco><yco>1181</yco>
 <town>Dorylaeum</town></grid>
@@ -934,7 +934,7 @@
 <town>Flavia Solva</town></grid>
 <grid><id>489</id><type>oppidum</type><xco>752</xco><yco>861</yco>
 <town>Emona</town></grid>
-<grid><id>490</id><type>oppidum</type><xco>749</xco><yco>825</yco>
+<grid><id>490</id><type>thermae</type><xco>749</xco><yco>825</yco>
 <town>Virunum</town></grid>
 <grid><id>491</id><type>oppidum</type><xco>869</xco><yco>805</yco>
 <town>Gorsium</town></grid>

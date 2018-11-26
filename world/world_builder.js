@@ -1,8 +1,7 @@
 function WorldBuilder(){
 
 //522 towns
-
-// 50 thermae, 1 amphitheatrum, 19 theatrum, 34 templum, 128 emporium, 157 villa, 88 oppidum
+// 51 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 153 villa, 87 oppidum
 // 9 horse, 21 cattle, 21 sheep, 16 pigs, 8 fish
 // 24 wheat, 37 wine, 22 olive oil, 13 pottery, 22 timber, 12 honey
 // 7 marble, 2 tin, 9 copper, 17 iron, 10 gold, 10 silver
@@ -85,6 +84,14 @@ while (i <mxi){
     var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
     var pyramid = new Place("CHAHIN_PYRAMID","pyramid",1,1,1, xpc -halfsize,0, zpc -halfsize,0);
     scene.add(pyramid); //pyramid
+  }
+  //library
+  else if(tench =="library"){
+    var lib_offset = 3;
+    var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+    var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+    var library = new Place("bibliotheca","library",6,6,6, xpc -halfsize -lib_offset,1.8, zpc -halfsize,Math.PI);
+    scene.add(library); //library
   }
   //fish
   else if(tench =="fish"){
