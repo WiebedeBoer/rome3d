@@ -1566,4 +1566,6 @@
 <region>Germania_Superior</region></grid>
 <grid><id>805</id><type>glass</type><xco>1408</xco><yco>1338</yco>
 <region>Syria</region></grid>
+<grid><id>806</id><type>sheep</type><xco>1562</xco><yco>1028</yco>
+<region>Colchis</region></grid>
 </CATALOG>

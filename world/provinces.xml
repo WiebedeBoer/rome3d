@@ -261,7 +261,7 @@
 <marble>na</marble><tin>na</tin><copper>copper</copper><iron>iron</iron><gold>na</gold><silver>na</silver><luxury>silk</luxury><paper>na</paper><scent>na</scent><sculpt>na</sculpt>
 </grid>
 <grid><id>53</id><climate>mediterranean</climate><xco>1566</xco><yco>1062</yco>
-<province>Colchis</province><horse>na</horse><cattle>na</cattle><sheep>na</sheep><pig>na</pig><fish>na</fish>
+<province>Colchis</province><horse>na</horse><cattle>na</cattle><sheep>sheep</sheep><pig>na</pig><fish>na</fish>
 <grain>na</grain><vine>grapevine</vine><oil>na</oil><pottery>na</pottery><timber>na</timber><honey>honey</honey>
 <marble>na</marble><tin>na</tin><copper>na</copper><iron>na</iron><gold>gold</gold><silver>na</silver><luxury>na</luxury><paper>na</paper><scent>na</scent><sculpt>na</sculpt>
 </grid>
