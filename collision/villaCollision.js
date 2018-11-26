@@ -43,8 +43,8 @@ for (var vertexIndex = 0; vertexIndex < MovingCube.geometry.vertices.length; ver
     if (!collisionCheck){
                 
         //street name
-        var x_street = Math.floor((camera.position.x + 715 + 152.5) / 43.375); //-715 +1020 1735
-        var z_street = Math.floor((camera.position.z + 715 + 17.5) / 36.625); //-715 +750 1465
+        var x_street = Math.floor((camera.position.x + 1400) / 70);
+        var z_street = Math.floor((camera.position.z + 1400) / 70);
         //map blacking
         var cb = document.getElementById("myCanvas");
         var ctxb = cb.getContext("2d");
@@ -57,7 +57,7 @@ for (var vertexIndex = 0; vertexIndex < MovingCube.geometry.vertices.length; ver
         ctx.fillRect(x_street, z_street, 1, 1);
         //msg
         clearText();
-        appendText(x_street +"th street E-W,"+z_street+"th N-S");
+        appendText(camera.position.x +"x,"+camera.position.z+"z");
     }
     else {
         clearText();     
