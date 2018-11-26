@@ -6,10 +6,10 @@ function WorldBuilder(){
 // 9 horse, 21 cattle, 20 sheep, 16 pigs, 8 fish
 // 24 wheat, 37 wine, 22 olive oil, 13 pottery, 22 timber, 12 honey
 // 7 marble, 2 tin, 9 copper, 17 iron, 10 gold, 10 silver
-// 1 incense, 1 papyrus, 2 spices, 2 silk, 2 ivory
+// 1 incense, 1 papyrus, 5 glass, 2 spices, 2 silk, 2 ivory
 
 //max towns
-var mxi = 799;
+var mxi = 804;
 
 //town objects
 var i = 0;
@@ -200,7 +200,13 @@ while (i <mxi){
     var luxury = new Place("DromedaryCamels","dromedary",0.4,0.4,0.4, xpc -halfsize,0.8, zpc -halfsize,0);
     scene.add(luxury);  
   }
-
+  //luxuries
+  else if (tench =="glass"){
+    var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+    var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+    var glass = new Place("Vase_504","glass_vase",0.025,0.025,0.025, xpc -halfsize,0.8, zpc -halfsize,0);
+    scene.add(glass);  
+  }
 
 }
 

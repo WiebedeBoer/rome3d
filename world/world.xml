@@ -1556,4 +1556,14 @@
 <region>Aegyptus</region></grid>
 <grid><id>800</id><type>horse</type><xco>1298</xco><yco>816</yco>
 <region>Sarmatia</region></grid>
+<grid><id>801</id><type>glass</type><xco>713</xco><yco>1084</yco>
+<region>Latium</region></grid>
+<grid><id>802</id><type>glass</type><xco>768</xco><yco>1128</yco>
+<region>Campania</region></grid>
+<grid><id>803</id><type>glass</type><xco>608</xco><yco>894</yco>
+<region>Gallia_Cisalpina</region></grid>
+<grid><id>804</id><type>glass</type><xco>524</xco><yco>598</yco>
+<region>Germania_Superior</region></grid>
+<grid><id>805</id><type>glass</type><xco>1408</xco><yco>1338</yco>
+<region>Syria</region></grid>
 </CATALOG>

@@ -62,6 +62,10 @@ var stables = new Barn(xPos+13,0,zPos);
 scene.add( stables ); 
 var donkey1 = new Donkey(xPos+45,0,zPos+15); 
 scene.add(donkey1);
+if (luxury =="glass"){
+    var glass1 = new Vase(xPos+25,zPos+15);
+    scene.add( glass1 ); 
+}
 }
 else if(type =="temple"){
     if(climate =="desert"){
@@ -120,6 +124,5 @@ scene.add( arrowbow );
 var arrowLoafCol = new propCollect(xPos+10, 6, zPos+33, "bow"); 
 scene.add(arrowLoafCol);
 }
-
 
 }
