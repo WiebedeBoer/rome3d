@@ -93,6 +93,16 @@ if (fish =="fish"){
     var fishLoafCol = new propCollect(xPos,8,zPos-15,"sauce"); 
     scene.add(fishLoafCol);
 }
+if (paper =="papyrus"){
+    var tablestand3 = new Table(xPos+15,2,zPos+15,0,0,0); 
+    scene.add(tablestand3); 
+    var scroll1 = new Scroll(xPos+15,8.1,zPos+15,3.14159 / 2,0,0);
+    scene.add( scroll1 ); 
+}
+if (luxury =="spices" || luxury =="incense" || luxury =="silk" || luxury =="ivory"){
+    var dromedary1 = new Camel(xPos-15,zPos-45);
+    scene.add( dromedary1 ); 
+}
 var tablestand2 = new Table(xPos+15,2,zPos-15,0,0,0); 
 scene.add(tablestand2); 
 var breadLoaf = new Bread(xPos+15,8,zPos-15,0,0,0); 
