@@ -1510,4 +1510,6 @@
 <region>Aegyptus</region></grid>
 <grid><id>777</id><type>ivory</type><xco>619</xco><yco>1858</yco>
 <region>Garamantia</region></grid>
+<grid><id>778</id><type>cattle</type><xco>703</xco><yco>1776</yco>
+<region>Garamantia</region></grid>
 </CATALOG>
