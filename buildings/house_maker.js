@@ -103,9 +103,17 @@ if (paper =="papyrus"){
     var scroll1 = new Scroll(xPos+15,8.1,zPos+15,3.14159 / 2,0,0);
     scene.add( scroll1 ); 
 }
-if (luxury =="spices" || luxury =="silk" || scent =="incense"  || carving =="ivory"){
-    var dromedary1 = new Camel(xPos-15,zPos-45);
+if (fabrics =="silk" || scent =="incense"){
+    var dromedary1 = new Camel(xPos-20,zPos-45);
     scene.add( dromedary1 ); 
+}
+if (luxury =="spices" || luxury =="salt"){
+    var dromedary2 = new Camel(xPos+10,zPos-45);
+    scene.add( dromedary2 ); 
+}
+if (carving =="ivory"){
+    var dromedary3 = new Camel(xPos+40,zPos-45);
+    scene.add( dromedary3 ); 
 }
 var tablestand2 = new Table(xPos+15,2,zPos-15,0,0,0); 
 scene.add(tablestand2); 

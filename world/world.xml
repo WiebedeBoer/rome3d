@@ -504,11 +504,11 @@
 <town>Astigi</town></grid>
 <grid><id>274</id><type>villa</type><xco>153</xco><yco>1449</yco>
 <town>Volubilis</town></grid>
-<grid><id>275</id><type>villa</type><xco>481</xco><yco>1348</yco>
+<grid><id>275</id><type>thermae</type><xco>481</xco><yco>1348</yco>
 <town>Sitifis</town></grid>
 <grid><id>276</id><type>villa</type><xco>518</xco><yco>1339</yco>
 <town>Cirta</town></grid>
-<grid><id>277</id><type>villa</type><xco>542</xco><yco>1337</yco>
+<grid><id>277</id><type>thermae</type><xco>542</xco><yco>1337</yco>
 <town>Calama</town></grid>
 <grid><id>278</id><type>villa</type><xco>558</xco><yco>1346</yco>
 <town>Thagaste</town></grid>
@@ -848,9 +848,9 @@
 <town>Libisosanorum</town></grid>
 <grid><id>446</id><type>oppidum</type><xco>255</xco><yco>1178</yco>
 <town>Valeria</town></grid>
-<grid><id>447</id><type>oppidum</type><xco>235</xco><yco>1173</yco>
+<grid><id>447</id><type>thermae</type><xco>235</xco><yco>1173</yco>
 <town>Segobriga</town></grid>
-<grid><id>448</id><type>oppidum</type><xco>199</xco><yco>1175</yco>
+<grid><id>448</id><type>thermae</type><xco>199</xco><yco>1175</yco>
 <town>Toletum</town></grid>
 <grid><id>449</id><type>oppidum</type><xco>241</xco><yco>1147</yco>
 <town>Ercavica</town></grid>
@@ -870,7 +870,7 @@
 <town>Segovia</town></grid>
 <grid><id>457</id><type>oppidum</type><xco>183</xco><yco>1070</yco>
 <town>Pallantia</town></grid>
-<grid><id>458</id><type>oppidum</type><xco>219</xco><yco>1082</yco>
+<grid><id>458</id><type>thermae</type><xco>219</xco><yco>1082</yco>
 <town>Clunia Sulpicia</town></grid>
 <grid><id>459</id><type>oppidum</type><xco>260</xco><yco>1055</yco>
 <town>Calagurris</town></grid>
@@ -920,13 +920,13 @@
 <town>Vindinium</town></grid>
 <grid><id>482</id><type>oppidum</type><xco>388</xco><yco>647</yco>
 <town>Samarobriva</town></grid>
-<grid><id>483</id><type>oppidum</type><xco>611</xco><yco>782</yco>
+<grid><id>483</id><type>thermae</type><xco>611</xco><yco>782</yco>
 <town>Brigantium</town></grid>
 <grid><id>484</id><type>oppidum</type><xco>604</xco><yco>818</yco>
 <town>Curia Raetorum</town></grid>
 <grid><id>485</id><type>oppidum</type><xco>575</xco><yco>789</yco>
 <town>Turicum</town></grid>
-<grid><id>486</id><type>oppidum</type><xco>550</xco><yco>780</yco>
+<grid><id>486</id><type>thermae</type><xco>550</xco><yco>780</yco>
 <town>Rauracorum</town></grid>
 <grid><id>487</id><type>oppidum</type><xco>542</xco><yco>812</yco>
 <town>Brenodurum</town></grid>
@@ -1568,4 +1568,10 @@
 <region>Syria</region></grid>
 <grid><id>806</id><type>sheep</type><xco>1562</xco><yco>1028</yco>
 <region>Colchis</region></grid>
+<grid><id>807</id><type>ivory</type><xco>1401</xco><yco>1702</yco>
+<region>Arabia_Petraea</region></grid>
+<grid><id>808</id><type>salt</type><xco>596</xco><yco>1631</yco>
+<region>Garamantia</region></grid>
+<grid><id>809</id><type>spices</type><xco>1801</xco><yco>1563</yco>
+<region>Persia</region></grid>
 </CATALOG>
