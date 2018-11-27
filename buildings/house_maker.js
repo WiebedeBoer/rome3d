@@ -62,9 +62,15 @@ var stables = new Barn(xPos+13,0,zPos);
 scene.add( stables ); 
 var donkey1 = new Donkey(xPos+45,0,zPos+15); 
 scene.add(donkey1);
-if (luxury =="glass"){
+if (glass =="glass"){
     var glass1 = new Vase(xPos+25,zPos+15);
     scene.add( glass1 ); 
+    var donkey2 = new Donkey(xPos+45,0,zPos-15); 
+    scene.add(donkey2);
+}
+if (carving =="amber" || fabrics =="hides"){
+    var donkey3 = new Donkey(xPos+45,0,zPos-45); 
+    scene.add(donkey3);  
 }
 }
 else if(type =="temple"){
@@ -80,7 +86,6 @@ else if(type =="temple"){
         var temple1 = new Temple3(xPos,0,zPos);
         scene.add( temple1 ); 
     }
-
 var templeCol = new propCollect(xPos,8,zPos-45,"templum"); 
 scene.add(templeCol);
 var augur = new Person("augur",xPos,zPos-45);
@@ -107,7 +112,7 @@ if (fabrics =="silk" || scent =="incense"){
     var dromedary1 = new Camel(xPos-20,zPos-45);
     scene.add( dromedary1 ); 
 }
-if (luxury =="spices" || luxury =="salt"){
+if (seasoning =="spices" || seasoning =="salt"){
     var dromedary2 = new Camel(xPos+10,zPos-45);
     scene.add( dromedary2 ); 
 }

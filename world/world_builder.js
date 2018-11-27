@@ -2,20 +2,19 @@ function WorldBuilder(){
 
 //522 towns
 // 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 151 villa, 82 oppidum
-// 9 horse, 21 cattle, 21 sheep, 16 pigs, 8 fish
-// 24 wheat, 37 wine, 22 olive oil, 13 pottery, 22 timber, 12 honey
-// 7 marble, 2 tin, 9 copper, 17 iron, 10 gold, 10 silver
-// 1 incense, 1 papyrus, 5 glass, 3 spices, 2 silk, 3 ivory, 1 salt
+// 10 horse, 21 cattle, 22 sheep, 16 pigs, 9 fish
+// 25 wheat, 37 wine, 22 olive oil, 14 pottery, 22 timber, 12 honey
+// 7 marble, 3 tin, 9 copper, 17 iron, 10 gold, 10 silver
+// 1 incense, 1 papyrus, 1 parchment, 14 glass, 3 spices, 2 silk, 3 ivory, 1 salt, 1 amber, 1 hides
 
 //max towns
-var mxi = 808;
+var mxi = 827;
 
 //town objects
 var i = 0;
 while (i <mxi){
 
-  //increment loop
-  i ++;
+
 
   //type, path, height,width,depth, x position,y position,z position,rotation y axis
   var tench = xtag[i].getElementsByTagName("type")[0].childNodes[0].nodeValue;
@@ -136,13 +135,13 @@ while (i <mxi){
     scene.add(pottery);  
   }
   //papyrus
-  else if(tench =="papyrus"){
+  else if(tench =="papyrus" || tench =="parchment"){
     var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
     var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
     var pottery = new Place("scroll","closed_scroll",9.0,9.0,9.0, xpc -halfsize,0.8, zpc -halfsize,0);
     scene.add(pottery);  
   }
-  //papyrus
+  //honey
   else if(tench =="honey"){
       var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
       var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
@@ -204,8 +203,19 @@ while (i <mxi){
   else if (tench =="silk" || tench =="incense" || tench =="ivory" || tench =="spices" || tench =="salt"){
     var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
     var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
-    var luxury = new Place("DromedaryCamels","dromedary",0.4,0.4,0.4, xpc -halfsize,0.8, zpc -halfsize,0);
-    scene.add(luxury);  
+    var luxury1 = new Place("DromedaryCamels","dromedary",0.4,0.4,0.4, xpc -halfsize,0.8, zpc -halfsize,0);
+    scene.add(luxury1);  
+    var luxury2 = new Place("DromedaryCamels","dromedary",0.4,0.4,0.4, xpc -halfsize,0.8, zpc -halfsize- 5.5,0);
+    scene.add(luxury2);  
+  }
+  //luxuries
+  else if (tench =="amber" || tench =="hides"){
+    var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+    var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+    var donkey_train1 = new Place("Donkey","donkey",0.3,0.3,0.3, xpc -halfsize,0.2, zpc -halfsize,0);
+    scene.add(donkey_train1);  
+    var donkey_train2 = new Place("Donkey","donkey",0.3,0.3,0.3, xpc -halfsize,0.2, zpc -halfsize - 5.0,0);
+    scene.add(donkey_train2); 
   }
   //luxuries
   else if (tench =="glass"){
@@ -214,6 +224,9 @@ while (i <mxi){
     var glass = new Place("Vase_504","glass_vase",0.025,0.025,0.025, xpc -halfsize,0.8, zpc -halfsize,0);
     scene.add(glass);  
   }
+
+    //increment loop
+    i ++;
 
 }
 
