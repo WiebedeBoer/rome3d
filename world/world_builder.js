@@ -3,6 +3,7 @@ function WorldBuilder(){
 //522 towns
 // 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 151 villa, 82 oppidum
 // 10 horse, 21 cattle, 22 sheep, 16 pigs, 9 fish
+//poultry not seen on map, only villa: 2 pheasant, 41 chicken
 // 25 wheat, 37 wine, 22 olive oil, 14 pottery, 22 timber, 12 honey
 // 7 marble, 3 tin, 9 copper, 17 iron, 10 gold, 10 silver
 // 1 incense, 1 papyrus, 1 parchment, 14 glass, 3 spices, 2 silk, 3 ivory, 1 salt, 1 amber, 1 hides
