@@ -200,6 +200,50 @@ else if(type =="pig"){
         scene.add(fenceB2);   
     }
 }
+//chicken pen
+else if(type =="chicken"){
+        var chicken1 = new Chicken(xPos-15,5,zPos+15); 
+        scene.add(chicken1);
+        var chicken2 = new Chicken(xPos-15,5,zPos-15); 
+        scene.add(chicken2);
+        var chicken3 = new Chicken(xPos+15,5,zPos+15); 
+        scene.add(chicken3);
+        var rooster4 = new Rooster(xPos+15,5,zPos-15); 
+        scene.add(rooster4);
+        var chicken5 = new Chicken(xPos,5,zPos-15); 
+        scene.add(chicken5);
+        var chicken6 = new Chicken(xPos,5,zPos+15); 
+        scene.add(chicken6);
+        var fenceL2 = new Fence(xPos,0,zPos+30,0,0,0); 
+        scene.add(fenceL2);
+        var fenceR2 = new Fence(xPos,0,zPos-30,0,0,0); 
+        scene.add(fenceR2);
+        var fenceF2 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
+        scene.add(fenceF2);
+        var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
+        scene.add(fenceB2);    
+}
+//pheasant field
+else if(type =="pheasant"){
+    var pheasant1 = new Pheasant(xPos-15,5,zPos+15); 
+    scene.add(pheasant1);
+    var pheasant2 = new Pheasant(xPos,5,zPos+15); 
+    scene.add(pheasant2);
+    var pheasant3 = new Pheasant(xPos+15,5,zPos+15); 
+    scene.add(pheasant3);   
+    if (timber =="cedar"){
+        var tree2 = new Forest(xPos,45,zPos-15,"cedar"); 
+        scene.add(tree2);
+    }
+    else if (timber =="pine"){
+        var tree2 = new Forest(xPos,45,zPos-15,"tree_pine"); 
+        scene.add(tree2);
+    }
+    else {
+        var tree2 = new Forest(xPos,45,zPos-15,"tree_transparent"); 
+        scene.add(tree2);
+    }   
+}
 //cow pasture
 else if(type =="cow"){
     if(cattle =="cattle"){
