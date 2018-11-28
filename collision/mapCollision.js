@@ -58,10 +58,9 @@ for (var vertexIndex = 0; vertexIndex < MovingCube.geometry.vertices.length; ver
         }
         else {
             //msg
-            clearText();
-            appendText(camera.position.x +"x,"+camera.position.z+"z");
-        } 
-    
+            //clearText();
+            //appendText(camera.position.x +"x,"+camera.position.z+"z");
+        }     
             //street name
             var x_street = Math.floor((camera.position.x + 1024) / 51.2);
             var z_street = Math.floor((camera.position.z + 1024) / 51.2);
@@ -75,12 +74,8 @@ for (var vertexIndex = 0; vertexIndex < MovingCube.geometry.vertices.length; ver
             var ctx = c.getContext("2d");
             ctx.fillStyle = "red";
             ctx.fillRect(x_street, z_street, 1, 1);
-
 } 
-
 
     function newDoc(locurl) {
         window.location.assign(locurl); 
-    }        
-
-
+    }    
