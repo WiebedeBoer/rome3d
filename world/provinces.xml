@@ -52,7 +52,7 @@
 <grid><id>8</id><climate>mediterranean</climate><xco>658</xco><yco>943</yco>
 <province>Gallia_Cisalpina</province><horse>na</horse><cattle>cattle</cattle><sheep>sheep</sheep><pig>pigs</pig>
 <fish>na</fish><poultry>duck</poultry><fruit>na</fruit>
-<grain>wheat</grain><vine>grapevine</vine><oil>na</oil><pottery>pottery</pottery><timber>na</timber><honey>na</honey>
+<grain>wheat</grain><vine>grapevine</vine><oil>na</oil><pottery>pottery</pottery><timber>na</timber><honey>honey</honey>
 <marble>na</marble><tin>na</tin><copper>na</copper><iron>iron</iron><gold>na</gold><silver>na</silver>
 <seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>glass</glass>
 </grid>
@@ -87,7 +87,7 @@
 <grid><id>13</id><climate>mediterranean</climate><xco>356</xco><yco>1113</yco>
 <province>Hispania_Tarraconensis</province><horse>horse</horse><cattle>na</cattle><sheep>sheep</sheep><pig>pigs</pig>
 <fish>fish</fish><poultry>chicken</poultry><fruit>na</fruit>
-<grain>wheat</grain><vine>grapevine</vine><oil>na</oil><pottery>pottery</pottery><timber>na</timber><honey>na</honey>
+<grain>wheat</grain><vine>grapevine</vine><oil>na</oil><pottery>pottery</pottery><timber>na</timber><honey>honey</honey>
 <marble>na</marble><tin>tin</tin><copper>copper</copper><iron>iron</iron><gold>gold</gold><silver>silver</silver>
 <seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>glass</glass>
 </grid>

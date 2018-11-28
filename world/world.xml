@@ -1652,4 +1652,8 @@
 <region>Africa</region></grid>
 <grid><id>848</id><type>pomegranate</type><xco>1670</xco><yco>1184</yco>
 <region>Armenia</region></grid>
+<grid><id>849</id><type>honey</type><xco>675</xco><yco>928</yco>
+<region>Gallia_Cisalpina</region></grid>
+<grid><id>850</id><type>honey</type><xco>323</xco><yco>1115</yco>
+<region>Hispania_Tarraconensis</region></grid>
 </CATALOG>
