@@ -1610,4 +1610,14 @@
 <region>Hispania_Tarraconensis</region></grid>
 <grid><id>827</id><type>parchment</type><xco>1139</xco><yco>1199</yco>
 <region>Asia</region></grid>
+<grid><id>828</id><type>donkey</type><xco>704</xco><yco>1063</yco>
+<region>Latium</region></grid>
+<grid><id>829</id><type>donkey</type><xco>994</xco><yco>1297</yco>
+<region>Achaia</region></grid>
+<grid><id>830</id><type>donkey</type><xco>1177</xco><yco>1229</yco>
+<region>Asia</region></grid>
+<grid><id>831</id><type>donkey</type><xco>1615</xco><yco>1360</yco>
+<region>Mesopotamia</region></grid>
+<grid><id>832</id><type>donkey</type><xco>1286</xco><yco>1796</yco>
+<region>Aegyptus</region></grid>
 </CATALOG>

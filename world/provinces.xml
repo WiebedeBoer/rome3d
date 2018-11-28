@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CATALOG>
 <grid><id>1</id><climate>mediterranean</climate><xco>699</xco><yco>1087</yco>
-<province>Latium</province><horse>na</horse><cattle>na</cattle><sheep>na</sheep><pig>pigs</pig>
+<province>Latium</province><horse>donkey</horse><cattle>na</cattle><sheep>na</sheep><pig>pigs</pig>
 <fish>na</fish><poultry>chicken</poultry>
 <grain>na</grain><vine>grapevine</vine><oil>na</oil><pottery>na</pottery><timber>na</timber><honey>na</honey>
 <marble>na</marble><tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>na</silver>
@@ -141,7 +141,7 @@
 <seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
 </grid>
 <grid><id>21</id><climate>desert</climate><xco>1214</xco><yco>1572</yco>
-<province>Aegyptus</province><horse>na</horse><cattle>cattle</cattle><sheep>na</sheep><pig>na</pig>
+<province>Aegyptus</province><horse>donkey</horse><cattle>cattle</cattle><sheep>na</sheep><pig>na</pig>
 <fish>na</fish><poultry>chicken</poultry>
 <grain>wheat</grain><vine>na</vine><oil>na</oil><pottery>na</pottery><timber>na</timber><honey>na</honey>
 <marble>na</marble><tin>na</tin><copper>na</copper><iron>na</iron><gold>gold</gold><silver>na</silver>
@@ -253,7 +253,7 @@
 <seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
 </grid>
 <grid><id>37</id><climate>mediterranean</climate><xco>1005</xco><yco>1268</yco>
-<province>Achaia</province><horse>na</horse><cattle>na</cattle><sheep>na</sheep><pig>na</pig>
+<province>Achaia</province><horse>donkey</horse><cattle>na</cattle><sheep>na</sheep><pig>na</pig>
 <fish>na</fish><poultry>chicken</poultry>
 <grain>na</grain><vine>grapevine</vine><oil>olive_tree</oil><pottery>pottery</pottery><timber>oak</timber><honey>honey</honey>
 <marble>marble</marble><tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>silver</silver>
@@ -288,7 +288,7 @@
 <seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
 </grid>
 <grid><id>42</id><climate>mediterranean</climate><xco>1137</xco><yco>1268</yco>
-<province>Asia</province><horse>na</horse><cattle>cattle</cattle><sheep>sheep</sheep><pig>pigs</pig>
+<province>Asia</province><horse>donkey</horse><cattle>cattle</cattle><sheep>sheep</sheep><pig>pigs</pig>
 <fish>na</fish><poultry>chicken</poultry>
 <grain>wheat</grain><vine>grapevine</vine><oil>olive_tree</oil><pottery>na</pottery><timber>na</timber><honey>na</honey>
 <marble>marble</marble><tin>na</tin><copper>na</copper><iron>na</iron><gold>gold</gold><silver>silver</silver>

@@ -2,20 +2,18 @@ function WorldBuilder(){
 
 //522 towns
 // 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 151 villa, 82 oppidum
-// 10 horse, 21 cattle, 22 sheep, 16 pigs, 9 fish
+// 10 horse, 5 donkey, 21 cattle, 22 sheep, 16 pigs, 9 fish
 //poultry not seen on map, only villa: 2 pheasant, 35 chicken, 8 duck
 // 25 wheat, 37 wine, 22 olive oil, 14 pottery, 22 timber, 12 honey
 // 7 marble, 3 tin, 9 copper, 17 iron, 10 gold, 10 silver
 // 1 incense, 1 papyrus, 1 parchment, 14 glass, 3 spices, 2 silk, 3 ivory, 1 salt, 1 amber, 1 hides
 
 //max towns
-var mxi = 827;
+var mxi = 832;
 
 //town objects
 var i = 0;
 while (i <mxi){
-
-
 
   //type, path, height,width,depth, x position,y position,z position,rotation y axis
   var tench = xtag[i].getElementsByTagName("type")[0].childNodes[0].nodeValue;
@@ -121,12 +119,19 @@ while (i <mxi){
     var cattle = new Place("Cow","cow",0.5,0.5,0.5, xpc -halfsize,0.2, zpc -halfsize,0);
     scene.add(cattle);  
   }
-  //cattle
+  //horse
   else if(tench =="horse"){
     var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
     var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
     var horse = new Place("WildHorse","horse",0.3,0.3,0.3, xpc -halfsize,0.2, zpc -halfsize,0);
     scene.add(horse);  
+  }
+  //donkey
+  else if (tench =="donkey"){
+      var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+      var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+      var donkey1 = new Place("Donkey","donkey",0.3,0.3,0.3, xpc -halfsize,0.2, zpc -halfsize,0);
+      scene.add(donkey1);  
   }
   //pottery
   else if(tench =="pottery"){
