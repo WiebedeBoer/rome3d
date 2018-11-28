@@ -9,7 +9,7 @@ if (farmtype=="villa_rustica"){
     fieldMaker("forest",xVil+180,zVil+90);
 
     fieldMaker("honey",xVil+90,zVil-270);
-    //fallow
+    fieldMaker("fruit",xVil+90,zVil-180);
     fieldMaker("wheat",xVil+90,zVil-90);
     fieldMaker("olive",xVil+90,zVil);    
     //fallow

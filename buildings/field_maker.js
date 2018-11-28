@@ -62,6 +62,31 @@ else if (type=="olive"){
     var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
     scene.add(birdCol);
 }
+//fruit trees
+else if (type=="fruit"){
+    if (fruit =="fig"){
+        var fruit1 = new FigTree(xPos-15,5,zPos+15); 
+        scene.add(fruit1);
+        var fruit2 = new FigTree(xPos-15,5,zPos-15); 
+        scene.add(fruit2);
+        var fruit3 = new FigTree(xPos+15,5,zPos+15); 
+        scene.add(fruit3);
+        var fruit4 = new FigTree(xPos+15,5,zPos-15); 
+        scene.add(fruit4);
+    }
+    else if (fruit =="pomegranate"){
+        var fruit1 = new PomegranateTree(xPos-15,5,zPos+15); 
+        scene.add(fruit1);
+        var fruit2 = new PomegranateTree(xPos-15,5,zPos-15); 
+        scene.add(fruit2);
+        var fruit3 = new PomegranateTree(xPos+15,5,zPos+15); 
+        scene.add(fruit3);
+        var fruit4 = new PomegranateTree(xPos+15,5,zPos-15); 
+        scene.add(fruit4);
+    }
+    var birdCol = new propCollect(xPos,8,zPos-45,"bird"); 
+    scene.add(birdCol);
+}
 //grapevine
 else if (type=="grape"){
     if(vine =="grapevine"){
