@@ -127,11 +127,11 @@ gamestart.style.display = "none";
 //page url for villa type
 var urlParams = new URLSearchParams(location.search);
 var actid = urlParams.get('villa');
-var urlid =actid -1;
+var urlid = actid -1;
 var province,climate,horse,cattle,sheep,pig,fish;
 var grain,vine,oil,pottery,timber,honey;
 var marble,tin,copper,iron,gold,silver,paper,luxury;
-if (urlid >=1 && urlid <=64){
+if (urlid >=1 && urlid <=65){
         province = xprov[urlid].getElementsByTagName("province")[0].childNodes[0].nodeValue;
         climate = xprov[urlid].getElementsByTagName("climate")[0].childNodes[0].nodeValue;
         //resources

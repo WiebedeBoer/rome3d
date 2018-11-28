@@ -350,7 +350,8 @@
 <grid><id>191</id><type>oasis</type><xco>1911</xco><yco>1616</yco><town>Pasargadae</town></grid>
 <grid><id>192</id><type>oasis</type><xco>1899</xco><yco>1629</yco>
 <town>Persepolis</town></grid>
-<grid><id>193</id><type>oasis</type><xco>2026</xco><yco>1611</yco><town>Karaman</town></grid>
+<grid><id>193</id><type>oasis</type><xco>2026</xco><yco>1611</yco>
+<town>Karaman</town></grid>
 <grid><id>194</id><type>oasis</type><xco>1951</xco><yco>1677</yco><town>Darab</town></grid>
 <grid><id>195</id><type>oasis</type><xco>1865</xco><yco>1389</yco><town>Varena</town></grid>
 <grid><id>196</id><type>oasis</type><xco>1843</xco><yco>1365</yco><town>Karaj</town></grid>
@@ -1738,4 +1739,16 @@
 <region>Persia</region></grid>
 <grid><id>889</id><type>fig</type><xco>1777</xco><yco>1569</yco>
 <region>Susiana</region></grid>
+<grid><id>890</id><type>fig</type><xco>2031</xco><yco>1626</yco>
+<region>Carmania</region></grid>
+<grid><id>891</id><type>silver</type><xco>2009</xco><yco>1608</yco>
+<region>Carmania</region></grid>
+<grid><id>892</id><type>copper</type><xco>2023</xco><yco>1599</yco>
+<region>Carmania</region></grid>
+<grid><id>893</id><type>grapevine</type><xco>2023</xco><yco>1625</yco>
+<region>Carmania</region></grid>
+<grid><id>894</id><type>salt</type><xco>2030</xco><yco>1642</yco>
+<region>Carmania</region></grid>
+<grid><id>895</id><type>silk</type><xco>2007</xco><yco>1630</yco>
+<region>Carmania</region></grid>
 </CATALOG>
