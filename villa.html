@@ -23,6 +23,8 @@
 <script src="buildings/field_maker.js"></script>
 <script src="buildings/field_wheat.js"></script>
 <script src="buildings/olive_tree.js"></script>
+<script src="buildings/pomegranate_tree.js"></script>
+<script src="buildings/fig_tree.js"></script>
 <script src="buildings/grapevine.js"></script>
 <script src="buildings/forest.js"></script>
 <script src="props/fence.js"></script>
@@ -157,6 +159,7 @@ if (!urlid || urlid >=1 || urlid <59){
         fabrics = xprov[urlid].getElementsByTagName("fabric")[0].childNodes[0].nodeValue;
         glass = xprov[urlid].getElementsByTagName("glass")[0].childNodes[0].nodeValue;
         poultry = xprov[urlid].getElementsByTagName("poultry")[0].childNodes[0].nodeValue;
+        fruit = xprov[urlid].getElementsByTagName("fruit")[0].childNodes[0].nodeValue;
 }
 else {
         window.location.assign("index.html")

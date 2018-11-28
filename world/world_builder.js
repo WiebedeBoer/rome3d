@@ -4,12 +4,13 @@ function WorldBuilder(){
 // 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 151 villa, 82 oppidum
 // 10 horse, 5 donkey, 21 cattle, 22 sheep, 16 pigs, 9 fish
 //poultry not seen on map, only villa: 2 pheasant, 35 chicken, 8 duck
+// 7 pomegranate, 9 fig
 // 25 wheat, 37 wine, 22 olive oil, 14 pottery, 22 timber, 12 honey
 // 7 marble, 3 tin, 9 copper, 17 iron, 10 gold, 10 silver
 // 1 incense, 1 papyrus, 1 parchment, 14 glass, 3 spices, 2 silk, 3 ivory, 1 salt, 1 amber, 1 hides
 
 //max towns
-var mxi = 832;
+var mxi = 848;
 
 //town objects
 var i = 0;
@@ -189,6 +190,20 @@ while (i <mxi){
     var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
     var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue);
     var olive = new TreeMaker("olive_tree",xpc-halfsize,zpc-halfsize,2.5,4.0,2.5);
+    scene.add(olive);
+  }
+  //fig
+  else if (tench =="fig"){
+    var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+    var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue);
+    var olive = new TreeMaker("fig",xpc-halfsize,zpc-halfsize,2.5,4.0,2.5);
+    scene.add(olive);
+  }
+  //pomegranate
+  else if (tench =="pomegranate"){
+    var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+    var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue);
+    var olive = new TreeMaker("pomegranate",xpc-halfsize,zpc-halfsize,2.5,4.0,2.5);
     scene.add(olive);
   }
   //timber oak
