@@ -131,7 +131,7 @@ var urlid =actid -1;
 var province,climate,horse,cattle,sheep,pig,fish;
 var grain,vine,oil,pottery,timber,honey;
 var marble,tin,copper,iron,gold,silver,paper,luxury;
-if (!urlid || urlid >=1 || urlid <59){
+if (urlid >=1 && urlid <=64){
         province = xprov[urlid].getElementsByTagName("province")[0].childNodes[0].nodeValue;
         climate = xprov[urlid].getElementsByTagName("climate")[0].childNodes[0].nodeValue;
         //resources
@@ -203,13 +203,13 @@ scene.add( skyBox );
 //lighting 
 barracksLighter();
 //fields and buildings and props and people, x5, z5
-FarmMaker("forest",-840,-840);
-FarmMaker("forest",-840,-390);
+FarmMaker("forest",-840,-930);
+FarmMaker("forest",-840,-480);
 FarmMaker("forest",-840,-30);
 FarmMaker("forest",-840,420);
 FarmMaker("forest",-840,870);
 
-FarmMaker("forest",-390,-840);
+FarmMaker("forest",-390,-930);
 FarmMaker("villa_rustica",-390,-480);
 FarmMaker("villa_rustica",-390,-30);
 FarmMaker("villa_rustica",-390,420);
@@ -226,14 +226,14 @@ FarmMaker("civitas",60,-30);
 FarmMaker("latifundia",60,420);
 //latifundia occupied
 
-FarmMaker("forest",510,-840);
-FarmMaker("villa_rustica",510,-390);
+FarmMaker("forest",510,-930);
+FarmMaker("villa_rustica",510,-480);
 FarmMaker("villa_rustica",510,-30);
 FarmMaker("villa_rustica",510,420);
 FarmMaker("forest",510,870);
 
-FarmMaker("forest",960,-840);
-FarmMaker("forest",960,-390);
+FarmMaker("forest",960,-930);
+FarmMaker("forest",960,-480);
 FarmMaker("forest",960,-30);
 FarmMaker("forest",960,420);
 FarmMaker("forest",960,870);
