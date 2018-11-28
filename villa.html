@@ -132,7 +132,8 @@ var province,climate,horse,cattle,sheep,pig,fish;
 var grain,vine,oil,pottery,timber,honey;
 var marble,tin,copper,iron,gold,silver,paper,luxury;
 if (urlid >=1 && urlid <=65){
-        province = xprov[urlid].getElementsByTagName("province")[0].childNodes[0].nodeValue;
+        var uprovince = xprov[urlid].getElementsByTagName("province")[0].childNodes[0].nodeValue;
+        province = uprovince.replace("_", " ");
         climate = xprov[urlid].getElementsByTagName("climate")[0].childNodes[0].nodeValue;
         //resources
         horse = xprov[urlid].getElementsByTagName("horse")[0].childNodes[0].nodeValue;
