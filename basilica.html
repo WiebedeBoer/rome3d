@@ -19,7 +19,8 @@
 <!--collision detection-->
 <script src="collision/domusCollision.js"></script>
 <!--people-->
-
+<script src="people/person.js"></script>
+<script src="people/basilicaPeople.js"></script>
 <!--economy-->
 <script src="economy/Shooting.js"></script>
 <script src="economy/Gathering.js"></script>
@@ -142,7 +143,7 @@ scene.add(column18);
 var column19 = new Columnade(-100,200); 
 scene.add(column19);
 //people
-
+BasilicaPeople();
 //moving cube
 var cubeGeometry = new THREE.CylinderGeometry(5,5,20,4);
 var wireMaterial = new THREE.MeshBasicMaterial( { color: 0xff0000, wireframe:true, visible:false } );
