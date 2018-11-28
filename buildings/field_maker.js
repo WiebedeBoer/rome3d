@@ -282,18 +282,24 @@ else if(type =="pheasant"){
     scene.add(pheasant2);
     var pheasant3 = new Pheasant(xPos+15,5,zPos+15); 
     scene.add(pheasant3);   
-    if (timber =="cedar"){
-        var tree2 = new Forest(xPos,45,zPos-15,"cedar"); 
-        scene.add(tree2);
-    }
-    else if (timber =="pine"){
-        var tree2 = new Forest(xPos,45,zPos-15,"tree_pine"); 
+    if (climate =="desert"){        
+        var tree2 = new Forest(xPos,45,zPos-15,"tree_palm"); 
         scene.add(tree2);
     }
     else {
-        var tree2 = new Forest(xPos,45,zPos-15,"tree_transparent"); 
-        scene.add(tree2);
-    }   
+        if (timber =="cedar"){
+            var tree2 = new Forest(xPos,45,zPos-15,"cedar"); 
+            scene.add(tree2);
+        }
+        else if (timber =="pine"){
+            var tree2 = new Forest(xPos,45,zPos-15,"tree_pine"); 
+            scene.add(tree2);
+        }
+        else {
+            var tree2 = new Forest(xPos,45,zPos-15,"tree_transparent"); 
+            scene.add(tree2);
+        }        
+    }  
 }
 //cow pasture
 else if(type =="cow"){
