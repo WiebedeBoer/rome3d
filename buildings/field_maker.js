@@ -302,7 +302,23 @@ else if(type =="horse"){
         scene.add(fenceF2);
         var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
         scene.add(fenceB2);  
-    }   
+    }  
+    else if (horse =="donkey"){
+        var donkey5 = new Donkey(xPos-15,5,zPos); 
+        scene.add(donkey5);
+        var donkey6 = new Donkey(xPos,5,zPos); 
+        scene.add(donkey6);
+        var donkey7 = new Donkey(xPos+15,5,zPos); 
+        scene.add(donkey7);
+        var fenceL2 = new Fence(xPos,0,zPos+30,0,0,0); 
+        scene.add(fenceL2);
+        var fenceR2 = new Fence(xPos,0,zPos-30,0,0,0); 
+        scene.add(fenceR2);
+        var fenceF2 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
+        scene.add(fenceF2);
+        var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
+        scene.add(fenceB2);  
+    }  
 }
 
 }
