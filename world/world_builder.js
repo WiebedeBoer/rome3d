@@ -3,14 +3,14 @@ function WorldBuilder(){
 //522 towns
 // 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 151 villa, 82 oppidum
 // 10 horse, 5 donkey, 25 cattle, 27 sheep, 16 pigs, 9 fish
-//poultry not seen on map, only villa: 4 pheasant, 38 chicken, 8 duck
-// 10 pomegranate, 12 fig
+//poultry not seen on map, only villa: 5 pheasant, 38 chicken, 8 duck
+// 10 pomegranate, 13 fig
 // 28 wheat, 40 wine, 23 olive oil, 20 pottery, 23 timber, 14 honey
 // 7 marble, 3 tin, 11 copper, 19 iron, 10 gold, 11 silver
-// 1 incense, 1 papyrus, 1 parchment, 15 glass, 4 spices, 9 silk, 3 ivory, 2 salt, 1 amber, 1 hides
+// 2 incense, 1 papyrus, 1 parchment, 15 glass, 5 spices, 9 silk, 3 ivory, 2 salt, 2 amber, 2 hides
 
 //max towns
-var mxi = 895;
+var mxi = 900;
 
 //town objects
 var i = 0;
@@ -290,7 +290,7 @@ scene.add(copper);
 
 //region collider and barracks maker
 var co = 0;
-while (co < 67){
+while (co < 68){
   var pX = xprov[co].getElementsByTagName("xco")[0].childNodes[0].nodeValue;
   var pZ = xprov[co].getElementsByTagName("yco")[0].childNodes[0].nodeValue;
   var tid = xprov[co].getElementsByTagName("id")[0].childNodes[0].nodeValue;
