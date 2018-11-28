@@ -223,6 +223,32 @@ else if(type =="chicken"){
         var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
         scene.add(fenceB2);    
 }
+//duck
+else if(type =="duck"){
+    
+    var duck1 = new Duck(xPos-15,zPos+15); 
+    scene.add(duck1);
+    var duck2 = new Duck(xPos-15,zPos-15); 
+    scene.add(duck2);
+    var duck3 = new Duck(xPos+15,zPos+15); 
+    scene.add(duck3);
+    var duck4 = new Duck(xPos+15,zPos-15); 
+    scene.add(duck4);
+    var duck5 = new Duck(xPos,zPos-15); 
+    scene.add(duck5);
+    var duck6 = new Duck(xPos,zPos+15); 
+    scene.add(duck6);
+    
+    var fenceL2 = new Fence(xPos,0,zPos+30,0,0,0); 
+    scene.add(fenceL2);
+    var fenceR2 = new Fence(xPos,0,zPos-30,0,0,0); 
+    scene.add(fenceR2);
+    var fenceF2 = new Fence(xPos-30,0,zPos,0,1.5707963,0); 
+    scene.add(fenceF2);
+    var fenceB2 = new Fence(xPos+30,0,zPos,0,1.5707963,0); 
+    scene.add(fenceB2); 
+
+}
 //pheasant field
 else if(type =="pheasant"){
     var pheasant1 = new Pheasant(xPos-15,5,zPos+15); 

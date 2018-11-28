@@ -14,7 +14,18 @@ if (farmtype=="villa_rustica"){
     fieldMaker("olive",xVil+90,zVil);    
     //fallow
 
-    fieldMaker("forest",xVil,zVil-270);
+    if (poultry =="chicken"){
+        fieldMaker("chicken",xVil,zVil-270);
+    }
+    else if (poultry =="pheasant"){
+        fieldMaker("pheasant",xVil,zVil-270);
+    }
+    else if (poultry =="duck"){
+        fieldMaker("duck",xVil,zVil-270);
+    }
+    else {
+        fieldMaker("forest",xVil,zVil-270);
+    }    
     fieldMaker("goat",xVil,zVil-180);
     fieldMaker("grape",xVil,zVil-90);
     houseMaker("farmhouse",xVil,zVil); //center
