@@ -68,7 +68,7 @@ if (glass =="glass"){
     var donkey2 = new Donkey(xPos+45,0,zPos-15); 
     scene.add(donkey2);
 }
-if (carving =="amber" || fabrics =="hides"){
+if (carving =="amber" || fabrics =="hides" || scent =="roses" || scent =="spikenard"){
     var donkey3 = new Donkey(xPos+45,0,zPos-45); 
     scene.add(donkey3);  
 }
