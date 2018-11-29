@@ -10,7 +10,7 @@ if (farmtype=="villa_rustica"){
 
     fieldMaker("honey",xVil+90,zVil-270);
     fieldMaker("fruit",xVil+90,zVil-180);
-    fieldMaker("wheat",xVil+90,zVil-90);
+    fieldMaker("grain",xVil+90,zVil-90);
     fieldMaker("olive",xVil+90,zVil);    
     //fallow
 
@@ -83,8 +83,8 @@ else if (farmtype=="latifundia"){
     fieldMaker("forest",xVil,zVil+540);
 
     //fallow
-    fieldMaker("wheat",xVil-90,zVil-180);
-    fieldMaker("wheat",xVil-90,zVil-90);
+    fieldMaker("grain",xVil-90,zVil-180);
+    fieldMaker("grain",xVil-90,zVil-90);
     houseMaker("barn2",xVil-90,zVil);
     fieldMaker("olive",xVil-90,zVil+90);      
     fieldMaker("horse",xVil-90,zVil+180);
@@ -94,8 +94,8 @@ else if (farmtype=="latifundia"){
     fieldMaker("forest",xVil-90,zVil+540);
 
     //fallow
-    fieldMaker("wheat",xVil-180,zVil-180);
-    fieldMaker("wheat",xVil-180,zVil-90);
+    fieldMaker("grain",xVil-180,zVil-180);
+    fieldMaker("grain",xVil-180,zVil-90);
     //fallow    
     fieldMaker("olive",xVil-180,zVil+90); 
     fieldMaker("forest",xVil-180,zVil+180);
