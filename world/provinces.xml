@@ -367,7 +367,7 @@
 <grid><id>53</id><climate>northern</climate><xco>132</xco><yco>439</yco>
 <province>Hibernia</province><horse>na</horse><cattle>na</cattle><sheep>na</sheep><pig>na</pig>
 <fish>na</fish><poultry>na</poultry><fruit>na</fruit>
-<grain>na</grain><vine>na</vine><oil>na</oil><pottery>na</pottery><timber>oak</timber><honey>na</honey>
+<grain>wheat</grain><vine>na</vine><oil>na</oil><pottery>na</pottery><timber>oak</timber><honey>na</honey>
 <marble>na</marble><tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>na</silver>
 <seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
 </grid>
