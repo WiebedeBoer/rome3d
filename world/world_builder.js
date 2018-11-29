@@ -1,7 +1,7 @@
 function WorldBuilder(){
 
 //522 towns
-// 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 151 villa, 82 oppidum
+// 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 100 villa, 82 oppidum, 51 palace
 // 10 horse, 5 donkey, 25 cattle, 27 sheep, 16 pigs, 10 fish
 //poultry not seen on map, only villa: 7 pheasant, 48 chicken, 8 duck
 // 10 pomegranate, 13 fig
@@ -255,6 +255,10 @@ while (i <mxi){
 //thermae
 var thermae = new Town("thermae","bath_front","bath_wall","bath_wall","bath_wall","concrete",4,3.5,4,mxi);
 scene.add(thermae); 
+
+//oriental palace
+var palladine = new Town("palace","apadana_front","apadana_wall","apadana_wall","apadana_wall","roof_wood",4,3.5,4,mxi);
+scene.add(palladine); 
 
 //emporia
 var horreum_south = new Town("horreum_south","horrea_wall","dock_wall","horrea_wall","horrea_wall","roof_wood",4,3.5,4,mxi);
