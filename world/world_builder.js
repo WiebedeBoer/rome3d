@@ -2,8 +2,9 @@ function WorldBuilder(){
 
 // 522 towns: 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 100 villa, 82 oppidum, 51 palace
 // 25 cattle, 27 sheep, 16 pigs, 10 fish
-// 30 wheat, 40 wine, 20 pottery, 18 honey, 15 glass
-// 3 tin, 11 copper, 19 iron, 10 gold, 11 silver
+// 40 wine, 20 pottery, 20 honey, 15 glass
+// 3 tin, 11 copper, 20 iron, 10 gold, 12 silver
+// 36 grains: 7 wheat, 5 spelt, 18 barley, 6 rye
 // 15 pack animals: 10 horse, 5 donkey
 // 63 poultry not seen on map, only villa: 7 pheasant, 48 chicken, 8 duck
 // 23 fruit: 10 pomegranate, 13 fig
@@ -12,10 +13,10 @@ function WorldBuilder(){
 // 2 paper: 1 papyrus, 1 parchment
 // 29 seasonings: 4 spices, 2 salt, 23 olive oil
 // 12 carving:  3 ivory, 2 amber, 7 marble
-// 11 fabrics: 9 silk, 2 hides
+// 13 fabrics: 11 silk, 2 hides
 
 //max towns
-var mxi = 906;
+var mxi = 918;
 
 //town objects
 var i = 0;
@@ -280,7 +281,7 @@ var oasis_town = new Town("oasis","oasis_door","oasis_window","oasis_wall","oasi
 scene.add(oasis_town);
 
 //wheat fields
-var wheat_field = new Town("wheat","pallisade","pallisade","pallisade","pallisade","field_wheat",7.5,0.1,7.5,mxi);
+var wheat_field = new Town("grain","pallisade","pallisade","pallisade","pallisade","field_wheat",7.5,0.1,7.5,mxi);
 scene.add(wheat_field);
 
 //mines and quarries
