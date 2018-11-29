@@ -184,7 +184,7 @@ else if (farmtype=="mine"){
     fieldMaker("forest",xVil+90,zVil-270);
     //deposits +90,-90
     //marble 
-    if (marble =="marble"){
+    if (carving =="marble"){
         var deposit1 = new Metal(xVil+70,zVil-75,"marble",4.5,1.2,4.5);
         scene.add( deposit1 );
         var deposit2 = new Metal(xVil+75,zVil-75,"marble",4.5,1.2,4.5);

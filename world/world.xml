@@ -1580,8 +1580,8 @@
 <region>Arabia_Petraea</region></grid>
 <grid><id>808</id><type>salt</type><xco>596</xco><yco>1631</yco>
 <region>Garamantia</region></grid>
-<grid><id>809</id><type>spices</type><xco>1801</xco><yco>1563</yco>
-<region>Susiana</region></grid>
+<grid><id>809</id><type>fish</type><xco>1891</xco><yco>1304</yco>
+<region>Hyrcania</region></grid>
 <grid><id>810</id><type>horse</type><xco>855</xco><yco>773</yco>
 <region>Pannonia</region></grid>
 <grid><id>811</id><type>fish</type><xco>601</xco><yco>1228</yco>
@@ -1776,6 +1776,4 @@
 <region>Susiana</region></grid>
 <grid><id>906</id><type>honey</type><xco>1604</xco><yco>1208</yco>
 <region>Armenia</region></grid>
-<grid><id>907</id><type>fish</type><xco>1891</xco><yco>1304</yco>
-<region>Hyrcania</region></grid>
 </CATALOG>

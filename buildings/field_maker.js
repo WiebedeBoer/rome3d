@@ -49,7 +49,7 @@ else if (type =="vegetables"){
 }
 //olive grove
 else if (type=="olive"){
-    if (oil =="olive_tree"){
+    if (seasoning =="olive_tree"){
         var Olive1 = new OliveTree(xPos-15,5,zPos+15); 
         scene.add(Olive1);
         var Olive2 = new OliveTree(xPos-15,5,zPos-15); 

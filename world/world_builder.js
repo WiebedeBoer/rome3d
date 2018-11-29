@@ -1,16 +1,21 @@
 function WorldBuilder(){
 
-//522 towns
-// 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 100 villa, 82 oppidum, 51 palace
-// 10 horse, 5 donkey, 25 cattle, 27 sheep, 16 pigs, 10 fish
-//poultry not seen on map, only villa: 7 pheasant, 48 chicken, 8 duck
-// 10 pomegranate, 13 fig
-// 30 wheat, 40 wine, 23 olive oil, 20 pottery, 23 timber, 18 honey
-// 7 marble, 3 tin, 11 copper, 19 iron, 10 gold, 11 silver
-// 2 incense, 1 papyrus, 1 parchment, 15 glass, 5 spices, 9 silk, 3 ivory, 2 salt, 2 amber, 2 hides
+// 522 towns: 58 thermae, 1 amphitheatrum, 16 theatrum, 16 bibliotheca, 31 templum, 122 emporium, 100 villa, 82 oppidum, 51 palace
+// 25 cattle, 27 sheep, 16 pigs, 10 fish
+// 30 wheat, 40 wine, 20 pottery, 18 honey, 15 glass
+// 3 tin, 11 copper, 19 iron, 10 gold, 11 silver
+// 15 pack animals: 10 horse, 5 donkey
+// 63 poultry not seen on map, only villa: 7 pheasant, 48 chicken, 8 duck
+// 23 fruit: 10 pomegranate, 13 fig
+// 23 timber: 16 oak, 4 cedar, 3 pine
+// 2 scent: 2 incense
+// 2 paper: 1 papyrus, 1 parchment
+// 29 seasonings: 4 spices, 2 salt, 23 olive oil
+// 12 carving:  3 ivory, 2 amber, 7 marble
+// 11 fabrics: 9 silk, 2 hides
 
 //max towns
-var mxi = 907;
+var mxi = 906;
 
 //town objects
 var i = 0;
