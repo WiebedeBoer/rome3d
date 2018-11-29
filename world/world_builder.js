@@ -9,14 +9,14 @@ function WorldBuilder(){
 // 63 poultry not seen on map, only villa: 7 pheasant, 48 chicken, 8 duck
 // 23 fruit: 10 pomegranate, 13 fig
 // 23 timber: 16 oak, 4 cedar, 3 pine
-// 2 scent: 2 incense
+// 7 scent: 2 incense, 2 roses, 3 spikenard
 // 2 paper: 1 papyrus, 1 parchment
 // 29 seasonings: 4 spices, 2 salt, 23 olive oil
 // 12 carving:  3 ivory, 2 amber, 7 marble
 // 13 fabrics: 11 silk, 2 hides
 
 //max towns
-var mxi = 918;
+var mxi = 923;
 
 //town objects
 var i = 0;
@@ -236,7 +236,7 @@ while (i <mxi){
     scene.add(luxury2);  
   }
   //luxuries
-  else if (tench =="amber" || tench =="hides"){
+  else if (tench =="amber" || tench =="hides" || tench =="roses" || tench =="spikenard"){
     var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
     var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
     var donkey_train1 = new Place("Donkey","donkey",0.3,0.3,0.3, xpc -halfsize,0.2, zpc -halfsize,0);

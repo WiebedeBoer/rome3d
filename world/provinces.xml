@@ -12,7 +12,7 @@
 <fish>na</fish><poultry>chicken</poultry><fruit>na</fruit>
 <grain>na</grain><vine>grapevine</vine><oil></oil><pottery>na</pottery><timber>na</timber><honey>na</honey>
 <tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>na</silver>
-<seasoning>olive_tree</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>glass</glass>
+<seasoning>olive_tree</seasoning><paper>na</paper><scent>roses</scent><sculpt>na</sculpt><fabric>na</fabric><glass>glass</glass>
 </grid>
 <grid><id>3</id><climate>mediterranean</climate><xco>674</xco><yco>997</yco>
 <province>Etruria</province><horse>na</horse><cattle>cattle</cattle><sheep>na</sheep><pig>pigs</pig>
@@ -180,7 +180,7 @@
 <fish>na</fish><poultry>chicken</poultry><fruit>na</fruit>
 <grain>na</grain><vine>na</vine><oil>na</oil><pottery>na</pottery><timber>na</timber><honey>honey</honey>
 <tin>na</tin><copper>na</copper><iron>iron</iron><gold>na</gold><silver>na</silver>
-<seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
+<seasoning>na</seasoning><paper>na</paper><scent>spikenard</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
 </grid>
 <grid><id>27</id><climate>northern</climate><xco>888</xco><yco>782</yco>
 <province>Pannonia</province><horse>horse</horse><cattle>na</cattle><sheep>sheep</sheep><pig>na</pig>
@@ -257,7 +257,7 @@
 <fish>na</fish><poultry>chicken</poultry><fruit>pomegranate</fruit>
 <grain>barley</grain><vine>grapevine</vine><oil></oil><pottery>pottery</pottery><timber>oak</timber><honey>honey</honey>
 <tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>silver</silver>
-<seasoning>olive_tree</seasoning><paper>na</paper><scent>na</scent><sculpt>marble</sculpt><fabric>na</fabric><glass>na</glass>
+<seasoning>olive_tree</seasoning><paper>na</paper><scent>roses</scent><sculpt>marble</sculpt><fabric>na</fabric><glass>na</glass>
 </grid>
 <grid><id>38</id><climate>mediterranean</climate><xco>1071</xco><yco>1388</yco>
 <province>Creta</province><horse>na</horse><cattle>na</cattle><sheep>na</sheep><pig>na</pig>
@@ -292,7 +292,7 @@
 <fish>na</fish><poultry>chicken</poultry><fruit>fig</fruit>
 <grain>barley</grain><vine>grapevine</vine><oil></oil><pottery>na</pottery><timber>na</timber><honey>na</honey>
 <tin>na</tin><copper>na</copper><iron>na</iron><gold>gold</gold><silver>silver</silver>
-<seasoning>olive_tree</seasoning><paper>parchment</paper><scent>na</scent><sculpt>marble</sculpt><fabric>na</fabric><glass>glass</glass>
+<seasoning>olive_tree</seasoning><paper>parchment</paper><scent>spikenard</scent><sculpt>marble</sculpt><fabric>na</fabric><glass>glass</glass>
 </grid>
 <grid><id>43</id><climate>mediterranean</climate><xco>1302</xco><yco>1172</yco>
 <province>Galatia</province><horse>na</horse><cattle>na</cattle><sheep>sheep</sheep><pig>na</pig>
@@ -313,7 +313,7 @@
 <fish>na</fish><poultry>chicken</poultry><fruit>fig</fruit>
 <grain>barley</grain><vine>grapevine</vine><oil></oil><pottery>na</pottery><timber>cedar</timber><honey>na</honey>
 <tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>silver</silver>
-<seasoning>olive_tree</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
+<seasoning>olive_tree</seasoning><paper>na</paper><scent>spikenard</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
 </grid>
 <grid><id>46</id><climate>mediterranean</climate><xco>1380</xco><yco>1230</yco>
 <province>Cappadocia</province><horse>horse</horse><cattle>na</cattle><sheep>na</sheep><pig>na</pig>

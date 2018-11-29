@@ -1800,4 +1800,14 @@
 <region>Mauretania_Caesariensis</region></grid>
 <grid><id>918</id><type>honey</type><xco>596</xco><yco>1320</yco>
 <region>Africa</region></grid>
+<grid><id>919</id><type>roses</type><xco>982</xco><yco>1223</yco>
+<region>Achaia</region></grid>
+<grid><id>920</id><type>roses</type><xco>773</xco><yco>1116</yco>
+<region>Campania</region></grid>
+<grid><id>921</id><type>spikenard</type><xco>729</xco><yco>845</yco>
+<region>Noricum</region></grid>
+<grid><id>922</id><type>spikenard</type><xco>1197</xco><yco>1227</yco>
+<region>Asia</region></grid>
+<grid><id>923</id><type>spikenard</type><xco>1348</xco><yco>1302</yco>
+<region>Cilicia</region></grid>
 </CATALOG>
