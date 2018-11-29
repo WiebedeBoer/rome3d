@@ -2,7 +2,7 @@ function fieldMaker(type,xPos,zPos){
 
 //wheat field
 if (type =="grain"){
-    if(grain =="wheat"|| grain =="spelt" || grain =="oats"|| grain =="barley"|| grain =="rye"){
+    if(grain =="wheat"|| grain =="spelt" || grain =="barley"|| grain =="rye"){
         var field1 = new Wheat(xPos+15,0,zPos-15);
         scene.add( field1 );
         var field2 = new Wheat(xPos+15,0,zPos);
