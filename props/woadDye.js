@@ -1,9 +1,9 @@
-class KermesDye extends THREE.Group {
+class WoadDye extends THREE.Group {
 
     init (){
 
         var dGun = this;
-        loadOBJModel("models/kermes/","kermes_jug.obj","models/kermes/","kermes_jug.mtl", (mesh) => {
+        loadOBJModel("models/woad/","woad_jug.obj","models/woad/","woad_jug.mtl", (mesh) => {
             mesh.scale.set (0.25, 0.2, 0.25);
             dGun.position.x = this.pX;
             dGun.position.y = this.pY;
