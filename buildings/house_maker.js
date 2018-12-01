@@ -108,6 +108,7 @@ if (paper =="papyrus"){
     var scroll1 = new Scroll(xPos+15,8.1,zPos+15,3.14159 / 2,0,0);
     scene.add( scroll1 ); 
 }
+//dyes
 if (dye =="purple"){
     var purplejug = new TyrianDye(xPos,2,zPos+15,0,0,0); 
     scene.add(purplejug);
@@ -116,6 +117,19 @@ else if (dye =="kermes"){
     var kermesjug = new KermesDye(xPos,2,zPos+15,0,0,0); 
     scene.add(kermesjug);
 }
+else if (dye =="saffron"){
+    var saffronjug = new SaffronDye(xPos,2,zPos+15,0,0,0); 
+    scene.add(saffronjug);
+}
+else if (dye =="woad"){
+    var woadjug = new WoadDye(xPos,2,zPos+15,0,0,0); 
+    scene.add(woadjug);
+}
+else if (dye =="madder"){
+    var madderjug = new MadderDye(xPos,2,zPos+15,0,0,0); 
+    scene.add(madderjug);
+}
+//luxuries
 if (fabrics =="silk" || scent =="incense"){
     var dromedary1 = new Camel(xPos-20,zPos-45);
     scene.add( dromedary1 ); 
