@@ -31,7 +31,7 @@
 <grid><id>5</id><climate>mediterranean</climate><xco>835</xco><yco>1146</yco>
 <province>Calabria</province><horse>na</horse><cattle>na</cattle><sheep>sheep</sheep><pig>na</pig>
 <fish>na</fish><poultry>chicken</poultry><fruit>na</fruit>
-<grain>barley</grain><vine>na</vine><pottery>na</pottery><dye>na</dye><timber>na</timber><honey>na</honey>
+<grain>barley</grain><vine>na</vine><pottery>na</pottery><dye>purple</dye><timber>na</timber><honey>na</honey>
 <tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>na</silver>
 <seasoning>olive_tree</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
 </grid>
