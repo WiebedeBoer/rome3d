@@ -109,8 +109,12 @@ if (paper =="papyrus"){
     scene.add( scroll1 ); 
 }
 if (dye =="purple"){
-    var purplejug = new Dye(xPos,2,zPos+15,0,0,0); 
+    var purplejug = new TyrianDye(xPos,2,zPos+15,0,0,0); 
     scene.add(purplejug);
+}
+else if (dye =="kermes"){
+    var kermesjug = new KermesDye(xPos,2,zPos+15,0,0,0); 
+    scene.add(kermesjug);
 }
 if (fabrics =="silk" || scent =="incense"){
     var dromedary1 = new Camel(xPos-20,zPos-45);
