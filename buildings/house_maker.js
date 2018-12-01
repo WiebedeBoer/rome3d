@@ -50,28 +50,28 @@ else if (type =="carpenter"){
     }
 }
 else if(type =="barn"){
-var stables = new Barn(xPos+13,0,zPos);
-scene.add( stables ); 
-var oilLoaf = new Jug(xPos,0,zPos+20,0,0,0); 
-scene.add(oilLoaf);
-var oilLoafCol = new propCollect(xPos,6,zPos+20,"oil"); 
-scene.add(oilLoafCol);
+    var stables = new Barn(xPos+13,0,zPos);
+    scene.add( stables ); 
+    var oilLoaf = new Jug(xPos,0,zPos+20,0,0,0); 
+    scene.add(oilLoaf);
+    var oilLoafCol = new propCollect(xPos,6,zPos+20,"oil"); 
+    scene.add(oilLoafCol);
 }
 else if(type =="barn2"){
-var stables = new Barn(xPos+13,0,zPos);
-scene.add( stables ); 
-var donkey1 = new Donkey(xPos+45,0,zPos+15); 
-scene.add(donkey1);
-if (glass =="glass"){
-    var glass1 = new Vase(xPos+25,zPos+15);
-    scene.add( glass1 ); 
-    var donkey2 = new Donkey(xPos+45,0,zPos-15); 
-    scene.add(donkey2);
-}
-if (carving =="amber" || fabrics =="hides" || scent =="roses" || scent =="spikenard"){
-    var donkey3 = new Donkey(xPos+45,0,zPos-45); 
-    scene.add(donkey3);  
-}
+    var stables = new Barn(xPos+13,0,zPos);
+    scene.add( stables ); 
+    var donkey1 = new Donkey(xPos+45,0,zPos+15); 
+    scene.add(donkey1);
+    if (glass =="glass"){
+        var glass1 = new Vase(xPos+25,zPos+15);
+        scene.add( glass1 ); 
+        var donkey2 = new Donkey(xPos+45,0,zPos-15); 
+        scene.add(donkey2);
+    }
+    if (carving =="amber" || fabrics =="hides" || scent =="roses" || scent =="spikenard"){
+        var donkey3 = new Donkey(xPos+45,0,zPos-45); 
+        scene.add(donkey3);  
+    }
 }
 else if(type =="temple"){
     if(climate =="desert"){
@@ -86,10 +86,10 @@ else if(type =="temple"){
         var temple1 = new Temple3(xPos,0,zPos);
         scene.add( temple1 ); 
     }
-var templeCol = new propCollect(xPos,8,zPos-45,"templum"); 
-scene.add(templeCol);
-var augur = new Person("augur",xPos,zPos-45);
-scene.add(augur);  
+    var templeCol = new propCollect(xPos,8,zPos-45,"templum"); 
+    scene.add(templeCol);
+    var augur = new Person("augur",xPos,zPos-45);
+    scene.add(augur);  
 }
 else if(type =="fora"){
 var fora1 = new Plaza("venalia","mosaic6",xPos,zPos);
@@ -107,6 +107,10 @@ if (paper =="papyrus"){
     scene.add(tablestand3); 
     var scroll1 = new Scroll(xPos+15,8.1,zPos+15,3.14159 / 2,0,0);
     scene.add( scroll1 ); 
+}
+if (dye =="purple"){
+    var purplejug = new Dye(xPos,2,zPos+15,0,0,0); 
+    scene.add(purplejug);
 }
 if (fabrics =="silk" || scent =="incense"){
     var dromedary1 = new Camel(xPos-20,zPos-45);
