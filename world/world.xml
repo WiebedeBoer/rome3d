@@ -1810,4 +1810,14 @@
 <region>Asia</region></grid>
 <grid><id>923</id><type>spikenard</type><xco>1348</xco><yco>1302</yco>
 <region>Cilicia</region></grid>
+<grid><id>924</id><type>purple</type><xco>1380</xco><yco>1479</yco>
+<region>Syria</region></grid>
+<grid><id>925</id><type>purple</type><xco>1064</xco><yco>1403</yco>
+<region>Creta</region></grid>
+<grid><id>926</id><type>purple</type><xco>614</xco><yco>1332</yco>
+<region>Africa</region></grid>
+<grid><id>927</id><type>purple</type><xco>121</xco><yco>1452</yco>
+<region>Mauretania_Caesariensis</region></grid>
+<grid><id>928</id><type>purple</type><xco>792</xco><yco>1098</yco>
+<region>Calabria</region></grid>
 </CATALOG>

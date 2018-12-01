@@ -14,9 +14,10 @@ function WorldBuilder(){
 // 29 seasonings: 4 spices, 2 salt, 23 olive oil
 // 12 carving:  3 ivory, 2 amber, 7 marble
 // 13 fabrics: 11 silk, 2 hides
+// 5 dye: 5 purple
 
 //max towns
-var mxi = 923;
+var mxi = 928;
 
 //town objects
 var i = 0;
@@ -169,6 +170,13 @@ while (i <mxi){
     scene.add(vine1);
     var vine2 = new TreeMaker("grapevine",xpc-halfsize,2+zpc-halfsize,1.5,1.5,1.5);
     scene.add(vine2);
+  }
+  //honey
+  else if(tench =="purple"){
+      var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+      var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+      var honey = new Place("purple_jug","purple",0.05,0.05,0.05, xpc -halfsize,0.8, zpc -halfsize,0);
+      scene.add(honey);  
   }
   //oasis palm trees
   else if (tench =="oasis"){
