@@ -14,10 +14,10 @@ function WorldBuilder(){
 // 29 seasonings: 4 spices, 2 salt, 23 olive oil
 // 12 carving:  3 ivory, 2 amber, 7 marble
 // 13 fabrics: 11 silk, 2 hides
-// 5 dye: 5 purple
+// 23 dye: 5 purple, 7 kermes, 6 woad, 2 madder, 3 saffron
 
 //max towns
-var mxi = 928;
+var mxi = 946;
 
 //town objects
 var i = 0;
@@ -171,12 +171,33 @@ while (i <mxi){
     var vine2 = new TreeMaker("grapevine",xpc-halfsize,2+zpc-halfsize,1.5,1.5,1.5);
     scene.add(vine2);
   }
-  //honey
+  //purple dye
   else if(tench =="purple"){
       var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
       var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
-      var honey = new Place("purple_jug","purple",0.05,0.05,0.05, xpc -halfsize,0.8, zpc -halfsize,0);
-      scene.add(honey);  
+      var purpledye = new Place("purple_jug","purple",0.05,0.05,0.05, xpc -halfsize,0.8, zpc -halfsize,0);
+      scene.add(purpledye);  
+  }
+  //woad dye
+  else if(tench =="woad"){
+    var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+    var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+    var woaddye = new Place("woad_jug","woad",0.05,0.05,0.05, xpc -halfsize,0.8, zpc -halfsize,0);
+    scene.add(woaddye);  
+  }
+  //madder dye
+  else if(tench =="madder"){
+    var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+    var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+    var madderdye = new Place("madder_jug","madder",0.05,0.05,0.05, xpc -halfsize,0.8, zpc -halfsize,0);
+    scene.add(madderdye);  
+  }
+  //saffron dye
+  else if(tench =="woad"){
+    var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
+    var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue); 
+    var saffrondye = new Place("saffron_jug","saffron",0.05,0.05,0.05, xpc -halfsize,0.8, zpc -halfsize,0);
+    scene.add(saffrondye);  
   }
   //oasis palm trees
   else if (tench =="oasis"){
@@ -220,8 +241,8 @@ while (i <mxi){
     var olive = new TreeMaker("pomegranate",xpc-halfsize,zpc-halfsize,2.5,4.0,2.5);
     scene.add(olive);
   }
-  //timber oak
-  else if (tench =="tree_transparent"){
+  //timber oak and kermes dye
+  else if (tench =="tree_transparent" || tench =="kermes"){
     var xpc = parseInt(xtag[i].getElementsByTagName("xco")[0].childNodes[0].nodeValue);
     var zpc = parseInt(xtag[i].getElementsByTagName("yco")[0].childNodes[0].nodeValue);
     var oak = new TreeMaker("tree_transparent",xpc-halfsize,zpc-halfsize,2.5,5.0,2.5);
