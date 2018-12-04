@@ -1856,4 +1856,8 @@
 <region>Gallia_Lugdunensis</region></grid>
 <grid><id>946</id><type>woad</type><xco>642</xco><yco>985</yco>
 <region>Etruria</region></grid>
+<grid><id>947</id><type>horse</type><xco>186</xco><yco>322</yco>
+<region>Caledonia</region></grid>
+<grid><id>948</id><type>horse</type><xco>82</xco><yco>462</yco>
+<region>Hibernia</region></grid>
 </CATALOG>

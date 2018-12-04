@@ -5,8 +5,8 @@ function WorldBuilder(){
 // 40 wine, 20 pottery, 20 honey, 15 glass
 // 3 tin, 11 copper, 20 iron, 10 gold, 12 silver
 // 36 grains: 7 wheat, 5 spelt, 18 barley, 6 rye
-// 15 pack animals: 10 horse, 5 donkey
-// 63 poultry not seen on map, only villa: 7 pheasant, 48 chicken, 8 duck
+// 17 pack animals: 12 horse, 5 donkey
+// 65 poultry not seen on map, only villa: 7 pheasant, 48 chicken, 10 duck
 // 23 fruit: 10 pomegranate, 13 fig
 // 23 timber: 16 oak, 4 cedar, 3 pine
 // 7 scent: 2 incense, 2 roses, 3 spikenard
@@ -17,7 +17,7 @@ function WorldBuilder(){
 // 23 dye: 5 purple, 7 kermes, 6 woad, 2 madder, 3 saffron
 
 //max towns
-var mxi = 946;
+var mxi = 948;
 
 //town objects
 var i = 0;

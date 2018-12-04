@@ -366,14 +366,14 @@
 </grid>
 <grid><id>53</id><climate>northern</climate><xco>132</xco><yco>439</yco>
 <province>Hibernia</province><horse>na</horse><cattle>na</cattle><sheep>na</sheep><pig>na</pig>
-<fish>na</fish><poultry>na</poultry><fruit>na</fruit>
+<fish>na</fish><poultry>duck</poultry><fruit>na</fruit>
 <grain>rye</grain><vine>na</vine><pottery>na</pottery><dye>na</dye><timber>oak</timber><honey>na</honey>
 <tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>na</silver>
 <seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
 </grid>
 <grid><id>54</id><climate>northern</climate><xco>239</xco><yco>295</yco>
-<province>Caledonia</province><horse>na</horse><cattle>cattle</cattle><sheep>sheep</sheep><pig>pigs</pig>
-<fish>na</fish><poultry>na</poultry><fruit>na</fruit>
+<province>Caledonia</province><horse>horse</horse><cattle>cattle</cattle><sheep>sheep</sheep><pig>pigs</pig>
+<fish>na</fish><poultry>duck</poultry><fruit>na</fruit>
 <grain>rye</grain><vine>na</vine><pottery>na</pottery><dye>woad</dye><timber>na</timber><honey>na</honey>
 <tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>na</silver>
 <seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>na</fabric><glass>na</glass>
