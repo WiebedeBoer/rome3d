@@ -1860,4 +1860,8 @@
 <region>Caledonia</region></grid>
 <grid><id>948</id><type>horse</type><xco>82</xco><yco>462</yco>
 <region>Hibernia</region></grid>
+<grid><id>949</id><type>parchment</type><xco>1653</xco><yco>1350</yco>
+<region>Assyria</region></grid>
+<grid><id>950</id><type>parchment</type><xco>1687</xco><yco>1583</yco>
+<region>Babylonia</region></grid>
 </CATALOG>

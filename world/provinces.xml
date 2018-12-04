@@ -397,14 +397,14 @@
 <fish>na</fish><poultry>chicken</poultry><fruit>pomegranate</fruit>
 <grain>barley</grain><vine>grapevine</vine><pottery>na</pottery><dye>na</dye><timber>na</timber><honey>na</honey>
 <tin>na</tin><copper>na</copper><iron>na</iron><gold>na</gold><silver>na</silver>
-<seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>silk</fabric><glass>glass</glass>
+<seasoning>na</seasoning><paper>parchment</paper><scent>na</scent><sculpt>na</sculpt><fabric>silk</fabric><glass>glass</glass>
 </grid>
 <grid><id>58</id><climate>desert</climate><xco>1635</xco><yco>1348</yco>
 <province>Assyria</province><horse>na</horse><cattle>cattle</cattle><sheep>sheep</sheep><pig>na</pig>
 <fish>na</fish><poultry>chicken</poultry><fruit>na</fruit>
 <grain>na</grain><vine>na</vine><pottery>na</pottery><dye>na</dye><timber>na</timber><honey>na</honey>
 <tin>na</tin><copper>copper</copper><iron>iron</iron><gold>na</gold><silver>na</silver>
-<seasoning>na</seasoning><paper>na</paper><scent>na</scent><sculpt>na</sculpt><fabric>silk</fabric><glass>na</glass>
+<seasoning>na</seasoning><paper>parchment</paper><scent>na</scent><sculpt>na</sculpt><fabric>silk</fabric><glass>na</glass>
 </grid>
 <grid><id>59</id><climate>desert</climate><xco>1899</xco><yco>1629</yco>
 <province>Persia</province><horse>na</horse><cattle>na</cattle><sheep>sheep</sheep><pig>na</pig>

@@ -10,14 +10,14 @@ function WorldBuilder(){
 // 23 fruit: 10 pomegranate, 13 fig
 // 23 timber: 16 oak, 4 cedar, 3 pine
 // 7 scent: 2 incense, 2 roses, 3 spikenard
-// 2 paper: 1 papyrus, 1 parchment
+// 4 paper: 1 papyrus, 3 parchment
 // 29 seasonings: 4 spices, 2 salt, 23 olive oil
 // 12 carving:  3 ivory, 2 amber, 7 marble
 // 13 fabrics: 11 silk, 2 hides
 // 23 dye: 5 purple, 7 kermes, 6 woad, 2 madder, 3 saffron
 
 //max towns
-var mxi = 948;
+var mxi = 950;
 
 //town objects
 var i = 0;
